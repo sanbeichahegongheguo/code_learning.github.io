@@ -7,15 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
-    <lastBuildDate>Wed, 03 Apr 2019 15:32:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Apr 2019 17:04:01 +0800</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>2</title>
+      <link>https://sanbeichahegongheguo.github.io/post/2/</link>
+      <pubDate>Wed, 03 Apr 2019 17:04:01 +0800</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/post/2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hello World</title>
       <link>https://sanbeichahegongheguo.github.io/post/hello-world/</link>
-      <pubDate>Wed, 03 Apr 2019 15:32:14 +0800</pubDate>
+      <pubDate>Mon, 31 Dec 2018 15:32:14 +0800</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/post/hello-world/</guid>
       <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
@@ -24,7 +33,7 @@
     <item>
       <title>正常人学编程 前言</title>
       <link>https://sanbeichahegongheguo.github.io/post/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
-      <pubDate>Wed, 03 Apr 2019 15:26:19 +0800</pubDate>
+      <pubDate>Sun, 30 Dec 2018 15:26:19 +0800</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/post/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</guid>
       <description>现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。
@@ -34,6 +43,30 @@
 太基础的我也不讲，因为网上已经有很多很好的。
 我的大纲设计是：
  这个知识点，到底是什么，是来解决什么问题的。 这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C++ 下又分别是怎么做。 配合实例，怎么把这个知识用起来。  希望能够成功。</description>
+    </item>
+    
+    <item>
+      <title>环境配置-01</title>
+      <link>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</link>
+      <pubDate>Sat, 29 Dec 2018 15:26:19 +0800</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</guid>
+      <description>环境配置分两种，一种是语言本身的环境配置，一种是编写代码时所需要的编辑器。
+1 先讲讲我们要讲的语言。 在这之前再讲语言的类型。
+1.1 语言分机器语言，汇编语言，和高级语言。 机器语言，也即低级语言，就是CPU能够认识的语言，也就是二进制指令。如果让你写一段程序计算1+1，那就需要些大量的 1和0，显然正常人都没办法做到。这块以后如果有兴趣可以讲讲普通人如何用二进制编程，其实是挺有意思。类似摩尔电码一样，用1和0代表一系列运算。具象化的那就是《三体》里的人列计算机，仅仅通过1和0，构建出与门或门非门与非门等等，再在这个基础上进行逻辑运算。和目前的深度学习理念非常像。如果以后我会讲到深度学习，那就会先讲这个。
+先列几个机器语言：
+指令部份的示例: 0000 代表 加载（LOAD） 0001 代表 存储（STORE） ... 暂存器部份的示例: 0000 代表暂存器 A 0001 代表暂存器 B ... 存储器部份的示例: 000000000000 代表地址为 0 的存储器 000000000001 代表地址为 1 的存储器 000000010000 代表地址为 16 的存储器 100000000000 代表地址为 2^11 的存储器 集成示例: 0000,0000,000000010000 代表 LOAD A, 16 0000,0001,000000000001 代表 LOAD B, 1 0001,0001,000000010000 代表 STORE B, 16 0001,0001,000000000001 代表 STORE B, 1 ...  是不是基本上就不是给人看的。
+低级语言，也称符号语言，就是在机器语言上改造出来的至少可以让人一眼看懂的语言，就是把操作性的指令，从0和1改造成约定俗成的英文字符，而且一般都是有英文原意的英文单词或缩写。比如把寄存器BX的内容送到AX中，用机器语言和汇编语言写就分别是：
+1000100111011000 机器指令 mov ax,bx 汇编指令  区别还是挺明显。后者至少大概知道是啥意思。</description>
+    </item>
+    
+    <item>
+      <title>环境配置-02</title>
+      <link>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</link>
+      <pubDate>Fri, 28 Dec 2018 15:26:19 +0800</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</guid>
+      <description>1 优先推荐初学者先使用网上环境，而不是本地部署。 Cloud Studio 是基于浏览器的集成式开发环境，是腾讯公司的，支持绝大部分编程语言，包括 HTML5、PHP、Python、Java、Ruby、C/C++、.NET 等等，无需下载安装程序，一键切换开发环境。 Cloud Studio 提供了完整的 Linux 环境，并且支持自定义域名指向，动态计算资源调整，可以完成各种应用的开发编译与部署。</description>
     </item>
     
   </channel>
