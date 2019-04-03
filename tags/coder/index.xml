@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coder on 火山灰</title>
+    <title>Coder on 欢迎来到火山灰的小站。想看文章请点击Blog。Tags是按照标签对文章进行了分类。</title>
     <link>https://sanbeichahegongheguo.github.io/tags/coder/</link>
-    <description>Recent content in Coder on 火山灰</description>
+    <description>Recent content in Coder on 欢迎来到火山灰的小站。想看文章请点击Blog。Tags是按照标签对文章进行了分类。</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
     <lastBuildDate>Mon, 31 Dec 2018 15:32:14 +0800</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/tags/coder/index.xml" rel="self" type="application/rss+xml" />
@@ -14,19 +13,19 @@
     
     <item>
       <title>Hello World</title>
-      <link>https://sanbeichahegongheguo.github.io/post/hello-world/</link>
+      <link>https://sanbeichahegongheguo.github.io/hello-world/</link>
       <pubDate>Mon, 31 Dec 2018 15:32:14 +0800</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/post/hello-world/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/hello-world/</guid>
       <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>正常人学编程 前言</title>
-      <link>https://sanbeichahegongheguo.github.io/post/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
+      <link>https://sanbeichahegongheguo.github.io/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
       <pubDate>Sun, 30 Dec 2018 15:26:19 +0800</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/post/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</guid>
       <description>现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。
  抽象得太抽象浓缩，看完无法迁移。伪代码无法实现转化为实际代码。 具体的手册太具体，一大堆功能、函数、方法交给你。为了教会你，用的都是彼此分离不同属没有关联的例子。只是为了讲这个方法的用法而用，实际使用的时候依然用不好。只有正确的用法，不指出常见的错误方法。典型的就是 Python 著名的库 Pandas 的作者写的《Python数据分析》、《鸟叔的Linux私房菜》。很多编程入门书，真的就只是入门书。对于有计算机编程基础的人员，入了门，很快就可以开始做项目。但是对于从零开始的人员，则需要经过痛苦的摸索阶段。 另外一些书则是介绍一些奇淫巧技，对于初学者毫无帮助。 还有的书因为出版的缘故，写得极其精简简略，生怕多重复强调一点。实际上，就像复习是最好的学习，而不断的重复也是让初学者更好入门的招数。不要怕啰嗦，只要能把道理讲清楚，特别是对于网络发布的情况。反而应该反对过度的凝练。传统的教育方法是书本凝练，课堂详细展开。但是对于自学、转行的人员，无法达到这样的条件。 还有就是对于零基础的人员，缺乏足够的知识组合。其实学习本身应该是融会贯通的，就像在学校，不会一学期就学这一门，学完这门才学另一门，都是同步进行。而如果课程设置合理，完全可以刚在这门课学到的知识，就用在了下一门的基础上。形成良好的闭环和循环增强，巩固了旧知识，学会了新知识。 刷LeetCode怎么刷？这块其实也是一个痛点。我最开始刷LeetCode的时候，想得最多的就是，我写的这个解法，它是怎么在后台被测试的？如何更好的构建类？而一直没有一个合格的人告诉我是如何运作的，似乎所有的人都默认为大家都知道了。QTMD。 也就是说，目前存在一个 huge 的 gap 横亘在初入门和熟练资深者之间，导致初学者长期卡在初学者阶段，无法良好的进入下一阶层。这个问题需要改变。这也是我们目前现代化教育的弊端：  学生学不会。 学生学会了不会用。 学生用了但是不是应该的用法。   我们的教育也是出大问题了。
 现在市面上有不少号称针对初学者的教程，比如：《一百天学会python》《零基础入门Linux》，但实际上一点都不实用。要么是太简略，该教的必备知识没教，要么是太简陋，只不过是把官方文档堆了出来，要么就是太庞杂，一坨东西呼人脸上，无所适从。
@@ -37,11 +36,11 @@
     </item>
     
     <item>
-      <title>环境配置-01</title>
-      <link>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</link>
+      <title>section01-环境配置-01</title>
+      <link>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</link>
       <pubDate>Sat, 29 Dec 2018 15:26:19 +0800</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</guid>
       <description>环境配置分两种，一种是语言本身的环境配置，一种是编写代码时所需要的编辑器。
 1 先讲讲我们要讲的语言。 在这之前再讲语言的类型。
 1.1 语言分机器语言，汇编语言，和高级语言。 机器语言，也即低级语言，就是CPU能够认识的语言，也就是二进制指令。如果让你写一段程序计算1+1，那就需要些大量的 1和0，显然正常人都没办法做到。这块以后如果有兴趣可以讲讲普通人如何用二进制编程，其实是挺有意思。类似摩尔电码一样，用1和0代表一系列运算。具象化的那就是《三体》里的人列计算机，仅仅通过1和0，构建出与门或门非门与非门等等，再在这个基础上进行逻辑运算。和目前的深度学习理念非常像。如果以后我会讲到深度学习，那就会先讲这个。
@@ -52,11 +51,11 @@
     </item>
     
     <item>
-      <title>环境配置-02</title>
-      <link>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</link>
+      <title>section01-环境配置-02</title>
+      <link>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</link>
       <pubDate>Fri, 28 Dec 2018 15:26:19 +0800</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/post/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</guid>
       <description>1 优先推荐初学者先使用网上环境，而不是本地部署。 Cloud Studio 是基于浏览器的集成式开发环境，是腾讯公司的，支持绝大部分编程语言，包括 HTML5、PHP、Python、Java、Ruby、C/C++、.NET 等等，无需下载安装程序，一键切换开发环境。 Cloud Studio 提供了完整的 Linux 环境，并且支持自定义域名指向，动态计算资源调整，可以完成各种应用的开发编译与部署。</description>
     </item>
     
