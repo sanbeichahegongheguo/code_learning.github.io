@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>正常人学编程 前言</title>
+
+  
+  
+  <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  <link href="//at.alicdn.com" rel="dns-prefetch">
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//fonts.gstatic.com" rel="dns-prefetch">
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  <meta name="description" content="现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。
+ 抽象得太抽象浓缩，看完无法迁移。伪代码无法实现转化为实际代码。 具体的手册太具体，一大堆功能、函数、方法交给你。为了教会你，用的都是彼此分离不同属没有关联的例子。只是为了讲这个方法的用法而用，实际使用的时候依然用不好。只有正确的用法，不指出常见的错误方法。典型的就是 Python 著名的库 Pandas 的作者写的《Python数据分析》、《鸟叔的Linux私房菜》。很多编程入门书，真的就只是入门书。对于有计算机编程基础的人员，入了门，很快就可以开始做项目。但是对于从零开始的人员，则需要经过痛苦的摸索阶段。 另外一些书则是介绍一些奇淫巧技，对于初学者毫无帮助。 还有的书因为出版的缘故，写得极其精简简略，生怕多重复强调一点。实际上，就像复习是最好的学习，而不断的重复也是让初学者更好入门的招数。不要怕啰嗦，只要能把道理讲清楚，特别是对于网络发布的情况。反而应该反对过度的凝练。传统的教育方法是书本凝练，课堂详细展开。但是对于自学、转行的人员，无法达到这样的条件。 还有就是对于零基础的人员，缺乏足够的知识组合。其实学习本身应该是融会贯通的，就像在学校，不会一学期就学这一门，学完这门才学另一门，都是同步进行。而如果课程设置合理，完全可以刚在这门课学到的知识，就用在了下一门的基础上。形成良好的闭环和循环增强，巩固了旧知识，学会了新知识。 刷LeetCode怎么刷？这块其实也是一个痛点。我最开始刷LeetCode的时候，想得最多的就是，我写的这个解法，它是怎么在后台被测试的？如何更好的构建类？而一直没有一个合格的人告诉我是如何运作的，似乎所有的人都默认为大家都知道了。QTMD。 也就是说，目前存在一个 huge 的 gap 横亘在初入门和熟练资深者之间，导致初学者长期卡在初学者阶段，无法良好的进入下一阶层。这个问题需要改变。这也是我们目前现代化教育的弊端：  学生学不会。 学生学会了不会用。 学生用了但是不是应该的用法。   我们的教育也是出大问题了。
+现在市面上有不少号称针对初学者的教程，比如：《一百天学会python》《零基础入门Linux》，但实际上一点都不实用。要么是太简略，该教的必备知识没教，要么是太简陋，只不过是把官方文档堆了出来，要么就是太庞杂，一坨东西呼人脸上，无所适从。
+所以我想，自己试着一点点，把基础知识和引用知识，捣碎了，结合具体事例，反复灌输，传授出来。
+太基础的我也不讲，因为网上已经有很多很好的。
+我的大纲设计是：
+ 这个知识点，到底是什么，是来解决什么问题的。 这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C&#43;&#43; 下又分别是怎么做。 配合实例，怎么把这个知识用起来。  希望能够成功。">
+
+  
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@twitter_username">
+    <meta name="twitter:title" content="正常人学编程 前言">
+    <meta name="twitter:description" content="现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。
+ 抽象得太抽象浓缩，看完无法迁移。伪代码无法实现转化为实际代码。 具体的手册太具体，一大堆功能、函数、方法交给你。为了教会你，用的都是彼此分离不同属没有关联的例子。只是为了讲这个方法的用法而用，实际使用的时候依然用不好。只有正确的用法，不指出常见的错误方法。典型的就是 Python 著名的库 Pandas 的作者写的《Python数据分析》、《鸟叔的Linux私房菜》。很多编程入门书，真的就只是入门书。对于有计算机编程基础的人员，入了门，很快就可以开始做项目。但是对于从零开始的人员，则需要经过痛苦的摸索阶段。 另外一些书则是介绍一些奇淫巧技，对于初学者毫无帮助。 还有的书因为出版的缘故，写得极其精简简略，生怕多重复强调一点。实际上，就像复习是最好的学习，而不断的重复也是让初学者更好入门的招数。不要怕啰嗦，只要能把道理讲清楚，特别是对于网络发布的情况。反而应该反对过度的凝练。传统的教育方法是书本凝练，课堂详细展开。但是对于自学、转行的人员，无法达到这样的条件。 还有就是对于零基础的人员，缺乏足够的知识组合。其实学习本身应该是融会贯通的，就像在学校，不会一学期就学这一门，学完这门才学另一门，都是同步进行。而如果课程设置合理，完全可以刚在这门课学到的知识，就用在了下一门的基础上。形成良好的闭环和循环增强，巩固了旧知识，学会了新知识。 刷LeetCode怎么刷？这块其实也是一个痛点。我最开始刷LeetCode的时候，想得最多的就是，我写的这个解法，它是怎么在后台被测试的？如何更好的构建类？而一直没有一个合格的人告诉我是如何运作的，似乎所有的人都默认为大家都知道了。QTMD。 也就是说，目前存在一个 huge 的 gap 横亘在初入门和熟练资深者之间，导致初学者长期卡在初学者阶段，无法良好的进入下一阶层。这个问题需要改变。这也是我们目前现代化教育的弊端：  学生学不会。 学生学会了不会用。 学生用了但是不是应该的用法。   我们的教育也是出大问题了。
+现在市面上有不少号称针对初学者的教程，比如：《一百天学会python》《零基础入门Linux》，但实际上一点都不实用。要么是太简略，该教的必备知识没教，要么是太简陋，只不过是把官方文档堆了出来，要么就是太庞杂，一坨东西呼人脸上，无所适从。
+所以我想，自己试着一点点，把基础知识和引用知识，捣碎了，结合具体事例，反复灌输，传授出来。
+太基础的我也不讲，因为网上已经有很多很好的。
+我的大纲设计是：
+ 这个知识点，到底是什么，是来解决什么问题的。 这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C&#43;&#43; 下又分别是怎么做。 配合实例，怎么把这个知识用起来。  希望能够成功。">
+    <meta name="twitter:image" content="/images/time.jpg">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="正常人学编程 前言">
+  <meta property="og:description" content="现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。
+ 抽象得太抽象浓缩，看完无法迁移。伪代码无法实现转化为实际代码。 具体的手册太具体，一大堆功能、函数、方法交给你。为了教会你，用的都是彼此分离不同属没有关联的例子。只是为了讲这个方法的用法而用，实际使用的时候依然用不好。只有正确的用法，不指出常见的错误方法。典型的就是 Python 著名的库 Pandas 的作者写的《Python数据分析》、《鸟叔的Linux私房菜》。很多编程入门书，真的就只是入门书。对于有计算机编程基础的人员，入了门，很快就可以开始做项目。但是对于从零开始的人员，则需要经过痛苦的摸索阶段。 另外一些书则是介绍一些奇淫巧技，对于初学者毫无帮助。 还有的书因为出版的缘故，写得极其精简简略，生怕多重复强调一点。实际上，就像复习是最好的学习，而不断的重复也是让初学者更好入门的招数。不要怕啰嗦，只要能把道理讲清楚，特别是对于网络发布的情况。反而应该反对过度的凝练。传统的教育方法是书本凝练，课堂详细展开。但是对于自学、转行的人员，无法达到这样的条件。 还有就是对于零基础的人员，缺乏足够的知识组合。其实学习本身应该是融会贯通的，就像在学校，不会一学期就学这一门，学完这门才学另一门，都是同步进行。而如果课程设置合理，完全可以刚在这门课学到的知识，就用在了下一门的基础上。形成良好的闭环和循环增强，巩固了旧知识，学会了新知识。 刷LeetCode怎么刷？这块其实也是一个痛点。我最开始刷LeetCode的时候，想得最多的就是，我写的这个解法，它是怎么在后台被测试的？如何更好的构建类？而一直没有一个合格的人告诉我是如何运作的，似乎所有的人都默认为大家都知道了。QTMD。 也就是说，目前存在一个 huge 的 gap 横亘在初入门和熟练资深者之间，导致初学者长期卡在初学者阶段，无法良好的进入下一阶层。这个问题需要改变。这也是我们目前现代化教育的弊端：  学生学不会。 学生学会了不会用。 学生用了但是不是应该的用法。   我们的教育也是出大问题了。
+现在市面上有不少号称针对初学者的教程，比如：《一百天学会python》《零基础入门Linux》，但实际上一点都不实用。要么是太简略，该教的必备知识没教，要么是太简陋，只不过是把官方文档堆了出来，要么就是太庞杂，一坨东西呼人脸上，无所适从。
+所以我想，自己试着一点点，把基础知识和引用知识，捣碎了，结合具体事例，反复灌输，传授出来。
+太基础的我也不讲，因为网上已经有很多很好的。
+我的大纲设计是：
+ 这个知识点，到底是什么，是来解决什么问题的。 这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C&#43;&#43; 下又分别是怎么做。 配合实例，怎么把这个知识用起来。  希望能够成功。">
+  <meta property="og:url" content="https://sanbeichahegongheguo.github.io/post/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/">
+  <meta property="og:image" content="/images/time.jpg">
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0">
+
+
+<link rel="canonical" href="https://sanbeichahegongheguo.github.io/post/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/">
+
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+
+<meta name="msvalidate.01" content="22596E34341DD1D17D6022C44647E587">
+
+
+
+
+
+<meta name="theme-color" content="#02b875">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="火山灰">
+<meta name="msapplication-tooltip" content="火山灰">
+<meta name='msapplication-navbutton-color' content="#02b875">
+<meta name="msapplication-TileColor" content="#02b875">
+<meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+<link rel="icon" href="https://sanbeichahegongheguo.github.io/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://sanbeichahegongheguo.github.io/icons/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://sanbeichahegongheguo.github.io/icons/icon-32x32.png">
+<link rel="icon" sizes="192x192" href="https://sanbeichahegongheguo.github.io/icons/icon-192x192.png">
+<link rel="apple-touch-icon" href="https://sanbeichahegongheguo.github.io/icons/icon-152x152.png">
+<link rel="manifest" href="https://sanbeichahegongheguo.github.io/manifest.json">
+
+
+<link rel="preload" href="https://sanbeichahegongheguo.github.io/styles/main.min.css" as="style">
+
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
+<link rel="preload" href="https://sanbeichahegongheguo.github.io/images/time.jpg" as="image">
+<link rel="preload" href="https://sanbeichahegongheguo.github.io/images/grey-prism.svg" as="image">
+
+
+<style>
+  body {
+    background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
+  }
+</style>
+<link rel="stylesheet" href="https://sanbeichahegongheguo.github.io/styles/main.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css">
+
+
+
+  
+  
+<!--[if lte IE 8]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-ie8@1.1.2/dist/videojs-ie8.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20180112/classList.min.js"></script>
+<![endif]-->
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a role="button" aria-label="Go to top" title="Go to top" class="to-top is-hide"><span class="icon icon-up" aria-hidden="true"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="https://sanbeichahegongheguo.github.io/images/time.jpg" alt="Avatar">
+  
+  <h2 class="title">火山灰</h2>
+  
+  <p class="subtitle">~ Stay hungry， Stay foolish ~</p>
+  <button class="menu-toggle" type="button" aria-label="Main Menu" aria-expanded="false" tab-index="0">
+    <span class="icon icon-menu" aria-hidden="true"></span>
+  </button>
+
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+          
+          
+           is-active">
+          <a href="https://sanbeichahegongheguo.github.io/">ForCoderBeginners</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="https://github.com/sanbeichahegongheguo">MyWorks</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="https://sanbeichahegongheguo.github.io/forcoderbeginner/">MyOthers</a>
+        </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list"><li class="social-item">
+          <a href="mailto:name@domain.com" title="Email" aria-label="Email">
+            <span class="icon icon-email" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//github.com/github_username" title="GitHub" aria-label="GitHub">
+            <span class="icon icon-github" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//twitter.com/twitter_username" title="Twitter" aria-label="Twitter">
+            <span class="icon icon-twitter" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//weibo.com/weibo_username" title="Weibo" aria-label="Weibo">
+            <span class="icon icon-weibo" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//www.linkedin.com/in/linkedin_username" title="Linkedin" aria-label="Linkedin">
+            <span class="icon icon-linkedin" aria-hidden="true"></span>
+          </a>
+        </li></ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">正常人学编程 前言</h1>
+      <p class="post-meta">@总舵主 · Apr 3, 2019 · 1 min read</p>
+    </header>
+    <article class="post-content"><p>现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。</p>
+
+<ol>
+<li>抽象得太抽象浓缩，看完无法迁移。伪代码无法实现转化为实际代码。</li>
+<li>具体的手册太具体，一大堆功能、函数、方法交给你。为了教会你，用的都是彼此分离不同属没有关联的例子。只是为了讲这个方法的用法而用，实际使用的时候依然用不好。只有正确的用法，不指出常见的错误方法。典型的就是 Python 著名的库 Pandas 的作者写的《Python数据分析》、《鸟叔的Linux私房菜》。很多编程入门书，真的就只是入门书。对于有计算机编程基础的人员，入了门，很快就可以开始做项目。但是对于从零开始的人员，则需要经过痛苦的摸索阶段。</li>
+<li>另外一些书则是介绍一些奇淫巧技，对于初学者毫无帮助。</li>
+<li>还有的书因为出版的缘故，写得极其精简简略，生怕多重复强调一点。实际上，就像复习是最好的学习，而不断的重复也是让初学者更好入门的招数。不要怕啰嗦，只要能把道理讲清楚，特别是对于网络发布的情况。反而应该反对过度的凝练。传统的教育方法是书本凝练，课堂详细展开。但是对于自学、转行的人员，无法达到这样的条件。</li>
+<li>还有就是对于零基础的人员，缺乏足够的知识组合。其实学习本身应该是融会贯通的，就像在学校，不会一学期就学这一门，学完这门才学另一门，都是同步进行。而如果课程设置合理，完全可以刚在这门课学到的知识，就用在了下一门的基础上。形成良好的闭环和循环增强，巩固了旧知识，学会了新知识。</li>
+<li>刷LeetCode怎么刷？这块其实也是一个痛点。我最开始刷LeetCode的时候，想得最多的就是，我写的这个解法，它是怎么在后台被测试的？如何更好的构建类？而一直没有一个合格的人告诉我是如何运作的，似乎所有的人都默认为大家都知道了。QTMD。</li>
+<li>也就是说，目前存在一个 huge 的 gap 横亘在初入门和熟练资深者之间，导致初学者长期卡在初学者阶段，无法良好的进入下一阶层。这个问题需要改变。这也是我们目前现代化教育的弊端：
+
+<ol>
+<li>学生学不会。</li>
+<li>学生学会了不会用。</li>
+<li>学生用了但是不是应该的用法。</li>
+</ol></li>
+</ol>
+
+<p>我们的教育也是出大问题了。</p>
+
+<p>现在市面上有不少号称针对初学者的教程，比如：《一百天学会python》《零基础入门Linux》，但实际上一点都不实用。要么是太简略，该教的必备知识没教，要么是太简陋，只不过是把官方文档堆了出来，要么就是太庞杂，一坨东西呼人脸上，无所适从。</p>
+
+<p>所以我想，自己试着一点点，把基础知识和引用知识，捣碎了，结合具体事例，反复灌输，传授出来。</p>
+
+<p>太基础的我也不讲，因为网上已经有很多很好的。</p>
+
+<p>我的大纲设计是：</p>
+
+<ol>
+<li>这个知识点，到底是什么，是来解决什么问题的。</li>
+<li>这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C++ 下又分别是怎么做。</li>
+<li>配合实例，怎么把这个知识用起来。</li>
+</ol>
+
+<p>希望能够成功。</p>
+
+<p><img src="../../static/images/avatar.png" alt="" /></p>
+</article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+          <li><a href="https://sanbeichahegongheguo.github.io/tags/coder"><span class="tag">Coder</span></a></li>
+        
+      </ul>
+      
+      <p class="post-copyright">
+        © This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  
+<footer class="site-footer">
+  <p>© 2017-2019 火山灰</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
+  
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js"></script>
+
+
+
+<script async src="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video.min.js"></script>
+
+
+
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+
+
+<script src="https://sanbeichahegongheguo.github.io/scripts/index.min.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('\/service-worker.js').then(function() {
+      console.log('[ServiceWorker] Registered');
+    });
+  }
+</script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
