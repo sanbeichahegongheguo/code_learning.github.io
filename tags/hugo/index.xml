@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on 火山灰</title>
+    <link>https://sanbeichahegongheguo.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on 火山灰</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sanbeichahegongheguo.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Katex Math Typesetting</title>
+      <link>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</link>
+      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</guid>
+      <description>Enable Katex in the config file by setting the katex param to true. This will import the necessary Katex CSS/JS.
+Note: Use the online reference of supported TeX functions.
+Some math:
+$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$  $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
+More math:
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</description>
+    </item>
+    
+    <item>
+      <title>Cupper Shortcodes</title>
+      <link>https://sanbeichahegongheguo.github.io/cupper-shortcodes/</link>
+      <pubDate>Tue, 12 Feb 2019 23:39:06 -0600</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/cupper-shortcodes/</guid>
+      <description>blockquote {{% blockquote author=&amp;quot;Carl Jung&amp;quot; %}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. {{% /blockquote %}}  Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
+    </item>
+    
+  </channel>
+</rss>

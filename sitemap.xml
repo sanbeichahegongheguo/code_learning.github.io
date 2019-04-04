@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/cupper-shortcodes/</loc>
+    <lastmod>2019-02-12T23:39:06-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sanbeichahegongheguo.github.io/hello-world/</loc>
     <lastmod>2018-12-31T15:32:14+08:00</lastmod>
   </url>
@@ -23,8 +33,23 @@
   </url>
   
   <url>
+    <loc>https://sanbeichahegongheguo.github.io/nasa-images/</loc>
+    <lastmod>2018-12-27T20:46:49-06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</loc>
     <lastmod>2018-12-27T17:04:01+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/</loc>
+    <lastmod>2017-06-26T18:27:58+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -34,8 +59,38 @@
   </url>
   
   <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/hugo/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/katex/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/math/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/nasa/</loc>
+    <lastmod>2018-12-27T20:46:49-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://sanbeichahegongheguo.github.io/post/</loc>
-    <lastmod>2018-12-31T15:32:14+08:00</lastmod>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/shortcodes/</loc>
+    <lastmod>2019-02-12T23:39:06-06:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -46,8 +101,8 @@
   </url>
   
   <url>
-    <loc>https://sanbeichahegongheguo.github.io/</loc>
-    <lastmod>2018-12-31T15:32:14+08:00</lastmod>
+    <loc>https://sanbeichahegongheguo.github.io/tags/typesetting/</loc>
+    <lastmod>2019-03-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
