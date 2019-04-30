@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>论文写作 on 火山灰</title>
+    <link>https://sanbeichahegongheguo.github.io/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/</link>
+    <description>Recent content in 论文写作 on 火山灰</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://sanbeichahegongheguo.github.io/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zotero入门</title>
+      <link>https://sanbeichahegongheguo.github.io/zotero%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/zotero%E5%85%A5%E9%97%A8/</guid>
+      <description>注：本文在阳博客基础上修改增加内容。
+注册Zotero新账号并下载 登陆https://www.zotero.org/user/register/，注册一个自己的Zotero账号，请特别记住，username会直接生成个性域名，别乱起，未来会有些不方便。
+下载Zotero单机版，也就是Zotero Standalone。Mac、Windows等通用。
+http://www.zotero.org/download/
+也可以下载firefox插件版，但是我更推荐单机版。两者的区别如下：
+下载之后安装默认提示一路安装。
+Zotero版本介绍 Zotero有桌面版和浏览器版。
+配置Zotero 打开Zotero，找到[首选项]或偏好：
+在同步一栏输入前面注册的账号，这样，文献库可以同步到[Zotero]官网。官方给我们提供了100MB的共享同步空间。当然基本不够用，后面会介绍如果用坚果云扩展。
+创建一个用来保存文献库的根目录，假设是：/users/ouyang/dev/zotero 继续配置：
+[Zotero]官网默认的存储空间有限，所以，我们需要一个小技巧，将文献库里面保存PDF文档的目录，分离开，放到[dropbox]目录下同步。回到刚才创建的：/users/ouyang/dev/zotero 目录，其中的storage目录是拿来保存PDF等文档的，将其剪切到[dropbox]目录下，如下图所示：
+打开终端或shell，创建一个软连接，让[Zotero]认出该目录：
+ln -s /users/ouyang/dropbox/zotero/storage /users/ouyang/dev/zotero/storage  回头看，/users/ouyang/dev/zotero 目录下多了一个软链接，表示成功了。
+接下去，在配置这里安装pdf索引：
+以及，将默认输出格式，更改为APA第六版：
+导入第一篇文献 好了，准备工作做完了。现在，让我们导入第一篇文献。Zotero支持以下六种导入方法：
+ 互联网自动识别：Web Translators (URL bar icon) 手动输入：Manual Input or Edit From a bibliographic 文件导入：format (RIS, BibTeX, MARC, etc.) 通过标示符增加：Add by identiﬁer (DOI, ISBN, PMID) 通过PDF元数据识别：Add PDF then Retrieve Metadata 从网页识别：Get any Webpage with basic data  先让我们找找成就感，从最容易的开始。通过Web Translators，互联网自动识别。
+打开豆瓣网站，随便找一本书，让我们以前一篇文章[心智十二宫]中的[我生活的种种模式]为例，它的豆瓣网页是：
+http://book.douban.com/subject/1065156/</description>
+    </item>
+    
+  </channel>
+</rss>
