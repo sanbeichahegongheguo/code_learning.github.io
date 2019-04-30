@@ -6,12 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://sanbeichahegongheguo.github.io/">
+  <link rel="canonical" href="https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%AA%E5%8D%9A%E5%A3%AB%E9%99%A9/">
 
-  
-    
-      <meta name="description" content="An accessibility-friendly Hugo theme, ported from the original Cupper project.">
-    
   
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -36,9 +32,7 @@
 
   
   
-    
-  
-  <title>火山灰</title>
+  <title>聊个博士险 | 火山灰</title>
 </head>
 
   <body>
@@ -161,7 +155,7 @@
       
       
       
-      <a href="/" aria-current="page">
+      <a href="/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -174,7 +168,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -229,22 +223,141 @@
         <div>
           
   <main id="main">
-    <h1>Home</h1>
-    <p>欢迎来到我的小站。我用的是最极简的博客风格，就是为了减少一切不必要的注意力吸引。</p>
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      聊个博士险
+    </h1>
+    <div class="date">
+      
+      <strong aria-hidden="true">Publish date: </strong>Dec 26, 2018
+    </div>
+    
+    
+      
 
-<p>点击Blog可看博文。</p>
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e4%b8%80-%e5%89%8d%e8%a8%80">
+            一 前言
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e4%ba%8c-%e5%9f%ba%e6%9c%ac%e6%a6%82%e5%bf%b5">
+            二 基本概念
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e4%b8%89-%e9%99%a9%e7%a7%8d%e8%ae%be%e8%ae%a1">
+            三 险种设计
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%9b%9b-%e5%b8%82%e5%9c%ba%e8%a7%84%e6%a8%a1">
+            四 市场规模
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e4%ba%94-%e6%94%b6%e8%b4%b9%e6%a8%a1%e5%9e%8b">
+            五 收费模型
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
 
-<p>点击Tags可根据分类阅读。</p>
 
-<p>文章均是按照正常的阅读顺序排列，而不是常见的最新更新的一篇在最上面。便于新人循序渐进阅读。</p>
+    
+    
 
-<p>留言功能用的是第三方的 Valine ，它的CSS样式太难调，我就不改了。勉强用。上面标注的“昵称”、“邮箱”、“网址”都可以不写直接留言，留言支持markdown语法，不过提交留言的时候要做简单的小学四则运算认证。不过目前的留言功能还没有调好，还不能用起来。</p>
+<p>借着一个假设的险种，讲讲保险的建模。</p>
 
-<p>还可以点击最下方的  dark theme  按钮调换主题模式。</p>
+<h2 id="一-前言">一 前言</h2>
 
-<p>祝阅读愉快。</p>
+<p>现在读博士的人越来越多，但是我们也知道读博士是一个高风险的行为，中间可能存在种种问题，比如抑郁，抑郁到退学，抑郁到自杀，或者延期毕业，或者毕不了业退学的，所以有必要推出一款博士险，对冲意外风险的。</p>
+
+<p>这里，我们就知道了保险的本质，是为了对冲风险，不至于意外发生的时候自己颗粒无收，起码留个青山以后有柴烧。</p>
+
+<h2 id="二-基本概念">二 基本概念</h2>
+
+<p>博士险针对的是因为种种原因没有<strong>按时</strong>拿到<strong>博士学位</strong>的情况。</p>
+
+<p>所以分以下4种情况：</p>
+
+<ol>
+<li><p>种种原因主动退学<strong>未</strong>拿到博士学位</p></li>
+
+<li><p>种种原因被动劝退未<strong>拿</strong>到博士学位</p></li>
+
+<li><p>种种原因意外或自杀不在世<strong>未</strong>拿到博士学位</p></li>
+
+<li><p>种种原因延期毕业<strong>拿</strong>到学位</p></li>
+</ol>
+
+<p>再加上</p>
+
+<ol>
+<li>按时拿到博士学位</li>
+</ol>
+
+<p>一共5种情况。</p>
+
+<p>其中，本险种针对的人群是拿到博士生，至少是拿到研究生入学通知书的。各类证明均需要</p>
+
+<h2 id="三-险种设计">三 险种设计</h2>
+
+<h2 id="四-市场规模">四 市场规模</h2>
+
+<h2 id="五-收费模型">五 收费模型</h2>
 
   </main>
+    
+
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'ClPpDvdzTKcxDyOMRIm9TAlP-gzGzoHsz',
+        appKey: 'KDW5XSrihNtcxo7mAx9mE831',
+        notify: 'false',
+        verify: 'false',
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor: 'true'
+    });
+  </script>
+
 
           <footer role="contentinfo">
   <div>
