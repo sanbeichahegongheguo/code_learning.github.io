@@ -21,40 +21,6 @@
     </item>
     
     <item>
-      <title>Git入门</title>
-      <link>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</guid>
-      <description>一、Git是什么 1、
-2、
-二、Git基本用法 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
-下面是我整理的常用 Git 命令清单。几个专用名词的译名如下。
-  Workspace：工作区 Index / Stage：暂存区 Repository：仓库区（或本地仓库） Remote：远程仓库   一、新建代码库 git init # 在当前目录新建一个Git代码库 git init [project-name] # 新建一个目录，将其初始化为Git代码库 git clone [url] # 下载一个项目和它的整个代码历史  二、配置 Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
-git config --list # 显示当前的Git配置 git config -e [--global] # 编辑Git配置文件 git config [--global] user.name &amp;quot;[name]&amp;quot; # 设置提交代码时的用户信息 git config [--global] user.email &amp;quot;[email address]&amp;quot; # 设置提交代码时的用户信息  三、增加/删除文件 git add [file1] [file2] ... # 添加指定文件到暂存区 git add [dir] # 添加指定目录到暂存区，包括子目录 git add .</description>
-    </item>
-    
-    <item>
-      <title>Git常见问题总结</title>
-      <link>https://sanbeichahegongheguo.github.io/git/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/git/</guid>
-      <description>The file will have its original line endings in your working directory 出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息
-此时需要执行如下代码：
-git rm -r --cached . git config core.autocrlf false git add .  . 代表当前目录
-Git 的 config 有三级 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
-为系统设置配置。
-2.2 第二级：git config --global 信息保存在 ~/.gitconfig 或 ~/.config/git/config
-只针对当前用户。
-2.3 第三级：git congfig --local 信息保存在当前仓库的Git目录中的 .git/config
-只针对该仓库。
-每一个级别覆盖上一级别的配置。
-Git传输协议 和 HTTPS 传输协议 两者有不同。
-让git status 显示中文，解决中文乱码 4.1 问题描述 status查看有改动但未提交的文件时总只显示一串数字串，显示不出中文文件名，非常不方便。如下图：</description>
-    </item>
-    
-    <item>
       <title>正常人学编程 前言</title>
       <link>https://sanbeichahegongheguo.github.io/1%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
@@ -213,6 +179,73 @@ A股的价值被高估基本上是共识。可以说90%以上的股票都是垃�
       <guid>https://sanbeichahegongheguo.github.io/about/</guid>
       <description>我的个人小站。记录学习和一些感悟。
 希望你会喜欢这里。</description>
+    </item>
+    
+    <item>
+      <title>Git入门</title>
+      <link>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</guid>
+      <description>一、Git是什么 1、
+2、
+二、Git基本用法 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
+下面是我整理的常用 Git 命令清单。几个专用名词的译名如下。
+  Workspace：工作区 Index / Stage：暂存区 Repository：仓库区（或本地仓库） Remote：远程仓库   一、新建代码库 git init # 在当前目录新建一个Git代码库 git init [project-name] # 新建一个目录，将其初始化为Git代码库 git clone [url] # 下载一个项目和它的整个代码历史  二、配置 Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+git config --list # 显示当前的Git配置 git config -e [--global] # 编辑Git配置文件 git config [--global] user.name &amp;quot;[name]&amp;quot; # 设置提交代码时的用户信息 git config [--global] user.email &amp;quot;[email address]&amp;quot; # 设置提交代码时的用户信息  三、增加/删除文件 git add [file1] [file2] ... # 添加指定文件到暂存区 git add [dir] # 添加指定目录到暂存区，包括子目录 git add .</description>
+    </item>
+    
+    <item>
+      <title>Git常见问题总结</title>
+      <link>https://sanbeichahegongheguo.github.io/git/</link>
+      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/git/</guid>
+      <description>The file will have its original line endings in your working directory 出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息
+此时需要执行如下代码：
+git rm -r --cached . git config core.autocrlf false git add .  . 代表当前目录
+Git 的 config 有三级 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
+为系统设置配置。
+2.2 第二级：git config --global 信息保存在 ~/.gitconfig 或 ~/.config/git/config
+只针对当前用户。
+2.3 第三级：git congfig --local 信息保存在当前仓库的Git目录中的 .git/config
+只针对该仓库。
+每一个级别覆盖上一级别的配置。
+Git传输协议 和 HTTPS 传输协议 两者有不同。
+让git status 显示中文，解决中文乱码 4.1 问题描述 status查看有改动但未提交的文件时总只显示一串数字串，显示不出中文文件名，非常不方便。如下图：</description>
+    </item>
+    
+    <item>
+      <title>NASA Images</title>
+      <link>https://sanbeichahegongheguo.github.io/nasa-images/</link>
+      <pubDate>Wed, 27 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/nasa-images/</guid>
+      <description>The below images are from the NASA Image and Video Library &amp;ndash; indulge yourself, revel in their beauty.
+The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. Credits.The Moon is an astronomical body that orbits planet Earth and is Earth&amp;rsquo;s only permanent natural satellite.</description>
+    </item>
+    
+    <item>
+      <title>Katex Math Typesetting</title>
+      <link>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</link>
+      <pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</guid>
+      <description>Enable Katex in the config file by setting the katex param to true. This will import the necessary Katex CSS/JS.
+Note: Use the online reference of supported TeX functions.
+Some math:
+$$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$  $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
+More math:
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</description>
+    </item>
+    
+    <item>
+      <title>Cupper Shortcodes</title>
+      <link>https://sanbeichahegongheguo.github.io/cupper-shortcodes/</link>
+      <pubDate>Sat, 12 Feb 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/cupper-shortcodes/</guid>
+      <description>blockquote {{% blockquote author=&amp;quot;Carl Jung&amp;quot; %}} Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness. It is far better to take things as they come along with patience and equanimity. {{% /blockquote %}}  Even a happy life cannot be without a measure of darkness, and the word happy would lose its meaning if it were not balanced by sadness.</description>
     </item>
     
     <item>

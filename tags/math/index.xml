@@ -6,7 +6,7 @@
     <description>Recent content in Math on 火山灰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Mar 2000 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Katex Math Typesetting</title>
       <link>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</link>
-      <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/katex-math-typesetting/</guid>
       <description>Enable Katex in the config file by setting the katex param to true. This will import the necessary Katex CSS/JS.

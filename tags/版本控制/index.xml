@@ -6,7 +6,7 @@
     <description>Recent content in 版本控制 on 火山灰</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Dec 2000 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Git入门</title>
       <link>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</guid>
       <description>一、Git是什么 1、
@@ -28,7 +28,7 @@ git config --list # 显示当前的Git配置 git config -e [--global] # 编辑Gi
     <item>
       <title>Git常见问题总结</title>
       <link>https://sanbeichahegongheguo.github.io/git/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/git/</guid>
       <description>The file will have its original line endings in your working directory 出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息
