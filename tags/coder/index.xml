@@ -12,12 +12,24 @@
     
     
     <item>
-      <title>Hello World</title>
+      <title>如何用hugo&#43;github建立自己的博客</title>
       <link>https://sanbeichahegongheguo.github.io/0hello-world/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/0hello-world/</guid>
       <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>vim入门</title>
+      <link>https://sanbeichahegongheguo.github.io/vim%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 31 Dec 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/vim%E5%85%A5%E9%97%A8/</guid>
+      <description>一、vi介绍 二、vim介绍 1、基本介绍 先摘录一下官网：
+Copyright &amp;copy; 2007 Laurent Gregoire
+ Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as &amp;ldquo;vi&amp;rdquo; ith most UNIX systems and with Apple OS X.
+Vim is often called a &amp;ldquo;programmer&amp;rsquo;s editor,&amp;rdquo; and so useful for programming that many consider it an entire IDE. It&amp;rsquo;s not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.</description>
     </item>
     
   </channel>

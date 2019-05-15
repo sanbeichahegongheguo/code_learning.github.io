@@ -77,18 +77,19 @@ http://book.douban.com/subject/1065156/</description>
     </item>
     
     <item>
-      <title>版本控制系统入门</title>
+      <title>[转载]版本控制系统入门</title>
       <link>https://sanbeichahegongheguo.github.io/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</guid>
-      <description>我知道版本控制系统（VCS）很有用。
+      <description>本文转载自阮一峰的博客。
+我知道版本控制系统（VCS）很有用。
 但是，我平时只是业余写一些小程序，感觉特地装一个VCS太麻烦，所以一直没有用。最近，因为想认真做一个中等规模的项目，所以决心好好学一下怎么用。
 下面就是我翻译的一篇入门教程，主要解释了VCS的一些主要概念。
-1. A Visual Guide to Version Control 2. 版本控制入门插图教程 作者：Kalid Azad
+作者：Kalid Azad
 译者：阮一峰
 原文网址：http://betterexplained.com/articles/a-visual-guide-to-version-control/
- 1. A Visual Guide to Version Control 2. 版本控制入门插图教程 - 2.0.1. 前言 - 2.0.2. 什么是版本控制系统（VCS）？ - 2.0.3. 一些术语 - 2.0.3.1. 基本概念 - 2.0.3.2. 基本操作 - 2.0.3.3. 高级操作 - 2.0.3.3.1. Check in - 2.0.3.3.2. Check out和编辑 - 2.0.3.3.3. Diff - 2.0.3.3.4. Branch - 2.0.3.3.5. Merge - 2.0.3.3.6. Conflict - 2.0.3.3.7. Tag - 2.0.3.4. 一个实际的例子：管理Windows源码 - 2.</description>
+ 1. A Visual Guide to Version Control 2. 版本控制入门插图教程 - 2.0.1. 前言 - 2.0.2. 什么是版本控制系统（VCS）？ - 2.0.3. 一些术语 - 2.0.3.1. 基本概念 - 2.0.3.2. 基本操作 - 2.0.3.3. 高级操作 - 2.0.3.3.1. Check in - 2.0.3.3.2. Check out和编辑 - 2.0.3.3.3. Diff - 2.0.3.3.4. Branch - 2.0.3.3.5. Merge - 2.0.3.3.6. Conflict - 2.0.3.3.7. Tag - 2.0.3.4. 一个实际的例子：管理Windows源码 - 2.0.4. 结束语  2.0.1. 前言 版本控制（Version Control）的作用是追踪文件的变化。为什么需要版本控制？简单说，就是当你出错了，可以很容易地回到没出错时的状态。</description>
     </item>
     
     <item>
