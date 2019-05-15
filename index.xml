@@ -13,11 +13,11 @@
     
     <item>
       <title>如何用hugo&#43;github建立自己的博客</title>
-      <link>https://sanbeichahegongheguo.github.io/0hello-world/</link>
+      <link>https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/0hello-world/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+      <guid>https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <description>这篇讲讲如何用github+hugo建立自己的博客。</description>
     </item>
     
     <item>
@@ -60,7 +60,7 @@
 2、实验楼 实验楼也提供网络在线的开发环境，不过非付费用户没办法保存。但是对于初入Linux的朋友，可以在上面尝试性操作，也算一个便利。
 3、Google家的在线平台 这个需要翻墙，仅供参考。
 2、本地编辑器 最开始入门，各类语言首先要学会如何在终端下运行，因为以后如果真的到了工业应用级别，服务器都是只提供命令行模式的。所以终端下命令，以及vim或者Emrac的使用最好能会一些。
-然后就是在一些文本编辑器下使用。常见的有sublime text2or3、Atom、Visual Studio Code等等。
+然后就是在一些文本编辑器下使用。常见的有sublime text2or3、nodepad++、Atom、Visual Studio Code等等。
 这类文本编辑器的特点就是轻量级,，不直接提供编程环境，可以自行改造成适应不同语言的编程环境。我自己使用过多款后最后选用的还是sublime text3。最够快捷和轻量级，没有VScode、Atom那么花哨。不过后两者也是很出色的，只是对于目前的我有些花哨了。
 最后就是终极的IDE，集成开发环境。就是把它一装，你需要的编辑器+语言环境，都安排好了。这里的典型就是微软家的visual studio和苹果家的Xcode。装了这两个，基本上就等于装了编辑器+C/C++语言环境，如果再想装什么语言，通过内置的环境配置也可以搞定。另外还有一些语言专属的IDE。我们下面一个一个说。
 首先是命令行下运行语言，这块后面肯定会一一讲到。
@@ -133,7 +133,13 @@ vim是在vi基础上的增强版，Linux系统下已经默认输入vi就等于vi
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</guid>
-      <description></description>
+      <description>shebang
+第一行代码#!/usr/bin/python3 的理解：
+分成两种情况：
+（1）如果调用python脚本时，使用:
+python script.py  #!/usr/bin/python 被忽略，等同于注释。
+（2）如果调用python脚本时，使用:
+./script.py  #!/usr/bin/python 指定解释器的路径。</description>
     </item>
     
     <item>
@@ -208,14 +214,14 @@ git config --list # 显示当前的Git配置 git config -e [--global] # 编辑Gi
     
     <item>
       <title>Git常见问题总结</title>
-      <link>https://sanbeichahegongheguo.github.io/git/</link>
+      <link>https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/git/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
       <description>The file will have its original line endings in your working directory 出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息
 此时需要执行如下代码：
 git rm -r --cached . git config core.autocrlf false git add .  . 代表当前目录
-Git 的 config 有三级 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
+Git 的 config 的三级配置 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
 为系统设置配置。
 2.2 第二级：git config --global 信息保存在 ~/.gitconfig 或 ~/.config/git/config
 只针对当前用户。
@@ -227,13 +233,23 @@ Git传输协议 和 HTTPS 传输协议 两者有不同。
     </item>
     
     <item>
-      <title>NASA Images</title>
+      <title>NASA 图形示例</title>
       <link>https://sanbeichahegongheguo.github.io/nasa-images/</link>
       <pubDate>Wed, 27 Dec 2000 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/nasa-images/</guid>
       <description>The below images are from the NASA Image and Video Library &amp;ndash; indulge yourself, revel in their beauty.
 The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma, with internal convective motion that generates a magnetic field via a dynamo process. It is by far the most important source of energy for life on Earth. Credits.The Moon is an astronomical body that orbits planet Earth and is Earth&amp;rsquo;s only permanent natural satellite.</description>
+    </item>
+    
+    <item>
+      <title>GitHub使用入门及问题汇集</title>
+      <link>https://sanbeichahegongheguo.github.io/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <description>作者：荒野雄兵 来源：CSDN 原文：https://blog.csdn.net/daerzei/article/details/79528153 版权声明：本文为博主原创文章，转载请附上博文链接！
+Push failed: Failed with error: unable to access &#39;https://github.com/********&#39;: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443  </description>
     </item>
     
     <item>
@@ -251,7 +267,7 @@ $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 
     </item>
     
     <item>
-      <title>Cupper Shortcodes</title>
+      <title>Cupper主题提供的小代码</title>
       <link>https://sanbeichahegongheguo.github.io/cupper-shortcodes/</link>
       <pubDate>Sat, 12 Feb 2000 00:00:00 +0000</pubDate>
       

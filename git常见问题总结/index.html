@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://sanbeichahegongheguo.github.io/tags/nasa/">
+  <link rel="canonical" href="https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/">
 
   
 
@@ -32,7 +32,7 @@
 
   
   
-  <title>Nasa | 火山灰</title>
+  <title>Git常见问题总结 | 火山灰</title>
 </head>
 
   <body>
@@ -168,7 +168,7 @@
       
       
       
-      <a href="/post/" >
+      <a href="/post/" aria-current="page">
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -181,7 +181,7 @@
       
       
       
-      <a href="/tags/" aria-current="page">
+      <a href="/tags/" >
         <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
           <use xlink:href="#bookmark"></use>
         </svg>
@@ -223,22 +223,313 @@
         <div>
           
   <main id="main">
-    <h1>Nasa</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Git常见问题总结
+    </h1>
+    <div class="date">
+      
+      <strong aria-hidden="true">Publish date: </strong>Dec 30, 2000
+    </div>
     
-      <li>
-        <h2>
-          <a href="https://sanbeichahegongheguo.github.io/nasa-images/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            NASA 图形示例
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://sanbeichahegongheguo.github.io/tags/git/">git</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#the-file-will-have-its-original-line-endings-in-your-working-directory">
+            The file will have its original line endings in your working directory
           </a>
-        </h2>
-      </li>        
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#git-%e7%9a%84-config-%e7%9a%84%e4%b8%89%e7%ba%a7%e9%85%8d%e7%bd%ae">
+            Git 的 config 的三级配置
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#git%e4%bc%a0%e8%be%93%e5%8d%8f%e8%ae%ae-%e5%92%8c-https-%e4%bc%a0%e8%be%93%e5%8d%8f%e8%ae%ae">
+            Git传输协议 和 HTTPS 传输协议
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e8%ae%a9git-status-%e6%98%be%e7%a4%ba%e4%b8%ad%e6%96%87-%e8%a7%a3%e5%86%b3%e4%b8%ad%e6%96%87%e4%b9%b1%e7%a0%81">
+            让git status 显示中文，解决中文乱码
+          </a>
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#%e8%af%a6%e8%a7%a3git-fetch%e4%b8%8egit-pull%e7%9a%84%e5%8c%ba%e5%88%ab">
+            详解git fetch与git pull的区别
+          </a>
+        </li>
+      
+    </ol>
+  </nav>
+
+
     
-    </ul>
+    
+
+<h2 id="the-file-will-have-its-original-line-endings-in-your-working-directory">The file will have its original line endings in your working directory</h2>
+
+<p>出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息</p>
+
+<p>此时需要执行如下代码：</p>
+
+<pre><code class="language-bash">git rm -r --cached .
+git config core.autocrlf false
+git add .
+</code></pre>
+
+<p>. 代表当前目录</p>
+
+<h2 id="git-的-config-的三级配置">Git 的 config 的三级配置</h2>
+
+<h3 id="2-1-最高级-git-config-system">2.1 最高级：<code>git config --system</code></h3>
+
+<p>信息保存在 /etc/gitconfig</p>
+
+<p>为系统设置配置。</p>
+
+<h3 id="2-2-第二级-git-config-global">2.2 第二级：<code>git config --global</code></h3>
+
+<p>信息保存在 ~/.gitconfig 或 ~/.config/git/config</p>
+
+<p>只针对当前用户。</p>
+
+<h3 id="2-3-第三级-git-congfig-local">2.3 第三级：<code>git congfig --local</code></h3>
+
+<p>信息保存在当前仓库的Git目录中的 <code>.git/config</code></p>
+
+<p>只针对该仓库。</p>
+
+<p>每一个级别覆盖上一级别的配置。</p>
+
+<h2 id="git传输协议-和-https-传输协议">Git传输协议 和 HTTPS 传输协议</h2>
+
+<p>两者有不同。</p>
+
+<h2 id="让git-status-显示中文-解决中文乱码">让git status 显示中文，解决中文乱码</h2>
+
+<h3 id="4-1-问题描述">4.1 问题描述</h3>
+
+<p>status查看有改动但未提交的文件时总只显示一串数字串，显示不出中文文件名，非常不方便。如下图：</p>
+
+<p><img src="./pic/status-dig.jpg" alt="" /></p>
+
+<h3 id="4-2-原因">4.2 原因</h3>
+
+<p>在默认设置下，中文在工作区状态输出时，不能正确显示，而是显示为八进制的字符编码。</p>
+
+<h3 id="4-3-解决办法一">4.3 解决办法一</h3>
+
+<p>将 git 配置文件 <code>core.quotepath</code>项设置为 false。</p>
+
+<p>quotepath 表示引用路径；加上<code>--global</code>表示全局配置。</p>
+
+<p>可以直接在 git bash 终端输入命令：</p>
+
+<pre><code class="language-bash">git config --global core.quotepath false
+</code></pre>
+
+<p>但是注意，这样设置后，你的git bash终端也要设置成中文和utf-8编码，才能正确显示中文，不然还是乱码。</p>
+
+<p>效果对比如下：</p>
+
+<p><img src="./pic/git-utf8.jpg" alt="" /></p>
+
+<p>git bash 终端设置办法：</p>
+
+<ul>
+<li>在git bash的界面中右击空白处，弹出菜单，选择 <code>选项-&gt;文本-&gt;本地Locale</code> ，设置为 <code>zh_CN</code> ，而旁边的字符集选框选为 <code>UTF-8</code> 。</li>
+<li>如果是英文界面则是：
+<code>Options-&gt;Text-&gt;Locale</code> 改为 <code>zh_CN，Character set改为UTF-8</code></li>
+</ul>
+
+<p>如图：</p>
+
+<p><img src="./pic/git-zh-utf8.jpg" alt="" /></p>
+
+<h3 id="4-4-解决办法二">4.4 解决办法二</h3>
+
+<p>如果你的git bash终端没有菜单选项显示，还可以通过直接修改配置文件的方式来解决中文乱码问题。</p>
+
+<p>进入git的安装目录：</p>
+
+<ol>
+<li>编辑 <code>etc\gitconfig</code> Git系统文件，也有些windows系统是存放在<code>C:\Users\Administrator\.gitconfig</code>路径或<code>安装盘符:\Git\mingw64\etc\gitconfig</code>，在文件末尾增加以下内容：</li>
+</ol>
+
+<pre><code class="language-bash">[gui]  
+    encoding = utf-8  
+    # 代码库统一使用utf-8  
+[i18n]  
+    commitencoding = utf-8  
+    # log编码  
+[svn]  
+    pathnameencoding = utf-8  
+    # 支持中文路径  
+[core]
+    quotepath = false 
+    # status引用路径不再是八进制（反过来说就是允许显示中文了）
+</code></pre>
+
+<ol>
+<li>编辑 <code>etc\git-completion.bash</code> 文件,在文件末尾增加以下内容：</li>
+</ol>
+
+<pre><code class="language-bash"># 让ls命令能够正常显示中文
+alias ls='ls --show-control-chars --color=auto' 
+</code></pre>
+
+<ol>
+<li>编辑 <code>etc\inputrc</code> 文件，修改 output-meta 和 convert-meta 属性值：</li>
+</ol>
+
+<pre><code class="language-bash">set output-meta on  # bash可以正常输入中文  
+set convert-meta off  
+</code></pre>
+
+<ol>
+<li>最后编辑profile文件，在文件末尾添加如下内容：</li>
+</ol>
+
+<pre><code class="language-bash">export LESSHARESET=utf-8
+</code></pre>
+
+<h2 id="详解git-fetch与git-pull的区别">详解git fetch与git pull的区别</h2>
+
+<p>git fetch和git pull都可以将远端仓库更新至本地那么他们之间有何区别?想要弄清楚这个问题有有几个概念不得不提。</p>
+
+<ul>
+<li>FETCH_HEAD： 是一个版本链接，记录在本地的一个文件中，指向着目前已经从远程仓库取下来的分支的末端版本。</li>
+<li>commit-id：在每次本地工作完成后，都会做一个git commit 操作来保存当前工作到本地的repo， 此时会产生一个commit-id，这是一个能唯一标识一个版本的序列号。 在使用git push后，这个序列号还会同步到远程仓库。</li>
+</ul>
+
+<h3 id="有了以上的概念再来说说git-fetch">有了以上的概念再来说说git fetch。</h3>
+
+<ul>
+<li>git fetch：这将更新git remote 中所有的远程仓库所包含分支的最新commit-id, 将其记录到.git/FETCH_HEAD文件中。</li>
+</ul>
+
+<p>git fetch更新远程仓库的方式如下：</p>
+
+<pre><code class="language-bash">git fetch origin master:tmp 
+//在本地新建一个temp分支，并将远程origin仓库的master分支代码下载到本地temp分支
+git diff tmp 
+//来比较本地代码与刚刚从远程下载下来的代码的区别
+git merge tmp
+//合并temp分支到本地的master分支
+git branch -d temp
+//如果不想保留temp分支 可以用这步删除
+</code></pre>
+
+<h3 id="如果直接使用git-fetch-则步骤如下">如果直接使用git fetch，则步骤如下：</h3>
+
+<ul>
+<li>创建并更新本地远程分支。即创建并更新origin/xxx 分支，拉取代码到origin/xxx分支上。</li>
+<li>在FETCH_HEAD中设定当前分支-origin/当前分支对应，如直接到时候git merge就可以将origin/abc合并到abc分支上。</li>
+</ul>
+
+<pre><code class="language-bash">git fetch origin
+//只是手动指定了要fetch的remote。在不指定分支时通常默认为master.
+</code></pre>
+
+<pre><code class="language-bash">git fetch origin dev
+//指定远程remote和FETCH_HEAD，并且只拉取该分支的提交。
+</code></pre>
+
+<h3 id="git-pull">git pull</h3>
+
+<p>首先，基于本地的FETCH_HEAD记录，比对本地的FETCH_HEAD记录与远程仓库的版本号，然后git fetch 获得当前指向的远程分支的后续版本的数据，然后再利用git merge将其与本地的当前分支合并。所以可以认为git pull是git fetch和git merge两个步骤的结合。
+git pull的用法如下：</p>
+
+<pre><code class="language-bash">git pull &lt;远程主机名&gt; &lt;远程分支名&gt;:&lt;本地分支名&gt;
+
+//取回远程主机某个分支的更新，再与本地的指定分支合并。
+</code></pre>
+
+<p>因此，与git pull相比git fetch相当于是从远程获取最新版本到本地，但不会自动merge。</p>
+
+<p>如果需要有选择的合并git fetch是更好的选择。效果相同时git pull将更为快捷。</p>
+
+<hr />
+
+<h3 id="上文来自-r-h-r-的csdn-博客-全文地址请点击-https-blog-csdn-net-riddle1981-article-details-74938111-utm-source-copy">上文来自 R-H-R 的CSDN 博客 ，全文地址请点击：<a href="https://blog.csdn.net/riddle1981/article/details/74938111?utm_source=copy">https://blog.csdn.net/riddle1981/article/details/74938111?utm_source=copy</a></h3>
+
+<hr />
+
   </main>
+    
+
+  <div id="vcomments"></div>
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+
+  <script type="text/javascript">
+    new Valine({
+        el: '#vcomments' ,
+        appId: 'ClPpDvdzTKcxDyOMRIm9TAlP-gzGzoHsz',
+        appKey: 'KDW5XSrihNtcxo7mAx9mE831',
+        notify: 'false',
+        verify: 'false',
+        avatar:'mm',
+        placeholder: '说点什么吧...',
+        visitor: 'true'
+    });
+  </script>
+
 
           <footer role="contentinfo">
   <div>

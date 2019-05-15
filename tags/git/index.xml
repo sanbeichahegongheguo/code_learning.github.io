@@ -27,14 +27,14 @@ git config --list # 显示当前的Git配置 git config -e [--global] # 编辑Gi
     
     <item>
       <title>Git常见问题总结</title>
-      <link>https://sanbeichahegongheguo.github.io/git/</link>
+      <link>https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/git/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
       <description>The file will have its original line endings in your working directory 出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息
 此时需要执行如下代码：
 git rm -r --cached . git config core.autocrlf false git add .  . 代表当前目录
-Git 的 config 有三级 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
+Git 的 config 的三级配置 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
 为系统设置配置。
 2.2 第二级：git config --global 信息保存在 ~/.gitconfig 或 ~/.config/git/config
 只针对当前用户。
