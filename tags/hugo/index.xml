@@ -17,7 +17,10 @@
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>这篇讲讲如何用github+hugo建立自己的博客。</description>
+      <description>这篇讲讲如何用github+hugo建立自己的博客。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -27,7 +30,9 @@
       
       <guid>https://sanbeichahegongheguo.github.io/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
       <description>作者：荒野雄兵 来源：CSDN 原文：https://blog.csdn.net/daerzei/article/details/79528153 版权声明：本文为博主原创文章，转载请附上博文链接！
-Push failed: Failed with error: unable to access &#39;https://github.com/********&#39;: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443  </description>
+Push failed: Failed with error: unable to access &#39;https://github.com/********&#39;: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443  &amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -41,7 +46,8 @@ Note: Use the online reference of supported TeX functions.
 Some math:
 $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$  $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
 More math:
-$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</description>
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
+&amp;mdash; EOF &amp;mdash;</description>
     </item>
     
     <item>

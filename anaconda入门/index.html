@@ -322,6 +322,16 @@
           </a>
         </li>
       
+        <li>
+          
+          
+          
+          
+          <a href="#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99">
+            参考资料
+          </a>
+        </li>
+      
     </ol>
   </nav>
 
@@ -547,6 +557,14 @@ conda config --set show_channel_urls yes
 
 <pre><code class="language-bash">conda config --show
 </code></pre>
+
+<p>同一个版本的python3目录下会有3个pip命令， 拿python3.6来说， 会有pip， pip3, pip3.6, 有两个可以看做别名或超链接。比如在Ubuntu系统下，python自带3.5.2 和2.7.12，这样使用pip 和pip3 就可以区分开来。</p>
+
+<p>如果再安装 anaconda 等python 科学计算环境， 比如版本是3.6， 这时你可以通过pip3.5 使用系统python3，当然也存在搜索路径优先的问题。</p>
+
+<p>pip 默认给 python2 用。
+pip3 指定给 python3 用。
+如果只装有 python3，则pip和pip3是等价的。</p>
 
 <h2 id="四-conda和pip对比">四、conda和pip对比</h2>
 
@@ -800,7 +818,7 @@ python_version = &quot;3.7&quot;
 
 <p>把这些信息写在 Pipfile 文件中的好处是，当我们把项目部署到正式环境时，不再需要一个一个去安装了，直接执行 pipenv install 就会自动创建虚拟环境的同时，把 Pipfile 中包都安装好。</p>
 
-<h4 id="激活虚拟环境">激活虚拟环境</h4>
+<h4 id="4-激活虚拟环境">4 激活虚拟环境</h4>
 
 <p>运行程序前我们还是要激活虚拟环境，我们可以使用 pipenv shell 来激活，不需要指定名字，只要你在当前项目下执行该命令就行。</p>
 
@@ -825,7 +843,7 @@ Microsoft Windows [Version 10.0.18290.1000]
 
 <p>退出虚拟环境使用 <code>exit</code> 命令， 这时候那对括号就消失了。</p>
 
-<h4 id="pipenv-run">pipenv run</h4>
+<h4 id="5-pipenv-run">5 pipenv run</h4>
 
 <p>另外，pipenv 还准备了一个 <code>run</code> 命令，它可以在你不必显示激活虚拟环境的情况下，用虚拟环境执行命令，例如：</p>
 
@@ -835,14 +853,14 @@ pipenv run python main.py
 
 <p>以上就是你要掌握的 Pipenv 基础知识，如果有兴趣，你还可以了解下面的内容</p>
 
-<h4 id="从-requirements-txt-导入">从 requirements.txt 导入</h4>
+<h4 id="6-从-requirements-txt-导入">6 从 requirements.txt 导入</h4>
 
 <p>如果是老项目，你把依赖包全部放在 requirements.txt 中，pipenv 很贴心，它支持从 requirements.txt 文件中安装，方便使用 pip 的用户平滑迁移过来。</p>
 
 <pre><code>pipenv install -r requirements.txt
 </code></pre>
 
-<h4 id="只安装到开发环境">只安装到开发环境</h4>
+<h4 id="7-只安装到开发环境">7 只安装到开发环境</h4>
 
 <p>在开发环境下我们要安装 django-debug-toolbar， pytest 这样的包，这些在生产环境其实是用不上的，所以没必要安装，那么我们在安装某个包的时候可以在 isntall 后面加个参数 &ndash;dev，表示只安装在开发环境，例如：</p>
 
@@ -861,19 +879,19 @@ pipenv install
 pipenv install --dev
 </code></pre>
 
-<h4 id="卸载包">卸载包</h4>
+<h4 id="8-卸载包">8 卸载包</h4>
 
 <pre><code>pipenv uninstall requests
 </code></pre>
 
-<h4 id="删除虚拟环境">删除虚拟环境</h4>
+<h4 id="9-删除虚拟环境">9 删除虚拟环境</h4>
 
 <pre><code>pipenv --rm 
 </code></pre>
 
 <p>删除虚拟环境后，会把虚拟环境目录和里面的所有依赖包删除掉，但是 Pipfile 和 Pipfile.lock 文件还会保留。</p>
 
-<h4 id="常见问题">常见问题：</h4>
+<h4 id="10-常见问题">10 常见问题：</h4>
 
 <p>如果你在使用 pipenv 创建虚拟环境失败了，出现类似这样的错误：</p>
 
@@ -911,7 +929,7 @@ SyntaxError: invalid syntax
 
 <p>很有可能就是你的系统中安装多有个版本的Python，可以模糊搜索 Python*.dll ，把那些不相关的全部删除，重新试试。</p>
 
-<h4 id="如何提高下载速度">如何提高下载速度</h4>
+<h4 id="11-如何提高下载速度">11 如何提高下载速度</h4>
 
 <p>修改 Pipfile 文件中的URL，将下载源指定为阿里云或者豆瓣等国内更快的源</p>
 
@@ -923,7 +941,7 @@ url = &quot;http://pypi.douban.com/simple&quot;
 verify_ssl = true
 </code></pre>
 
-<h4 id="pipenv-有什么缺点">Pipenv 有什么缺点</h4>
+<h4 id="12-pipenv-有什么缺点">12 Pipenv 有什么缺点</h4>
 
 <p>慢，有时候感觉特别慢，就一直卡在 Locking 过程中，你在安装的时候跳过 lock 环节，使用命令</p>
 
@@ -932,9 +950,7 @@ verify_ssl = true
 
 <p>更多操作指南，请参考官方文档： <a href="https://pipenv.readthedocs.io/en/latest/basics/">https://pipenv.readthedocs.io/en/latest/basics/</a></p>
 
-<p>&mdash; EOF &mdash;</p>
-
-<p><em>参考资料</em></p>
+<h2 id="参考资料"><em>参考资料</em></h2>
 
 <p><a href="https://link.jianshu.com?t=http://kylepurdon.com/blog/using-continuum-analytics-conda-as-a-replacement-for-virtualenv-pyenv-and-more.html">Using Continuum Analytics Conda as a replacement for virtualenv, pyenv, and more？</a></p>
 
@@ -953,6 +969,14 @@ verify_ssl = true
 <p><a href="https://link.jianshu.com?t=http://www.nowamagic.net/academy/detail/1330228">用virtualenv建立多个Python独立开发环境</a></p>
 
 <p><a href="https://link.jianshu.com?t=http://www.jb51.net/article/51651.htm">Python科学计算环境推荐——Anaconda</a></p>
+
+<p>&mdash; EOF &mdash;</p>
+
+<p>*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。</p>
+
+<p>本人公众号[火山灰]，[time_ash_past]</p>
+
+<p><img src="../../公众号.jpg" alt="" /></p>
 
   </main>
     

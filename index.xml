@@ -17,7 +17,10 @@
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
-      <description>这篇讲讲如何用github+hugo建立自己的博客。</description>
+      <description>这篇讲讲如何用github+hugo建立自己的博客。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -32,7 +35,28 @@
 所以我想，自己试着一点点，把基础知识和引用知识，捣碎了，结合具体事例，反复灌输，传授出来。
 太基础的我也不讲，因为网上已经有很多很好的。
 我的大纲设计是：
- 这个知识点，到底是什么，是来解决什么问题的。 这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C++ 下又分别是怎么做。 配合实例，怎么把这个知识用起来。  希望能够成功。</description>
+ 这个知识点，到底是什么，是来解决什么问题的。 这个知识点，在python下是怎么做，在Perl、Java、kotlin、Go、C/C++ 下又分别是怎么做。 配合实例，怎么把这个知识用起来。  希望能够成功。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
+    </item>
+    
+    <item>
+      <title>正常人学编程 前言</title>
+      <link>https://sanbeichahegongheguo.github.io/linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E5%BD%95/</link>
+      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E5%BD%95/</guid>
+      <description>本文来源：知乎专栏
+简答题 1. 计算机硬件和软件的关系是什么？ 硬件是计算机系统的物理组成部分，即计算机系统中的各种物理装置，包括控制器、运算器、内存储器、I/O设备（如硬盘、键盘）以及外存储器等。它是计算机系统的物质基础。
+软件系统就是所有程序、数据和相关文件的集合。从狭义的角度上讲，软件是指计算机运行所需的各种程序。没有硬件，谈不上应用计算机。但是，光有硬件而没有软件，计算机也不能工作。（1）硬件和软件互相依存；（2）硬件和软件无严格界线；（3）硬件和软件协同发展。
+计算机软件和硬件密不可分，协调工作。软件的运行通过硬件呈现给用户，用户通过硬件进行开发及修改软件，二者相互依存，缺一不可。离开了硬件的软件什么也做不了，离开软件的硬件也只是摆设。对于计算机而言，软件像是灵魂，硬件像是肉体。二者相互依存。同时二者也相互制约。在计算机的早期，硬件很薄弱，限制了计算机的发展；如今，硬件配置很多都很高了，软件的优化对提高计算机的性能十分关键。以手机为例，早期的智能机内存通常只有512MB，提高手机内存是解决手机卡顿的关键因素，而如今，很多手机的内存已达10GB甚至12GB，超过了很多电脑的内存，但是很多时候仍然卡顿，一个重要的原因是软件优化不够好（很多程序设计者在面对大内存时，以不将内存优化作为程序设计的重点，于是出现了你有多少硬件资源，我软件就要占用多少硬件资源），占用了大量的硬件资源。
+综上，硬件和软件是计算机重要组成部分，缺一不可。计算机性能的提升即依赖于硬件配置的提高，也依赖于软件水平的优化。
+参考资料：
+ https://www.sophia.org/tutorials/the-relationship-between-hardware-and-software https://www.quora.com/What-is-the-relation-between-hardware-and-software-2  2. 常见的 Linux 发行版本有哪些？它们的主要差别在什么地方？ Linux 发行版本是基于Linux内核和软件包管理系统创建的操作系统。通常一个 Linux 发行版包括 Linux 内核、GNU 工具和库、其他一些软件以及窗口系统、窗口管理器和桌面环境。 迄今为止，已经有超过 600 多个 Linux 发行版本，其中将近 500 个仍处于活跃开发状态。其中最常用的一些商业支持发行版有：Fedora(Red Hat), openSUSE(SUSE) 和 Ubuntu，社区驱动的发行版有：Debian, Slackware, Gentoo和 Arch Linux。 值得一提的是 Android 系统，我们知道 Android 也是基于 Linux 的，但是它算不算一个 Linux 发行版本呢？很多大佬有不同的意见，有人认为 Android 也是一种发行版，有人指出 Android 缺少包括 glibc 在内的很多 GUN 工具，因而不能算是一种 Linux 发行版。
+Linux 发行版 = Linux 内核 + 商业软件
+常见的 Linux 发行版：
+ 国外：RedHat、Fedora、Centos、SUSE、Debian、Ubuntu、Mint、Arch、Manjaro 国内：红旗、Deepin  是不是一千个用户就有一千个 Linux 系统推荐理由？</description>
     </item>
     
     <item>
@@ -67,7 +91,10 @@
 然后讲一下我接触到的各类文本编辑器的优劣。
 首先肯定是vim和emrac。这两款文本编辑器是适用于终端界面环境下。早期编程没有图形界面，那时候的程序员写代码很麻烦的。于是就有两个程序员分别开发了各自认为合适的文本编辑器。
 vi
-vim是在vi基础上的增强版，Linux系统下已经默认输入vi就等于vim。所以我也没用过原版vi。</description>
+vim是在vi基础上的增强版，Linux系统下已经默认输入vi就等于vim。所以我也没用过原版vi。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -139,7 +166,10 @@ vim是在vi基础上的增强版，Linux系统下已经默认输入vi就等于vi
 （1）如果调用python脚本时，使用:
 python script.py  #!/usr/bin/python 被忽略，等同于注释。
 （2）如果调用python脚本时，使用:
-./script.py  #!/usr/bin/python 指定解释器的路径。</description>
+./script.py  #!/usr/bin/python 指定解释器的路径。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -148,7 +178,7 @@ python script.py  #!/usr/bin/python 被忽略，等同于注释。
       <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%AA%E5%8D%9A%E5%A3%AB%E9%99%A9/</guid>
-      <description> 借着一个假设的险种，讲讲保险的建模。
+      <description>借着一个假设的险种，讲讲保险的建模。
 一 前言 现在读博士的人越来越多，但是我们也知道读博士是一个高风险的行为，中间可能存在种种问题，比如抑郁，抑郁到退学，抑郁到自杀，或者延期毕业，或者毕不了业退学的，所以有必要推出一款博士险，对冲意外风险的。
 这里，我们就知道了保险的本质，是为了对冲风险，不至于意外发生的时候自己颗粒无收，起码留个青山以后有柴烧。
 二 基本概念 博士险针对的是因为种种原因没有按时拿到博士学位的情况。
@@ -160,7 +190,9 @@ python script.py  #!/usr/bin/python 被忽略，等同于注释。
   再加上
  按时拿到博士学位  一共5种情况。
 其中，本险种针对的人群是拿到博士生，至少是拿到研究生入学通知书的。各类证明均需要
-三 险种设计 四 市场规模 五 收费模型 </description>
+三 险种设计 四 市场规模 五 收费模型 &amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -185,7 +217,9 @@ python script.py  #!/usr/bin/python 被忽略，等同于注释。
 因为我们国家对老百姓的资金转移管控很严格，每个人每年只有5万美元的兑换额度，基本上有点钱的普通人，也投资不了国外资产，那就要么卖房，要么去炒A股。所以就导致我们的房价和股价，都是虚高的。
 A股的价值被高估基本上是共识。可以说90%以上的股票都是垃圾股。中国的会计，特别是上市公司的会计，第一要会的，基本上就是如何做账。想让它漂亮就漂亮，想让它垃圾就垃圾，通过人为控制低估和高估，来收割韭菜。
 这就是刘翔和我的故事模型给大家的启示：
- 你现在牛逼不一定代表你真的牛逼。没有经过完整市场的考验，无法做出这个判断。 现在已经是一个想做鸡头而不得的时代。想要真的过上好日子，只能选择追求卓越，而且是持续不断地追求卓越。而且还要让自己一直身处在优秀的圈子里。取法其上仅得其中，取法其中仅得其下。暂时的满足感优越感只会毁了未来的你。 当然，偶尔也得劳逸结合。刘翔训练110米跨栏的时候也不是天天跑110米跨栏，他平时更多的训练是拉伸、负重、爆发力等。 对A股保持足够的谨慎、警惕和距离。  </description>
+ 你现在牛逼不一定代表你真的牛逼。没有经过完整市场的考验，无法做出这个判断。 现在已经是一个想做鸡头而不得的时代。想要真的过上好日子，只能选择追求卓越，而且是持续不断地追求卓越。而且还要让自己一直身处在优秀的圈子里。取法其上仅得其中，取法其中仅得其下。暂时的满足感优越感只会毁了未来的你。 当然，偶尔也得劳逸结合。刘翔训练110米跨栏的时候也不是天天跑110米跨栏，他平时更多的训练是拉伸、负重、爆发力等。 对A股保持足够的谨慎、警惕和距离。  &amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -195,7 +229,10 @@ A股的价值被高估基本上是共识。可以说90%以上的股票都是垃�
       
       <guid>https://sanbeichahegongheguo.github.io/about/</guid>
       <description>我的个人小站。记录学习和一些感悟。
-希望你会喜欢这里。</description>
+希望你会喜欢这里。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -249,7 +286,9 @@ Git传输协议 和 HTTPS 传输协议 两者有不同。
       
       <guid>https://sanbeichahegongheguo.github.io/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
       <description>作者：荒野雄兵 来源：CSDN 原文：https://blog.csdn.net/daerzei/article/details/79528153 版权声明：本文为博主原创文章，转载请附上博文链接！
-Push failed: Failed with error: unable to access &#39;https://github.com/********&#39;: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443  </description>
+Push failed: Failed with error: unable to access &#39;https://github.com/********&#39;: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443  &amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
     </item>
     
     <item>
@@ -263,7 +302,8 @@ Note: Use the online reference of supported TeX functions.
 Some math:
 $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$  $$ \varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887… $$
 More math:
-$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$</description>
+$$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$  $$ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } $$
+&amp;mdash; EOF &amp;mdash;</description>
     </item>
     
     <item>
