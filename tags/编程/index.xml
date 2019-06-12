@@ -12,6 +12,24 @@
     
     
     <item>
+      <title>Linux 系统和 Shell 编程问题录</title>
+      <link>https://sanbeichahegongheguo.github.io/linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E5%BD%95/</link>
+      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E5%BD%95/</guid>
+      <description>本文来源：知乎专栏
+简答题 1. 计算机硬件和软件的关系是什么？ 硬件是计算机系统的物理组成部分，即计算机系统中的各种物理装置，包括控制器、运算器、内存储器、I/O设备（如硬盘、键盘）以及外存储器等。它是计算机系统的物质基础。
+软件系统就是所有程序、数据和相关文件的集合。从狭义的角度上讲，软件是指计算机运行所需的各种程序。没有硬件，谈不上应用计算机。但是，光有硬件而没有软件，计算机也不能工作。（1）硬件和软件互相依存；（2）硬件和软件无严格界线；（3）硬件和软件协同发展。
+计算机软件和硬件密不可分，协调工作。软件的运行通过硬件呈现给用户，用户通过硬件进行开发及修改软件，二者相互依存，缺一不可。离开了硬件的软件什么也做不了，离开软件的硬件也只是摆设。对于计算机而言，软件像是灵魂，硬件像是肉体。二者相互依存。同时二者也相互制约。在计算机的早期，硬件很薄弱，限制了计算机的发展；如今，硬件配置很多都很高了，软件的优化对提高计算机的性能十分关键。以手机为例，早期的智能机内存通常只有512MB，提高手机内存是解决手机卡顿的关键因素，而如今，很多手机的内存已达10GB甚至12GB，超过了很多电脑的内存，但是很多时候仍然卡顿，一个重要的原因是软件优化不够好（很多程序设计者在面对大内存时，以不将内存优化作为程序设计的重点，于是出现了你有多少硬件资源，我软件就要占用多少硬件资源），占用了大量的硬件资源。
+综上，硬件和软件是计算机重要组成部分，缺一不可。计算机性能的提升即依赖于硬件配置的提高，也依赖于软件水平的优化。
+参考资料：
+ https://www.sophia.org/tutorials/the-relationship-between-hardware-and-software https://www.quora.com/What-is-the-relation-between-hardware-and-software-2  2. 常见的 Linux 发行版本有哪些？它们的主要差别在什么地方？ Linux 发行版本是基于Linux内核和软件包管理系统创建的操作系统。通常一个 Linux 发行版包括 Linux 内核、GNU 工具和库、其他一些软件以及窗口系统、窗口管理器和桌面环境。 迄今为止，已经有超过 600 多个 Linux 发行版本，其中将近 500 个仍处于活跃开发状态。其中最常用的一些商业支持发行版有：Fedora(Red Hat), openSUSE(SUSE) 和 Ubuntu，社区驱动的发行版有：Debian, Slackware, Gentoo和 Arch Linux。 值得一提的是 Android 系统，我们知道 Android 也是基于 Linux 的，但是它算不算一个 Linux 发行版本呢？很多大佬有不同的意见，有人认为 Android 也是一种发行版，有人指出 Android 缺少包括 glibc 在内的很多 GUN 工具，因而不能算是一种 Linux 发行版。
+Linux 发行版 = Linux 内核 + 商业软件
+常见的 Linux 发行版：
+ 国外：RedHat、Fedora、Centos、SUSE、Debian、Ubuntu、Mint、Arch、Manjaro 国内：红旗、Deepin  是不是一千个用户就有一千个 Linux 系统推荐理由？</description>
+    </item>
+    
+    <item>
       <title>正常人学编程 前言</title>
       <link>https://sanbeichahegongheguo.github.io/1%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
@@ -27,24 +45,6 @@
 &amp;mdash; EOF &amp;mdash;
 *EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
 本人公众号[火山灰]，[time_ash_past]</description>
-    </item>
-    
-    <item>
-      <title>正常人学编程 前言</title>
-      <link>https://sanbeichahegongheguo.github.io/linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E5%BD%95/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E5%BD%95/</guid>
-      <description>本文来源：知乎专栏
-简答题 1. 计算机硬件和软件的关系是什么？ 硬件是计算机系统的物理组成部分，即计算机系统中的各种物理装置，包括控制器、运算器、内存储器、I/O设备（如硬盘、键盘）以及外存储器等。它是计算机系统的物质基础。
-软件系统就是所有程序、数据和相关文件的集合。从狭义的角度上讲，软件是指计算机运行所需的各种程序。没有硬件，谈不上应用计算机。但是，光有硬件而没有软件，计算机也不能工作。（1）硬件和软件互相依存；（2）硬件和软件无严格界线；（3）硬件和软件协同发展。
-计算机软件和硬件密不可分，协调工作。软件的运行通过硬件呈现给用户，用户通过硬件进行开发及修改软件，二者相互依存，缺一不可。离开了硬件的软件什么也做不了，离开软件的硬件也只是摆设。对于计算机而言，软件像是灵魂，硬件像是肉体。二者相互依存。同时二者也相互制约。在计算机的早期，硬件很薄弱，限制了计算机的发展；如今，硬件配置很多都很高了，软件的优化对提高计算机的性能十分关键。以手机为例，早期的智能机内存通常只有512MB，提高手机内存是解决手机卡顿的关键因素，而如今，很多手机的内存已达10GB甚至12GB，超过了很多电脑的内存，但是很多时候仍然卡顿，一个重要的原因是软件优化不够好（很多程序设计者在面对大内存时，以不将内存优化作为程序设计的重点，于是出现了你有多少硬件资源，我软件就要占用多少硬件资源），占用了大量的硬件资源。
-综上，硬件和软件是计算机重要组成部分，缺一不可。计算机性能的提升即依赖于硬件配置的提高，也依赖于软件水平的优化。
-参考资料：
- https://www.sophia.org/tutorials/the-relationship-between-hardware-and-software https://www.quora.com/What-is-the-relation-between-hardware-and-software-2  2. 常见的 Linux 发行版本有哪些？它们的主要差别在什么地方？ Linux 发行版本是基于Linux内核和软件包管理系统创建的操作系统。通常一个 Linux 发行版包括 Linux 内核、GNU 工具和库、其他一些软件以及窗口系统、窗口管理器和桌面环境。 迄今为止，已经有超过 600 多个 Linux 发行版本，其中将近 500 个仍处于活跃开发状态。其中最常用的一些商业支持发行版有：Fedora(Red Hat), openSUSE(SUSE) 和 Ubuntu，社区驱动的发行版有：Debian, Slackware, Gentoo和 Arch Linux。 值得一提的是 Android 系统，我们知道 Android 也是基于 Linux 的，但是它算不算一个 Linux 发行版本呢？很多大佬有不同的意见，有人认为 Android 也是一种发行版，有人指出 Android 缺少包括 glibc 在内的很多 GUN 工具，因而不能算是一种 Linux 发行版。
-Linux 发行版 = Linux 内核 + 商业软件
-常见的 Linux 发行版：
- 国外：RedHat、Fedora、Centos、SUSE、Debian、Ubuntu、Mint、Arch、Manjaro 国内：红旗、Deepin  是不是一千个用户就有一千个 Linux 系统推荐理由？</description>
     </item>
     
     <item>
