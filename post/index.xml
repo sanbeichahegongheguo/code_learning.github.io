@@ -98,9 +98,27 @@ vim是在vi基础上的增强版，Linux系统下已经默认输入vi就等于vi
     </item>
     
     <item>
+      <title>section01-环境配置-03-编辑器设置</title>
+      <link>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</guid>
+      <description>shebang
+第一行代码#!/usr/bin/python3 的理解：
+分成两种情况：
+（1）如果调用python脚本时，使用:
+python script.py  #!/usr/bin/python 被忽略，等同于注释。
+（2）如果调用python脚本时，使用:
+./script.py  #!/usr/bin/python 指定解释器的路径。
+&amp;mdash; EOF &amp;mdash;
+*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
+本人公众号[火山灰]，[time_ash_past]</description>
+    </item>
+    
+    <item>
       <title>section02-计算机起源与组成</title>
       <link>https://sanbeichahegongheguo.github.io/section02-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</link>
-      <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/section02-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</guid>
       <description>本文转自[零基础编程入门（02）——计算机起源与组成]
@@ -155,21 +173,47 @@ vim是在vi基础上的增强版，Linux系统下已经默认输入vi就等于vi
     </item>
     
     <item>
-      <title>section01-环境配置-03-编辑器设置</title>
-      <link>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</link>
-      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <title>异或运算</title>
+      <link>https://sanbeichahegongheguo.github.io/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</guid>
-      <description>shebang
-第一行代码#!/usr/bin/python3 的理解：
-分成两种情况：
-（1）如果调用python脚本时，使用:
-python script.py  #!/usr/bin/python 被忽略，等同于注释。
-（2）如果调用python脚本时，使用:
-./script.py  #!/usr/bin/python 指定解释器的路径。
-&amp;mdash; EOF &amp;mdash;
-*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。
-本人公众号[火山灰]，[time_ash_past]</description>
+      <guid>https://sanbeichahegongheguo.github.io/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97/</guid>
+      <description>本文主要内容来自 LeetCode|异或运算的一些应用
+定义 代码中有一套借鉴了布尔逻辑的逻辑运算符，例如“并”“交”“非”等，还有一个就是“异或”。
+异或是一个数学运算，用于逻辑运算。如果 a、b 两个值不同，则异或结果为 1 ，否则结果为 0 。真值表如下：
+   a 运算符 b 结果     0 ⊕ 0 0   1 ⊕ 0 1   0 ⊕ 1 1   1 ⊕ 1 0    记真值表的时候有的同学可能觉得很容易记错，也有同学喜欢记异或运算的公式，比如：P = AB&#39; ⊕ A&#39;B（“ &amp;lsquo; ”表示非）。其实这两种方法都可以，还有一种方式我个人觉得记忆起来更容易一些，即 异或运算是半加运算。什么意思，半加 即不带进位的加法运算。再来看一下上面的真值表：
+   a 运算符 b 结果     0 + 0 0   1 + 0 1   0 + 1 1   1 + 1 (1)0    括号里的 1 是进位，不考虑进位，即 半加 运算，这样记起来是不是更容易些呢？</description>
+    </item>
+    
+    <item>
+      <title>聊一个算法入门题</title>
+      <link>https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/</guid>
+      <description>题目描述 在一个整数数组中，一个数字减去它左边的数字得到一个差值，求最大差值的数字。
+例如：
+[4,2,7,5,11,13,9,1]，差值最大为11，是13-2的结果。
+注意：
+只能用右边的数字减去左边的数字计算差值。
+题目解析 我特别喜欢这道题。因为解决它也不需要太高深的知识，用不到数据结构和高深算法，但是又需要对数据结构和算法有着较好的本质理解。甚至我觉得如果一个没学过的人看到这个题能有正确的解题思路，说明他对编程有着良好的直觉，可以入门学习了。
+下面来一步一步解析。
+如果看到这个问题一头雾水无从下手，不要急，说明你还没懂解算法题的套路。等套路掌握了就很容易了。
+首先，要排除极端情况。如果是面试也一定要问面试者各种极端情况是否需要考虑排除。比如这道题，如果数组只有一个值或者两个值怎么办？
+只有一个值那就返回null。两个值就返回两者差值。如果面试的时候问一下面试官，还是挺可以加分的。
+接下来进入正题。
+因为编程的时候，输入有很多，但是每次我们只能一个一个取。
+所以其实思路就是需要建立游标。如果有学过数据结构就知道里面需要各种游标做标记。
+游标就是用来逐个取值的。
+最初级的想法，我们需要一个变量记录遇到的最大值，一个变量记录遇到的最小值，而且要保证遇到的最大值要在最小值的右边，然后设立一个游标不断移动。然后还需要一个变量储存差值。如果出现更大的差值就取代之。最后输出这个差值即可，甚至还可以输出是哪两个位置的数之差。
+好了，思路在这里了。
+这里可以先转换一下题目，假设题目不要求只能右边减去左边。这个就很简单，两次遍历循环，第一次两两比较找到最大值，第二次两两比较找到最小值。实际上这个类似排序算法，优化方法也与排序算法类似。
+再回到原题，既然要求只能右边减去左边，说明换思路。
+最繁琐的就是两个变量在改变的时候，把它们两个值对应的索引也记录并一直保证较小值的索引在较大值索引的左边。
+上面的方法确实繁琐。有句话说得好，聪明的人是把复杂的事变简单，这个时候仔细想想，其实保证只能右边减去左边，可以有一个最好的办法就是，用2个变量记录最大值和最小值，然后游标逐个移动，碰到的值，如果比最大值大，就更新最大值，比最小值小，就更新最小值，这里注意需要一个顺序问题以避免最大值跑到了最小值的左边。也就是需要首先判断这个值比目前存有的最小值要大之后，再和现存的最大值比较。如果比最大值还大，那么就更新最大值。然后两者再相减。
+这里可以进一步再想想，实际上只需要判断游标碰到的值，如果比目前最大的值还大，那么就更新最大值，然后相减得到的差值和现存的最大差值比较，储存差值更大的那个；如果比目前最小的值还小，那么就把最小值、最大值更新，然后游标继续移动。
+那么解答就可以用python3写出来了：
+import time class Solution(object): def maxDiff(self, arr): listlen = len(arr) if listlen &amp;lt;= 1: print(&amp;quot;NaN&amp;quot;) return None minnum = min(arr[0], arr[1]) maxnum = max(arr[0], arr[1]) maxdiff = arr[1] - arr[0] for i in range(2, listlen): if arr[i] &amp;gt; maxnum: maxnum = arr[i] maxdiff = max((maxnum - minnum), maxdiff) elif arr[i] &amp;lt;= minnum: minnum = arr[i] maxnum = arr[i] maxdiff = maxnum - minnum # print(&#39;minnum:&#39;,minnum) # print(&#39;maxnum:&#39;,maxnum) # print(&#39;maxdiff:&#39;,maxdiff) return maxdiff if __name__ == &#39;__main__&#39;: solution = Solution() arr1 = [1] arr2 = [4, 40, -7, 5, 11, -60, 9, 0, 12] solution.</description>
     </item>
     
     <item>
@@ -254,6 +298,31 @@ Git 的 config 的三级配置 2.1 最高级：git config --system 信息保存�
 每一个级别覆盖上一级别的配置。
 Git传输协议 和 HTTPS 传输协议 两者有不同。
 让git status 显示中文，解决中文乱码 本文转载自：git status 显示中文和解决中文乱码</description>
+    </item>
+    
+    <item>
+      <title>土共创业故事-1</title>
+      <link>https://sanbeichahegongheguo.github.io/%E5%9C%9F%E5%85%B1%E5%88%9B%E4%B8%9A%E6%95%85%E4%BA%8B-1/</link>
+      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/%E5%9C%9F%E5%85%B1%E5%88%9B%E4%B8%9A%E6%95%85%E4%BA%8B-1/</guid>
+      <description>一、背景
+今天用讲述创业的语调，讲讲土共创业的故事。
+话说民国期间，国内市场纷纷扰扰。清政府退位，但是北洋政府同样糜烂不堪，救过创业市场一片蓝海。就如何拯救中华民族，各个有志青年纷纷写PPT拉风投。
+当时的几家著名风投都是外资。最著名的如苏联，其次是美国、英国、德国，同样还有日本。
+那时候如阎锡山、张作霖等人拿的就是日本人的天使投资启动金。
+当时苏联也有很强烈的投资意愿。到处投资了天使轮，其中1921在上海和嘉兴的那个创业团队是最不起眼的一个。除过这个之外，苏联也投资了不少种子团队。
+后来苏联发现，总是投资天使轮失败率太高，想投点早期轮，于是选中了有一定市场号召力的孙中山团队。拉上早期投资的土共，一起组建了黄埔军校。
+拿到了钱，就开始招聘人员、搭设组织架构、市场宣传等一连串行为启动起来。
+这笔投资第一个产品原型不错，初次推入市场就迅速自南往北占领市场，于是估值一下子涨了起来。
+蛋糕做大了就有人开始眼热，很快创业团队就利益分割问题，创业团队里有人决心排挤掉天使投资人，吞掉投资人份额，拉进其他投资人，追求更大利益。
+这个时候土共的份额也被吞噬掉，甚至引发了团队成员的肉体消亡。
+这次剧烈冲突引起 了土共的创始团队分裂，不少人纷纷离职。
+幸好这个时候苏联这个创始人还没放弃土共，而且因为之前合作绑定的关系，也必须继续压注追加投资。
+二、变局
+这时候土共高层管理变动频繁，提出的市场策略也是多次变化，可见此时内部混乱到何种程度。
+比如一会提出城市暴动，一会提出工人罢工，一会提出武装起义，闹得不亦乐乎。
+这时候各地方一些市场有了小量的回馈积累。</description>
     </item>
     
     <item>

@@ -30,6 +30,19 @@ Linux 发行版 = Linux 内核 + 商业软件
     </item>
     
     <item>
+      <title>异或运算</title>
+      <link>https://sanbeichahegongheguo.github.io/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/%E5%BC%82%E6%88%96%E8%BF%90%E7%AE%97/</guid>
+      <description>本文主要内容来自 LeetCode|异或运算的一些应用
+定义 代码中有一套借鉴了布尔逻辑的逻辑运算符，例如“并”“交”“非”等，还有一个就是“异或”。
+异或是一个数学运算，用于逻辑运算。如果 a、b 两个值不同，则异或结果为 1 ，否则结果为 0 。真值表如下：
+   a 运算符 b 结果     0 ⊕ 0 0   1 ⊕ 0 1   0 ⊕ 1 1   1 ⊕ 1 0    记真值表的时候有的同学可能觉得很容易记错，也有同学喜欢记异或运算的公式，比如：P = AB&#39; ⊕ A&#39;B（“ &amp;lsquo; ”表示非）。其实这两种方法都可以，还有一种方式我个人觉得记忆起来更容易一些，即 异或运算是半加运算。什么意思，半加 即不带进位的加法运算。再来看一下上面的真值表：
+   a 运算符 b 结果     0 + 0 0   1 + 0 1   0 + 1 1   1 + 1 (1)0    括号里的 1 是进位，不考虑进位，即 半加 运算，这样记起来是不是更容易些呢？</description>
+    </item>
+    
+    <item>
       <title>Zotero入门</title>
       <link>https://sanbeichahegongheguo.github.io/zotero%E5%85%A5%E9%97%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
