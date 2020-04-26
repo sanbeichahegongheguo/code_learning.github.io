@@ -1,797 +1,785 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!doctype html>
+<html lang="zh-CN">
+<head>
 
-  <meta name="generator" content="Hugo 0.54.0" />
-  <link rel="canonical" href="https://sanbeichahegongheguo.github.io/anaconda%E5%85%A5%E9%97%A8/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
+    <title>Anaconda入门 | 火山灰</title>
+    <meta property="og:title" content="Anaconda入门 - 火山灰">
+    <meta property="og:type" content="article">
+        
+        
+    <meta name="Keywords" content=" ">
+    <meta name="description" content="Anaconda入门">
+        
+    <meta name="author" content="总舵主">
+    <meta property="og:url" content="https://sanbeichahegongheguo.github.io/Anaconda%E5%85%A5%E9%97%A8/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <link rel="stylesheet" href="https://sanbeichahegongheguo.github.io/css/prism.css" media="none" onload="this.media='all';">
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4031353640611810",
+        enable_page_level_ads: true
+    });
+    </script>
+    
 
-  
-  
-  <link rel="stylesheet" type="text/css" href="https://sanbeichahegongheguo.github.io/css/styles.css">
 
-  <style id="inverter" media="none">
-    html { filter: invert(100%) }
-    * { background-color: inherit }
-    img:not([src*=".svg"]), .colors, iframe, .demo-container { filter: invert(100%) }
-  </style>
-
-  
-  
-  <title>Anaconda入门 | 火山灰</title>
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
 </head>
 
-  <body>
-    <a href="#main">skip to content</a>
-    <svg style="display: none">
-  <symbol id="bookmark" viewBox="0 0 40 50">
-   <g transform="translate(2266 3206.2)">
-    <path style="stroke:currentColor;stroke-width:3.2637;fill:none" d="m-2262.2-3203.4-.2331 42.195 16.319-16.318 16.318 16.318.2331-42.428z"/>
-   </g>
-  </symbol>
 
-  <symbol id="w3c" viewBox="0 0 127.09899 67.763">
-   <text font-size="83" style="font-size:83px;font-family:Trebuchet;letter-spacing:-12;fill-opacity:0" letter-spacing="-12" y="67.609352" x="-26.782778">W3C</text>
-   <text font-size="83" style="font-size:83px;font-weight:bold;font-family:Trebuchet;fill-opacity:0" y="67.609352" x="153.21722" font-weight="bold">SVG</text>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m33.695.377 12.062 41.016 12.067-41.016h8.731l-19.968 67.386h-.831l-12.48-41.759-12.479 41.759h-.832l-19.965-67.386h8.736l12.061 41.016 8.154-27.618-3.993-13.397h8.737z"/>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m91.355 46.132c0 6.104-1.624 11.234-4.862 15.394-3.248 4.158-7.45 6.237-12.607 6.237-3.882 0-7.263-1.238-10.148-3.702-2.885-2.47-5.02-5.812-6.406-10.022l6.82-2.829c1.001 2.552 2.317 4.562 3.953 6.028 1.636 1.469 3.56 2.207 5.781 2.207 2.329 0 4.3-1.306 5.909-3.911 1.609-2.606 2.411-5.738 2.411-9.401 0-4.049-.861-7.179-2.582-9.399-1.995-2.604-5.129-3.912-9.397-3.912h-3.327v-3.991l11.646-20.133h-14.062l-3.911 6.655h-2.493v-14.976h32.441v4.075l-12.31 21.217c4.324 1.385 7.596 3.911 9.815 7.571 2.22 3.659 3.329 7.953 3.329 12.892z"/>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.21 0 1.414 8.6-5.008 9.583s-1.924-4.064-5.117-6.314c-2.693-1.899-4.447-2.309-7.186-1.746-3.527.73-7.516 4.938-9.258 10.13-2.084 6.21-2.104 9.218-2.178 11.978-.115 4.428.58 7.043.58 7.043s-3.04-5.626-3.011-13.866c.018-5.882.947-11.218 3.666-16.479 2.404-4.627 5.954-7.404 9.114-7.728 3.264-.343 5.848 1.229 7.841 2.938 2.089 1.788 4.213 5.698 4.213 5.698l4.94-9.837z"/>
-   <path style="fill:currentColor;image-rendering:optimizeQuality;shape-rendering:geometricPrecision" d="m125.82 48.674s-2.208 3.957-3.589 5.48c-1.379 1.524-3.849 4.209-6.896 5.555-3.049 1.343-4.646 1.598-7.661 1.306-3.01-.29-5.807-2.032-6.786-2.764-.979-.722-3.486-2.864-4.897-4.854-1.42-2-3.634-5.995-3.634-5.995s1.233 4.001 2.007 5.699c.442.977 1.81 3.965 3.749 6.572 1.805 2.425 5.315 6.604 10.652 7.545 5.336.945 9.002-1.449 9.907-2.031.907-.578 2.819-2.178 4.032-3.475 1.264-1.351 2.459-3.079 3.116-4.108.487-.758 1.276-2.286 1.276-2.286l-1.276-6.644z"/>
-  </symbol>
-
-  <symbol id="tag" viewBox="0 0 177.16535 177.16535">
-    <g transform="translate(0 -875.2)">
-     <path style="fill-rule:evenodd;stroke-width:0;fill:currentColor" d="m159.9 894.3-68.79 8.5872-75.42 77.336 61.931 60.397 75.429-76.565 6.8495-69.755zm-31.412 31.835a10.813 10.813 0 0 1 1.8443 2.247 10.813 10.813 0 0 1 -3.5174 14.872l-.0445.0275a10.813 10.813 0 0 1 -14.86 -3.5714 10.813 10.813 0 0 1 3.5563 -14.863 10.813 10.813 0 0 1 13.022 1.2884z"/>
-    </g>
-  </symbol>
-
-  <symbol id="balloon" viewBox="0 0 141.73228 177.16535">
-   <g transform="translate(0 -875.2)">
-    <g>
-     <path style="fill:currentColor" d="m68.156 882.83-.88753 1.4269c-4.9564 7.9666-6.3764 17.321-5.6731 37.378.36584 10.437 1.1246 23.51 1.6874 29.062.38895 3.8372 3.8278 32.454 4.6105 38.459 4.6694-.24176 9.2946.2879 14.377 1.481 1.2359-3.2937 5.2496-13.088 8.886-21.623 6.249-14.668 8.4128-21.264 10.253-31.252 1.2464-6.7626 1.6341-12.156 1.4204-19.764-.36325-12.93-2.1234-19.487-6.9377-25.843-2.0833-2.7507-6.9865-7.6112-7.9127-7.8436-.79716-.20019-6.6946-1.0922-6.7755-1.0248-.02213.0182-5.0006-.41858-7.5248-.22808l-2.149-.22808h-3.3738z"/>
-     <path style="fill:currentColor" d="m61.915 883.28-3.2484.4497c-1.7863.24724-3.5182.53481-3.8494.63994-2.4751.33811-4.7267.86957-6.7777 1.5696-.28598 0-1.0254.20146-2.3695.58589-5.0418 1.4418-6.6374 2.2604-8.2567 4.2364-6.281 7.6657-11.457 18.43-12.932 26.891-1.4667 8.4111.71353 22.583 5.0764 32.996 3.8064 9.0852 13.569 25.149 22.801 37.517 1.3741 1.841 2.1708 2.9286 2.4712 3.5792 3.5437-1.1699 6.8496-1.9336 10.082-2.3263-1.3569-5.7831-4.6968-21.86-6.8361-33.002-.92884-4.8368-2.4692-14.322-3.2452-19.991-.68557-5.0083-.77707-6.9534-.74159-15.791.04316-10.803.41822-16.162 1.5026-21.503 1.4593-5.9026 3.3494-11.077 6.3247-15.852z"/>
-     <path style="fill:currentColor" d="m94.499 885.78c-.10214-.0109-.13691 0-.0907.0409.16033.13489 1.329 1.0675 2.5976 2.0723 6.7003 5.307 11.273 14.568 12.658 25.638.52519 4.1949.24765 14.361-.5059 18.523-2.4775 13.684-9.7807 32.345-20.944 53.519l-3.0559 5.7971c2.8082.76579 5.7915 1.727 8.9926 2.8441 11.562-11.691 18.349-19.678 24.129-28.394 7.8992-11.913 11.132-20.234 12.24-31.518.98442-10.02-1.5579-20.876-6.7799-28.959-.2758-.4269-.57803-.86856-.89617-1.3166-3.247-6.13-9.752-12.053-21.264-16.131-2.3687-.86369-6.3657-2.0433-7.0802-2.1166z"/>
-     <path style="fill:currentColor" d="m32.52 892.22c-.20090-.13016-1.4606.81389-3.9132 2.7457-11.486 9.0476-17.632 24.186-16.078 39.61.79699 7.9138 2.4066 13.505 5.9184 20.562 5.8577 11.77 14.749 23.219 30.087 38.74.05838.059.12188.1244.18052.1838 1.3166-.5556 2.5965-1.0618 3.8429-1.5199-.66408-.32448-1.4608-1.3297-3.8116-4.4602-5.0951-6.785-8.7512-11.962-13.051-18.486-5.1379-7.7948-5.0097-7.5894-8.0586-13.054-6.2097-11.13-8.2674-17.725-8.6014-27.563-.21552-6.3494.13041-9.2733 1.775-14.987 2.1832-7.5849 3.9273-10.986 9.2693-18.07 1.7839-2.3656 2.6418-3.57 2.4409-3.7003z"/>
-     <path style="fill:currentColor" d="m69.133 992.37c-6.2405.0309-12.635.76718-19.554 2.5706 4.6956 4.7759 9.935 10.258 12.05 12.625l4.1272 4.6202h11.493l3.964-4.4516c2.0962-2.3541 7.4804-7.9845 12.201-12.768-8.378-1.4975-16.207-2.6353-24.281-2.5955z"/>
-     <rect style="stroke-width:0;fill:currentColor" ry="2.0328" height="27.746" width="22.766" y="1017.7" x="60.201"/>
-    </g>
-   </g>
-  </symbol>
-
-  <symbol id="info" viewBox="0 0 41.667 41.667">
-   <g transform="translate(-37.035 -1004.6)">
-    <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m76.25 1030.2a18.968 18.968 0 0 1 -23.037 13.709 18.968 18.968 0 0 1 -13.738 -23.019 18.968 18.968 0 0 1 23.001 -13.768 18.968 18.968 0 0 1 13.798 22.984"/>
-    <g transform="matrix(1.1146 0 0 1.1146 -26.276 -124.92)">
-     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:3.728;fill:none" d="m75.491 1039.5v-8.7472"/>
-     <path style="stroke-width:0;fill:currentColor" transform="scale(-1)" d="m-73.193-1024.5a2.3719 2.3719 0 0 1 -2.8807 1.7142 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
-    </g>
-   </g>
-  </symbol>
-
-  <symbol id="warning" viewBox="0 0 48.430474 41.646302">
-    <g transform="translate(-1.1273 -1010.2)">
-     <path style="stroke-linejoin:round;stroke:currentColor;stroke-linecap:round;stroke-width:4.151;fill:none" d="m25.343 1012.3-22.14 37.496h44.28z"/>
-     <path style="stroke:currentColor;stroke-linecap:round;stroke-width:4.1512;fill:none" d="m25.54 1027.7v8.7472"/>
-     <path style="stroke-width:0;fill:currentColor" d="m27.839 1042.8a2.3719 2.3719 0 0 1 -2.8807 1.7143 2.3719 2.3719 0 0 1 -1.718 -2.8785 2.3719 2.3719 0 0 1 2.8763 -1.7217 2.3719 2.3719 0 0 1 1.7254 2.8741"/>
-    </g>
-  </symbol>
-
-  <symbol id="menu" viewBox="0 0 50 50">
-     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="0" x="0"/>
-     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="20" x="0"/>
-     <rect style="stroke-width:0;fill:currentColor" height="10" width="50" y="40" x="0"/>
-   </symbol>
-
-   <symbol id="link" viewBox="0 0 50 50">
-    <g transform="translate(0 -1002.4)">
-     <g transform="matrix(.095670 0 0 .095670 2.3233 1004.9)">
-      <g>
-       <path style="stroke-width:0;fill:currentColor" d="m452.84 192.9-128.65 128.65c-35.535 35.54-93.108 35.54-128.65 0l-42.881-42.886 42.881-42.876 42.884 42.876c11.845 11.822 31.064 11.846 42.886 0l128.64-128.64c11.816-11.831 11.816-31.066 0-42.9l-42.881-42.881c-11.822-11.814-31.064-11.814-42.887 0l-45.928 45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526c35.535-35.521 93.136-35.521 128.64 0l42.886 42.881c35.535 35.523 35.535 93.141-.001 128.66zm-254.28 168.51-45.903 45.9c-11.845 11.846-31.064 11.817-42.881 0l-42.884-42.881c-11.845-11.821-11.845-31.041 0-42.886l128.65-128.65c11.819-11.814 31.069-11.814 42.884 0l42.886 42.886 42.876-42.886-42.876-42.881c-35.54-35.521-93.113-35.521-128.65 0l-128.65 128.64c-35.538 35.545-35.538 93.146 0 128.65l42.883 42.882c35.51 35.54 93.11 35.54 128.65 0l72.496-72.499c-23.956 1.597-48.092-3.784-69.474-16.283z"/>
-      </g>
-     </g>
-    </g>
-  </symbol>
-
-  <symbol id="doc" viewBox="0 0 35 45">
-   <g transform="translate(-147.53 -539.83)">
-    <path style="stroke:currentColor;stroke-width:2.4501;fill:none" d="m149.38 542.67v39.194h31.354v-39.194z"/>
-    <g style="stroke-width:25" transform="matrix(.098003 0 0 .098003 133.69 525.96)">
-     <path d="m220 252.36h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
-     <path style="stroke:currentColor;stroke-width:25;fill:none" d="m220 409.95h200"/>
-     <path d="m220 488.74h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
-     <path d="m220 331.15h200" style="stroke:currentColor;stroke-width:25;fill:none"/>
-    </g>
-   </g>
- </symbol>
-
- <symbol id="tick" viewBox="0 0 177.16535 177.16535">
-  <g transform="translate(0 -875.2)">
-   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="155" width="40" y="702.99" x="556.82"/>
-   <rect style="stroke-width:0;fill:currentColor" transform="rotate(30)" height="40" width="90.404" y="817.99" x="506.42"/>
-  </g>
- </symbol>
-</svg>
-
-    <div class="wrapper">
-      <header class="intro-and-nav" role="banner">
-  <div>
-    <div class="intro">
-      <a class="logo" href="/" aria-label="火山灰 home page">
-        <img src="https://sanbeichahegongheguo.github.io/images/logo.svg" alt="">
-      </a>
-      <p class="library-desc">
-        
-          ~Stay hungry，Stay foolish~
-        
-      </p>
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://sanbeichahegongheguo.github.io/">
+                        火山灰
+                    </a>
+                
+                <p class="description">~Stay hungry，Stay foolish~</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://sanbeichahegongheguo.github.io/">首页</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/tags/" title="标签">标签</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/categories/" title="分类">分类</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/about/" title="关于我">关于我</a>
+                    
+                </nav>
+            </div>
+        </div>
     </div>
-    <nav id="patterns-nav" class="patterns" role="navigation">
-  <h2 class="vh">Main navigation</h2>
-  <button id="menu-button" aria-expanded="false">
-    <svg viewBox="0 0 50 50" aria-hidden="true" focusable="false">
-      <use xlink:href="#menu"></use>
-    </svg>
-    Menu
-  </button>
-  
-  <ul id="patterns-list">
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Home</span>
-      </a>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 3px 2px 1px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一anaconda介绍">一、Anaconda介绍</a></li>
+    <li><a href="#二anaconda版本">二、Anaconda版本</a></li>
+    <li><a href="#三同时安装anaconda23">三、同时安装Anaconda2\3</a>
+      <ul>
+        <li><a href="#1windows下同时安装anaconda2和anaconda3">1.Windows下同时安装Anaconda2和Anaconda3</a>
+          <ul>
+            <li><a href="#11前言">1.1<em>前言</em></a></li>
+            <li><a href="#12操作步骤">1.2<em>操作步骤</em></a></li>
+            <li><a href="#13纯净python共存">1.3<em>纯净Python共存</em></a></li>
+            <li><a href="#14总结"><em>1.4总结</em></a></li>
+          </ul>
+        </li>
+        <li><a href="#2liunxubuntu下安装anaconda">2.Liunx（Ubuntu）下安装Anaconda</a></li>
+        <li><a href="#3更改pip源">3.更改pip源</a>
+          <ul>
+            <li><a href="#windows">windows</a></li>
+            <li><a href="#linuxubuntu">linux（ubuntu）</a></li>
+            <li><a href="#更改anaconda源">更改anaconda源</a></li>
+            <li><a href="#如何删除添加的源呢">如何删除添加的源呢？</a></li>
+            <li><a href="#看看当前的-cofig-是什么样的">看看当前的 cofig 是什么样的</a></li>
+          </ul>
+        </li>
+      </ul>
     </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/post/" aria-current="page">
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Blog</span>
-      </a>
+    <li><a href="#四conda和pip对比">四、conda和pip对比</a></li>
+    <li><a href="#五condavirtualenvpipenv管理虚拟环境的操作和效果对比">五、conda、virtualenv、pipenv管理虚拟环境的操作和效果对比</a>
+      <ul>
+        <li><a href="#conda创建虚拟环境">conda创建虚拟环境：</a></li>
+        <li><a href="#virtualenv创建虚拟环境">virtualenv创建虚拟环境</a></li>
+        <li><a href="#pipenv创建虚拟环境">Pipenv创建虚拟环境</a>
+          <ul>
+            <li><a href="#1-安装-pipenv">1 安装 Pipenv</a></li>
+            <li><a href="#2-创建虚拟环境">2 创建虚拟环境</a></li>
+            <li><a href="#3-安装第三方包">3 安装第三方包</a></li>
+            <li><a href="#4-激活虚拟环境">4 激活虚拟环境</a></li>
+            <li><a href="#5-pipenv-run">5 pipenv run</a></li>
+            <li><a href="#6-从-requirementstxt-导入">6 从 requirements.txt 导入</a></li>
+            <li><a href="#7-只安装到开发环境">7 只安装到开发环境</a></li>
+            <li><a href="#8-卸载包">8 卸载包</a></li>
+            <li><a href="#9-删除虚拟环境">9 删除虚拟环境</a></li>
+            <li><a href="#10-常见问题">10 常见问题：</a></li>
+            <li><a href="#11-如何提高下载速度">11 如何提高下载速度</a></li>
+            <li><a href="#12-pipenv-有什么缺点">12 Pipenv 有什么缺点</a></li>
+          </ul>
+        </li>
+      </ul>
     </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/tags/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">Tags</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/about/" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">About</span>
-      </a>
-    </li>
-  
-    <li class="pattern">
-      
-      
-      
-      
-      <a href="/index.xml" >
-        <svg class="bookmark-icon" aria-hidden="true" focusable="false" viewBox="0 0 40 50">
-          <use xlink:href="#bookmark"></use>
-        </svg>
-        <span class="text">RSS</span>
-      </a>
-    </li>
-  
+    <li><a href="#参考资料"><em>参考资料</em></a></li>
   </ul>
 </nav>
-  </div>
-</header>
-      <div class="main-and-footer">
-        <div>
-          
-  <main id="main">
-    <h1>
-      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-        <use xlink:href="#bookmark"></use>
-      </svg>
-      Anaconda入门
-    </h1>
-    <div class="date">
-      
-      <strong aria-hidden="true">Publish date: </strong>Jan 1, 0001
     </div>
-    
-      <div class="tags">
-        <strong aria-hidden="true">Tags: </strong>
-        <ul aria-label="tags">
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://sanbeichahegongheguo.github.io/tags/python/">python</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://sanbeichahegongheguo.github.io/tags/anaconda/">Anaconda</a>
-            </li>
-          
-            <li>
-              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
-                <use xlink:href="#tag"></use>
-              </svg>
-              
-              <a href="https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/">入门</a>
-            </li>
-          
-        </ul>
-      </div>
-    
-    
-      
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
 
-  <nav class="toc" aria-labelledby="toc-heading">
-    <h2 id="toc-heading">Table of contents</h2>
-    <ol>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e4%b8%80-anaconda%e4%bb%8b%e7%bb%8d">
-            一、Anaconda介绍
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e4%ba%8c-anaconda%e7%89%88%e6%9c%ac">
-            二、Anaconda版本
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e4%b8%89-%e5%90%8c%e6%97%b6%e5%ae%89%e8%a3%85anaconda2-3">
-            三、同时安装Anaconda2\3
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e5%9b%9b-conda%e5%92%8cpip%e5%af%b9%e6%af%94">
-            四、conda和pip对比
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e4%ba%94-conda-virtualenv-pipenv%e7%ae%a1%e7%90%86%e8%99%9a%e6%8b%9f%e7%8e%af%e5%a2%83%e7%9a%84%e6%93%8d%e4%bd%9c%e5%92%8c%e6%95%88%e6%9e%9c%e5%af%b9%e6%af%94">
-            五、conda、virtualenv、pipenv管理虚拟环境的操作和效果对比
-          </a>
-        </li>
-      
-        <li>
-          
-          
-          
-          
-          <a href="#%e5%8f%82%e8%80%83%e8%b5%84%e6%96%99">
-            参考资料
-          </a>
-        </li>
-      
-    </ol>
-  </nav>
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
 
-
-    
-    
-
-<h2 id="一-anaconda介绍">一、Anaconda介绍</h2>
-
+    <article class="post">
+        <header>
+            <h1 class="post-title">Anaconda入门</h1>
+        </header>
+        <date class="post-meta meta-date">发布于:
+            1年1月1日
+        </date>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|&nbsp<span id="busuanzi_value_page_pv"></span><span>次阅读</span></span>
+        </div>
+        
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://sanbeichahegongheguo.github.io/tags/python'>python</a></li>
+                
+                <li><a href='https://sanbeichahegongheguo.github.io/tags/Anaconda'>Anaconda</a></li>
+                
+                <li><a href='https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8'>入门</a></li>
+                
+            </ul>
+            
+        </div>
+        
+        <div class="post-content">
+            <h2 id="一anaconda介绍">一、Anaconda介绍</h2>
 <p><strong>Anaconda</strong>是一个Python的科学计算发行版，包含了超过300个流行的用于科学、数学、工程和数据分析的Python Packages。由于Python有2和3两个版本，因此Anaconda也在Python2和Python3的基础上推出了两个发行版，即<strong>Anaconda2</strong>和<strong>Anaconda3</strong>。</p>
-
-<h2 id="二-anaconda版本">二、Anaconda版本</h2>
-
-<h2 id="三-同时安装anaconda2-3">三、同时安装Anaconda2\3</h2>
-
-<h3 id="1-windows下同时安装anaconda2和anaconda3">1.Windows下同时安装Anaconda2和Anaconda3</h3>
-
-<h4 id="1-1-前言">1.1<em>前言</em></h4>
-
-<hr />
-
+<h2 id="二anaconda版本">二、Anaconda版本</h2>
+<h2 id="三同时安装anaconda23">三、同时安装Anaconda2\3</h2>
+<h3 id="1windows下同时安装anaconda2和anaconda3">1.Windows下同时安装Anaconda2和Anaconda3</h3>
+<h4 id="11前言">1.1<em>前言</em></h4>
+<hr>
 <p>有时候我们会在电脑上同时使用Anaconda2和Anaconda3两个版本，因此有必要考虑它们的共存问题。一般的使用场景是以其中一个版本为主，另外一个版本为辅，因此只需要达到能方便的切换到备用版本，且备用版本的pip等命令能正常使用即可。</p>
-
 <p>由于Anaconda2和Anaconda3包含较多的模块，很多人是不需要这些的，因此若只想要较为纯净的Python2和Python3共存的，可以看本文最后一部分。</p>
-
-<h4 id="1-2-操作步骤">1.2<em>操作步骤</em></h4>
-
-<hr />
-
+<h4 id="12操作步骤">1.2<em>操作步骤</em></h4>
+<hr>
 <ol>
-<li>首先安装<strong>主版本</strong>，在这里我们选择<strong>Anaconda2</strong>，按照正常步骤安装即可，这里假定安装目录为<code>D:\Anaconda2</code>。</li>
+<li>
+<p>首先安装<strong>主版本</strong>，在这里我们选择<strong>Anaconda2</strong>，按照正常步骤安装即可，这里假定安装目录为<code>D:\Anaconda2</code>。</p>
+<p><img src="./images/15332345662971.png" alt="步骤1"></p>
+</li>
+<li>
+<p>在这一步打上那两个勾。</p>
+<p><img src="./images/20151231221831912.png" alt="步骤2"></p>
+<p>第一个选项是将安装目录加入到系统的PATH环境变量中，以后在CMD中便可以直接用python命令启动python。 
+第二个选项是让其他IDE能够检测到Anaconda2并将Anaconda2作为默认的Python 2.7。</p>
+</li>
+<li>
+<p>安装好Anaconda2之后，再安装Anaconda3，这里Anaconda3的安装目录必须选在<strong>D:\Anaconda2\envs</strong>子目录下，如图所示，最后的”py3”可以自己另取。</p>
+<p><img src="./images/20151231222220973.png" alt="步骤3"></p>
+</li>
+<li>
+<p>这里取消掉那两个勾（按照字面意思理解，打上第二个勾应该是没有影响的。至于第一个选项，由于之前已经把Anaconda2添加到系统PATH路径下了，因此再把Anaconda3添加进去，由于顺序在Anaconda2的后面，几乎是没有作用的，所以这里没有勾上）。</p>
+<p><img src="./images/20151231222309050.png" alt="步骤4"></p>
+</li>
+<li>
+<p>安装完成之后，在CMD里面直接输入<code>python</code>会启动<strong>Python2</strong>，而使用<code>activate py3</code>（<strong>py3</strong>即之前<strong>Python3</strong>安装目录文件夹的名字）命令之后，再使用<code>python</code>即可切换至<strong>Python3</strong>，如下图所示。使用<code>activate py3</code>命令之后，在命令行前面会出现一个<code>[py3]</code>标记，此时使用任何的<code>python</code>命令都是在<strong>Python3</strong>下进行的。使用<code>deactivate</code>命令可取消激活<strong>Python3</strong>。</p>
+<p><img src="./images/20160101084125476.png" alt="步骤5"></p>
+</li>
 </ol>
-
-<p><img src="./images/15332345662971.png" alt="步骤1" /></p>
-
-<ol>
-<li>在这一步打上那两个勾。</li>
-</ol>
-
-<p><img src="./images/20151231221831912.png" alt="步骤2" /></p>
-
-<p>第一个选项是将安装目录加入到系统的PATH环境变量中，以后在CMD中便可以直接用python命令启动python。
-   第二个选项是让其他IDE能够检测到Anaconda2并将Anaconda2作为默认的Python 2.7。</p>
-
-<ol>
-<li>安装好Anaconda2之后，再安装Anaconda3，这里Anaconda3的安装目录必须选在<strong>D:\Anaconda2\envs</strong>子目录下，如图所示，最后的”py3”可以自己另取。</li>
-</ol>
-
-<p><img src="./images/20151231222220973.png" alt="步骤3" /></p>
-
-<ol>
-<li>这里取消掉那两个勾（按照字面意思理解，打上第二个勾应该是没有影响的。至于第一个选项，由于之前已经把Anaconda2添加到系统PATH路径下了，因此再把Anaconda3添加进去，由于顺序在Anaconda2的后面，几乎是没有作用的，所以这里没有勾上）。</li>
-</ol>
-
-<p><img src="./images/20151231222309050.png" alt="步骤4" /></p>
-
-<ol>
-<li>安装完成之后，在CMD里面直接输入<code>python</code>会启动<strong>Python2</strong>，而使用<code>activate py3</code>（<strong>py3</strong>即之前<strong>Python3</strong>安装目录文件夹的名字）命令之后，再使用<code>python</code>即可切换至<strong>Python3</strong>，如下图所示。使用<code>activate py3</code>命令之后，在命令行前面会出现一个<code>[py3]</code>标记，此时使用任何的<code>python</code>命令都是在<strong>Python3</strong>下进行的。使用<code>deactivate</code>命令可取消激活<strong>Python3</strong>。</li>
-</ol>
-
-<p><img src="./images/20160101084125476.png" alt="步骤5" /></p>
-
-<h4 id="1-3-纯净python共存">1.3<em>纯净Python共存</em></h4>
-
-<hr />
-
+<h4 id="13纯净python共存">1.3<em>纯净Python共存</em></h4>
+<hr>
 <p>说是纯净，其实也不完全“纯净”，这里需要用到另外一个发行版<strong>miniconda</strong>，它仅包含Python本身和Conda包管理器，因此体积不大。使用<strong>miniconda</strong>时的共存安装方法与上述步骤完全一致，就不赘述了。</p>
-
 <p><a href="http://conda.pydata.org/miniconda.html">miniconda下载主页</a></p>
-
-<h4 id="1-4总结"><em>1.4总结</em></h4>
-
-<hr />
-
+<h4 id="14总结"><em>1.4总结</em></h4>
+<hr>
 <p>本文的共存实现方法其实是基于<strong>conda</strong>的创建虚拟环境的功能，详情可见<a href="http://conda.pydata.org/docs/using/envs.html">此链接</a>。</p>
-
 <p>因此在首先安装主要版本之后，也可使用<code>conda create -n py3 python=3</code>命令来安装<strong>Python3</strong>，但由于网络问题，这种方法容易失败，所以自己先下载好完整安装包，然后安装到主版本主目录下的<code>envs</code>文件夹更方便。</p>
-
 <p>有人也许会说直接同时安装<strong>Anaconda2</strong>和<strong>Anaconda3</strong>，然后将<strong>Anaconda3</strong>目录下的<strong>python.exe</strong>改为<strong>python3.exe</strong>也可实现类似的共存。但这种方法存在一个较大的缺陷，即<strong>Anaconda3</strong>内包含的某些IDE会工作不正常，如<strong>Jupyter Notebook</strong>和<strong>Spyder</strong>等，因为他们依赖于安装目录下的<strong>python.exe</strong>，且备用版本的<code>pip</code>等命令也没办法直接使用，总体来说很不方便。</p>
-
 <p>很多的情况下使用python3的资源会比2多不少，比如说在xgboost包的安装问题上，python2需要用到GIT，编译器等，先下载源码再编译，然后添加路径，之后通过GIT调用python安装，还不一定成功。反观python3，网上有现成的.whl文件，下载下来pip一下就好，轻松又愉快。但是对于之前用惯了python2，并且有不少代码已经写在里边的同学，一时间要换成3也是有点困难，所以就需要同时使用python2和3了。我们需要的是基于某个版本的anaconda，2或者3都可以，下面以2为例。</p>
-
 <p>首先需要我们设置一下anaconda，使用清华的镜像，原地址会非常慢。cmd中输入</p>
-
-<pre><code>conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
 conda config --set show_channel_urls yes
-</code></pre>
-
-<p>这之后在你的c:\Users\用户名下的.condarc中就会多了我们添加的地址</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>这之后在你的c:\Users\用户名下的.condarc中就会多了我们添加的地址</p>
 <p>只需要删掉defaults那一行，保存一下就设置成功了。</p>
-
 <p>之后开始干正事，首先在cmd中写入命令</p>
-
-<pre><code class="language-bash">conda update conda
-</code></pre>
-
-<p>用于更新anaconda，完成后</p>
-
-<pre><code class="language-bash">conda create --name python3 python=3.6
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda update conda
+</code></pre></td></tr></table>
+</div>
+</div><p>用于更新anaconda，完成后</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name python3 <span style="color:#008080">python</span><span style="color:#000;font-weight:bold">=</span>3.6
 activate python3
-</code></pre>
-
-<p>相当于在conda目录的envs文件夹中创建了一个新的环境python3，并且通过activate命令激活了它，在activate命令后你的cmd前应该多了一个括号里面写着python3</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>相当于在conda目录的envs文件夹中创建了一个新的环境python3，并且通过activate命令激活了它，在activate命令后你的cmd前应该多了一个括号里面写着python3</p>
 <p>然后在激活了的python3环境中安装anaconda的库</p>
-
-<pre><code class="language-bash">conda install anaconda
-</code></pre>
-
-<p>因为之前已经设置了镜像，如果你的网速不差的话应该一会就好了，完成之后欣喜的发现</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install anaconda
+</code></pre></td></tr></table>
+</div>
+</div><p>因为之前已经设置了镜像，如果你的网速不差的话应该一会就好了，完成之后欣喜的发现</p>
 <p>所有东西都多了python3的版本，当然如果你习惯用notebook来debug的话同样可以参照之前的博客里提到的，给python3也设置一个自定义工作目录的notebook快捷方式。</p>
-
 <p>然后就可以愉快的用它们喽，打开python3的notebook来看看是不是真的python3好了，输入
 开心地看见</p>
-
 <p>大功告成。</p>
-
-<h3 id="2-liunx-ubuntu-下安装anaconda">2.Liunx（Ubuntu）下安装Anaconda</h3>
-
+<h3 id="2liunxubuntu下安装anaconda">2.Liunx（Ubuntu）下安装Anaconda</h3>
 <ol>
 <li>安装anaconda，执行下列命令</li>
 </ol>
-
-<pre><code class="language-bash">bash Anaconda2-5.0.0.1-Linux-x86_64.sh
-</code></pre>
-
-<p>或</p>
-
-<pre><code class="language-bash">. /Anaconda2-5.0.0.1-Linux-x86_64.sh # . 即为默认使用bash命令开始执行
-</code></pre>
-
-<ol>
-<li>安装过程中会显示配置路径</li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bash Anaconda2-5.0.0.1-Linux-x86_64.sh
+</code></pre></td></tr></table>
+</div>
+</div><p>或</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">. /Anaconda2-5.0.0.1-Linux-x86_64.sh <span style="color:#998;font-style:italic"># . 即为默认使用bash命令开始执行</span>
+</code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>安装过程中会显示配置路径：</li>
 </ol>
-
 <pre><code>Prefix=/home/jsy/anaconda2/
-</code></pre>
-
-<ol>
-<li>安装完之后，运行python，仍是ubuntu自带的python信息，需自己设置下环境变量</li>
-<li>在终端输入</li>
+</code></pre><ol start="3">
+<li>安装完之后，运行python，仍是ubuntu自带的python信息，需自己设置下环境变量。</li>
+<li>在终端输入：</li>
 </ol>
-
-<pre><code class="language-bash">sudo gedit /etc/profile
-</code></pre>
-
-<p>打开profile文件</p>
-
-<ol>
-<li>在文件末尾添加一行：
-<code>bash
-export PATH=/home/[用户名]/anaconda2/bin:$PATH
-</code>
-其中，将“/home/[用户名]/anaconda2/bin”替换为你实际的安装路径，保存。</li>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo gedit /etc/profile
+</code></pre></td></tr></table>
+</div>
+</div><p>打开profile文件，</p>
+<ol start="5">
+<li>在文件末尾添加一行：</li>
 </ol>
-
-<p><img src="./images/20171026100654406.png" alt="img" /></p>
-
-<p>7.重启Linux</p>
-
-<p>8.打开终端，输入python，如果出现如下界面，表明设置成功。</p>
-
-<p><img src="./images/20171026100659839.png" alt="img" /></p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0086b3">export</span> <span style="color:#008080">PATH</span><span style="color:#000;font-weight:bold">=</span>/home/<span style="color:#000;font-weight:bold">[</span>用户名<span style="color:#000;font-weight:bold">]</span>/anaconda2/bin:<span style="color:#008080">$PATH</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>其中，将“/home/[用户名]/anaconda2/bin”替换为你实际的安装路径，保存。</p>
+<p><img src="./images/20171026100654406.png" alt="img"></p>
+<ol start="6">
+<li>重启Linux。</li>
+<li>打开终端，输入python，如果出现如下界面，表明设置成功。</li>
+</ol>
+<p><img src="./images/20171026100659839.png" alt="img"></p>
 <p>你还可以用conda info 来查询安装信息</p>
-
-<h3 id="3-更改pip源">3.更改pip源</h3>
-
+<h3 id="3更改pip源">3.更改pip源</h3>
 <h4 id="windows">windows</h4>
-
 <p>在 c:\user\username\pip\pip.ini中加入</p>
-
 <pre><code>[global]
 index-url=https://pypi.tuna.tsinghua.edu.cn/simple 
 [install]  
 trusted-host=pypi.tuna.tsinghua.edu.cn
 disable-pip-version-check = true  
 timeout = 6000 # 是把超时时间设置为6000s
-</code></pre>
-
-<blockquote>
+</code></pre><blockquote>
 <p>注意：首先需要创建pip文件夹与pip.ini文件。</p>
 </blockquote>
-
-<h4 id="linux-ubuntu">linux（ubuntu）</h4>
-
+<h4 id="linuxubuntu">linux（ubuntu）</h4>
 <p>同样首先建pip的配置文件</p>
-
-<pre><code class="language-bash">cd $HOME  
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0086b3">cd</span> <span style="color:#008080">$HOME</span>  
 mkdir .pip  
-cd .pip
+<span style="color:#0086b3">cd</span> .pip
 sudo vim pip.conf  
-</code></pre>
-
-<p>在里面添加</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>在里面添加</p>
 <pre><code>[global]  
 index-url=https://pypi.tuna.tsinghua.edu.cn/simple
 [install]  
 trusted-host=pypi.tuna.tsinghua.edu.cn 
 disable-pip-version-check = true  
 timeout = 6000 # 是把超时时间设置为6000s
-</code></pre>
-
-<h4 id="更改anaconda源">更改anaconda源</h4>
-
-<pre><code class="language-bash">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ # 不要有引号，网上有的帖子会在链接两端加引号，需要去掉。
+</code></pre><h4 id="更改anaconda源">更改anaconda源</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ <span style="color:#998;font-style:italic"># 不要有引号，网上有的帖子会在链接两端加引号，需要去掉。</span>
 conda config --set show_channel_urls yes
-</code></pre>
-
-<p>好了，这下可以开心的下载东西了</p>
-
-<hr />
-
+</code></pre></td></tr></table>
+</div>
+</div><p>好了，这下可以开心的下载东西了</p>
+<hr>
 <h4 id="如何删除添加的源呢">如何删除添加的源呢？</h4>
-
-<pre><code class="language-bash">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
-</code></pre>
-
-<h4 id="看看当前的-cofig-是什么样的">看看当前的 cofig 是什么样的</h4>
-
-<pre><code class="language-bash">conda config --show
-</code></pre>
-
-<p>同一个版本的python3目录下会有3个pip命令， 拿python3.6来说， 会有pip， pip3, pip3.6, 有两个可以看做别名或超链接。比如在Ubuntu系统下，python自带3.5.2 和2.7.12，这样使用pip 和pip3 就可以区分开来。</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="看看当前的-cofig-是什么样的">看看当前的 cofig 是什么样的</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda config --show
+</code></pre></td></tr></table>
+</div>
+</div><p>同一个版本的python3目录下会有3个pip命令， 拿python3.6来说， 会有pip， pip3, pip3.6, 有两个可以看做别名或超链接。比如在Ubuntu系统下，python自带3.5.2 和2.7.12，这样使用pip 和pip3 就可以区分开来。</p>
 <p>如果再安装 anaconda 等python 科学计算环境， 比如版本是3.6， 这时你可以通过pip3.5 使用系统python3，当然也存在搜索路径优先的问题。</p>
-
 <p>pip 默认给 python2 用。
 pip3 指定给 python3 用。
 如果只装有 python3，则pip和pip3是等价的。</p>
-
-<h2 id="四-conda和pip对比">四、conda和pip对比</h2>
-
+<h2 id="四conda和pip对比">四、conda和pip对比</h2>
 <p>既然都是关于python的包管理工具为什么有了pip 我们还需要conda？在stackoverflow上的英文回答：</p>
-
 <blockquote>
 <p>Having been involved in the python world for so long, we are all aware of pip, easy_install, and virtualenv, but these tools did not meet all of our specific requirements. The main problem is that they are focused around Python, neglecting non-Python library dependencies, such as HDF5, MKL, LLVM, etc., which do not have a setup.py in their source code and also do not install files into Python’s site-packages directory.
 So Conda is a packaging tool and installer that aims to do more than what pip does; handle library dependencies outside of the Python packages as well as the Python packages themselves. Conda also creates a virtual environment, like virtualenv does.</p>
-
 <p>As such, Conda should be compared to Buildout perhaps, another tool that lets you handle both Python and non-Python installation tasks.</p>
-
 <p>Because Conda introduces a new packaging format, you cannot use pip and Conda interchangeably;  pip cannot install the Conda package format. You can use the two tools side by side but they do not interoperate either.</p>
-
+</blockquote>
+<blockquote>
 <p>在python的世界里也浸淫多年了，我们早已习惯有 pip ，easy_install 和virtualenv的世界，但是这些🔧没有解决我们所有的需求哦。这其中主要的问题是他们全部都集中解决关于python相关问题而忽略了非python库的依赖关系。(这句我没看明白)，就像 HDF5， MKL LLVM，etc等，在他们的源码中并没有setup.py这种东西，而且也没有安装文件在python的site-packages 目录中。</p>
-
 <p>所有conda就是一个包管理工具和安装工具，它就是要做比pip更多的事情；在python-site-packages之外管理python 库依赖关系。 而且conda同样也像virtualenv一样创建一个虚拟环境。</p>
-
 <p>conda可以让你同时管理安装处理你有关python的任务和跟python无关的任务。</p>
-
 <p>conda使用了一个新的包格式，你不能交替使用pip 和conda。因为pip不能安装和解析conda的包格式。你可以使用两个工具 但是他们是不能交互的。</p>
 </blockquote>
-
 <p>conda环境的常用启动命令：</p>
-
-<pre><code class="language-bash">source activate xxx # 启动xxx环境 
-source deactivate # 关闭当前环境
-conda env update -f environment.yml # 更新配置文件
-</code></pre>
-
-<h2 id="五-conda-virtualenv-pipenv管理虚拟环境的操作和效果对比">五、conda、virtualenv、pipenv管理虚拟环境的操作和效果对比</h2>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0086b3">source</span> activate xxx <span style="color:#998;font-style:italic"># 启动xxx环境</span> 
+<span style="color:#0086b3">source</span> deactivate <span style="color:#998;font-style:italic"># 关闭当前环境</span>
+conda env update -f environment.yml <span style="color:#998;font-style:italic"># 更新配置文件</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="五condavirtualenvpipenv管理虚拟环境的操作和效果对比">五、conda、virtualenv、pipenv管理虚拟环境的操作和效果对比</h2>
 <ol>
 <li>创建虚拟环境。</li>
 <li>切换虚拟环境。</li>
 <li>安装开发包。</li>
 <li>删除虚拟环境。</li>
 </ol>
-
 <h3 id="conda创建虚拟环境">conda创建虚拟环境：</h3>
-
 <p>1.查看包</p>
-
-<pre><code class="language-bash">conda list # 查看安装了哪些包
-conda env list # 查看有哪些虚拟环境
-conda -V # 查看conda的版本
-</code></pre>
-
-<p>2.创建虚拟环境,命名为myflaskapp，n就是指name；并安装flask包。</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda list <span style="color:#998;font-style:italic"># 查看安装了哪些包</span>
+conda env list <span style="color:#998;font-style:italic"># 查看有哪些虚拟环境</span>
+conda -V <span style="color:#998;font-style:italic"># 查看conda的版本</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>2.创建虚拟环境,命名为myflaskapp，n就是指name；并安装flask包。</p>
 <blockquote>
 <p>Note that the conda create command requires that you give it the name of a package to install in the new environment.</p>
-
 <p>conda命令创建虚拟环境时，必须指定一个或者几个你需要安装的package。</p>
 </blockquote>
-
-<pre><code class="language-bash">conda create -n py2 python=2* anaconda
-</code></pre>
-
-<p>这样就会安装anaconda2版本。</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create -n py2 <span style="color:#008080">python</span><span style="color:#000;font-weight:bold">=</span>2* anaconda
+</code></pre></td></tr></table>
+</div>
+</div><p>这样就会安装anaconda2版本。</p>
 <p>栗子1：
 这条命令安装了一个名为myflaskapp虚拟环境，安装flask包。</p>
-
-<pre><code class="language-vAH">conda create -n myflaskapp flask
-</code></pre>
-
-<p>栗子2：
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create -n myflaskapp flask
+</code></pre></td></tr></table>
+</div>
+</div><p>栗子2：
 这个是克隆创建了一个和原系统一样的python环境，命名为nb。</p>
-
-<pre><code class="language-bash">conda create -n nb --clone root
-</code></pre>
-
-<p>栗子3：
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create -n nb --clone root
+</code></pre></td></tr></table>
+</div>
+</div><p>栗子3：
 这就不需指定具体包了</p>
-
-<pre><code class="language-bash">conda create --name $ENVIRONMENT_NAME python
-</code></pre>
-
-<p>其他：</p>
-
-<pre><code class="language-bash">$ conda create -n py3 python=3*
-$ conda create -n py2 python=2*
-</code></pre>
-
-<p>This will create two environments, one with Python3 and the other with Python2. I typically set one of these as my default by adding source activate py3 to my terminal startup. Typically I only use these &ldquo;named python&rdquo; environments to run a Python REPL or do general Python tasks. I&rsquo;ll create another conda environment named specifically for each real project I work on.</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda create --name <span style="color:#008080">$ENVIRONMENT_NAME</span> python
+</code></pre></td></tr></table>
+</div>
+</div><p>其他：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ conda create -n py3 <span style="color:#008080">python</span><span style="color:#000;font-weight:bold">=</span>3*
+$ conda create -n py2 <span style="color:#008080">python</span><span style="color:#000;font-weight:bold">=</span>2*
+</code></pre></td></tr></table>
+</div>
+</div><p>This will create two environments, one with Python3 and the other with Python2. I typically set one of these as my default by adding source activate py3 to my terminal startup. Typically I only use these &ldquo;named python&rdquo; environments to run a Python REPL or do general Python tasks. I&rsquo;ll create another conda environment named specifically for each real project I work on.</p>
 <p>这个创建两个python版本的环境。</p>
-
 <p>3.切换环境</p>
-
 <p><strong>Linux：</strong></p>
-
-<pre><code class="language-bash">source activate myflaskapp
-</code></pre>
-
-<p><strong>Windows：</strong></p>
-
-<pre><code class="language-bash">activate myflaskapp
-</code></pre>
-
-<p>4.关闭环境</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0086b3">source</span> activate myflaskapp
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Windows：</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">activate myflaskapp
+</code></pre></td></tr></table>
+</div>
+</div><p>4.关闭环境</p>
 <p><strong>Linux：</strong></p>
-
-<pre><code class="language-bash">source deactivate
-</code></pre>
-
-<p><strong>Windows：</strong></p>
-
-<pre><code class="language-bash">deactivate
-</code></pre>
-
-<p>5.改指定虚拟环境安装包</p>
-
-<pre><code class="language-bash">conda install -n yourenvname [package]
-</code></pre>
-
-<p>6.移除虚拟环境</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0086b3">source</span> deactivate
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Windows：</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">deactivate
+</code></pre></td></tr></table>
+</div>
+</div><p>5.改指定虚拟环境安装包</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda install -n yourenvname <span style="color:#000;font-weight:bold">[</span>package<span style="color:#000;font-weight:bold">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>6.移除虚拟环境</p>
 <p>移除某个环境中的包</p>
-
-<pre><code class="language-bash">conda remove --name $ENVIRONMENT_NAME $PACKAGE_NAME
-</code></pre>
-
-<p>移除某个虚拟环境</p>
-
-<pre><code class="language-bash">conda remove -n yourenvname --all
-</code></pre>
-
-<p>这些所有的虚拟环境，都在C:\Anaconda3\envs文件夹下。</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda remove --name <span style="color:#008080">$ENVIRONMENT_NAME</span> <span style="color:#008080">$PACKAGE_NAME</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>移除某个虚拟环境</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda remove -n yourenvname --all
+</code></pre></td></tr></table>
+</div>
+</div><p>这些所有的虚拟环境，都在C:\Anaconda3\envs文件夹下。</p>
 <h3 id="virtualenv创建虚拟环境">virtualenv创建虚拟环境</h3>
-
 <p>1.安装virtualenv</p>
-
-<pre><code class="language-bash">pip install virtualenv
-</code></pre>
-
-<p>2.创建虚拟环境</p>
-
-<pre><code class="language-bash">mkdir myproject
-cd myproject
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install virtualenv
+</code></pre></td></tr></table>
+</div>
+</div><p>2.创建虚拟环境</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir myproject
+<span style="color:#0086b3">cd</span> myproject
 virtualenv venv
-</code></pre>
-
-<p>创建了一个名为myproject的文件夹，然后这里边创建虚拟环境venv。</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>创建了一个名为myproject的文件夹，然后这里边创建虚拟环境venv。</p>
 <p>在创建virtualenv时增加 <strong>&ndash;no-site-packages</strong> 选项的virtualenv就不会读取系统包，如下：</p>
-
-<pre><code class="language-zsh">virtualenv nowamagic_venv --no-site-packages
-</code></pre>
-
-<p><strong>&ndash;distribute</strong> 选项使virtualenv使用新的基于发行版的包管理系统而不是 setuptools 获得的包。 你现在需要知道的就是 <strong>&ndash;distribute</strong> 选项会自动在新的虚拟环境中安装 pip ，这样就不需要手动安装了。 当你成为一个更有经验的Python开发者，你就会明白其中细节。</p>
-
-<pre><code class="language-bash">virtualenv --distribute nowamagic_venv
-</code></pre>
-
-<p>3.激活虚拟环境
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-zsh" data-lang="zsh">virtualenv nowamagic_venv --no-site-packages
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>&ndash;distribute</strong> 选项使virtualenv使用新的基于发行版的包管理系统而不是 setuptools 获得的包。 你现在需要知道的就是 <strong>&ndash;distribute</strong> 选项会自动在新的虚拟环境中安装 pip ，这样就不需要手动安装了。 当你成为一个更有经验的Python开发者，你就会明白其中细节。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">virtualenv --distribute nowamagic_venv
+</code></pre></td></tr></table>
+</div>
+</div><p>3.激活虚拟环境
 <strong>Linux：</strong></p>
-
-<pre><code class="language-bash">. venv/bin/activate
-</code></pre>
-
-<p>或者</p>
-
-<pre><code class="language-bash">source $ENV_BASE_DIR/$ENVIRONMENT_NAME/bin/activate # 进入到venv虚拟环境文件夹下，可以source bin/activate
-</code></pre>
-
-<p><strong>Windows：</strong></p>
-
-<pre><code class="language-bash">venv\scripts\activate
-</code></pre>
-
-<p>4.退出环境</p>
-
-<p><strong>Linux：</strong>和<strong>Windows：</strong></p>
-
-<pre><code class="language-bash">deactivate
-</code></pre>
-
-<h3 id="pipenv创建虚拟环境">Pipenv创建虚拟环境</h3>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">. venv/bin/activate
+</code></pre></td></tr></table>
+</div>
+</div><p>或者</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#0086b3">source</span> <span style="color:#008080">$ENV_BASE_DIR</span>/<span style="color:#008080">$ENVIRONMENT_NAME</span>/bin/activate <span style="color:#998;font-style:italic"># 进入到venv虚拟环境文件夹下，可以source bin/activate</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Windows：</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">venv<span style="color:#d14">\s</span>cripts<span style="color:#d14">\a</span>ctivate
+</code></pre></td></tr></table>
+</div>
+</div><p>4.退出环境</p>
+<p><strong>Linux：<strong>和</strong>Windows：</strong></p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">deactivate
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="pipenv创建虚拟环境">Pipenv创建虚拟环境</h3>
 <p>virtualenv 创建虚拟环境，Pip 负责安装第三方包，而 Pipenv 就是两者的结合体，给我们的开发带来了更多的便利性。 所有的命令都可以通过 pipenv 完成。</p>
-
 <p>现在就花5分钟，掌握这个工具的使用吧。</p>
-
 <h4 id="1-安装-pipenv">1 安装 Pipenv</h4>
-
 <p>pipenv 的安装和普通的第三方库没什么区别，可以直接使用 pip 命令安装。</p>
-
-<pre><code>pip install  pipenv
-</code></pre>
-
-<p>在 Mac 上可以使用 brew 命令来安装</p>
-
-<pre><code>brew install pipenv
-</code></pre>
-
-<p>接下来介绍如何使用 Pipenv，我们开启新项目后，首先要做的就是为其单独创建一个虚拟环境（确保你的电脑里面只安装一个Python版本，否则总会出现不可预知的问题）</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pip install  pipenv
+</code></pre></td></tr></table>
+</div>
+</div><p>在 Mac 上可以使用 brew 命令来安装</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">brew install pipenv
+</code></pre></td></tr></table>
+</div>
+</div><p>接下来介绍如何使用 Pipenv，我们开启新项目后，首先要做的就是为其单独创建一个虚拟环境（确保你的电脑里面只安装一个Python版本，否则总会出现不可预知的问题）</p>
 <h4 id="2-创建虚拟环境">2 创建虚拟环境</h4>
-
 <p>虚拟环境是每个项目独立使用的 Python 执行环境。</p>
-
-<pre><code># 进入项目所在目录
-cd your_project
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#998;font-style:italic"># 进入项目所在目录</span>
+<span style="color:#0086b3">cd</span> your_project
 
 pipenv install
-</code></pre>
-
-<p>严格来说，pipenv 没有直接提供创建虚拟环境的命令，而是在背后默默帮你创建，install 其实是安装第三方包的命令，对新项目来说，它会先创建虚拟环境，同时，在项目目录下创建名为 Pipfile 的空文件。</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>严格来说，pipenv 没有直接提供创建虚拟环境的命令，而是在背后默默帮你创建，install 其实是安装第三方包的命令，对新项目来说，它会先创建虚拟环境，同时，在项目目录下创建名为 Pipfile 的空文件。</p>
 <p>虚拟环境的名字和项目名相关，默认情况下，Pipenv 会自动为你选择虚拟环境的存储位置，在 Windows 下通常为 C:\Users.virtualenvs</p>
-
 <h4 id="3-安装第三方包">3 安装第三方包</h4>
-
 <p>以前安装包使用 pip 命令，现在你可以用 pipenv 命令来安装，例如我安装 requests 包：</p>
-
-<pre><code>pipenv install requests
-</code></pre>
-
-<p>使用 pipenv 安装第三方包有什么好处呢？安装前你不需要激活虚拟环境，就直接下载到了虚拟环境中，如果用 pip 安装，你还要先激活该环境。（我经常忘记给虚拟环境取了什么名字）</p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv install requests
+</code></pre></td></tr></table>
+</div>
+</div><p>使用 pipenv 安装第三方包有什么好处呢？安装前你不需要激活虚拟环境，就直接下载到了虚拟环境中，如果用 pip 安装，你还要先激活该环境。（我经常忘记给虚拟环境取了什么名字）</p>
 <p>安装完包之后，Pipfile 文件会被更新，同时新增了 Pipfile.lock 文件</p>
-
 <p>Pipfile 文件中的结构：</p>
-
 <pre><code>[[source]]
 name = &quot;pypi&quot;
 url = &quot;https://pypi.org/simple&quot;
@@ -804,227 +792,558 @@ requests = &quot;*&quot;
 
 [requires]
 python_version = &quot;3.7&quot;
-</code></pre>
-
-<p>Pipfile 文件中记录了3件事情：</p>
-
+</code></pre><p>Pipfile 文件中记录了3件事情：</p>
 <ol>
 <li>包从哪里下载的</li>
 <li>需要下载哪些包， <code>*</code> 表示始终下载最新版本， dev-packages 表示专用于开发阶段使用的包。</li>
 <li>Python 版本是多少</li>
 </ol>
-
 <p>Pipfile.lock 文件详细记录了这些包的信息，包括这个包的hash值多少，还有包所依赖的其他包有哪些。</p>
-
 <p>把这些信息写在 Pipfile 文件中的好处是，当我们把项目部署到正式环境时，不再需要一个一个去安装了，直接执行 pipenv install 就会自动创建虚拟环境的同时，把 Pipfile 中包都安装好。</p>
-
 <h4 id="4-激活虚拟环境">4 激活虚拟环境</h4>
-
 <p>运行程序前我们还是要激活虚拟环境，我们可以使用 pipenv shell 来激活，不需要指定名字，只要你在当前项目下执行该命令就行。</p>
-
-<pre><code>pipenv shell
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv shell
 
 Launching subshell in virtual environment…
-Microsoft Windows [Version 10.0.18290.1000]
-(c) 2018 Microsoft Corporation. All rights reserved.
+Microsoft Windows <span style="color:#000;font-weight:bold">[</span>Version 10.0.18290.1000<span style="color:#000;font-weight:bold">]</span>
+<span style="color:#000;font-weight:bold">(</span>c<span style="color:#000;font-weight:bold">)</span> <span style="color:#099">2018</span> Microsoft Corporation. All rights reserved.
 
-(weihub-flask-j3rUnHkH) D:\my\weihub-flask&gt;
-</code></pre>
-
-<p>注意到了吗？ 目录前面多了一对括号括起来的字符串，它就是我们刚刚创建的虚拟环境名字。 激活虚拟环境后，你就可以开始运行你的程序了。</p>
-
-<pre><code>(weihub-flask-j3rUnHkH) D:\my\weihub-flask&gt; python
+<span style="color:#000;font-weight:bold">(</span>weihub-flask-j3rUnHkH<span style="color:#000;font-weight:bold">)</span> D:<span style="color:#d14">\m</span>y<span style="color:#d14">\w</span>eihub-flask&gt;
+</code></pre></td></tr></table>
+</div>
+</div><p>注意到了吗？ 目录前面多了一对括号括起来的字符串，它就是我们刚刚创建的虚拟环境名字。 激活虚拟环境后，你就可以开始运行你的程序了。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">(</span>weihub-flask-j3rUnHkH<span style="color:#000;font-weight:bold">)</span> D:<span style="color:#d14">\m</span>y<span style="color:#d14">\w</span>eihub-flask&gt; python
 
 &gt;&gt;&gt; import requests
-&gt;&gt;&gt; requests.get(&quot;http://baidu.com&quot;).text
-'&lt;html&gt;\n&lt;meta http-equiv=&quot;refresh&quot; content=&quot;0;url=http://www.baidu.com/&quot;&gt;\n&lt;/html&gt;\n'
+&gt;&gt;&gt; requests.get<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;http://baidu.com&#34;</span><span style="color:#000;font-weight:bold">)</span>.text
+<span style="color:#d14">&#39;&lt;html&gt;\n&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0;url=http://www.baidu.com/&#34;&gt;\n&lt;/html&gt;\n&#39;</span>
 &gt;&gt;&gt;
-</code></pre>
-
-<p>退出虚拟环境使用 <code>exit</code> 命令， 这时候那对括号就消失了。</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>退出虚拟环境使用 <code>exit</code> 命令， 这时候那对括号就消失了。</p>
 <h4 id="5-pipenv-run">5 pipenv run</h4>
-
 <p>另外，pipenv 还准备了一个 <code>run</code> 命令，它可以在你不必显示激活虚拟环境的情况下，用虚拟环境执行命令，例如：</p>
-
-<pre><code>pipenv run python -m http.server
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv run python -m http.server
 pipenv run python main.py
-</code></pre>
-
-<p>以上就是你要掌握的 Pipenv 基础知识，如果有兴趣，你还可以了解下面的内容</p>
-
-<h4 id="6-从-requirements-txt-导入">6 从 requirements.txt 导入</h4>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>以上就是你要掌握的 Pipenv 基础知识，如果有兴趣，你还可以了解下面的内容</p>
+<h4 id="6-从-requirementstxt-导入">6 从 requirements.txt 导入</h4>
 <p>如果是老项目，你把依赖包全部放在 requirements.txt 中，pipenv 很贴心，它支持从 requirements.txt 文件中安装，方便使用 pip 的用户平滑迁移过来。</p>
-
-<pre><code>pipenv install -r requirements.txt
-</code></pre>
-
-<h4 id="7-只安装到开发环境">7 只安装到开发环境</h4>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv install -r requirements.txt
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="7-只安装到开发环境">7 只安装到开发环境</h4>
 <p>在开发环境下我们要安装 django-debug-toolbar， pytest 这样的包，这些在生产环境其实是用不上的，所以没必要安装，那么我们在安装某个包的时候可以在 isntall 后面加个参数 &ndash;dev，表示只安装在开发环境，例如：</p>
-
-<pre><code>pipenv install pytest --dev
-</code></pre>
-
-<p>在生产环境执行：</p>
-
-<pre><code class="language-python"># 生产环境
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv install pytest --dev
+</code></pre></td></tr></table>
+</div>
+</div><p>在生产环境执行：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#998;font-style:italic"># 生产环境</span>
 pipenv install
-</code></pre>
-
-<p>开发环境执行：</p>
-
-<pre><code># 开发环境
+</code></pre></td></tr></table>
+</div>
+</div><p>开发环境执行：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#998;font-style:italic"># 开发环境</span>
 pipenv install --dev
-</code></pre>
-
-<h4 id="8-卸载包">8 卸载包</h4>
-
-<pre><code>pipenv uninstall requests
-</code></pre>
-
-<h4 id="9-删除虚拟环境">9 删除虚拟环境</h4>
-
-<pre><code>pipenv --rm 
-</code></pre>
-
-<p>删除虚拟环境后，会把虚拟环境目录和里面的所有依赖包删除掉，但是 Pipfile 和 Pipfile.lock 文件还会保留。</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="8-卸载包">8 卸载包</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv uninstall requests
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="9-删除虚拟环境">9 删除虚拟环境</h4>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv --rm 
+</code></pre></td></tr></table>
+</div>
+</div><p>删除虚拟环境后，会把虚拟环境目录和里面的所有依赖包删除掉，但是 Pipfile 和 Pipfile.lock 文件还会保留。</p>
 <h4 id="10-常见问题">10 常见问题：</h4>
-
 <p>如果你在使用 pipenv 创建虚拟环境失败了，出现类似这样的错误：</p>
-
-<pre><code>pipenv install
-Creating a virtualenv for this project…
-Pipfile: D:\my\weihub-flask\Pipfile
-Using c:\users\lzjun\appdata\local\programs\python\python37-32\python.exe (3.7.1) to create virtualenv…
-[ ===] Creating virtual environment...Already using interpreter c:\users\lzjun\appdata\local\programs\python\python37-32\python.exe
-Using base prefix 'c:\\users\\lzjun\\appdata\\local\\programs\\python\\python37-32'
-New python executable in C:\Users\lzjun\.virtualenvs\weihub-flask-j3rUnHkH\Scripts\python.exe
-ERROR: The executable C:\Users\lzjun\.virtualenvs\weihub-flask-j3rUnHkH\Scripts\python.exe is not functioning
-ERROR: It thinks sys.prefix is 'd:\\my\\weihub-flask' (should be 'c:\\users\\lzjun\\.virtualenvs\\weihub-flask-j3runhkh')
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv install
+Creating a virtualenv <span style="color:#000;font-weight:bold">for</span> this project…
+Pipfile: D:<span style="color:#d14">\m</span>y<span style="color:#d14">\w</span>eihub-flask<span style="color:#d14">\P</span>ipfile
+Using c:<span style="color:#d14">\u</span>sers<span style="color:#d14">\l</span>zjun<span style="color:#d14">\a</span>ppdata<span style="color:#d14">\l</span>ocal<span style="color:#d14">\p</span>rograms<span style="color:#d14">\p</span>ython<span style="color:#d14">\p</span>ython37-32<span style="color:#d14">\p</span>ython.exe <span style="color:#000;font-weight:bold">(</span>3.7.1<span style="color:#000;font-weight:bold">)</span> to create virtualenv…
+<span style="color:#000;font-weight:bold">[</span> <span style="color:#000;font-weight:bold">===]</span> Creating virtual environment...Already using interpreter c:<span style="color:#d14">\u</span>sers<span style="color:#d14">\l</span>zjun<span style="color:#d14">\a</span>ppdata<span style="color:#d14">\l</span>ocal<span style="color:#d14">\p</span>rograms<span style="color:#d14">\p</span>ython<span style="color:#d14">\p</span>ython37-32<span style="color:#d14">\p</span>ython.exe
+Using base prefix <span style="color:#d14">&#39;c:\\users\\lzjun\\appdata\\local\\programs\\python\\python37-32&#39;</span>
+New python executable in C:<span style="color:#d14">\U</span>sers<span style="color:#d14">\l</span>zjun<span style="color:#d14">\.</span>virtualenvs<span style="color:#d14">\w</span>eihub-flask-j3rUnHkH<span style="color:#d14">\S</span>cripts<span style="color:#d14">\p</span>ython.exe
+ERROR: The executable C:<span style="color:#d14">\U</span>sers<span style="color:#d14">\l</span>zjun<span style="color:#d14">\.</span>virtualenvs<span style="color:#d14">\w</span>eihub-flask-j3rUnHkH<span style="color:#d14">\S</span>cripts<span style="color:#d14">\p</span>ython.exe is not functioning
+ERROR: It thinks sys.prefix is <span style="color:#d14">&#39;d:\\my\\weihub-flask&#39;</span> <span style="color:#000;font-weight:bold">(</span>should be <span style="color:#d14">&#39;c:\\users\\lzjun\\.virtualenvs\\weihub-flask-j3runhkh&#39;</span><span style="color:#000;font-weight:bold">)</span>
 ERROR: virtualenv is not compatible with this system or executable
-Note: some Windows users have reported this error when they installed Python for &quot;Only this user&quot; or have multiple versions of Python installed. Copying the appropriate PythonXX.dll to the virtualenv Scripts/ directory may fix this problem.
+Note: some Windows users have reported this error when they installed Python <span style="color:#000;font-weight:bold">for</span> <span style="color:#d14">&#34;Only this user&#34;</span> or have multiple versions of Python installed. Copying the appropriate PythonXX.dll to the virtualenv Scripts/ directory may fix this problem.
 
 Failed creating virtual environment
-[pipenv.exceptions.VirtualenvCreationException]:   File &quot;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\cli\command.py&quot;, line 254, in install
-
-[pipenv.exceptions.VirtualenvCreationException]:   File &quot;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&quot;, line 1741, in do_install
-
-[pipenv.exceptions.VirtualenvCreationException]:   File &quot;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&quot;, line 574, in ensure_project
-
-[pipenv.exceptions.VirtualenvCreationException]:   File &quot;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&quot;, line 506, in ensure_virtualenv
-[pipenv.exceptions.VirtualenvCreationException]:       python=python, site_packages=site_packages, pypi_mirror=pypi_mirror
-[pipenv.exceptions.VirtualenvCreationException]:   File &quot;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&quot;, line 935, in do_create_virtualenv
-
-[pipenv.exceptions.VirtualenvCreationException]: Fatal Python error: initfsencoding: unable to load the file system codec
-Traceback (most recent call last):
-  File &quot;C:\Users\lzjun\.virtualenvs\weihub-flask-j3rUnHkH\lib\encodings\__init__.py&quot;, line 31, in &lt;module&gt;
-  File &quot;C:\Users\lzjun\.virtualenvs\weihub-flask-j3rUnHkH\lib\codecs.py&quot;, line 481
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:   File <span style="color:#d14">&#34;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\cli\command.py&#34;</span>, line 254, in install
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:       <span style="color:#008080">editable_packages</span><span style="color:#000;font-weight:bold">=</span>state.installstate.editables,
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:   File <span style="color:#d14">&#34;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&#34;</span>, line 1741, in do_install
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:       <span style="color:#008080">pypi_mirror</span><span style="color:#000;font-weight:bold">=</span>pypi_mirror,
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:   File <span style="color:#d14">&#34;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&#34;</span>, line 574, in ensure_project
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:       <span style="color:#008080">pypi_mirror</span><span style="color:#000;font-weight:bold">=</span>pypi_mirror,
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:   File <span style="color:#d14">&#34;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&#34;</span>, line 506, in ensure_virtualenv
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:       <span style="color:#008080">python</span><span style="color:#000;font-weight:bold">=</span>python, <span style="color:#008080">site_packages</span><span style="color:#000;font-weight:bold">=</span>site_packages, <span style="color:#008080">pypi_mirror</span><span style="color:#000;font-weight:bold">=</span>pypi_mirror
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:   File <span style="color:#d14">&#34;c:\users\lzjun\appdata\local\programs\python\python37-32\lib\site-packages\pipenv\core.py&#34;</span>, line 935, in do_create_virtualenv
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>:       <span style="color:#008080">extra</span><span style="color:#000;font-weight:bold">=</span>crayons.blue<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;{0}&#34;</span>.format<span style="color:#000;font-weight:bold">(</span>c.err<span style="color:#000;font-weight:bold">))</span>,
+<span style="color:#000;font-weight:bold">[</span>pipenv.exceptions.VirtualenvCreationException<span style="color:#000;font-weight:bold">]</span>: Fatal Python error: initfsencoding: unable to load the file system codec
+Traceback <span style="color:#000;font-weight:bold">(</span>most recent call last<span style="color:#000;font-weight:bold">)</span>:
+  File <span style="color:#d14">&#34;C:\Users\lzjun\.virtualenvs\weihub-flask-j3rUnHkH\lib\encodings\__init__.py&#34;</span>, line 31, in &lt;module&gt;
+  File <span style="color:#d14">&#34;C:\Users\lzjun\.virtualenvs\weihub-flask-j3rUnHkH\lib\codecs.py&#34;</span>, line 481
     except UnicodeDecodeError, exc:
                              ^
 SyntaxError: invalid syntax
-</code></pre>
-
-<p>很有可能就是你的系统中安装多有个版本的Python，可以模糊搜索 Python*.dll ，把那些不相关的全部删除，重新试试。</p>
-
+</code></pre></td></tr></table>
+</div>
+</div><p>很有可能就是你的系统中安装多有个版本的Python，可以模糊搜索 Python*.dll ，把那些不相关的全部删除，重新试试。</p>
 <h4 id="11-如何提高下载速度">11 如何提高下载速度</h4>
-
 <p>修改 Pipfile 文件中的URL，将下载源指定为阿里云或者豆瓣等国内更快的源</p>
-
-<pre><code>[[source]]
-name = &quot;pypi&quot;
-url = &quot;https://mirrors.aliyun.com/pypi/simple&quot;
-# 或者使用豆瓣源
-url = &quot;http://pypi.douban.com/simple&quot;
-verify_ssl = true
-</code></pre>
-
-<h4 id="12-pipenv-有什么缺点">12 Pipenv 有什么缺点</h4>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">[[</span>source<span style="color:#000;font-weight:bold">]]</span>
+<span style="color:#008080">name</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;pypi&#34;</span>
+<span style="color:#008080">url</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;https://mirrors.aliyun.com/pypi/simple&#34;</span>
+<span style="color:#998;font-style:italic"># 或者使用豆瓣源</span>
+<span style="color:#008080">url</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;http://pypi.douban.com/simple&#34;</span>
+<span style="color:#008080">verify_ssl</span> <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">true</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="12-pipenv-有什么缺点">12 Pipenv 有什么缺点</h4>
 <p>慢，有时候感觉特别慢，就一直卡在 Locking 过程中，你在安装的时候跳过 lock 环节，使用命令</p>
-
-<pre><code>pipenv install --skip-lock
-</code></pre>
-
-<p>更多操作指南，请参考官方文档： <a href="https://pipenv.readthedocs.io/en/latest/basics/">https://pipenv.readthedocs.io/en/latest/basics/</a></p>
-
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">pipenv install --skip-lock
+</code></pre></td></tr></table>
+</div>
+</div><p>更多操作指南，请参考官方文档： <a href="https://pipenv.readthedocs.io/en/latest/basics/">https://pipenv.readthedocs.io/en/latest/basics/</a></p>
 <h2 id="参考资料"><em>参考资料</em></h2>
-
 <p><a href="https://link.jianshu.com?t=http://kylepurdon.com/blog/using-continuum-analytics-conda-as-a-replacement-for-virtualenv-pyenv-and-more.html">Using Continuum Analytics Conda as a replacement for virtualenv, pyenv, and more？</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://conda.pydata.org/docs/_downloads/conda-pip-virtualenv-translator.html">conda vs. pip vs. virtualenv</a></p>
-
 <p><a href="https://link.jianshu.com?t=https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/">Create virtual environments for python with conda</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://conda.pydata.org/docs/py2or3.html">conda-documention</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://docs.jinkan.org/docs/flask/installation.html#installation">flask-virtualenv介绍</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://stackoverflow.com/questions/34971379/switching-between-anaconda-and-anaconda3">Switching between Anaconda and Anaconda3</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://www.tuicool.com/articles/vyyA7rB">用 conda 管理 Python 开发环境</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://www.nowamagic.net/academy/detail/1330228">用virtualenv建立多个Python独立开发环境</a></p>
-
 <p><a href="https://link.jianshu.com?t=http://www.jb51.net/article/51651.htm">Python科学计算环境推荐——Anaconda</a></p>
+<p>&mdash;EOF&mdash;</p>
+<p><em>EOF</em>是一个计算机术语，为<code>End Of File</code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。</p>
+<p>本人公众号<code>火山灰</code>，亦可搜<code>time_ash_past</code>。</p>
+<p><img src="C:/Users/time/Documents/MEGA/%E4%B8%AA%E4%BA%BA%E6%96%87%E7%AB%A0/myBlog/myhugo_blog/blog/content/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt=""></p>
+        </div>
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://sanbeichahegongheguo.github.io/">总舵主</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://sanbeichahegongheguo.github.io/Anaconda%E5%85%A5%E9%97%A8/">https://sanbeichahegongheguo.github.io/Anaconda%E5%85%A5%E9%97%A8/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
 
-<p>&mdash; EOF &mdash;</p>
 
-<p>*EOF*是一个计算机术语，为End Of File的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。</p>
+        
 
-<p>本人公众号[火山灰]，[time_ash_past]</p>
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/%E8%BD%AC%E8%BD%BD-%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/">转载 | 自然语言处理入门</a></li>
+        
+        <li><a href="/Git%E5%85%A5%E9%97%A8/">Git入门</a></li>
+        
+        <li><a href="/Zotero%E5%85%A5%E9%97%A8/">Zotero入门</a></li>
+        
+        <li><a href="/%E8%BD%AC%E8%BD%BD-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8/">转载 | 版本控制系统入门</a></li>
+        
+        <li><a href="/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/">聊一个算法入门题</a></li>
+        
+    </ul>
+</div>
 
-<p><img src="../../公众号.jpg" alt="" /></p>
+    </article>
+      
 
-  </main>
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://sanbeichahegongheguo.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://sanbeichahegongheguo.github.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
     
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/" title="聊一个算法入门题">聊一个算法入门题</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E6%88%91%E6%9C%89%E4%B8%AA%E6%A2%A6%E4%B8%8D%E6%83%B3%E9%86%92/" title="转载 | 我有个梦，不想醒">转载 | 我有个梦，不想醒</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E9%A9%AC%E6%81%A9%E5%85%A8%E9%9B%86%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%AC%AC%E4%BA%8C%E7%AF%87%E8%AF%84%E6%99%AE%E9%B2%81%E5%A3%AB%E6%9C%80%E8%BF%91%E7%9A%84%E4%B9%A6%E6%8A%A5%E6%A3%80%E6%9F%A5%E4%BB%A4%E7%9A%84%E5%8E%9F%E6%96%87/" title="《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文">《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-GitHub%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" title="如何用hugo&#43;GitHub建立自己的博客">如何用hugo&#43;GitHub建立自己的博客</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E8%80%85%E5%AF%B9%E5%AE%B6%E5%BA%AD%E5%92%8C%E4%B8%A4%E6%80%A7%E5%85%B3%E7%B3%BB%E5%BA%94%E8%AF%A5%E6%8C%81%E4%BB%80%E4%B9%88%E6%80%81%E5%BA%A6/" title="转载 | 共产主义者对家庭和两性关系应该持什么态度">转载 | 共产主义者对家庭和两性关系应该持什么态度</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/" title="正常人学编程 前言">正常人学编程 前言</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-Linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-Shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/" title="转载 | Linux 系统和 Shell 编程问题集">转载 | Linux 系统和 Shell 编程问题集</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/" title="section01-环境配置-01">section01-环境配置-01</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02-%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/" title="section01-环境配置-02-语言环境">section01-环境配置-02-语言环境</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/section02-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%B7%E6%BA%90%E4%B8%8E%E7%BB%84%E6%88%90/" title="section02-计算机起源与组成">section02-计算机起源与组成</a>
+    </li>
+    
+</ul>
+    </section>
 
-  <div id="vcomments"></div>
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-  <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E5%88%AB%E4%BA%BA%E7%9A%84%E6%95%85%E4%BA%8B/">别人的故事 (1)</a></li>
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制 (1)</a></li>
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E7%BB%8F%E5%85%B8%E8%A7%A3%E8%AF%BB/">经典解读 (2)</a></li>
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%BE%E7%A8%8B/">编程课程 (1)</a></li>
+    
+</ul>
+    </section>
 
-  <script type="text/javascript">
-    new Valine({
-        el: '#vcomments' ,
-        appId: '',
-        appKey: '',
-        notify: 'false',
-        verify: 'false',
-        avatar:'mm',
-        placeholder: '说点什么吧...',
-        visitor: 'true'
-    });
-  </script>
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/Anaconda/">Anaconda</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/GitHub/">GitHub</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/NLP/">NLP</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/Vim/">Vim</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/Windows/">Windows</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/git/">git</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/python/">python</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/zotero/">zotero</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E4%B8%83%E5%8D%83%E4%BA%BA%E5%A4%A7%E4%BC%9A/">七千人大会</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/">入门</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/">杂评</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%A2%A6%E6%83%B3/">梦想</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/">毛泽东</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%BC%96%E7%A8%8B/">编程</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%BF%BB%E8%AF%91%E7%94%9F%E7%89%A9%E5%AD%A6/">翻译，生物学</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">论文写作</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/">软件管理</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/">马克思主义</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%8E%9F%E6%96%87/">马克思原文</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://www.aliyun.com/minisite/goods?userCode=jdg9oj97&amp;share_source=copy_link" title="【2019双12】ALL IN CLoud 低至1折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://cloud.tencent.com/act/cps/redirect?redirect=1048&amp;cps_key=14ff722692ac784fa8c3301c8c28d924&amp;from=console" title="助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！" target="_blank" style="color:red">
+                
+                    <img src="https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
 
 
-          <footer role="contentinfo">
-  <div>
-    <label for="themer">
-      dark theme: <input type="checkbox" id="themer" class="vh">
-      <span aria-hidden="true"></span>
-    </label>
-  </div>
-  
-    Made with <a href="https://gohugo.io/">Hugo</a>. Themed by <a href="https://github.com/zwbetz-gh/cupper-hugo-theme">Cupper</a>. Deployed to <a href="https://www.netlify.com/">Netlify</a>.
-  
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.flysnow.org/" title="飞雪无情的博客">飞雪无情的博客</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://www.ruanyifeng.com/blog/" title="阮一峰的博客">阮一峰的博客</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://corpython.github.io/" title="code show 的博客">code show 的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://sanbeichahegongheguo.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
 </footer>
 
-        </div>
-      </div>
-    </div>
-    <script src="https://sanbeichahegongheguo.github.io/js/prism.js"></script>
-<script src="https://sanbeichahegongheguo.github.io/js/dom-scripts.js"></script>
 
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
 
-    
-  
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
-  </body>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-158754845-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+
+</body>
+
 </html>

@@ -1,0 +1,1072 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>转载 | 版本控制系统入门 | 火山灰</title>
+    <meta property="og:title" content="转载 | 版本控制系统入门 - 火山灰">
+    <meta property="og:type" content="article">
+        
+        
+    <meta name="Keywords" content=" ">
+    <meta name="description" content="转载 | 版本控制系统入门">
+        
+    <meta name="author" content="总舵主">
+    <meta property="og:url" content="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href='/css/normalize.css'>
+    <link rel="stylesheet" href='/css/style.css'>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-4031353640611810",
+        enable_page_level_ads: true
+    });
+    </script>
+    
+
+
+    
+    
+        <link rel="stylesheet" href='/css/douban.css'>
+    
+        <link rel="stylesheet" href='/css/other.css'>
+    
+</head>
+
+
+<body>
+    <header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="https://sanbeichahegongheguo.github.io/">
+                        火山灰
+                    </a>
+                
+                <p class="description">~Stay hungry，Stay foolish~</p>
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="https://sanbeichahegongheguo.github.io/">首页</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/tags/" title="标签">标签</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/categories/" title="分类">分类</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/archives/" title="归档">归档</a>
+                    
+                    <a  href="https://sanbeichahegongheguo.github.io/about/" title="关于我">关于我</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div id="body">
+        <div class="container">
+            <div class="col-group">
+
+                <div class="col-8" id="main">
+                    
+<div class="res-cons">
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 3px 2px 1px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-前言">1. 前言</a></li>
+    <li><a href="#2-什么是版本控制系统vcs">2. 什么是版本控制系统（VCS）？</a></li>
+    <li><a href="#3-一些术语">3. 一些术语</a>
+      <ul>
+        <li><a href="#31-基本概念">3.1. 基本概念</a></li>
+        <li><a href="#32-基本操作">3.2. 基本操作</a></li>
+        <li><a href="#33-高级操作">3.3. 高级操作</a>
+          <ul>
+            <li><a href="#331-check-in">3.3.1. Check in</a></li>
+            <li><a href="#332-check-out和编辑">3.3.2. Check out和编辑</a></li>
+            <li><a href="#333-diff">3.3.3. Diff</a></li>
+            <li><a href="#334-branch">3.3.4. Branch</a></li>
+            <li><a href="#335-merge">3.3.5. Merge</a></li>
+            <li><a href="#336-conflict">3.3.6. Conflict</a></li>
+            <li><a href="#337-tag">3.3.7. Tag</a></li>
+          </ul>
+        </li>
+        <li><a href="#34-一个实际的例子管理windows源码">3.4. 一个实际的例子：管理Windows源码</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-结束语">4. 结束语</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#so-why-do-we-need-a-version-control-system-vcs">So Why Do We Need A Version Control System (VCS)?</a></li>
+    <li><a href="#learn-the-lingo">Learn The Lingo</a></li>
+    <li><a href="#visual-examples">Visual Examples</a></li>
+    <li><a href="#checkins">Checkins</a></li>
+    <li><a href="#checkouts-and-editing">Checkouts And Editing</a></li>
+    <li><a href="#diffs">Diffs</a></li>
+    <li><a href="#branching">Branching</a></li>
+    <li><a href="#merging">Merging</a></li>
+    <li><a href="#conflicts">Conflicts</a></li>
+    <li><a href="#tagging">Tagging</a></li>
+    <li><a href="#real-life-example-managing-windows-source-code">Real-Life Example: Managing Windows Source Code</a></li>
+    <li><a href="#key-takeaways">Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+
+    <article class="post">
+        <header>
+            <h1 class="post-title">转载 | 版本控制系统入门</h1>
+        </header>
+        <date class="post-meta meta-date">发布于:
+            1年1月1日
+        </date>
+        
+        <div class="post-meta">
+            <span>|</span>
+            
+            <span class="meta-category"><a href='https://sanbeichahegongheguo.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6'>版本控制</a></span>
+            
+        </div>
+        
+        
+        <div class="post-meta">
+            <span id="busuanzi_container_page_pv">|&nbsp<span id="busuanzi_value_page_pv"></span><span>次阅读</span></span>
+        </div>
+        
+        <div class="post-meta meta-tags">
+            
+            <ul class="clearfix">
+                
+                <li><a href='https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6'>版本控制</a></li>
+                
+                <li><a href='https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8'>入门</a></li>
+                
+                <li><a href='https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD'>转载</a></li>
+                
+            </ul>
+            
+        </div>
+        
+        <div class="post-content">
+            <p>本文转载自阮一峰的博客的一篇文章：<a href="http://www.ruanyifeng.com/blog/2008/12/a_visual_guide_to_version_control.html">版本控制入门插图教程</a>。</p>
+<hr>
+<p>我知道版本控制系统（VCS）很有用。</p>
+<p>但是，我平时只是业余写一些小程序，感觉特地装一个VCS太麻烦，所以一直没有用。最近，因为想认真做一个中等规模的项目，所以决心好好学一下怎么用。</p>
+<p>下面就是我翻译的一篇入门教程，主要解释了VCS的一些主要概念。</p>
+<p>作者：Kalid Azad</p>
+<p>译者：阮一峰</p>
+<p>原文网址：http://betterexplained.com/articles/a-visual-guide-to-version-control/</p>
+<!-- raw HTML omitted -->
+<ul>
+<li><a href="#1-%E5%89%8D%E8%A8%80">1. 前言</a></li>
+<li><a href="#2-%E4%BB%80%E4%B9%88%E6%98%AF%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9Fvcs">2. 什么是版本控制系统（VCS）？</a></li>
+<li><a href="#3-%E4%B8%80%E4%BA%9B%E6%9C%AF%E8%AF%AD">3. 一些术语</a></li>
+<li><a href="#31-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5">3.1. 基本概念</a></li>
+<li><a href="#32-%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C">3.2. 基本操作</a></li>
+<li><a href="#33-%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C">3.3. 高级操作</a></li>
+<li><a href="#331-check-in">3.3.1. Check in</a></li>
+<li><a href="#332-check-out%E5%92%8C%E7%BC%96%E8%BE%91">3.3.2. Check out和编辑</a></li>
+<li><a href="#333-diff">3.3.3. Diff</a></li>
+<li><a href="#334-branch">3.3.4. Branch</a></li>
+<li><a href="#335-merge">3.3.5. Merge</a></li>
+<li><a href="#336-conflict">3.3.6. Conflict</a></li>
+<li><a href="#337-tag">3.3.7. Tag</a></li>
+<li><a href="#34-%E4%B8%80%E4%B8%AA%E5%AE%9E%E9%99%85%E7%9A%84%E4%BE%8B%E5%AD%90%E7%AE%A1%E7%90%86windows%E6%BA%90%E7%A0%81">3.4. 一个实际的例子：管理Windows源码</a></li>
+<li><a href="#4-%E7%BB%93%E6%9D%9F%E8%AF%AD">4. 结束语</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="1-前言">1. 前言</h2>
+<p><img src="./images/version_control_intro_small.png" alt=""></p>
+<p>版本控制（Version Control）的作用是追踪文件的变化。为什么需要版本控制？简单说，就是当你出错了，可以很容易地回到没出错时的状态。</p>
+<p>你可能已经在不知不觉中，布置了自己的版本控制系统。比如，创建了类似下面这样的文件名：</p>
+<blockquote>
+<ul>
+<li>
+<p>KalidAzadResumeOct2006.doc</p>
+</li>
+<li>
+<p>KalidAzadResumeMar2007.doc</p>
+</li>
+<li>
+<p>instacalc-logo3.png</p>
+</li>
+<li>
+<p>instacalc-logo4.png</p>
+</li>
+<li>
+<p>logo-old.png</p>
+</li>
+</ul>
+</blockquote>
+<p>这就是软件中为什么有&quot;Save As&quot;命令的原因。它使得你可以在不破坏源文件的基础上，得到一个类似的新文件。文件的多版本保存是一个常见问题，通常的解决办法是这样的：</p>
+<blockquote>
+<ul>
+<li>
+<p>做一个文件备份（比如Document.old.txt）。</p>
+</li>
+<li>
+<p>在文件名中加入版本号或日期（比如Document_V1.txt，DocumentMarch2007.txt）。</p>
+</li>
+<li>
+<p>在多人编辑的环境下，共享一个文件目录，并且要求每个人编辑完以后，在文件上做出标识。</p>
+</li>
+</ul>
+</blockquote>
+<h2 id="2-什么是版本控制系统vcs">2. 什么是版本控制系统（VCS）？</h2>
+<p>通过文件名识别版本，对于小型项目或者单个文件也许可行。但是对于软件开发来说，是不适用的。</p>
+<p>你能想像吗，要是Windows操作系统的源文件，是在一个叫做&quot;Windows2007-Latest-UPDATED!!&ldquo;的共享目录中开发的，并且每个程序员都可以编辑，都有一个自己的子目录，那会发生什么情况？那么，Windows就根本不可能被制造出来。</p>
+<p>大型的、频繁修改的、多人编写的软件项目，需要一个版本控制系统（简称VCS，行话叫做&quot;文件数据库&rdquo;），追踪文件的变化，避免出现混乱。一个好的VCS应该做到以下几点：</p>
+<blockquote>
+<ul>
+<li>
+<p>备份（Backup）和恢复（Restore）。文件的每一次编辑都得到保存，可以恢复到任意一个日期。需要2007年2月23日的版本？没问题。</p>
+</li>
+<li>
+<p>同步（Synchronization）。让不同用户随时都能得到文件的最新版本。</p>
+</li>
+<li>
+<p>短期撤销（Short-term undo）。文件被你搞乱了，怎么办？那就撤销编辑，回到最近一次的无差错版本。</p>
+</li>
+<li>
+<p>长期撤销（Long-term undo）。有时候，你会过了很久才发现出错了。如果你想撤销一年前的一次编辑，怎么办？那就去取回一年之前的那个版本。</p>
+</li>
+<li>
+<p>追踪修改（Track Changes）。文件的每一次编辑，你都可以写下注解，解释编辑的原因。（这些信息储存在VCS中，而不是文件中。）这样就很容易看出，长期中文件变化的脉络和原因。</p>
+</li>
+<li>
+<p>追踪权限（Track Ownership）。VCS会记录每一次提交新版本的用户名。这样就容易追踪责任。</p>
+</li>
+<li>
+<p>试验功能（Sandboxing）。当你对文件做出重大变更时，你可以把编辑内容暂时性地保存在一个单独的区域，不断进行测试和除错。等到确认正确以后，再加入主版本。</p>
+</li>
+<li>
+<p>分支（Branching）和合并（merging）。分支功能可以看成是一个更大的测试版本。你将整个的代码做一份拷贝，然后再起一个独立的名字，追踪其变化，与原版本脱离关系，这就是分支。以后，你还可以将分支版本再并入源版本，这就是合并。</p>
+</li>
+</ul>
+</blockquote>
+<p>虽然共享文件夹操作起来更快速和简单，但是它做不到上面这些功能。</p>
+<h2 id="3-一些术语">3. 一些术语</h2>
+<p>大多数VCS都有下面一些共同的概念，不过名字可能会稍有不同。</p>
+<h3 id="31-基本概念">3.1. 基本概念</h3>
+<blockquote>
+<ul>
+<li>
+<p>Repository (repo): 储存文件的数据库。</p>
+</li>
+<li>
+<p>Server: 储存repo的计算机。</p>
+</li>
+<li>
+<p>Client: 连接repo的计算机。</p>
+</li>
+<li>
+<p>Working Set/Working Copy: 当你编辑文件时，编辑对象所在的本地文件目录。</p>
+</li>
+<li>
+<p>Trunk/Main: repo中储存代码文件的主位置。你可以把代码想像成一棵家族树，&ldquo;trunk&quot;就是主线的那条树干。</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="32-基本操作">3.2. 基本操作</h3>
+<blockquote>
+<ul>
+<li>
+<p>Add: 将一个文件第一次加入repo，也就是开始用VCS追踪这个文件。</p>
+</li>
+<li>
+<p>Revision: 文件的版本编号（即v1, v2, v3等等）。</p>
+</li>
+<li>
+<p>Head: repo中保存的文件最新版本。</p>
+</li>
+<li>
+<p>Check out：从repo中下载一个文件。</p>
+</li>
+<li>
+<p>Check in: 上传文件进入repo（如果文件发生了变化）。这个文件将得到一个新的版本编号，用户将可以&quot;check out&quot;这个文件。</p>
+</li>
+<li>
+<p>Checkin Message: 描述所做修改的短说明。</p>
+</li>
+<li>
+<p>Changelog/History: 一个记录文件自从创建开始所有变动的清单。</p>
+</li>
+<li>
+<p>Update/Sync: 将你本地的文件同repo中最新版本进行同步的过程。这将使得本地文件始终能够跟上最新的变动。</p>
+</li>
+<li>
+<p>Revert: 放弃对文件所做的编辑，从repo中重新获得未编辑前的版本。</p>
+</li>
+</ul>
+</blockquote>
+<h3 id="33-高级操作">3.3. 高级操作</h3>
+<blockquote>
+<ul>
+<li>
+<p>Branch: 在repo中对一个文件或文件目录，创建一个独立的拷贝。Branch在这里既是动词（branch the code），又是名词（Which branch is it in?）。</p>
+</li>
+<li>
+<p>Diff/Change/Delta: 找出两个文件之间的差别。对于比较不同版本之间的变动很有用。</p>
+</li>
+<li>
+<p>Merge (or patch): 将一个文件上的改动，应用于另一个文件，使得两者保持相同。比如，你可以将一个branch中的功能merge到另一个branch中。</p>
+</li>
+<li>
+<p>Conflict: 当你check in的时候，你所做的变动可能与其他用户发生冲突。（这时双方的编辑都不会生效。）</p>
+</li>
+<li>
+<p>Resolve: 修改互相冲突的变动，check in正确的版本。</p>
+</li>
+<li>
+<p>Locking: 取得一个文件的&quot;控制权&rdquo;，使得在你解锁之前，其他人不能编辑这个文件。有些VCS用这个功能避免conflict。</p>
+</li>
+<li>
+<p>Breaking the lock: 强制解锁一个文件，使得你可以对其进行编辑。比如，某人lock了一个文件，但是他又去度假了。</p>
+</li>
+<li>
+<p>Check out for edit: Check out到一个文件&quot;可编辑&quot;的版本。有些VCS默认允许编辑，另一些要求明确发出命令后，才提供可编辑的版本。</p>
+</li>
+</ul>
+</blockquote>
+<p>一次典型的使用过程是这样的：</p>
+<p>爱丽丝add一个文件（list.txt）进入repo。然后，她又把这个文件check out，做了一次编辑（在文件中加入milk这个单词）。接着，她将修改后的文件check in，并附有一条checking message（&ldquo;加入了新的条目&rdquo;）。第二天早上，鲍勃update了他本地的working set，看到了list.txt的最新修订版，其中包含了单词&quot;milk&rdquo;。如果他使用changelog或diff，都可以发现前一天爱丽丝加入&quot;milk&quot;这个词。</p>
+<p>下面，我们用一些例子，来讲解VCS的使用。</p>
+<h4 id="331-check-in">3.3.1. Check in</h4>
+<p>最简单的情况是，check in一个文件（list.txt），然后经常修改它。</p>
+<p><img src="./images/basic_checkin.png" alt=""></p>
+<p>在subversion系统中的命令是：</p>
+<p>svn add list.txt
+(modify the file)
+svn ci list.txt -m &ldquo;Changed the list&rdquo;</p>
+<p>最后一个命令中的-m标识，表示check in时附带的message。</p>
+<h4 id="332-check-out和编辑">3.3.2. Check out和编辑</h4>
+<p>你不一定总是Check in文件，有时候你需要check out，进行编辑，然后再check in。这个过程可以用下图表示：</p>
+<p><img src="./images/checkout_edit.png" alt=""></p>
+<p>如果你对自己的编辑不满意，想要从头开始，你可以revert到上一个版本。当你check out的时候，默认情况下，你总是会得到最新版本。如果你想得到以前的版本，你可以在命令中指定版本号。在Subversion中，运行下面的命令：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn co list.txt <span style="color:#000;font-weight:bold">(</span>get latest version<span style="color:#000;font-weight:bold">)</span>
+...edit file...
+svn revert list.txt <span style="color:#000;font-weight:bold">(</span>throw away changes<span style="color:#000;font-weight:bold">)</span>
+
+svn co -r2 list.txt <span style="color:#000;font-weight:bold">(</span>check out particular version<span style="color:#000;font-weight:bold">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="333-diff">3.3.3. Diff</h4>
+<p>Diff就是你编辑时所做的变动。你可以想象一下，单独将变动部分保存下来，然后将它们应用到一个文件上：</p>
+<p><img src="./images/basic_diffs.png" alt=""></p>
+<p>比如，从r1版到r2版，我们加入eggs（+Eggs）。你可以将这个过程想象成，单独将图中红色的部分保存下来，然后将它应用到r1上，就可以得到r2。</p>
+<p>从r2版到r3版，我们加入了Juice（+Juice）。从r3版到r4版，我们删去了Juice加入了Soup（-Juice, +Soup）。</p>
+<p>大多数版本控制系统，只保存diff，而不是文件的完整版本。这样可以节省磁盘空间。你做了4次修改，不意味着系统保留了4份拷贝。实际上，系统内只有1份拷贝和4个diff。在SVN中，我们用下面的命令diff一个文件的两个版本：</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn diff -r3:4 list.txt
+</code></pre></td></tr></table>
+</div>
+</div><h4 id="334-branch">3.3.4. Branch</h4>
+<p>Branch可以将源文件做一份拷贝，保存在VCS的另一个位置，然后我们对拷贝进行修改，不会影响到源文件。</p>
+<p><img src="./images/first_branch.png" alt=""></p>
+<p>比如，上图中我们创建了一个branch，在其中加入了Rice，而在trunk上加入的是Bread。有的VCS在创建Branch时，可能会修改版本号。</p>
+<p>在Subversion中，创建branch的命令很简单，只要从一个目录拷贝到另一个目录就可以了。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn copy http://path/to/trunk http://path/to/branch
+</code></pre></td></tr></table>
+</div>
+</div><p>所以，branch并不难理解，你只要想像将代码拷贝到不同目录就行了。它的好处在于，不管你做错了什么，你总可以回到一个安全的版本。</p>
+<h4 id="335-merge">3.3.5. Merge</h4>
+<p>如果你要将一个branch中的变动，并入另一个branch，这可不太简单。</p>
+<p>比如，我们要将Rice这个词从一个branch，并入主线中的文件。我们应该怎么做？Diff一下r6和r7，然后再并入主线？</p>
+<p>错了。我们只需要找到branch所做的变动就可以了。也就是说，我们只要diff一下r5和r6，然后再应用到trunk上就可以了。</p>
+<p><img src="./images/merging.png" alt=""></p>
+<p>如果我们diff了r6和r7，我们就会漏掉&quot;Bread&quot;这个已经在主干中的词。这是很微妙的一个地方，branch中的变动在于Rice这个词（+Rice），只要将这个词加入主干就可以了。主干文件中也许还有其他变化，不过这不要紧，我们所要的只是插入Rice这个特性。</p>
+<p>在Subversion中，merge命令与diff很类似。在一个主干中，运行下面的命令：</p>
+<p>svn merge -r5:6 http://path/to/branch</p>
+<p>这个命令diff了r5和r6，然后将其加入当前位置的文件中。不幸的是，Subversion没有提供一种容易的途径，追踪merge中到底有什么变动。所以如果你不小心的话，你可能将同样的变动应用两次。SVN已经计划提供这个功能，但是目前的建议还是，保留一份changelog message，提醒你r5-r6已经并入了主干。</p>
+<h4 id="336-conflict">3.3.6. Conflict</h4>
+<p>Conflict往往来自不同用户，同时对同一个内容做出了不同的修改。Joe想删除eggs，加入cheese（-eggs, +cheese），Sue想删除eggs，加入hot dog（-eggs, +hot dog）。</p>
+<p><img src="./images/vcs_conflict.png" alt=""></p>
+<p>从某个角度看，这有点像一场比赛：如果Joe首先check in，那么他的编辑将写入文件。（Sue的编辑将被拒绝。）</p>
+<p>如果他们同时提交了这种互相冲突的变动，VCS将报告一个conflict，不允许check in。由你来决定，是check in一个更新的版本，还是就地解决这个冲突。下面是一些可能的办法：</p>
+<blockquote>
+<ul>
+<li>
+<p>重做一遍编辑。首先，将文件Sync到最新的版本（r4），这时cheese已经在文件中了。你再重做一遍剪辑，加上hot dog。</p>
+</li>
+<li>
+<p>覆盖掉他人的修改。将文件check out到最新的版本（r4），用你的版本将这个版本覆盖，再check in。也就是说，你等于删掉了cheese，替换为hot dog。</p>
+</li>
+</ul>
+</blockquote>
+<p>Conflict不是很常见，但是处理起来很麻烦。通常，我会选择上面第一种处理方法。</p>
+<h4 id="337-tag">3.3.7. Tag</h4>
+<p>大概不会有人想到VCS早就符合Web 2.0的潮流吧？许多VCS允许你对任意编辑做一个标签（label），方便以后的引用。这样一来，你就可以用&quot;Release 1.0&rdquo;，指代内部的版本号码。</p>
+<p><img src="./images/tagging.png" alt=""></p>
+<p>在Subversion中，tag其实是不再让你编辑的branche，它们只是方便为了以后的使用，让你能够明确看到1.0版中到底包含了哪些东西。因此它们就停顿在那里，不再变动了。</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">(</span>in trunk<span style="color:#000;font-weight:bold">)</span>
+svn copy http://path/to/revision http://path/to/tag
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="34-一个实际的例子管理windows源码">3.4. 一个实际的例子：管理Windows源码</h3>
+<p>我们前面说过，微软公司不用共享文件夹管理代码，那么他们怎么管理呢？</p>
+<blockquote>
+<ul>
+<li>
+<p>首先有一条main line，专门保存稳定版本的Windows。</p>
+</li>
+<li>
+<p>然后，每个开发小组（网络、用户界面、媒体播放器等等）都有各自的branch，来添加新功能。这些新功能还在开发当中，并不稳定。</p>
+</li>
+</ul>
+</blockquote>
+<p>你在你的branch中，开发了一个新功能。然后，你用&quot;Reverse Integrate (RI)&quot;，将它并入主版本。接着，你再用&quot;Forward Integrate&rdquo;，你再去得到最新的主版本，将它并入你的branch。</p>
+<p><img src="./images/windows.png" alt=""></p>
+<p>假设老版本是Media Player 10和IE 6。Media Player开发小组，在他们的branch中制作了第11版，然后他们用一个10 - 11的补丁，将第11版加入老版本中。这是一个reverse integration，从branch到trunk。IE开发小组也是同样的步骤。</p>
+<p>接着，Media Player开发小组从其他小组（比如IE小组）得到最新的代码。在这个例子中，Media Player从trunk得到最新的补丁，运用到他们的branch中，这叫做forward integration。</p>
+<p>reverse integration和forward integration，分别简称RI和FI。这样的安排让变动主要在branch中发生，而使得主干保持相对不受影响。</p>
+<p>在微软实际运作中，有很多层的branch和sub-branch，还有许多质量控制标准，确定什么时候才可以进行RI。这里只是希望帮助你建立一个想法，那就是branch有助于管理复杂的项目。现在，你应该明白了世界上最大的软件项目之一，是怎么进行组织的。</p>
+<h2 id="4-结束语">4. 结束语</h2>
+<p>如果你以前没有用过VCS，我建议你使用它。因为它是一种很好的工具，即使你不打算写一个操作系统，单单就是为了备份，也值得用它。</p>
+<p>网上有许多VCS软件可供选择，并且都有详细的教程或手册，比如SVN、CVS、RCS、Git、Perforce等等。Eric Sink写过一个详细的version control guide可供参考。</p>
+<hr>
+<p>到这里阮一峰的翻译文章就结束了。我再附上英文原文。</p>
+<hr>
+<h1 id="a-visual-guide-to-version-control">A Visual Guide to Version Control</h1>
+<p><a href="https://betterexplained.com/">Home</a> &gt; <a href="https://betterexplained.com/articles/category/guides/">Guides</a>, <a href="https://betterexplained.com/articles/category/programming/">Programming</a> &gt;</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/version_control_intro_small.png" alt="img"></p>
+<p>Version Control (aka Revision Control aka Source Control) lets you track your files over time. Why do you care? So when you mess up you can easily get back to a previous working version.</p>
+<p><strong>You’ve probably cooked up your own</strong> version control system without realizing it had such a geeky name. Got any files like this? (Not these exact ones I hope).</p>
+<ul>
+<li>KalidAzadResumeOct2014.doc</li>
+<li>KalidAzadResumeMar2015.doc</li>
+<li>instacalc-logo3.png</li>
+<li>instacalc-logo4.png</li>
+<li>logo-old.png</li>
+</ul>
+<p><strong>It’s why we use “Save As”.</strong> You want the new file without obliterating the old one. It’s a common problem, and solutions are usually like this:</p>
+<ul>
+<li>Make a <strong>single backup copy</strong> (Document.old.txt).</li>
+<li>If we’re clever, we add a <strong>version number or date</strong>: Document_V1.txt, DocumentMarch2015.txt</li>
+<li>We may even use a <strong>shared folder</strong> so other people can see and edit files without sending them over email. Hopefully they relabel the file after they save it.</li>
+</ul>
+<h2 id="so-why-do-we-need-a-version-control-system-vcs">So Why Do We Need A Version Control System (VCS)?</h2>
+<p>Our shared folder/naming system is fine for class projects or one-time papers. But software projects? Not a chance.</p>
+<p>Do you think the Windows source code sits in a shared folder like “Windows2007-Latest-UPDATED!!”, for anyone to edit? That every programmer just works in a different subfolder? No way.</p>
+<p>Large, fast-changing projects with many authors need a Version Control System (geekspeak for “file database”) to track changes and avoid general chaos. A good VCS does the following:</p>
+<ul>
+<li><strong>Backup and Restore.</strong> Files are saved as they are edited, and you can jump to any moment in time. Need that file as it was on Feb 23, 2007? No problem.</li>
+<li><strong>Synchronization.</strong> Lets people share files and stay up-to-date with the latest version.</li>
+<li><strong>Short-term undo.</strong> Monkeying with a file and messed it up? (That’s just like you, isn’t it?). Throw away your changes and go back to the “last known good” version in the database.</li>
+<li><strong>Long-term undo.</strong> Sometimes we mess up bad. Suppose you made a change a year ago, and it had a bug. Jump back to the old version, and see what change was made that day.</li>
+<li><strong>Track Changes</strong>. As files are updated, you can leave messages explaining why the change happened (stored in the VCS, not the file). This makes it easy to see how a file is evolving over time, and why.</li>
+<li><strong>Track Ownership.</strong> A VCS tags every change with the name of the person who made it. Helpful for <del><a href="http://www.unwords.com/unword/blamestorming.html">blamestorming</a></del> giving credit.</li>
+<li><strong>Sandboxing</strong>, or insurance against yourself. Making a big change? You can make temporary changes in an isolated area, test and work out the kinks before “checking in” your changes.</li>
+<li><strong>Branching and merging</strong>. A larger sandbox. You can <strong>branch</strong> a copy of your code into a separate area and modify it in isolation (tracking changes separately). Later, you can <strong>merge</strong> your work back into the common area.</li>
+</ul>
+<p>Shared folders are quick and simple, but can’t beat these features.</p>
+<h2 id="learn-the-lingo">Learn The Lingo</h2>
+<p>Most version control systems involve the following concepts, though the labels may be different.</p>
+<p>Basic Setup</p>
+<ul>
+<li><strong>Repository (repo)</strong>: The database storing the files.</li>
+<li><strong>Server</strong>: The computer storing the repo.</li>
+<li><strong>Client</strong>: The computer connecting to the repo.</li>
+<li><strong>Working Set/Working Copy</strong>: Your local directory of files, where you make changes.</li>
+<li><strong>Trunk/Main</strong>: The primary location for code in the repo. Think of code as a family tree — the trunk is the main line.</li>
+</ul>
+<p>Basic Actions</p>
+<ul>
+<li><strong>Add</strong>: Put a file into the repo for the first time, i.e. begin tracking it with Version Control.</li>
+<li><strong>Revision</strong>: What version a file is on (v1, v2, v3, etc.).</li>
+<li><strong>Head</strong>: The latest revision in the repo.</li>
+<li><strong>Check out</strong>: Download a file from the repo.</li>
+<li><strong>Check in</strong>: Upload a file to the repository (if it has changed). The file gets a new revision number, and people can “check out” the latest one.</li>
+<li><strong>Checkin Message</strong>: A short message describing what was changed.</li>
+<li><strong>Changelog/History</strong>: A list of changes made to a file since it was created.</li>
+<li><strong>Update/Sync</strong>: Synchronize your files with the latest from the repository. This lets you grab the latest revisions of all files.</li>
+<li><strong>Revert</strong>: Throw away your local changes and reload the latest version from the repository.</li>
+</ul>
+<p>Advanced Actions</p>
+<ul>
+<li><strong>Branch</strong>: Create a separate copy of a file/folder for private use (bug fixing, testing, etc). Branch is both a verb (“branch the code”) and a noun (“Which branch is it in?”).</li>
+<li><strong>Diff/Change/Delta</strong>: Finding the differences between two files. Useful for seeing what changed between revisions.</li>
+<li><strong>Merge (or patch)</strong>: Apply the changes from one file to another, to bring it up-to-date. For example, you can merge features from one branch into another. (At Microsoft this was called <a href="https://blogs.msdn.com/larryosterman/archive/2005/02/01/364840.aspx">Reverse Integrate and Forward Integrate</a>)</li>
+<li><strong>Conflict</strong>: When pending changes to a file contradict each other (both changes cannot be applied).</li>
+<li><strong>Resolve</strong>: Fixing the changes that contradict each other and checking in the correct version.</li>
+<li><strong>Locking</strong>: Taking control of a file so nobody else can edit it until you unlock it. Some version control systems use this to avoid conflicts.</li>
+<li><strong>Breaking the lock</strong>: Forcibly unlocking a file so you can edit it. It may be needed if someone locks a file and goes on vacation (or “calls in sick” the day Halo 3 comes out).</li>
+<li><strong>Check out for edit</strong>: Checking out an “editable” version of a file. Some VCSes have editable files by default, others require an explicit command.</li>
+</ul>
+<p>And a typical scenario goes like this:</p>
+<p>Alice <strong>adds</strong> a file (<code>list.txt</code>) to the <strong>repository</strong>. She <strong>checks it out</strong>, makes a change (puts “milk” on the list), and checks it back in with a checkin message (“Added required item.”). The next morning, Bob <strong>updates</strong> his local working set and sees the latest revision of <code>list.txt</code>, which contains “milk”. He can browse the <strong>changelog</strong> or <strong>diff</strong> to see that Alice put “milk” the day before.</p>
+<h2 id="visual-examples">Visual Examples</h2>
+<p>This guide is purposefully high-level: most tutorials throw a bunch of text commands at you. Let’s cover the high-level concepts without getting stuck in the syntax (the <a href="http://svnbook.red-bean.com/">Subversion manual</a> is always there, don’t worry). Sometimes it’s nice to <strong>see what’s possible</strong>.</p>
+<h2 id="checkins">Checkins</h2>
+<p>The simplest scenario is checking in a file (<code>list.txt</code>) and modifying it over time.</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/basic_checkin.png" alt="version control checkin"></p>
+<p>Each time we check in a new version, we get a new revision (r1, r2, r3, etc.). In Subversion you’d do:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn add list.txt
+<span style="color:#000;font-weight:bold">(</span>modify the file<span style="color:#000;font-weight:bold">)</span>
+svn ci list.txt -m <span style="color:#d14">&#34;Changed the list&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The <code>-m</code> flag is the message to use for this checkin.</p>
+<h2 id="checkouts-and-editing">Checkouts And Editing</h2>
+<p>In reality, you might not keep checking in a file. You may have to <strong>check out, edit and check in</strong>. The cycle looks like this:</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/checkout_edit.png" alt="version control checkout"></p>
+<p>If you don’t like your changes and want to start over, you can <strong>revert</strong> to the previous version and start again (or stop). When checking out, you get the latest revision by default. If you want, you can specify a particular revision. In Subversion, run:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn co list.txt <span style="color:#000;font-weight:bold">(</span>get latest version<span style="color:#000;font-weight:bold">)</span>
+…edit file…
+svn revert list.txt <span style="color:#000;font-weight:bold">(</span>throw away changes<span style="color:#000;font-weight:bold">)</span>
+svn co -r2 list.txt <span style="color:#000;font-weight:bold">(</span>check out particular version<span style="color:#000;font-weight:bold">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="diffs">Diffs</h2>
+<p>The trunk has a history of <strong>changes</strong> as a file evolves. Diffs are the changes you made while editing: imagine you can “peel” them off and apply them to a file:</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/basic_diffs.png" alt="version control diff"></p>
+<p>For example, to go from r1 to r2, we add eggs (+Eggs). Imagine peeling off that red sticker and placing it on r1, to get r2.</p>
+<p>And to get from r2 to r3, we add Juice (+Juice). To get from r3 to r4, we remove Juice and add Soup (-Juice, +Soup).</p>
+<p>Most version control systems <strong>store diffs rather than full copies of the file</strong>. This saves disk space: 4 revisions of a file doesn’t mean we have 4 copies; we have 1 copy and 4 small diffs. Pretty nifty, eh? In SVN, we diff two revisions of a file like this:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn diff -r3:4 list.txt
+</code></pre></td></tr></table>
+</div>
+</div><p>Diffs help us notice changes (“How did you fix that bug again?”) and even apply them from one branch to another.</p>
+<p><strong>Bonus question:</strong> what’s the diff from r1 to r4?</p>
+<pre><code>+Eggs
++Soup
+</code></pre><p>Notice how “Juice” wasn’t even involved — the direct jump from r1 to r4 doesn’t need that change, since Juice was overridden by Soup.</p>
+<h2 id="branching">Branching</h2>
+<p>Branches let us copy code into a separate folder so we can monkey with it separately:</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/first_branch.png" alt="version control branch"></p>
+<p>For example, we can create a branch for new, experimental ideas for our list: crazy things like Rice or Eggo waffles. Depending on the version control system, creating a branch (copy) may change the revision number.</p>
+<p>Now that we have a branch, we can change our code and work out the kinks. (<em>“Hrm… waffles? I don’t know what the boss will think. Rice is a safe bet.”</em>). Since we’re in a separate branch, we can make changes and test in isolation, knowing our changes won’t hurt anyone. And our branch history is under version control.</p>
+<p>In Subversion, you create a branch simply by copying a directory to another.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn copy http://path/to/trunk http://path/to/branch
+</code></pre></td></tr></table>
+</div>
+</div><p>So branching isn’t too tough of a concept: <strong>Pretend you copied your code into a different directory.</strong> You’ve probably branched your code in school projects, making sure you have a “fail safe” version you can return to if things blow up.</p>
+<h2 id="merging">Merging</h2>
+<p>Branching sounds simple, right? Well, it’s not — figuring out how to merge changes from one branch to another can be tricky.</p>
+<p>Let’s say we want to get the “Rice” feature from our experimental branch into the mainline. How would we do this? Diff r6 and r7 and apply that to the main line?</p>
+<p><strong>Wrongo.</strong> We only want to apply the changes <strong>that happened in the branch!</strong>. That means we diff r5 and r6, and apply that to the main trunk:</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/merging.png" alt="version control merge"></p>
+<p>If we diffed r6 and r7, we would lose the “Bread” feature that was in main. This is a subtle point — imagine “peeling off” the changes from the experimental branch (+Rice) and adding that to main. Main may have had other changes, which is ok — we just want to insert the Rice feature.</p>
+<p>In Subversion, merging is very close to diffing. Inside the main trunk, run the command:</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">svn merge -r5:6 http://path/to/branch
+</code></pre></td></tr></table>
+</div>
+</div><p>This command diffs r5-r6 in the experimental branch and applies it to the current location. Unfortunately, Subversion doesn’t have an easy way to keep track of what merges have been applied, so if you’re not careful you may apply the same changes twice. It’s a planned feature, but the current advice is to keep a changelog message reminding you that you’ve already merged r5-r6 into main.</p>
+<h2 id="conflicts">Conflicts</h2>
+<p>Many times, the VCS can automatically merge changes to different parts of a file. <strong>Conflicts</strong> can arise when changes appear that don’t gel: Joe wants to remove eggs and replace it with cheese (-eggs, +cheese), and Sue wants to replace eggs with a hot dog (-eggs, +hot dog).</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/vcs_conflict.png" alt="version control conflict"></p>
+<p>At this point it’s a race: if Joe checks in first, that’s the change that goes through (and Sue can’t make her change).</p>
+<p>When changes overlap and contradict like this, the VCS may report a <strong>conflict</strong> and not let you check in — it’s up to you to check in a newer version that <strong>resolves</strong> this dilemma. A few approaches:</p>
+<ul>
+<li><strong>Re-apply your changes</strong>. Sync to the the latest version (r4) and re-apply your changes to this file: Add hot dog to the list that already has cheese.</li>
+<li><strong>Override their changes with yours</strong>. Check out the latest version (r4), copy over your version, and check your version in. In effect, this removes cheese and replaces it with hot dog.</li>
+</ul>
+<p>Conflicts are infrequent but can be a pain. Usually I update to the latest and re-apply my changes.</p>
+<h2 id="tagging">Tagging</h2>
+<p>Who would have thought a version control system would be Web 2.0 compliant? Many systems let you tag (label) any revision for easy reference. This way you can refer to “Release 1.0” instead of a particular build number:</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/tagging.png" alt="version control tag"></p>
+<p>In Subversion, tags are just branches that you agree not to edit; they are around for posterity, so you can see exactly what your version 1.0 release contained. Hence they end in a stub — there’s nowhere to go.</p>
+<div class="highlight"><div style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#000;font-weight:bold">(</span>in trunk<span style="color:#000;font-weight:bold">)</span>
+svn copy http://path/to/revision http://path/to/tag
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="real-life-example-managing-windows-source-code">Real-Life Example: Managing Windows Source Code</h2>
+<p>We guessed that Windows was managed out of a shared folder, but it’s not the case. So <a href="https://blogs.msdn.com/larryosterman/archive/2005/02/01/364840.aspx">how’s it done</a>?</p>
+<ul>
+<li>There’s a <strong>main line</strong> with stable builds of Windows.</li>
+<li>Each group (Networking, User Interface, Media Player, etc.) <strong>has its own branch</strong> to develop new features. These are under development and less stable than main.</li>
+</ul>
+<p>You develop new features in your branch and “Reverse Integrate (RI)” to get them into Main. Later, you “Forward Integrate” to bring the latest changes from Main into your branch:</p>
+<p><img src="https://betterexplained.com/wp-content/uploads/version_control/windows.png" alt="version control branch example"></p>
+<p>Let’s say we’re at Media Player 10 and IE 6. The Media Player team makes version 11 in their own branch. When it’s ready and tested, there’s a patch from 10 – 11 which is applied to Main (just like the “Rice” example, but a tad more complicated). This is a <strong>reverse integration</strong>, from the branch to the trunk. The IE team can do the same thing.</p>
+<p>Later, the Media Player team can pick up the latest code from other teams, like IE. In this case, Media Player <strong>forward integrates</strong> and gets the latest patches from main into their branch. This is like pulling in the “Bread” feature into the experimental branch, but again, more complicated.</p>
+<p>So it’s RI and FI. Aye aye. This arrangement lets changes percolate throughout the branches, while keeping new code out of the main line. Cool, eh?</p>
+<p>In reality, there’s many layers of branches and sub-branches, along with quality metrics that determine when you get to RI. But you get the idea: branches help manage complexity. Now you know the basics of how one of the largest software projects is organized.</p>
+<h2 id="key-takeaways">Key Takeaways</h2>
+<p>My goal was to share high-level thoughts about version control systems. Here are the basics:</p>
+<ul>
+<li><strong>Use version control.</strong> Seriously, it’s a good thing, even if you’re not writing an OS. It’s worth it for backups alone.</li>
+<li><strong>Take it slow.</strong> I’m only now looking into branching and merging for my projects. Just get a handle on using version control and go from there. If you’re a small project, branching/merging may not be an issue. Large projects often have experienced maintainers who keep track of the branches and patches.</li>
+<li><strong>Keep Learning.</strong> There’s plenty of guides for <a href="http://svnbook.red-bean.com/">SVN</a>, <a href="http://wwwasd.web.cern.ch/wwwasd/cvs/tutorial/cvs_tutorial_toc.html">CVS</a>, <a href="http://agave.garden.org/~aaronh/rcs/tutorial.html">RCS</a>, <a href="https://www.kernel.org/pub/software/scm/git/docs/">Git</a>, <a href="http://public.perforce.com/public/tutorial.html">Perforce</a> or whatever system you’re using. The important thing is to <strong>know the concepts</strong> and realize every system has its own lingo and philosophy. Eric Sink has a <a href="http://www.ericsink.com/scm/source_control.html">detailed version control guide</a> also.</li>
+</ul>
+<p>These are the basics — as time goes on I’ll share specific lessons I’ve learned from <a href="http://instacalc.com/">my projects</a>. Now that you’ve figured out a regular VCS, <a href="https://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/">try an illustrated guide to distributed version control</a>.</p>
+<p>&mdash;EOF&mdash;</p>
+<p><em>EOF</em>是一个计算机术语，为<code>End Of File</code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。</p>
+<p>本人公众号<code>火山灰</code>，亦可搜<code>time_ash_past</code>。</p>
+<p><img src="C:/Users/time/Documents/MEGA/%E4%B8%AA%E4%BA%BA%E6%96%87%E7%AB%A0/myBlog/myhugo_blog/blog/content/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt=""></p>
+        </div>
+        
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://sanbeichahegongheguo.github.io/">总舵主</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8/">https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
+
+
+        
+
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/Git%E5%85%A5%E9%97%A8/">Git入门</a></li>
+        
+        <li><a href="/Zotero%E5%85%A5%E9%97%A8/">Zotero入门</a></li>
+        
+        <li><a href="/%E8%BD%AC%E8%BD%BD-%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/">转载 | 自然语言处理入门</a></li>
+        
+        <li><a href="/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/">聊一个算法入门题</a></li>
+        
+        <li><a href="/%E8%BD%AC%E8%BD%BD-%E6%88%91%E6%9C%89%E4%B8%AA%E6%A2%A6%E4%B8%8D%E6%83%B3%E9%86%92/">转载 | 我有个梦，不想醒</a></li>
+        
+    </ul>
+</div>
+
+    </article>
+      
+
+</div>
+
+                </div>
+
+                <div id="secondary">
+    <section class="widget">
+        <form id="search" action='https://sanbeichahegongheguo.github.io/search/' method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="https://sanbeichahegongheguo.github.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+<ul class="widget-list">
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/" title="聊一个算法入门题">聊一个算法入门题</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E6%88%91%E6%9C%89%E4%B8%AA%E6%A2%A6%E4%B8%8D%E6%83%B3%E9%86%92/" title="转载 | 我有个梦，不想醒">转载 | 我有个梦，不想醒</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E9%A9%AC%E6%81%A9%E5%85%A8%E9%9B%86%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%AC%AC%E4%BA%8C%E7%AF%87%E8%AF%84%E6%99%AE%E9%B2%81%E5%A3%AB%E6%9C%80%E8%BF%91%E7%9A%84%E4%B9%A6%E6%8A%A5%E6%A3%80%E6%9F%A5%E4%BB%A4%E7%9A%84%E5%8E%9F%E6%96%87/" title="《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文">《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-GitHub%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" title="如何用hugo&#43;GitHub建立自己的博客">如何用hugo&#43;GitHub建立自己的博客</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E8%80%85%E5%AF%B9%E5%AE%B6%E5%BA%AD%E5%92%8C%E4%B8%A4%E6%80%A7%E5%85%B3%E7%B3%BB%E5%BA%94%E8%AF%A5%E6%8C%81%E4%BB%80%E4%B9%88%E6%80%81%E5%BA%A6/" title="转载 | 共产主义者对家庭和两性关系应该持什么态度">转载 | 共产主义者对家庭和两性关系应该持什么态度</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/" title="正常人学编程 前言">正常人学编程 前言</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-Linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-Shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/" title="转载 | Linux 系统和 Shell 编程问题集">转载 | Linux 系统和 Shell 编程问题集</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/" title="section01-环境配置-01">section01-环境配置-01</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02-%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/" title="section01-环境配置-02-语言环境">section01-环境配置-02-语言环境</a>
+    </li>
+    
+    <li>
+        <a href="https://sanbeichahegongheguo.github.io/section02-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%B7%E6%BA%90%E4%B8%8E%E7%BB%84%E6%88%90/" title="section02-计算机起源与组成">section02-计算机起源与组成</a>
+    </li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+<ul class="widget-list">
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E5%88%AB%E4%BA%BA%E7%9A%84%E6%95%85%E4%BA%8B/">别人的故事 (1)</a></li>
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制 (1)</a></li>
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E7%BB%8F%E5%85%B8%E8%A7%A3%E8%AF%BB/">经典解读 (2)</a></li>
+    
+    <li><a href="https://sanbeichahegongheguo.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%BE%E7%A8%8B/">编程课程 (1)</a></li>
+    
+</ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">标签</h3>
+<div class="tagcloud">
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/Anaconda/">Anaconda</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/GitHub/">GitHub</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/NLP/">NLP</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/Vim/">Vim</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/Windows/">Windows</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/git/">git</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/hugo/">hugo</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/python/">python</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/zotero/">zotero</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E4%B8%83%E5%8D%83%E4%BA%BA%E5%A4%A7%E4%BC%9A/">七千人大会</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/">入门</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/">杂评</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%A2%A6%E6%83%B3/">梦想</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/">毛泽东</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/">版本控制</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/">生活感悟</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%AE%97%E6%B3%95/">算法</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%BC%96%E7%A8%8B/">编程</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E7%BF%BB%E8%AF%91%E7%94%9F%E7%89%A9%E5%AD%A6/">翻译，生物学</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E8%AE%BA%E6%96%87%E5%86%99%E4%BD%9C/">论文写作</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD/">转载</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/">软件管理</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/">马克思主义</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%8E%9F%E6%96%87/">马克思原文</a>
+    
+</div>
+    </section>
+
+    
+<section class="widget">
+    <h3 class="widget-title" style="color:red">福利派送</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a href="https://www.aliyun.com/minisite/goods?userCode=jdg9oj97&amp;share_source=copy_link" title="【2019双12】ALL IN CLoud 低至1折" target="_blank" style="color:red">
+                
+                    <img src="https://img.alicdn.com/tfs/TB1_rYHo7P2gK0jSZPxXXacQpXa-690-388.jpg">
+                
+            </a>
+        </li>
+        
+        <li>
+            <a href="https://cloud.tencent.com/act/cps/redirect?redirect=1048&amp;cps_key=14ff722692ac784fa8c3301c8c28d924&amp;from=console" title="助力产业智慧升级，云服务器首年88元起，更有千元代金券礼包免费领！" target="_blank" style="color:red">
+                
+                    <img src="https://upload-dianshi-1255598498.file.myqcloud.com/345-7c71532bd4935fbdd9a67c1a71e577b1767b805c.200%E7%89%88%E6%9C%ACB.jpg">
+                
+            </a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    
+<section class="widget">
+    <h3 class="widget-title">友情链接</h3>
+    <ul class="widget-list">
+        
+        <li>
+            <a target="_blank" href="https://www.flysnow.org/" title="飞雪无情的博客">飞雪无情的博客</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://www.ruanyifeng.com/blog/" title="阮一峰的博客">阮一峰的博客</a>
+        </li>
+        
+        <li>
+            <a target="_blank" href="https://corpython.github.io/" title="code show 的博客">code show 的博客</a>
+        </li>
+        
+    </ul>
+</section>
+
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="https://sanbeichahegongheguo.github.io/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+    <div class="container">
+        &copy; 2020 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
+        <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
+
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-158754845-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+    <script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+    <script src='/js/douban.js'></script>
+
+
+</body>
+
+</html>

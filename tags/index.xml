@@ -1,45 +1,72 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on 火山灰</title>
     <link>https://sanbeichahegongheguo.github.io/tags/</link>
     <description>Recent content in Tags on 火山灰</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 31 Dec 0001 00:00:00 +0000</lastBuildDate>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 26 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Anaconda</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/anaconda/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>梦想</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E6%A2%A6%E6%83%B3/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/anaconda/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E6%A2%A6%E6%83%B3/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Coder</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/coder/</link>
-      <pubDate>Mon, 31 Dec 0001 00:00:00 +0000</pubDate>
+      <title>算法</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/coder/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Git</title>
+      <title>编程</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>转载</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
       <link>https://sanbeichahegongheguo.github.io/tags/git/</link>
-      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://sanbeichahegongheguo.github.io/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hugo</title>
+      <title>GitHub</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/GitHub/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/GitHub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
       <link>https://sanbeichahegongheguo.github.io/tags/hugo/</link>
       <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
@@ -48,128 +75,29 @@
     </item>
     
     <item>
-      <title>Katex</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/katex/</link>
-      <pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate>
+      <title>马克思主义</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/katex/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E4%B8%BB%E4%B9%89/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Math</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/math/</link>
-      <pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate>
+      <title>马克思原文</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%8E%9F%E6%96%87/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/math/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E5%85%8B%E6%80%9D%E5%8E%9F%E6%96%87/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Nasa</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/nasa/</link>
-      <pubDate>Wed, 27 Dec 2000 00:00:00 +0000</pubDate>
+      <title>毛泽东</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/nasa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nlp</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/nlp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/nlp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/python/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/python/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shortcodes</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/shortcodes/</link>
-      <pubDate>Sat, 12 Feb 2000 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Typesetting</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/typesetting/</link>
-      <pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/typesetting/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vim</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/vim/</link>
-      <pubDate>Mon, 31 Dec 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zotero</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/zotero/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/zotero/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>入门</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>共产主义</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89/</link>
-      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>创业</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E5%88%9B%E4%B8%9A/</link>
-      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%88%9B%E4%B8%9A/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>医改</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E5%8C%BB%E6%94%B9/</link>
-      <pubDate>Tue, 16 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%8C%BB%E6%94%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>土共</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E5%9C%9F%E5%85%B1/</link>
-      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%9C%9F%E5%85%B1/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/</guid>
       <description></description>
     </item>
     
@@ -183,11 +111,20 @@
     </item>
     
     <item>
-      <title>样例</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E6%A0%B7%E4%BE%8B/</link>
-      <pubDate>Wed, 27 Dec 2000 00:00:00 +0000</pubDate>
+      <title>生活感悟</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</link>
+      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E6%A0%B7%E4%BE%8B/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>入门</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%85%A5%E9%97%A8/</guid>
       <description></description>
     </item>
     
@@ -201,38 +138,92 @@
     </item>
     
     <item>
-      <title>生活感悟</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</link>
-      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Vim</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/Vim/</link>
+      <pubDate>Mon, 31 Dec 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%82%9F/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/Vim/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>瞎扯</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E7%9E%8E%E6%89%AF/</link>
-      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Anaconda</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/Anaconda/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%9E%8E%E6%89%AF/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/Anaconda/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>算法</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E7%AE%97%E6%B3%95/</link>
-      <pubDate>Wed, 26 Dec 2018 00:00:00 +0000</pubDate>
+      <title>NLP</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/NLP/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/NLP/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>编程</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      <title>python</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%BC%96%E7%A8%8B/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/Windows/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/Windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zotero</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/zotero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/zotero/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>七千人大会</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E4%B8%83%E5%8D%83%E4%BA%BA%E5%A4%A7%E4%BC%9A/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E4%B8%83%E5%8D%83%E4%BA%BA%E5%A4%A7%E4%BC%9A/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>工具</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>杂评</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>翻译，生物学</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E7%BF%BB%E8%AF%91%E7%94%9F%E7%89%A9%E5%AD%A6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E7%BF%BB%E8%AF%91%E7%94%9F%E7%89%A9%E5%AD%A6/</guid>
       <description></description>
     </item>
     
@@ -246,20 +237,11 @@
     </item>
     
     <item>
-      <title>转载</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD/</link>
-      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+      <title>软件管理</title>
+      <link>https://sanbeichahegongheguo.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E8%BD%AC%E8%BD%BD/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>马恩思想</title>
-      <link>https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E6%81%A9%E6%80%9D%E6%83%B3/</link>
-      <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://sanbeichahegongheguo.github.io/tags/%E9%A9%AC%E6%81%A9%E6%80%9D%E6%83%B3/</guid>
+      <guid>https://sanbeichahegongheguo.github.io/tags/%E8%BD%AF%E4%BB%B6%E7%AE%A1%E7%90%86/</guid>
       <description></description>
     </item>
     

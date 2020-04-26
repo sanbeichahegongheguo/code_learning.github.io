@@ -1,15 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 火山灰</title>
     <link>https://sanbeichahegongheguo.github.io/categories/</link>
     <description>Recent content in Categories on 火山灰</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce.</copyright>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 26 Dec 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>别人的故事</title>
+      <link>https://sanbeichahegongheguo.github.io/categories/%E5%88%AB%E4%BA%BA%E7%9A%84%E6%95%85%E4%BA%8B/</link>
+      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/categories/%E5%88%AB%E4%BA%BA%E7%9A%84%E6%95%85%E4%BA%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>经典解读</title>
+      <link>https://sanbeichahegongheguo.github.io/categories/%E7%BB%8F%E5%85%B8%E8%A7%A3%E8%AF%BB/</link>
+      <pubDate>Mon, 31 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/categories/%E7%BB%8F%E5%85%B8%E8%A7%A3%E8%AF%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编程课程</title>
+      <link>https://sanbeichahegongheguo.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%BE%E7%A8%8B/</link>
+      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%BE%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>版本控制</title>
+      <link>https://sanbeichahegongheguo.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://sanbeichahegongheguo.github.io/categories/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

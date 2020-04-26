@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>版本控制 on 火山灰</title>
     <link>https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</link>
     <description>Recent content in 版本控制 on 火山灰</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>zh-CN</language>
     <lastBuildDate>Sat, 30 Dec 2000 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://sanbeichahegongheguo.github.io/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/index.xml" rel="self" type="application/rss+xml" />
@@ -13,52 +13,29 @@
     
     <item>
       <title>Git入门</title>
-      <link>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</link>
+      <link>https://sanbeichahegongheguo.github.io/Git%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/git%E5%85%A5%E9%97%A8/</guid>
-      <description>一、Git是什么 1、
-2、
-二、Git基本用法 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
-下面是我整理的常用 Git 命令清单。几个专用名词的译名如下。
-  Workspace：工作区 Index / Stage：暂存区 Repository：仓库区（或本地仓库） Remote：远程仓库   一、新建代码库 git init # 在当前目录新建一个Git代码库 git init [project-name] # 新建一个目录，将其初始化为Git代码库 git clone [url] # 下载一个项目和它的整个代码历史  二、配置 Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
-git config --list # 显示当前的Git配置 git config -e [--global] # 编辑Git配置文件 git config [--global] user.name &amp;quot;[name]&amp;quot; # 设置提交代码时的用户信息 git config [--global] user.email &amp;quot;[email address]&amp;quot; # 设置提交代码时的用户信息  三、增加/删除文件 git add [file1] [file2] ... # 添加指定文件到暂存区 git add [dir] # 添加指定目录到暂存区，包括子目录 git add .</description>
+      <guid>https://sanbeichahegongheguo.github.io/Git%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;h2 id=&#34;一git是什么&#34;&gt;一、Git是什么&lt;/h2&gt;</description>
     </item>
     
     <item>
       <title>Git常见问题总结</title>
-      <link>https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
+      <link>https://sanbeichahegongheguo.github.io/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
-      <description>The file will have its original line endings in your working directory 出现这个问题主要原因是：我们从别人github地址上通过git clone下载下来，而又想git push到我们自己的github上，那么就会出现上面提示的错误信息
-此时需要执行如下代码：
-git rm -r --cached . git config core.autocrlf false git add .  . 代表当前目录
-Git 的 config 的三级配置 2.1 最高级：git config --system 信息保存在 /etc/gitconfig
-为系统设置配置。
-2.2 第二级：git config --global 信息保存在 ~/.gitconfig 或 ~/.config/git/config
-只针对当前用户。
-2.3 第三级：git congfig --local 信息保存在当前仓库的Git目录中的 .git/config
-只针对该仓库。
-每一个级别覆盖上一级别的配置。
-Git传输协议 和 HTTPS 传输协议 两者有不同。
-让git status 显示中文，解决中文乱码 本文转载自：git status 显示中文和解决中文乱码</description>
+      <guid>https://sanbeichahegongheguo.github.io/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <description>&lt;p&gt;收集使用&lt;code&gt;git&lt;/code&gt;的过程中出现的问题。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>[转载]版本控制系统入门</title>
-      <link>https://sanbeichahegongheguo.github.io/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</link>
+      <title>转载 | 版本控制系统入门</title>
+      <link>https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://sanbeichahegongheguo.github.io/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</guid>
-      <description>本文转载自阮一峰的博客。
-我知道版本控制系统（VCS）很有用。
-但是，我平时只是业余写一些小程序，感觉特地装一个VCS太麻烦，所以一直没有用。最近，因为想认真做一个中等规模的项目，所以决心好好学一下怎么用。
-下面就是我翻译的一篇入门教程，主要解释了VCS的一些主要概念。
-作者：Kalid Azad
-译者：阮一峰
-原文网址：http://betterexplained.com/articles/a-visual-guide-to-version-control/
- 1. A Visual Guide to Version Control 2. 版本控制入门插图教程 - 2.0.1. 前言 - 2.0.2. 什么是版本控制系统（VCS）？ - 2.0.3. 一些术语 - 2.0.3.1. 基本概念 - 2.0.3.2. 基本操作 - 2.0.3.3. 高级操作 - 2.0.3.3.1. Check in - 2.0.3.3.2. Check out和编辑 - 2.0.3.3.3. Diff - 2.0.3.3.4. Branch - 2.0.3.3.5. Merge - 2.0.3.3.6. Conflict - 2.0.3.3.7. Tag - 2.0.3.4. 一个实际的例子：管理Windows源码 - 2.0.4. 结束语  2.0.1. 前言 版本控制（Version Control）的作用是追踪文件的变化。为什么需要版本控制？简单说，就是当你出错了，可以很容易地回到没出错时的状态。</description>
+      <guid>https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;本文转载自阮一峰的博客的一篇文章：&lt;a href=&#34;http://www.ruanyifeng.com/blog/2008/12/a_visual_guide_to_version_control.html&#34;&gt;版本控制入门插图教程&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
   </channel>
