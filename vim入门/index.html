@@ -10,10 +10,10 @@
     <meta property="og:title" content="vim入门 - 火山灰">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content='0001-12-31T00:00:00&#43;08:00'>
+    <meta property="article:published_time" content='2001-12-31T00:00:00&#43;08:00'>
         
         
-    <meta property="article:modified_time" content='0001-12-31T00:00:00&#43;08:00'>
+    <meta property="article:modified_time" content='2001-12-31T00:00:00&#43;08:00'>
         
     <meta name="Keywords" content=" ">
     <meta name="description" content="vim入门">
@@ -225,7 +225,7 @@
             <h1 class="post-title">vim入门</h1>
         </header>
         <date class="post-meta meta-date">发布于:
-            1年12月31日
+            2001年12月31日
         </date>
         
         
@@ -641,82 +641,85 @@ delek.vim
 industry.vim  
 pablo.vim    
 shine.vim
-</code></pre><p>README.txt里的内容如下</p>
-<blockquote>
-<p>1 README.txt for color scheme files</p>
-<p>2</p>
-<p>3 These files are used for the &ldquo;:colorscheme&rdquo; command.  They appear in the</p>
-<p>4 Edit/Color Scheme menu in the GUI.</p>
-<p>5</p>
-<p>6</p>
-<p>7 Hints for writing a color scheme file:</p>
-<p>8</p>
-<p>9 There are two basic ways to define a color scheme:</p>
-<p>10</p>
-<p>11 1. Define a new Normal color and set the &lsquo;background&rsquo; option accordingly.</p>
-<p>12     set background={light or dark}</p>
-<p>13     highlight clear</p>
-<p>14     highlight Normal &hellip;</p>
-<p>15     &hellip;</p>
-<p>16</p>
-<p>17 2. Use the default Normal color and automatically adjust to the value of</p>
-<p>18    &lsquo;background&rsquo;.</p>
-<p>19     highlight clear Normal</p>
-<p>20     set background&amp;</p>
-<p>21     highlight clear</p>
-<p>22     if &amp;background == &ldquo;light&rdquo;</p>
-<p>23       highlight Error &hellip;</p>
-<p>24       &hellip;</p>
-<p>25     else</p>
-<p>26       highlight Error &hellip;</p>
-<p>27       &hellip;</p>
-<p>28     endif</p>
-<p>29</p>
-<p>30 You can use &ldquo;:highlight clear&rdquo; to reset everything to the defaults, and then</p>
-<p>31 change the groups that you want differently.  This also will work for groups</p>
-<p>32 that are added in later versions of Vim.</p>
-<p>33 Note that &ldquo;:highlight clear&rdquo; uses the value of &lsquo;background&rsquo;, thus set it</p>
-<p>34 before this command.</p>
-<p>35 Some attributes (e.g., bold) might be set in the defaults that you want</p>
-<p>36 removed in your color scheme.  Use something like &ldquo;gui=NONE&rdquo; to remove the</p>
-<p>37 attributes.</p>
-<p>38</p>
-<p>39 In case you want to set &lsquo;background&rsquo; depending on the colorscheme selected,</p>
-<p>40 this autocmd might be useful:</p>
-<p>41      autocmd SourcePre */colors/blue_sky.vim set background=dark</p>
-<p>42 Replace &ldquo;blue_sky&rdquo; with the name of the colorscheme.</p>
-<p>43</p>
-<p>44 In case you want to tweak a colorscheme after it was loaded, check out that</p>
-<p>45 ColorScheme autocmd event.</p>
-<p>46</p>
-<p>47 To see which highlight group is used where, find the help for</p>
-<p>48 &ldquo;highlight-groups&rdquo; and &ldquo;group-name&rdquo;.</p>
-<p>49</p>
-<p>50 You can use &ldquo;:highlight&rdquo; to find out the current colors.  Exception: the</p>
-<p>51 ctermfg and ctermbg values are numbers, which are only valid for the current</p>
-<p>52 terminal.  Use the color names instead.  See &ldquo;:help cterm-colors&rdquo;.</p>
-<p>53</p>
-<p>54 The default color settings can be found in the source file src/syntax.c.</p>
-<p>55 Search for &ldquo;highlight_init&rdquo;.</p>
-<p>56</p>
-<p>57 If you think you have a color scheme that is good enough to be used by others,</p>
-<p>58 please check the following items:</p>
-<p>59</p>
-<p>60 - Does it work in a color terminal as well as in the GUI?</p>
-<p>61 - Is &ldquo;g:colors_name&rdquo; set to a meaningful value?  In case of doubt you can do</p>
-<p>62   it this way:</p>
-<p>63     let g:colors_name = expand(&lsquo;<!-- raw HTML omitted -->:t:r&rsquo;)</p>
-<p>64 - Is &lsquo;background&rsquo; either used or appropriately set to &ldquo;light&rdquo; or &ldquo;dark&rdquo;?</p>
-<p>65 - Try setting &lsquo;hlsearch&rsquo; and searching for a pattern, is the match easy to</p>
-<p>66   spot?</p>
-<p>67 - Split a window with &ldquo;:split&rdquo; and &ldquo;:vsplit&rdquo;.  Are the status lines and</p>
-<p>68   vertical separators clearly visible?</p>
-<p>69 - In the GUI, is it easy to find the cursor, also in a file with lots of</p>
-<p>70   syntax highlighting?</p>
-<p>71 - Do not use hard coded escape sequences, these will not work in other</p>
-<p>72   terminals.  Always use color names or #RRGGBB for the GUI.</p>
-</blockquote>
-<p>下面给出几个主题的实例，选择自己喜欢的，让你的Vim炫起来！</p>
+</code></pre><p>README.txt里的内容如下：</p>
+<pre><code>README.txt for color scheme files 
+
+These files are used for the &quot;:colorscheme&quot; command.  They appear in the
+
+Edit/Color Scheme menu in the GUI.
+
+Hints for writing a color scheme file:
+
+There are two basic ways to define a color scheme:
+
+1. Define a new Normal color and set the 'background' option accordingly.
+
+     set background={light or dark}
+     highlight clear
+     highlight Normal ...
+     ...
+
+2. Use the default Normal color and automatically adjust to the value of
+    'background'.
+     highlight clear Normal
+     set background&amp;
+     highlight clear
+     if &amp;background == &quot;light&quot;
+       highlight Error ...
+       ...
+     else
+       highlight Error ...
+       ...
+     endif
+You can use &quot;:highlight clear&quot; to reset everything to the defaults, and then
+change the groups that you want differently.  This also will work for groups
+that are added in later versions of Vim.
+
+Note that &quot;:highlight clear&quot; uses the value of 'background', thus set it
+before this command.
+
+Some attributes (e.g., bold) might be set in the defaults that you want
+removed in your color scheme.  Use something like &quot;gui=NONE&quot; to remove the
+attributes.
+
+In case you want to set 'background' depending on the colorscheme selected,
+this autocmd might be useful:
+
+      autocmd SourcePre */colors/blue_sky.vim set background=dark
+
+Replace &quot;blue_sky&quot; with the name of the colorscheme.
+
+In case you want to tweak a colorscheme after it was loaded, check out that
+ColorScheme autocmd event.
+
+To see which highlight group is used where, find the help for
+
+&quot;highlight-groups&quot; and &quot;group-name&quot;.
+
+You can use &quot;:highlight&quot; to find out the current colors.  Exception: the
+ctermfg and ctermbg values are numbers, which are only valid for the current
+terminal.  Use the color names instead.  See &quot;:help cterm-colors&quot;.
+
+The default color settings can be found in the source file src/syntax.c.
+Search for &quot;highlight_init&quot;.
+
+If you think you have a color scheme that is good enough to be used by others,
+please check the following items:
+
+ - Does it work in a color terminal as well as in the GUI?
+ - Is &quot;g:colors_name&quot; set to a meaningful value?  In case of doubt you can do
+   it this way:
+     let g:colors_name = expand('&lt;sfile&gt;:t:r')
+ - Is 'background' either used or appropriately set to &quot;light&quot; or &quot;dark&quot;?
+ - Try setting 'hlsearch' and searching for a pattern, is the match easy to
+   spot?
+ - Split a window with &quot;:split&quot; and &quot;:vsplit&quot;.  Are the status lines and
+   vertical separators clearly visible?
+ - In the GUI, is it easy to find the cursor, also in a file with lots of
+   syntax highlighting?
+ - Do not use hard coded escape sequences, these will not work in other
+   terminals.  Always use color names or #RRGGBB for the GUI.    
+</code></pre><p>下面给出几个主题的实例，选择自己喜欢的，让你的Vim炫起来！</p>
 <p><img src="./images/20140322133754562.png" alt="img"></p>
 <p>上图是evening主题</p>
 <p><img src="./images/20140322134009671.png" alt="img"></p>
@@ -820,7 +823,7 @@ endif
 </code></pre><p>&mdash;EOF&mdash;</p>
 <p><em>EOF</em>是一个计算机术语，为<code>End Of File</code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。</p>
 <p>本人公众号<code>火山灰</code>，亦可搜<code>time_ash_past</code>。</p>
-<p><img src="C:/Users/time/Documents/MEGA/%E4%B8%AA%E4%BA%BA%E6%96%87%E7%AB%A0/myBlog/myhugo_blog/blog/content/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt=""></p>
         </div>
         
 <div class="post-archive">
@@ -841,13 +844,13 @@ endif
         
         <li><a href="/%E8%BD%AC%E8%BD%BD-%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/">转载 | 自然语言处理入门</a></li>
         
+        <li><a href="/Git%E5%85%A5%E9%97%A8/">Git入门</a></li>
+        
+        <li><a href="/Git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/">Git常见问题总结</a></li>
+        
+        <li><a href="/GitHub%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%B1%87%E9%9B%86/">GitHub使用入门及问题汇集</a></li>
+        
         <li><a href="/"></a></li>
-        
-        <li><a href="/Biodiversity-May-Thrive-Through-Games-of-Rock-Paper-Scissors/"> Biodiversity May Thrive Through Games of Rock-Paper-Scissors</a></li>
-        
-        <li><a href="/%E5%88%9B%E4%B8%9A22%E9%97%AE%E4%B8%AD%E6%96%87%E7%89%88/"> 创业22问中文版</a></li>
-        
-        <li><a href="/Anaconda%E5%85%A5%E9%97%A8/">Anaconda入门</a></li>
         
     </ul>
 </div>
