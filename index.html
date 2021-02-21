@@ -1,23 +1,25 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-	<meta name="generator" content="Hugo 0.68.1" />
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>火山灰 | ~Stay hungry，Stay foolish~</title>
-    <meta property="og:title" content="火山灰 | ~Stay hungry，Stay foolish~">
-    <meta property="og:type" content="website">
+    <title> | 火山灰</title>
+    <meta property="og:title" content=" - 火山灰">
+    <meta property="og:type" content="article">
+        
+        
     <meta name="Keywords" content=" ">
-    <meta name="description" content=" ">
+    <meta name="description" content="">
+        
+    <meta name="author" content="总舵主">
     <meta property="og:url" content="https://sanbeichahegongheguo.github.io/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
-    <link rel="alternate" type="application/rss+xml+xml" href="https://sanbeichahegongheguo.github.io/index.xml" title="火山灰" />
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -46,11 +48,9 @@
         <div class="col-group">
             <div class="site-name ">
                 
-                    <h1>
-                        <a id="logo" href="https://sanbeichahegongheguo.github.io/">
-                            火山灰
-                        </a>
-                    </h1>
+                    <a id="logo" href="https://sanbeichahegongheguo.github.io/">
+                        火山灰
+                    </a>
                 
                 <p class="description">~Stay hungry，Stay foolish~</p>
             </div>
@@ -79,221 +79,235 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 3px 2px 1px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents"></nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if(leftPos<220){
+                postToc.css({"width":leftPos-10,"margin-left":(0-leftPos)})
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+    })
+</script>
+
     <article class="post">
         <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/" title="聊一个算法入门题">聊一个算法入门题</a>
-            </h1>
+            <h1 class="post-title"></h1>
         </header>
-        <date class="post-meta meta-date">
-            2019年12月26日
+        <date class="post-meta meta-date">发布于:
+            1年1月1日
         </date>
         
-        <div class="post-content">
-            <h2 id="题目描述">题目描述</h2>
-<p>在一个整数数组中，一个数字减去它左边的数字得到一个差值，求最大差值的数字。</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E6%88%91%E6%9C%89%E4%B8%AA%E6%A2%A6%E4%B8%8D%E6%83%B3%E9%86%92/" title="转载 | 我有个梦，不想醒">转载 | 我有个梦，不想醒</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2019年12月26日
-        </date>
         
         <div class="post-meta">
-            <span>|</span>
-            
-            <span class="meta-category"><a href='https://sanbeichahegongheguo.github.io/categories/%E5%88%AB%E4%BA%BA%E7%9A%84%E6%95%85%E4%BA%8B'>别人的故事</a></span>
-            
+            <span id="busuanzi_container_page_pv">|&nbsp<span id="busuanzi_value_page_pv"></span><span>次阅读</span></span>
         </div>
         
-        <div class="post-content">
-            <p><strong>按语</strong></p>
-<p>刷豆瓣的时候刷到一个小姐姐的这篇文字。讲述一个非计算机专业的女生最后如何一步一步走上程序员的岗位的历程。走过弯路、经历挫折，但是还是收获了自己最想得到的。经过原作者允许，特转载此篇与大家共享。</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E6%88%91%E6%9C%89%E4%B8%AA%E6%A2%A6%E4%B8%8D%E6%83%B3%E9%86%92/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E9%A9%AC%E6%81%A9%E5%85%A8%E9%9B%86%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%AC%AC%E4%BA%8C%E7%AF%87%E8%AF%84%E6%99%AE%E9%B2%81%E5%A3%AB%E6%9C%80%E8%BF%91%E7%9A%84%E4%B9%A6%E6%8A%A5%E6%A3%80%E6%9F%A5%E4%BB%A4%E7%9A%84%E5%8E%9F%E6%96%87/" title="《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文">《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月31日
-        </date>
-        
-        <div class="post-meta">
-            <span>|</span>
+        <div class="post-meta meta-tags">
             
-            <span class="meta-category"><a href='https://sanbeichahegongheguo.github.io/categories/%E7%BB%8F%E5%85%B8%E8%A7%A3%E8%AF%BB'>经典解读</a></span>
+            没有标签
             
         </div>
         
         <div class="post-content">
-            <p>马恩全集第一卷第一篇是马克思的博士论文，《德谟克利特的自然哲学和伊壁鸠鲁的自然哲学的差别》。别怕。我也没看，因为我也知道我看不懂。不过第二篇这篇就很好看了。</p>……
+            <p>先推荐一篇我觉得写得不错的文章：</p>
+<p><a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;mid=2651024915&amp;idx=1&amp;sn=1ff4466d5ed02d3661847eccd4afd8b7&amp;chksm=bdbe96408ac91f56e8dea10063ba23e2c41e2393b554bb85834a86935c38cb1aa4d79eb66116&amp;scene=21#wechat_redirect">让比尔·盖茨放心退出董事会的纳德拉，是如何与两位前任 CEO“对抗”的？</a></p>
+<hr>
+<p>第一步，下载同步工具：BitTorrentSync</p>
+<p>这个工具是一个P2P工具，也就是直接在下载用户之间传输文件，不通过如百度云盘等中间服务商，所以可以避过监察从而共享文件。</p>
+<p>但是，很显然这样好的东西，后来的版本被国内禁了，现在只有老版本才可以用。</p>
+<p>我用的是 1.4.111 Beta版。网上知道类似版本的皆可以。</p>
+<blockquote>
+<p>它的【官网】下载链接是：https://www.getsync.com/ 貌似被墙，也可能没被，各位各显神通。如果无法打开就自己网上直接搜，大把有。
+早期的 1.4.x 版本支持【DHT 功能】，可以在墙内【免翻墙】使用。2.0 之后的版本【不】再支持 DHT，无法享受这一好处。</p>
+</blockquote>
+<p>我下面提供一个下载 1.4.110 版本的下载链接，谨慎下载。</p>
+<p><a href="http://www.xz7.com/downinfo/102980.html">http://www.xz7.com/downinfo/102980.html</a></p>
+<p>第二步，假设你已经完成下载。</p>
+<p>界面如图：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/54vq79tiaHs5ibx2AbVB3ClQSE24xQMBOfN5OysyiboMqQCWvHyueYFNgQ62p3YPjQZvGDDjEGg3EWPpRkbibDY7icw/640?wx_fmt=png" alt="img"></p>
+<p>右上角那里有几个可以修改的地方：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/54vq79tiaHs5ibx2AbVB3ClQSE24xQMBOfIBJ0LSHIIXAW2meLvod9O0rwxTSaxyqH9Hm4QW0DGgRTvw2fxlD3uA/640?wx_fmt=png" alt="img"></p>
+<p>语言可以设置为 中文。</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/54vq79tiaHs5ibx2AbVB3ClQSE24xQMBOfuI4kicgxdxiaWVDTmPcrWjAWzRlyONPC46oA0hQd8YQuy5e4NrFsqHYw/640?wx_fmt=png" alt="img"></p>
+<p>接下来就是关键：</p>
+<p>第三步，在自己的电脑觉得合适的地方新建一个文件夹，名字随便叫，我是叫“同步文件”。</p>
+<p>然后在同步文件里，再新建二级文件，如历史类，IT类，政治类等等</p>
+<p>第四步，就是准备开始同步。</p>
+<p>选择复制输入秘钥：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/54vq79tiaHs5ibx2AbVB3ClQSE24xQMBOfwOnY2DTzqB8Ag92vS2RDaOaFdZ0U0fPXgia7MSpGTjbb8m1yKPTSEkg/640?wx_fmt=png" alt="img"></p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/54vq79tiaHs5ibx2AbVB3ClQSE24xQMBOfdx9BLSlRBuRNoS8Vv45icE7Fu5WS5gdjPR5qbAOxkUABcicrO5NaWTHQ/640?wx_fmt=png" alt="img"></p>
+<p>秘钥的内容就是如下：（所以建议你在电脑端打开本文，方便复制）</p>
+<blockquote>
+<p>★政治类
+BT Sync 密钥：BRSSYZTSAC6UGYTUOJ22L4GCO7QESPPBD</p>
+<p>★心理学
+BT Sync 密钥：BNZ6DOA6W577O6GUNH7C3MY6DWC6FTDQB</p>
+<p>★历史类
+BT Sync 密钥：BSH7FXJFVWJTKWGSX5GTWX7PHZZ2D2M7Q</p>
+<p>★经济类
+BT Sync 密钥：B2FRYA6AXCDW6CF4YJVFWKH2HAXOFICOX</p>
+<p>★管理类
+BT Sync 密钥：B3WNBTAAFFAODFR6FQ3E3L5BBSJAFNBSJ</p>
+<p>★社会学
+BT Sync 密钥：BZR4TTYHT25QWUIE6YNMAKWUGBHKSGLC6</p>
+<p>★文艺类
+BT Sync 密钥：BMBB5YLBIJJAE5H6TP27OS7YCEUKCYHZK</p>
+<p>★哲学类
+BT Sync 密钥：B6WWVBXPMZDI5IL4KED6AAHA5FO4UNKQF</p>
+</blockquote>
+<p>除了上面“电子图书馆”那几个目录，下面这2个目录，你可能也会感兴趣。</p>
+<p>翻墙软件（包含常见的翻墙软件，时常更新）：</p>
+<p>BTLZ4A4UD3PEWKPLLWEOKH3W7OQJKFPLG</p>
+<p>“博客离线浏览”以及“博客电子书制作脚本”B7P64IMWOCXWEYOXIMBX6HN5MHEULFS4V</p>
+<p>基本上就是这些。按理操作非常简单，只要获得了软件，剩下的就是同步了。</p>
+<p>每个文件夹同步后都有这样的内容：</p>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/54vq79tiaHs5ibx2AbVB3ClQSE24xQMBOfFOkiblRia4Xaibxl47ic64hUauwSaZiaaJgIQibiaxFiaqStKdCqJdk8L7aHzg/640?wx_fmt=png" alt="img"></p>
+<p>所以同步一个之后就可以获取所有数目和所有密钥了。之前的书目排版也不用吐槽了。</p>
+<p>因为这个需要网友们之间相互接力，同步的人越多，速度越快。所以平时没事多开着，方便他人。</p>
+<p>另外这个其实也不是我自己的，而是一个大神搭建的，所有里面有一个 “博客离线浏览”，是他的所有博客文章（本身是 需要翻墙，所以直接给出离线版本。</p>
+<p>他还有一个系列：</p>
+<blockquote>
+<p>这是俺花了不少时间整理的，包括十多张详细的网状图，涵盖几百个权贵家族。
+通过此文档，可以直观体会到天朝就是一个“XXXXXX”。</p>
+<p>俺已经把这份文档开源到 GitHub（它不但是一个开源项目的集散地，也是一个多人网络协作的平台）。希望大伙儿群策群力，一起来曝光权贵丑陋的嘴脸。</p>
+<p>更多详情请看zhao@github：</p>
+<p>可以复制下面地址：https://github.com/programthink/zhao</p>
+</blockquote>
+<p>内容很精彩，很值得一看。但是如果直接打开，显示是：</p>
+<blockquote>
+<p>Repository unavailable in your location
+This repository is currently disabled in your location. For more details please see the takedown notice.</p>
+</blockquote>
+<p>因为政府正式给GitHub发文要求删除该库，GitHub只好对内地封禁：</p>
+<blockquote>
+<p>Cyber Security Association of China
+To whom this might be concerned at GitHub:
+The post at <a href="https://github.com/programthink/zhao/issues/38">https://github.com/programthink/zhao/issues/38</a> vilifies our President Xi as a murder suspect, which is a groundless and malicious slander. We hereby express our strong concern and request you to take it off your website at the earliest time possible.
+Cyber Security Association of China
+June 8, 2016
+Address: No.190 Chaoyangmennei Street, Dongcheng District, Beijing. Zip Code: 100010</p>
+</blockquote>
+<p>想看？</p>
+<p>有提供翻墙软件哦。自己想办法啦。</p>
+
         </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E9%A9%AC%E6%81%A9%E5%85%A8%E9%9B%86%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%AC%AC%E4%BA%8C%E7%AF%87%E8%AF%84%E6%99%AE%E9%B2%81%E5%A3%AB%E6%9C%80%E8%BF%91%E7%9A%84%E4%B9%A6%E6%8A%A5%E6%A3%80%E6%9F%A5%E4%BB%A4%E7%9A%84%E5%8E%9F%E6%96%87/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-GitHub%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/" title="如何用hugo&#43;GitHub建立自己的博客">如何用hugo&#43;GitHub建立自己的博客</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月31日
-        </date>
         
-        <div class="post-content">
-            <p>这篇讲讲如何用<code>hugo+GitHub</code>建立自己的博客。</p>
-<p>本人的博客就是用<code>hugo+GitHub</code>搭建。</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E5%A6%82%E4%BD%95%E7%94%A8hugo-GitHub%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E8%80%85%E5%AF%B9%E5%AE%B6%E5%BA%AD%E5%92%8C%E4%B8%A4%E6%80%A7%E5%85%B3%E7%B3%BB%E5%BA%94%E8%AF%A5%E6%8C%81%E4%BB%80%E4%B9%88%E6%80%81%E5%BA%A6/" title="转载 | 共产主义者对家庭和两性关系应该持什么态度">转载 | 共产主义者对家庭和两性关系应该持什么态度</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月31日
-        </date>
-        
-        <div class="post-content">
-            <p>早在 1847 年，恩格斯在《共产主义原理》中就专门驳斥过共产主义 “公妻制” 的无聊谎言：</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E8%80%85%E5%AF%B9%E5%AE%B6%E5%BA%AD%E5%92%8C%E4%B8%A4%E6%80%A7%E5%85%B3%E7%B3%BB%E5%BA%94%E8%AF%A5%E6%8C%81%E4%BB%80%E4%B9%88%E6%80%81%E5%BA%A6/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/" title="正常人学编程 前言">正常人学编程 前言</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月30日
-        </date>
-        
-        <div class="post-meta">
-            <span>|</span>
-            
-            <span class="meta-category"><a href='https://sanbeichahegongheguo.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%BE%E7%A8%8B'>编程课程</a></span>
-            
-        </div>
-        
-        <div class="post-content">
-            <p>现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-Linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-Shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/" title="转载 | Linux 系统和 Shell 编程问题集">转载 | Linux 系统和 Shell 编程问题集</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月30日
-        </date>
-        
-        <div class="post-content">
-            <p>本文来源：<a href="https://zhuanlan.zhihu.com/p/62543626">知乎专栏</a></p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/%E8%BD%AC%E8%BD%BD-Linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-Shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/" title="section01-环境配置-01">section01-环境配置-01</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月29日
-        </date>
-        
-        <div class="post-content">
-            <p>环境配置分两种，一种是语言本身的环境配置，一种是编写代码时所需要的编辑器。</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02-%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/" title="section01-环境配置-02-语言环境">section01-环境配置-02-语言环境</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月28日
-        </date>
-        
-        <div class="post-content">
-            <h2 id="1优先推荐初学者先使用网上环境而不是本地部署">1、优先推荐初学者先使用网上环境，而不是本地部署。</h2>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/section01-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02-%E8%AF%AD%E8%A8%80%E7%8E%AF%E5%A2%83/">阅读全文</a></p>
-    </article>
-    
-    <article class="post">
-        <header>
-            <h1 class="post-title">
-                <a href="https://sanbeichahegongheguo.github.io/section02-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%B7%E6%BA%90%E4%B8%8E%E7%BB%84%E6%88%90/" title="section02-计算机起源与组成">section02-计算机起源与组成</a>
-            </h1>
-        </header>
-        <date class="post-meta meta-date">
-            2018年12月28日
-        </date>
-        
-        <div class="post-content">
-            <p>本文转自[<a href="https://zhuanlan.zhihu.com/p/36534718">零基础编程入门（02）——计算机起源与组成</a>]</p>……
-        </div>
-        <p class="readmore"><a href="https://sanbeichahegongheguo.github.io/section02-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%B5%B7%E6%BA%90%E4%B8%8E%E7%BB%84%E6%88%90/">阅读全文</a></p>
-    </article>
-    
-    
+<div class="post-archive">
+    <ul class="post-copyright">
+        <li><strong>原文作者：</strong><a rel="author" href="https://sanbeichahegongheguo.github.io/">总舵主</a></li>
+        <li style="word-break:break-all"><strong>原文链接：</strong><a href="https://sanbeichahegongheguo.github.io/">https://sanbeichahegongheguo.github.io/</a></li>
+        <li><strong>版权声明：</strong>本作品采用<a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可，非商业转载请注明出处（作者，原文链接），商业转载请联系作者获得授权。</li>
+    </ul>
+</div>
+<br/>
 
 
+        
 
-<ol class="page-navigator">
-    
+<div class="post-archive">
+    <h2>See Also</h2>
+    <ul class="listing">
+        
+        <li><a href="/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/">聊一个算法入门题</a></li>
+        
+        <li><a href="/%E8%BD%AC%E8%BD%BD-%E6%88%91%E6%9C%89%E4%B8%AA%E6%A2%A6%E4%B8%8D%E6%83%B3%E9%86%92/">转载 | 我有个梦，不想醒</a></li>
+        
+        <li><a href="/%E9%A9%AC%E6%81%A9%E5%85%A8%E9%9B%86%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%AC%AC%E4%BA%8C%E7%AF%87%E8%AF%84%E6%99%AE%E9%B2%81%E5%A3%AB%E6%9C%80%E8%BF%91%E7%9A%84%E4%B9%A6%E6%8A%A5%E6%A3%80%E6%9F%A5%E4%BB%A4%E7%9A%84%E5%8E%9F%E6%96%87/">《马恩全集》第一卷第二篇《评普鲁士最近的书报检查令》的原文</a></li>
+        
+        <li><a href="/%E5%A6%82%E4%BD%95%E7%94%A8hugo-GitHub%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/">如何用hugo&#43;GitHub建立自己的博客</a></li>
+        
+        <li><a href="/%E8%BD%AC%E8%BD%BD-%E5%85%B1%E4%BA%A7%E4%B8%BB%E4%B9%89%E8%80%85%E5%AF%B9%E5%AE%B6%E5%BA%AD%E5%92%8C%E4%B8%A4%E6%80%A7%E5%85%B3%E7%B3%BB%E5%BA%94%E8%AF%A5%E6%8C%81%E4%BB%80%E4%B9%88%E6%80%81%E5%BA%A6/">转载 | 共产主义者对家庭和两性关系应该持什么态度</a></li>
+        
+    </ul>
+</div>
 
-    
-    <li  class="current">
-        <a href="https://sanbeichahegongheguo.github.io/">1</a>
-    </li>
-    
-    <li >
-        <a href="https://sanbeichahegongheguo.github.io/page/2/">2</a>
-    </li>
-    
-    <li >
-        <a href="https://sanbeichahegongheguo.github.io/page/3/">3</a>
-    </li>
-    
-
-    
-    <li class="next">
-        <a href="https://sanbeichahegongheguo.github.io/page/2/">下一页</a>
-    </li>
-    
-</ol>
-
-
-
+    </article>
+      
 
 </div>
 
@@ -381,6 +395,8 @@
     
     <a href="https://sanbeichahegongheguo.github.io/tags/NLP/">NLP</a>
     
+    <a href="https://sanbeichahegongheguo.github.io/tags/RSA/">RSA</a>
+    
     <a href="https://sanbeichahegongheguo.github.io/tags/Vim/">Vim</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/Windows/">Windows</a>
@@ -400,6 +416,10 @@
     <a href="https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%AD%A6/">文学</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99/">文心雕龙</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/">杂评</a>
     
@@ -491,13 +511,66 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
+        &copy; 2021 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         
     </div>
 </footer>
 
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.2.8/raphael.min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/flowchart/1.12.2/flowchart.min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+                if (!window.flowchart) return;
+                const blocks = document.querySelectorAll('pre code.language-flowchart, pre code.language-flow');
+                for (let i = 0; i < blocks.length; i++) {
+                    const block = blocks[i];
+                    const rootElement = block.parentNode;
+                    const container = document.createElement('div');
+                    const id = `js-flowchart-diagrams-${i}`;
+                    container.id = id;
+                    container.className = 'align-center';
+                    container.setAttribute("style", "overFlow-x:auto");
+                    rootElement.parentNode.replaceChild(container, rootElement);
+                    const diagram = flowchart.parse(block.childNodes[0].nodeValue);
+                    diagram.drawSVG(id, window.flowchartDiagramsOptions ? window.flowchartDiagramsOptions : {});
+                }
+            })();
+        </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/js-sequence-diagrams/1.0.6/sequence-diagram-min.js" crossorigin="anonymous"></script>
+        <script>(function () {
+            if (!window.Diagram) return;
+            const blocks = document.querySelectorAll('pre code.language-sequence');
+            for (let i = 0; i < blocks.length; i++) {
+                const block = blocks[i];
+                
+                const rootElement = block.parentNode;
+                const container = document.createElement('div');
+                const id = `js-sequence-diag-${i}`;
+                container.id = id;
+                container.className = 'align-center';
+                container.setAttribute("style", "overFlow-x:auto");
+                rootElement.parentNode.replaceChild(container, rootElement);
+
+                const diagram = Diagram.parse(block.childNodes[0].nodeValue);
+                diagram.drawSVG(id, window.sequenceDiagramsOptions
+                    ? window.sequenceDiagramsOptions
+                    : { theme: 'simple' });
+            }
+        })();
+        </script><script type="text/javascript">
+        window.MathJax = {
+            tex2jax: {
+                inlineMath: [['$', '$']],
+                processEscapes: true
+                }
+            };
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 <a id="rocket" href="#top"></a>

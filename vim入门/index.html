@@ -155,16 +155,16 @@
         <li><a href="#1基本介绍">1、基本介绍</a></li>
         <li><a href="#2新版功能">2、新版功能</a>
           <ul>
-            <li><a href="#1-支持异步-io-和通道channel">1. <strong>支持异步 I/O 和通道channel</strong></a></li>
-            <li><a href="#2-任务">2. <strong>任务</strong></a></li>
-            <li><a href="#3-定时器">3. <strong>定时器</strong></a></li>
-            <li><a href="#4-partial">4. <strong>Partial</strong></a></li>
-            <li><a href="#5-lambda-和闭包">5. <strong>Lambda 和闭包</strong></a></li>
-            <li><a href="#6-插件包">6. <strong>插件包</strong></a></li>
-            <li><a href="#7-窗口-id">7. <strong>窗口 ID</strong></a></li>
-            <li><a href="#8-折行缩进">8. <strong>折行缩进</strong></a></li>
-            <li><a href="#9-windows支持-directx">9. <strong>Windows：支持 DirectX</strong></a></li>
-            <li><a href="#10-支持-gtk-3">10. <strong>支持 GTK+ 3</strong></a></li>
+            <li><a href="#1-支持异步-io-和通道channel">1. 支持异步 I/O 和通道channel</a></li>
+            <li><a href="#2-任务">2. 任务</a></li>
+            <li><a href="#3-定时器">3. 定时器</a></li>
+            <li><a href="#4-partial">4. Partial</a></li>
+            <li><a href="#5-lambda-和闭包">5. Lambda 和闭包</a></li>
+            <li><a href="#6-插件包">6. 插件包</a></li>
+            <li><a href="#7-窗口-id">7. 窗口 ID</a></li>
+            <li><a href="#8-折行缩进">8. 折行缩进</a></li>
+            <li><a href="#9-windows支持-directx">9. Windows：支持 DirectX</a></li>
+            <li><a href="#10-支持-gtk-3">10. 支持 GTK+ 3</a></li>
           </ul>
         </li>
         <li><a href="#3下载">3、下载:</a></li>
@@ -256,7 +256,7 @@
 Copyright (c) 2007 Laurent Gregoire</p>
 <blockquote>
 <p>Vim is a highly configurable text editor for efficiently creating and changing any kind of text. It is included as &ldquo;vi&rdquo; ith most UNIX systems and with Apple OS X.</p>
-<p>Vim is often called a &ldquo;programmer&rsquo;s editor,&rdquo; and so useful for programming that many consider it an entire IDE. It&rsquo;s not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.</p>
+<p>Vim is often called a &ldquo;programmer's editor,&rdquo; and so useful for programming that many consider it an entire IDE. It's not just for programmers, though. Vim is perfect for all kinds of text editing, from composing email to editing configuration files.</p>
 <p>Despite what the above comic suggests, Vim can be configured to work in a very simple (Notepad-like) way, called evim or Easy Vim.</p>
 <p>Vim is rock stable and is continuously being developed to become even better. Among its features are:</p>
 <ul>
@@ -453,8 +453,8 @@ Windows NT/2000/XP/7 字符界面版：<span style="color:#d14">`</span>ftp://ft
 </span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#d14">&#34; All system-wide defaults are set in </span><span style="color:#008080">$VIMRUNTIME</span><span style="color:#d14">/debian.vim and sourced by
-</span><span style="color:#d14">&#34;</span> the call to :runtime you can find below.  If you wish to change any of those
+<pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#d14">&#34;</span><span style="color:#d14"> All system-wide defaults are set in </span><span style="color:#008080">$VIMRUNTIME</span><span style="color:#d14">/debian.vim and sourced by
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;</span> the call to :runtime you can find below.  If you wish to change any of those
 <span style="color:#d14">&#34; settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
 </span><span style="color:#d14">&#34;</span> will be overwritten everytime an upgrade of the vim packages is performed.
 <span style="color:#d14">&#34; It is recommended to make changes after sourcing debian.vim since it alters
@@ -482,7 +482,7 @@ endif
 </span><span style="color:#d14">&#34;</span> Uncomment the following to have Vim jump to the last position when
 <span style="color:#d14">&#34; reopening a file
 </span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">if</span> has<span style="color:#000;font-weight:bold">(</span><span style="color:#d14">&#34;autocmd&#34;</span><span style="color:#000;font-weight:bold">)</span>
-<span style="color:#d14">&#34;  au BufReadPost * if line(&#34;</span><span style="color:#d14">&#39;\&#34;&#34;) &gt; 1 &amp;&amp; line(&#34;&#39;</span><span style="color:#d14">\&#34;</span><span style="color:#d14">&#34;) &lt;= line(&#34;$&#34;) | exe &#34;</span>normal! g<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#d14">\&#34;</span><span style="color:#d14">&#34; | endif
+<span style="color:#d14">&#34;  au BufReadPost * if line(&#34;</span><span style="color:#d14">&#39;\&#34;&#34;) &gt; 1 &amp;&amp; line(&#34;&#39;</span><span style="color:#d14">\&#34;</span><span style="color:#d14">&#34;) &lt;= line(&#34;</span><span style="color:#d14">$&#34;) | exe &#34;</span>normal! g<span style="color:#a61717;background-color:#e3d2d2">&#39;</span><span style="color:#d14">\&#34;</span><span style="color:#d14">&#34; | endif
 </span><span style="color:#d14">&#34;</span>endif
 
 <span style="color:#d14">&#34; Uncomment the following to have Vim load indentation rules and plugins
@@ -577,7 +577,7 @@ endif
 </span><span style="color:#d14">filetype indent on
 </span><span style="color:#d14">set lazyredraw
 </span><span style="color:#d14">set showmatch		&#34;</span>这个其实在全局配置里有。
-<span style="color:#0086b3">set</span> incsearch		<span style="color:#d14">&#34;这个其实在全局配置里有。
+<span style="color:#0086b3">set</span> incsearch		<span style="color:#d14">&#34;</span><span style="color:#d14">这个其实在全局配置里有。
 </span></code></pre></td></tr></table>
 </div>
 </div><p>改变vim配色：安装colorscheme</p>
@@ -944,6 +944,8 @@ endif
     
     <a href="https://sanbeichahegongheguo.github.io/tags/NLP/">NLP</a>
     
+    <a href="https://sanbeichahegongheguo.github.io/tags/RSA/">RSA</a>
+    
     <a href="https://sanbeichahegongheguo.github.io/tags/Vim/">Vim</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/Windows/">Windows</a>
@@ -963,6 +965,10 @@ endif
     <a href="https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%AD%A6/">文学</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99/">文心雕龙</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/">杂评</a>
     
@@ -1054,7 +1060,7 @@ endif
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
+        &copy; 2021 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

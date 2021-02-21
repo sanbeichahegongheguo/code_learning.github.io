@@ -331,13 +331,13 @@
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Wed May 31 22:28:23 2017
-</span><span style="color:#d14">@author: Administrator
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Wed May 31 22:28:23 2017</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: Administrator</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">snownlp</span> <span style="color:#000;font-weight:bold">import</span> SnowNLP
-s <span style="color:#000;font-weight:bold">=</span> SnowNLP(<span style="color:#d14">u</span><span style="color:#d14">&#39;这个东西真心很赞&#39;</span>)
+s <span style="color:#000;font-weight:bold">=</span> SnowNLP(<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">这个东西真心很赞</span><span style="color:#d14">&#39;</span>)
 
 s<span style="color:#000;font-weight:bold">.</span>words         <span style="color:#998;font-style:italic"># [u&#39;这个&#39;, u&#39;东西&#39;, u&#39;真心&#39;, u&#39;很&#39;, u&#39;赞&#39;]</span>
 s<span style="color:#000;font-weight:bold">.</span>tags          <span style="color:#998;font-style:italic"># [(u&#39;这个&#39;, u&#39;r&#39;), (u&#39;东西&#39;, u&#39;n&#39;), (u&#39;真心&#39;, u&#39;d&#39;), (u&#39;很&#39;, u&#39;d&#39;), (u&#39;赞&#39;, u&#39;Vg&#39;)]</span>
@@ -346,20 +346,20 @@ s<span style="color:#000;font-weight:bold">.</span>tags          <span style="co
 <span style="color:#998;font-style:italic">#汉转拼音</span>
 <span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>pinyin)        <span style="color:#998;font-style:italic"># [u&#39;zhe&#39;, u&#39;ge&#39;, u&#39;dong&#39;, u&#39;xi&#39;,</span>
                        <span style="color:#998;font-style:italic">#  u&#39;zhen&#39;, u&#39;xin&#39;, u&#39;hen&#39;, u&#39;zan&#39;]</span>
-s <span style="color:#000;font-weight:bold">=</span> SnowNLP(<span style="color:#d14">u</span><span style="color:#d14">&#39;「繁體字」「繁體中文」的叫法在臺灣亦很常見。&#39;</span>)
+s <span style="color:#000;font-weight:bold">=</span> SnowNLP(<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">「繁體字」「繁體中文」的叫法在臺灣亦很常見。</span><span style="color:#d14">&#39;</span>)
 <span style="color:#998;font-style:italic">#简转繁</span>
 <span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>han)    <span style="color:#998;font-style:italic"># 输出是：u&#39;「繁体字」「繁体中文」的叫法在台湾亦很常见。&#39;</span>
 
-text <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">u</span><span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">自然语言处理是计算机科学领域与人工智能领域中的一个重要方向。
-</span><span style="color:#d14">它研究能实现人与计算机之间用自然语言进行有效通信的各种理论和方法。
-</span><span style="color:#d14">自然语言处理是一门融语言学、计算机科学、数学于一体的科学。
-</span><span style="color:#d14">因此，这一领域的研究将涉及自然语言，即人们日常使用的语言，
-</span><span style="color:#d14">所以它与语言学的研究有着密切的联系，但又有重要的区别。
-</span><span style="color:#d14">自然语言处理并不是一般地研究自然语言，
-</span><span style="color:#d14">而在于研制能有效地实现自然语言通信的计算机系统，
-</span><span style="color:#d14">特别是其中的软件系统。因而它是计算机科学的一部分。
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+text <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">u</span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">自然语言处理是计算机科学领域与人工智能领域中的一个重要方向。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">它研究能实现人与计算机之间用自然语言进行有效通信的各种理论和方法。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">自然语言处理是一门融语言学、计算机科学、数学于一体的科学。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">因此，这一领域的研究将涉及自然语言，即人们日常使用的语言，</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">所以它与语言学的研究有着密切的联系，但又有重要的区别。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">自然语言处理并不是一般地研究自然语言，</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">而在于研制能有效地实现自然语言通信的计算机系统，</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">特别是其中的软件系统。因而它是计算机科学的一部分。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 
 s <span style="color:#000;font-weight:bold">=</span> SnowNLP(text)
 s<span style="color:#000;font-weight:bold">.</span>keywords(<span style="color:#099">3</span>)   <span style="color:#998;font-style:italic"># [u&#39;语言&#39;, u&#39;自然&#39;, u&#39;计算机&#39;]</span>
@@ -368,12 +368,12 @@ s<span style="color:#000;font-weight:bold">.</span>keywords(<span style="color:#
                     <span style="color:#998;font-style:italic">#  u&#39;自然语言处理是计算机科学领域与人工智能领域中的一个重要方向&#39;]</span>
 s<span style="color:#000;font-weight:bold">.</span>sentences
 
-s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="color:#d14">u</span><span style="color:#d14">&#39;这篇&#39;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#39;文章&#39;</span>],
-             [<span style="color:#d14">u</span><span style="color:#d14">&#39;那篇&#39;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#39;论文&#39;</span>],
-             [<span style="color:#d14">u</span><span style="color:#d14">&#39;这个&#39;</span>]])
+s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">这篇</span><span style="color:#d14">&#39;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">文章</span><span style="color:#d14">&#39;</span>],
+             [<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">那篇</span><span style="color:#d14">&#39;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">论文</span><span style="color:#d14">&#39;</span>],
+             [<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">这个</span><span style="color:#d14">&#39;</span>]])
 <span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>tf)   <span style="color:#998;font-style:italic">#词频</span>
 <span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>idf)  <span style="color:#998;font-style:italic">#逆向文件频率</span>
-<span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>sim([<span style="color:#d14">u</span><span style="color:#d14">&#39;文章&#39;</span>]))  <span style="color:#998;font-style:italic"># [0.3756070762985226, 0, 0]</span>
+<span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>sim([<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">文章</span><span style="color:#d14">&#39;</span>]))  <span style="color:#998;font-style:italic"># [0.3756070762985226, 0, 0]</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>运行结果如下图所示：</p>
@@ -501,11 +501,11 @@ s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="colo
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Thu Feb  1 18:10:52 2018
-</span><span style="color:#d14">
-</span><span style="color:#d14">@author: zch
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Thu Feb  1 18:10:52 2018</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: zch</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">requests</span>
@@ -514,9 +514,9 @@ s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="colo
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">random</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pymysql.cursors</span>
 
-<span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">荣耀V10天猫原始链接：https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w13636028-15291748785.6.70ea7f34skZgjc&amp;id=562003579553&amp;sku_properties=10004:653780895;5919063:6536025
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">荣耀V10天猫原始链接：https://detail.tmall.com/item.htm?spm=a1z10.1-b-s.w13636028-15291748785.6.70ea7f34skZgjc&amp;id=562003579553&amp;sku_properties=10004:653780895;5919063:6536025</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 
 
 <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">crawlProductComment</span>(url,page):
@@ -528,67 +528,67 @@ s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="colo
     data <span style="color:#000;font-weight:bold">=</span> json<span style="color:#000;font-weight:bold">.</span>loads(jsondata)
 
     <span style="color:#998;font-style:italic">#输出页面信息</span>
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;正在获取第{}页的评论数据！&#34;</span><span style="color:#000;font-weight:bold">.</span>format(data[<span style="color:#d14">&#39;paginator&#39;</span>][<span style="color:#d14">&#39;page&#39;</span>]))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">正在获取第{}页的评论数据！</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(data[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">paginator</span><span style="color:#d14">&#39;</span>][<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">page</span><span style="color:#d14">&#39;</span>]))
     j <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
     k <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
     <span style="color:#998;font-style:italic">#遍历评论信息列表</span>
-    <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> data[<span style="color:#d14">&#34;rateList&#34;</span>]:
+    <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> data[<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">rateList</span><span style="color:#d14">&#34;</span>]:
         j <span style="color:#000;font-weight:bold">=</span> j <span style="color:#000;font-weight:bold">+</span> <span style="color:#099">1</span>
         <span style="color:#000;font-weight:bold">if</span> page <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">10</span>:
             <span style="color:#000;font-weight:bold">if</span> j <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">10</span>:
-                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;00&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;0&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
+                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">00</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">0</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
             <span style="color:#000;font-weight:bold">else</span>:
-                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;00&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
+                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">00</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
         <span style="color:#000;font-weight:bold">elif</span> page <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">100</span>:
             <span style="color:#000;font-weight:bold">if</span> j <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">10</span>:
-                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;0&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;0&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
+                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">0</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">0</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
             <span style="color:#000;font-weight:bold">else</span>:
-                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;0&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
+                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">0</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
         <span style="color:#000;font-weight:bold">else</span>:
             <span style="color:#000;font-weight:bold">if</span> j <span style="color:#000;font-weight:bold">&lt;</span> <span style="color:#099">10</span>:
-                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#39;0&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
+                k <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">0</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
             <span style="color:#000;font-weight:bold">else</span>:
                 k <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(page) <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(j)
         <span style="color:#998;font-style:italic">#输出商品sku信息</span>
-        auctionSku <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14">&#39;auctionSku&#39;</span>]
-        rateDate <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14">&#39;rateDate&#39;</span>]
-        rateContent <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14">&#39;rateContent&#39;</span>]
+        auctionSku <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">auctionSku</span><span style="color:#d14">&#39;</span>]
+        rateDate <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">rateDate</span><span style="color:#d14">&#39;</span>]
+        rateContent <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">rateContent</span><span style="color:#d14">&#39;</span>]
 
-        info <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14">&#39;appendComment&#39;</span>]
+        info <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">appendComment</span><span style="color:#d14">&#39;</span>]
         <span style="color:#000;font-weight:bold">if</span> info:
-            appendCommentTime <span style="color:#000;font-weight:bold">=</span> info[<span style="color:#d14">&#39;commentTime&#39;</span>]
-            appendCommentContent <span style="color:#000;font-weight:bold">=</span> info[<span style="color:#d14">&#39;content&#39;</span>]
+            appendCommentTime <span style="color:#000;font-weight:bold">=</span> info[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">commentTime</span><span style="color:#d14">&#39;</span>]
+            appendCommentContent <span style="color:#000;font-weight:bold">=</span> info[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">content</span><span style="color:#d14">&#39;</span>]
         <span style="color:#000;font-weight:bold">else</span>:
-            appendCommentTime <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>
-            appendCommentContent <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;&#34;</span>
+            appendCommentTime <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">&#34;</span>
+            appendCommentContent <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">&#34;</span>
 
 
-        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;第{}个商品的sku:{}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(k,auctionSku))
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">第{}个商品的sku:{}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(k,auctionSku))
         <span style="color:#998;font-style:italic">#输出评论时间和评论内容</span>
-        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;评论时间：{}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(rateDate))
-        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;评论内容：{}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(rateContent))
-        info <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14">&#39;appendComment&#39;</span>]
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">评论时间：{}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(rateDate))
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">评论内容：{}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(rateContent))
+        info <span style="color:#000;font-weight:bold">=</span> i[<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">appendComment</span><span style="color:#d14">&#39;</span>]
         <span style="color:#998;font-style:italic">#判断是否有追加评论</span>
         <span style="color:#000;font-weight:bold">if</span> info:
-            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;追评时间:{}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(appendCommentTime))
-            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;追评内容:{}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(appendCommentContent))
-        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;-------------------------------------------------&#34;</span>)
+            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">追评时间:{}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(appendCommentTime))
+            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">追评内容:{}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(appendCommentContent))
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">-------------------------------------------------</span><span style="color:#d14">&#34;</span>)
 
-        <span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">        数据库操作
-</span><span style="color:#d14">        &#39;&#39;&#39;</span>
+        <span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">        数据库操作</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">        </span><span style="color:#d14">&#39;&#39;&#39;</span>
 
         <span style="color:#998;font-style:italic">#获取数据库链接</span>
-        connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>connect(host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;localhost&#39;</span>,
-                                  user <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;root&#39;</span>,
-                                  password <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;123456&#39;</span>,
-                                  db <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;tmall&#39;</span>,
-                                  charset <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;utf8mb4&#39;</span>)
+        connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>connect(host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">localhost</span><span style="color:#d14">&#39;</span>,
+                                  user <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">root</span><span style="color:#d14">&#39;</span>,
+                                  password <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">123456</span><span style="color:#d14">&#39;</span>,
+                                  db <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">tmall</span><span style="color:#d14">&#39;</span>,
+                                  charset <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">utf8mb4</span><span style="color:#d14">&#39;</span>)
         <span style="color:#000;font-weight:bold">try</span>:
             <span style="color:#998;font-style:italic">#获取会话指针</span>
             <span style="color:#000;font-weight:bold">with</span> connection<span style="color:#000;font-weight:bold">.</span>cursor() <span style="color:#000;font-weight:bold">as</span> cursor:
                 <span style="color:#998;font-style:italic">#创建sql语句</span>
-                sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;insert into `HonorV10_Comment` (`id`,`auctionSku`,`rateDate`,`rateContent`,`appendCommentTime`,`appendCommentContent`) values (</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">)&#34;</span>
+                sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">insert into `HonorV10_Comment` (`id`,`auctionSku`,`rateDate`,`rateContent`,`appendCommentTime`,`appendCommentContent`) values (</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">)</span><span style="color:#d14">&#34;</span>
 
                 <span style="color:#998;font-style:italic">#执行sql语句</span>
                 cursor<span style="color:#000;font-weight:bold">.</span>execute(sql,(k,auctionSku,rateDate,rateContent,appendCommentTime,appendCommentContent))
@@ -603,7 +603,7 @@ s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="colo
     <span style="color:#998;font-style:italic">#print(&#34;正在获取第{}页评论数据!&#34;.format(i+1))</span>
     <span style="color:#998;font-style:italic">#获取荣耀V10评论JSON链接,通过更改page参数的值来循环读取多页评论信息</span>
     <span style="color:#998;font-style:italic">#itemId:&#34;562003579553&#34;,sellerId:&#34;1114511827&#34;,shopId:&#34;101717810&#34;</span>
-    url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;https://rate.tmall.com/list_detail_rate.htm?itemId=562003579553&amp;spuId=101717810&amp;spuId=101717810&amp;sellerId=1114511827&amp;order=3&amp;currentPage=&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(i) <span style="color:#000;font-weight:bold">+</span><span style="color:#d14">&#39;&amp;append=⊙&amp;content=1&#39;</span>
+    url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">https://rate.tmall.com/list_detail_rate.htm?itemId=562003579553&amp;spuId=101717810&amp;spuId=101717810&amp;sellerId=1114511827&amp;order=3&amp;currentPage=</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(i) <span style="color:#000;font-weight:bold">+</span><span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">&amp;append=⊙&amp;content=1</span><span style="color:#d14">&#39;</span>
     crawlProductComment(url,i)
     <span style="color:#998;font-style:italic">#设置休眠时间</span>
     time<span style="color:#000;font-weight:bold">.</span>sleep(random<span style="color:#000;font-weight:bold">.</span>randint(<span style="color:#099">32</span>,<span style="color:#099">66</span>))
@@ -668,32 +668,32 @@ s <span style="color:#000;font-weight:bold">=</span> SnowNLP([[<span style="colo
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Wed Feb  7 11:23:27 2018
-</span><span style="color:#d14">
-</span><span style="color:#d14">@author: zch
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Wed Feb  7 11:23:27 2018</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: zch</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pymysql.cursors</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">re</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">jieba</span>
 
-<span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">数据库操作
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">数据库操作</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 
 <span style="color:#998;font-style:italic">#获取数据库链接</span>
-connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>connect(host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;localhost&#39;</span>,
-                          user <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;root&#39;</span>,
-                          password <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;123456&#39;</span>,
-                          db <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;tmall&#39;</span>,
-                          charset <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;utf8mb4&#39;</span>)
+connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>connect(host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">localhost</span><span style="color:#d14">&#39;</span>,
+                          user <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">root</span><span style="color:#d14">&#39;</span>,
+                          password <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">123456</span><span style="color:#d14">&#39;</span>,
+                          db <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">tmall</span><span style="color:#d14">&#39;</span>,
+                          charset <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">utf8mb4</span><span style="color:#d14">&#39;</span>)
 <span style="color:#000;font-weight:bold">try</span>:
     <span style="color:#998;font-style:italic">#获取会话指针</span>
     <span style="color:#000;font-weight:bold">with</span> connection<span style="color:#000;font-weight:bold">.</span>cursor() <span style="color:#000;font-weight:bold">as</span> cursor:
         <span style="color:#998;font-style:italic">#创建sql语句</span>
-        sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;select * from `HonorV10_Comment` limit 3000&#34;</span>
+        sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">select * from `HonorV10_Comment` limit 3000</span><span style="color:#d14">&#34;</span>
 
         <span style="color:#998;font-style:italic">#执行sql语句</span>
         cursor<span style="color:#000;font-weight:bold">.</span>execute(sql)
@@ -705,16 +705,16 @@ connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span styl
 <span style="color:#000;font-weight:bold">finally</span>:
     connection<span style="color:#000;font-weight:bold">.</span>close()
 
-f1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">open</span>(<span style="color:#d14">&#34;tmall_review.txt&#34;</span>,<span style="color:#d14">&#39;a&#39;</span>) 
+f1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">open</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">tmall_review.txt</span><span style="color:#d14">&#34;</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">a</span><span style="color:#d14">&#39;</span>) 
 <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">0</span>,<span style="color:#099">3000</span>):
     line <span style="color:#000;font-weight:bold">=</span> data[i][<span style="color:#099">3</span>]
     <span style="color:#000;font-weight:bold">print</span>(line)
     <span style="color:#998;font-style:italic"># 中文的编码范围是：\u4e00到\u9fa5 </span>
-    p2 <span style="color:#000;font-weight:bold">=</span> re<span style="color:#000;font-weight:bold">.</span>compile(<span style="color:#d14">r</span><span style="color:#d14">&#39;[^\u4e00-\u9fa5]&#39;</span>)  
-    result <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34; &#34;</span><span style="color:#000;font-weight:bold">.</span>join(p2<span style="color:#000;font-weight:bold">.</span>split(line))<span style="color:#000;font-weight:bold">.</span>strip() 
+    p2 <span style="color:#000;font-weight:bold">=</span> re<span style="color:#000;font-weight:bold">.</span>compile(<span style="color:#d14">r</span><span style="color:#d14">&#39;</span><span style="color:#d14">[^</span><span style="color:#d14">\</span><span style="color:#d14">u4e00-</span><span style="color:#d14">\</span><span style="color:#d14">u9fa5]</span><span style="color:#d14">&#39;</span>)  
+    result <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14"> </span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>join(p2<span style="color:#000;font-weight:bold">.</span>split(line))<span style="color:#000;font-weight:bold">.</span>strip() 
     <span style="color:#998;font-style:italic">#line.replace(&#39;\t&#39;,&#39;&#39;).replace(&#39;\n&#39;,&#39;&#39;).replace(&#39; &#39;,&#39;&#39;)</span>
     cutline <span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut(result,cut_all<span style="color:#000;font-weight:bold">=</span><span style="color:#999">False</span>)
-    f1<span style="color:#000;font-weight:bold">.</span>write(<span style="color:#d14">&#34; &#34;</span><span style="color:#000;font-weight:bold">.</span>join(cutline))
+    f1<span style="color:#000;font-weight:bold">.</span>write(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14"> </span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>join(cutline))
 
 f1<span style="color:#000;font-weight:bold">.</span>close()
 
@@ -774,22 +774,22 @@ f1<span style="color:#000;font-weight:bold">.</span>close()
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Wed Feb  7 11:21:39 2018
-</span><span style="color:#d14">
-</span><span style="color:#d14">@author: zch
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Wed Feb  7 11:21:39 2018</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: zch</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">gensim.models</span> <span style="color:#000;font-weight:bold">import</span> word2vec
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">logging</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pandas</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">pd</span>
 
 <span style="color:#998;font-style:italic"># 主程序  </span>
-logging<span style="color:#000;font-weight:bold">.</span>basicConfig(format<span style="color:#000;font-weight:bold">=</span><span style="color:#d14">&#39;</span><span style="color:#d14">%(asctime)s</span><span style="color:#d14">:</span><span style="color:#d14">%(levelname)s</span><span style="color:#d14">: </span><span style="color:#d14">%(message)s</span><span style="color:#d14">&#39;</span>, level<span style="color:#000;font-weight:bold">=</span>logging<span style="color:#000;font-weight:bold">.</span>INFO)  
+logging<span style="color:#000;font-weight:bold">.</span>basicConfig(format<span style="color:#000;font-weight:bold">=</span><span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">%(asctime)s</span><span style="color:#d14">:</span><span style="color:#d14">%(levelname)s</span><span style="color:#d14">: </span><span style="color:#d14">%(message)s</span><span style="color:#d14">&#39;</span>, level<span style="color:#000;font-weight:bold">=</span>logging<span style="color:#000;font-weight:bold">.</span>INFO)  
 
 
 <span style="color:#998;font-style:italic"># 加载语料,默认为utf-8编码</span>
-sentences <span style="color:#000;font-weight:bold">=</span>word2vec<span style="color:#000;font-weight:bold">.</span>Text8Corpus(<span style="color:#d14">u</span><span style="color:#d14">&#34;D:</span><span style="color:#d14">\\</span><span style="color:#d14">data/tmall/tmall_review.txt&#34;</span>)
+sentences <span style="color:#000;font-weight:bold">=</span>word2vec<span style="color:#000;font-weight:bold">.</span>Text8Corpus(<span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">D:</span><span style="color:#d14">\\</span><span style="color:#d14">data/tmall/tmall_review.txt</span><span style="color:#d14">&#34;</span>)
 
 
 <span style="color:#998;font-style:italic">#训练skip-gram模型，默认window=5</span>
@@ -800,25 +800,25 @@ model <span style="color:#000;font-weight:bold">=</span>word2vec<span style="col
 <span style="color:#998;font-style:italic"># 计算两个词的相似度/相关程度  </span>
 <span style="color:#000;font-weight:bold">try</span>:  
     <span style="color:#998;font-style:italic">#最新版本的用法，老版本用法为y1 = model.similarity(u&#34;苹果&#34;, u&#34;华为&#34;)，下同。  </span>
-    y1 <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>wv<span style="color:#000;font-weight:bold">.</span>similarity(<span style="color:#d14">u</span><span style="color:#d14">&#34;华为&#34;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#34;手机&#34;</span>)  
+    y1 <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>wv<span style="color:#000;font-weight:bold">.</span>similarity(<span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">华为</span><span style="color:#d14">&#34;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">手机</span><span style="color:#d14">&#34;</span>)  
 <span style="color:#000;font-weight:bold">except</span> <span style="color:#900;font-weight:bold">KeyError</span>:  
     y1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>  
-<span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">u</span><span style="color:#d14">&#34;【华为】和【手机】的相似度为：&#34;</span>, y1)  
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;------------------------</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">【华为】和【手机】的相似度为：</span><span style="color:#d14">&#34;</span>, y1)  
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">------------------------</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
 
 <span style="color:#998;font-style:italic">#计算某个词的相关词列表(topn=10)</span>
-y2 <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>wv<span style="color:#000;font-weight:bold">.</span>most_similar(<span style="color:#d14">u</span><span style="color:#d14">&#34;物流&#34;</span>,topn<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>)
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">u</span><span style="color:#d14">&#34;和【物流】最相关的词有：</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
+y2 <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>wv<span style="color:#000;font-weight:bold">.</span>most_similar(<span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">物流</span><span style="color:#d14">&#34;</span>,topn<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">和【物流】最相关的词有：</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
 <span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> y2:
     <span style="color:#000;font-weight:bold">print</span>(item[<span style="color:#099">0</span>], item[<span style="color:#099">1</span>])
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;------------------------</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">------------------------</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
 
 <span style="color:#998;font-style:italic"># 寻找对应关系  </span>
-<span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">u</span><span style="color:#d14">&#34;上网-流畅，拍照-&#34;</span>)  
-y3 <span style="color:#000;font-weight:bold">=</span>model<span style="color:#000;font-weight:bold">.</span>wv<span style="color:#000;font-weight:bold">.</span>most_similar([<span style="color:#d14">u</span><span style="color:#d14">&#39;上网&#39;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#39;流畅&#39;</span>], [<span style="color:#d14">u</span><span style="color:#d14">&#39;拍照&#39;</span>],topn<span style="color:#000;font-weight:bold">=</span><span style="color:#099">5</span>)  
+<span style="color:#000;font-weight:bold">print</span> (<span style="color:#d14">u</span><span style="color:#d14">&#34;</span><span style="color:#d14">上网-流畅，拍照-</span><span style="color:#d14">&#34;</span>)  
+y3 <span style="color:#000;font-weight:bold">=</span>model<span style="color:#000;font-weight:bold">.</span>wv<span style="color:#000;font-weight:bold">.</span>most_similar([<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">上网</span><span style="color:#d14">&#39;</span>, <span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">流畅</span><span style="color:#d14">&#39;</span>], [<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">拍照</span><span style="color:#d14">&#39;</span>],topn<span style="color:#000;font-weight:bold">=</span><span style="color:#099">5</span>)  
 <span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> y3:  
     <span style="color:#000;font-weight:bold">print</span>(item[<span style="color:#099">0</span>], item[<span style="color:#099">1</span>])  
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;------------------------</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">------------------------</span><span style="color:#d14">\n</span><span style="color:#d14">&#34;</span>)
 
 </code></pre></td></tr></table>
 </div>
@@ -882,24 +882,24 @@ y3 <span style="color:#000;font-weight:bold">=</span>model<span style="color:#00
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">jieba分词测试
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">jieba分词测试</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">jieba</span>
 
 
 <span style="color:#998;font-style:italic">#全模式</span>
-test1 <span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14">&#34;杭州西湖风景很好，是旅游胜地！&#34;</span>, cut_all<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>)
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;全模式: &#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;| &#34;</span><span style="color:#000;font-weight:bold">.</span>join(test1))
+test1 <span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地！</span><span style="color:#d14">&#34;</span>, cut_all<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">全模式: </span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">| </span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>join(test1))
 
 <span style="color:#998;font-style:italic">#精确模式</span>
-test2 <span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14">&#34;杭州西湖风景很好，是旅游胜地！&#34;</span>, cut_all<span style="color:#000;font-weight:bold">=</span><span style="color:#999">False</span>)
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;精确模式: &#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;| &#34;</span><span style="color:#000;font-weight:bold">.</span>join(test2))
+test2 <span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地！</span><span style="color:#d14">&#34;</span>, cut_all<span style="color:#000;font-weight:bold">=</span><span style="color:#999">False</span>)
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">精确模式: </span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">| </span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>join(test2))
 
 <span style="color:#998;font-style:italic">#搜索引擎模式</span>
-test3<span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut_for_search(<span style="color:#d14">&#34;杭州西湖风景很好，是旅游胜地,每年吸引大量前来游玩的游客！&#34;</span>)  
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;搜索引擎模式:&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14">&#34;| &#34;</span><span style="color:#000;font-weight:bold">.</span>join(test3))
+test3<span style="color:#000;font-weight:bold">=</span> jieba<span style="color:#000;font-weight:bold">.</span>cut_for_search(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地,每年吸引大量前来游玩的游客！</span><span style="color:#d14">&#34;</span>)  
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">搜索引擎模式:</span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">| </span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>join(test3))
 <span style="color:#099">1234567891011121314151617181920</span>
 </code></pre></td></tr></table>
 </div>
@@ -954,29 +954,29 @@ test3<span style="color:#000;font-weight:bold">=</span> jieba<span style="color:
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">SnowNLP测试
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">SnowNLP测试</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">snownlp</span> <span style="color:#000;font-weight:bold">import</span> SnowNLP
 
-s <span style="color:#000;font-weight:bold">=</span> SnowNLP(<span style="color:#d14">u</span><span style="color:#d14">&#39;杭州西湖风景很好，是旅游胜地,每年吸引大量前来游玩的游客！&#39;</span>)
+s <span style="color:#000;font-weight:bold">=</span> SnowNLP(<span style="color:#d14">u</span><span style="color:#d14">&#39;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地,每年吸引大量前来游玩的游客！</span><span style="color:#d14">&#39;</span>)
 
 <span style="color:#998;font-style:italic">#分词</span>
 <span style="color:#000;font-weight:bold">print</span>(s<span style="color:#000;font-weight:bold">.</span>words)
 
 
 <span style="color:#998;font-style:italic">#情感词性计算</span>
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;该文本的情感词性为正的概率:&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(s<span style="color:#000;font-weight:bold">.</span>sentiments))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">该文本的情感词性为正的概率:</span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(s<span style="color:#000;font-weight:bold">.</span>sentiments))
 
-text <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">u</span><span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">西湖，位于浙江省杭州市西面，是中国大陆首批国家重点风景名胜区和中国十大风景名胜之一。
-</span><span style="color:#d14">它是中国大陆主要的观赏性淡水湖泊之一，也是现今《世界遗产名录》中少数几个和中国唯一一个湖泊类文化遗产。
-</span><span style="color:#d14">西湖三面环山，面积约6.39平方千米，东西宽约2.8千米，南北长约3.2千米，绕湖一周近15千米。
-</span><span style="color:#d14">湖中被孤山、白堤、苏堤、杨公堤分隔，按面积大小分别为外西湖、西里湖、北里湖、小南湖及岳湖等五片水面，
-</span><span style="color:#d14">苏堤、白堤越过湖面，小瀛洲、湖心亭、阮公墩三个小岛鼎立于外西湖湖心，夕照山的雷峰塔与宝石山的保俶塔隔湖相映，
-</span><span style="color:#d14">由此形成了“一山、二塔、三岛、三堤、五湖”的基本格局。
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+text <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">u</span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">西湖，位于浙江省杭州市西面，是中国大陆首批国家重点风景名胜区和中国十大风景名胜之一。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">它是中国大陆主要的观赏性淡水湖泊之一，也是现今《世界遗产名录》中少数几个和中国唯一一个湖泊类文化遗产。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">西湖三面环山，面积约6.39平方千米，东西宽约2.8千米，南北长约3.2千米，绕湖一周近15千米。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">湖中被孤山、白堤、苏堤、杨公堤分隔，按面积大小分别为外西湖、西里湖、北里湖、小南湖及岳湖等五片水面，</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">苏堤、白堤越过湖面，小瀛洲、湖心亭、阮公墩三个小岛鼎立于外西湖湖心，夕照山的雷峰塔与宝石山的保俶塔隔湖相映，</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">由此形成了“一山、二塔、三岛、三堤、五湖”的基本格局。</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 
 s2 <span style="color:#000;font-weight:bold">=</span> SnowNLP(text)
 
@@ -1021,21 +1021,21 @@ e/叹词 o/拟声词 g/语素 w/标点 x/其它12345
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">THULAC 分词测试
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">THULAC 分词测试</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">thulac</span>   
 
 <span style="color:#998;font-style:italic">#默认模式，分词的同时进行词性标注</span>
 test1 <span style="color:#000;font-weight:bold">=</span> thulac<span style="color:#000;font-weight:bold">.</span>thulac()
-text1 <span style="color:#000;font-weight:bold">=</span> test1<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14">&#34;杭州西湖风景很好，是旅游胜地！&#34;</span>)
+text1 <span style="color:#000;font-weight:bold">=</span> test1<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地！</span><span style="color:#d14">&#34;</span>)
 <span style="color:#000;font-weight:bold">print</span>(text1)
 
 
 <span style="color:#998;font-style:italic">#只进行分词</span>
 test2 <span style="color:#000;font-weight:bold">=</span> thulac<span style="color:#000;font-weight:bold">.</span>thulac(seg_only<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>)
-text2 <span style="color:#000;font-weight:bold">=</span> test2<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14">&#34;杭州西湖风景很好，是旅游胜地！&#34;</span>)
+text2 <span style="color:#000;font-weight:bold">=</span> test2<span style="color:#000;font-weight:bold">.</span>cut(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地！</span><span style="color:#d14">&#34;</span>)
 <span style="color:#000;font-weight:bold">print</span>(text2)<span style="color:#099">1234567891011121314151617</span>
 </code></pre></td></tr></table>
 </div>
@@ -1075,9 +1075,9 @@ text2 <span style="color:#000;font-weight:bold">=</span> test2<span style="color
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">PYNLPIR 分词测试
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">PYNLPIR 分词测试</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">pynlpir</span>
 
@@ -1085,21 +1085,21 @@ text2 <span style="color:#000;font-weight:bold">=</span> test2<span style="color
 <span style="color:#998;font-style:italic">#打开分词器</span>
 pynlpir<span style="color:#000;font-weight:bold">.</span>open()
 
-text1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;杭州西湖风景很好，是旅游胜地,每年吸引大量前来游玩的游客！&#34;</span> 
+text1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">杭州西湖风景很好，是旅游胜地,每年吸引大量前来游玩的游客！</span><span style="color:#d14">&#34;</span> 
 
 <span style="color:#998;font-style:italic">#分词，默认打开分词和词性标注功能</span>
 test1 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="color:#000;font-weight:bold">.</span>segment(text1)
 <span style="color:#998;font-style:italic">#print(test1)</span>
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;1.默认分词模式:</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(test1))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">1.默认分词模式:</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(test1))
 
 <span style="color:#998;font-style:italic">#将词性标注语言变更为汉语</span>
 test2 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="color:#000;font-weight:bold">.</span>segment(text1,pos_english<span style="color:#000;font-weight:bold">=</span><span style="color:#999">False</span>)
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;2.汉语标注模式:</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(test2))
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">2.汉语标注模式:</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(test2))
 
 
 <span style="color:#998;font-style:italic">#关闭词性标注</span>
 test3 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="color:#000;font-weight:bold">.</span>segment(text1,pos_tagging<span style="color:#000;font-weight:bold">=</span><span style="color:#999">False</span>)
-<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;3.无词性标注模式:</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(test3))<span style="color:#099">1234567891011121314151617181920212223242526</span>
+<span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">3.无词性标注模式:</span><span style="color:#d14">\n</span><span style="color:#d14">&#39;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(test3))<span style="color:#099">1234567891011121314151617181920212223242526</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><strong>测试结果</strong>如下图所示：</p>
@@ -1186,11 +1186,11 @@ test3 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="col
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Tue Aug 15 16:44:15 2017
-</span><span style="color:#d14">
-</span><span style="color:#d14">@author: Administrator
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Tue Aug 15 16:44:15 2017</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: Administrator</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">urllib.request</span>
 <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">bs4</span> <span style="color:#000;font-weight:bold">import</span> BeautifulSoup
@@ -1204,14 +1204,14 @@ test3 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="col
     html1 <span style="color:#000;font-weight:bold">=</span> urllib<span style="color:#000;font-weight:bold">.</span>request<span style="color:#000;font-weight:bold">.</span>urlopen(url)<span style="color:#000;font-weight:bold">.</span>read()
     html1 <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(html1)
 
-    soup1 <span style="color:#000;font-weight:bold">=</span> BeautifulSoup(html1,<span style="color:#d14">&#39;lxml&#39;</span>)
-    result1 <span style="color:#000;font-weight:bold">=</span> soup1<span style="color:#000;font-weight:bold">.</span>find_all(attrs<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14">&#34;class&#34;</span>:<span style="color:#d14">&#34;r-time&#34;</span>})
+    soup1 <span style="color:#000;font-weight:bold">=</span> BeautifulSoup(html1,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">lxml</span><span style="color:#d14">&#39;</span>)
+    result1 <span style="color:#000;font-weight:bold">=</span> soup1<span style="color:#000;font-weight:bold">.</span>find_all(attrs<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">class</span><span style="color:#d14">&#34;</span>:<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">r-time</span><span style="color:#d14">&#34;</span>})
     <span style="color:#998;font-style:italic">#print(result1)</span>
-    result2 <span style="color:#000;font-weight:bold">=</span> soup1<span style="color:#000;font-weight:bold">.</span>find_all(attrs<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14">&#34;class&#34;</span>:<span style="color:#d14">&#34;buyer-feedback&#34;</span>})
+    result2 <span style="color:#000;font-weight:bold">=</span> soup1<span style="color:#000;font-weight:bold">.</span>find_all(attrs<span style="color:#000;font-weight:bold">=</span>{<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">class</span><span style="color:#d14">&#34;</span>:<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">buyer-feedback</span><span style="color:#d14">&#34;</span>})
     result2 <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">str</span>(result2)
 
-    soup2 <span style="color:#000;font-weight:bold">=</span> BeautifulSoup(result2,<span style="color:#d14">&#39;lxml&#39;</span>)
-    result3 <span style="color:#000;font-weight:bold">=</span> soup2<span style="color:#000;font-weight:bold">.</span>find_all(<span style="color:#d14">&#39;span&#39;</span>)
+    soup2 <span style="color:#000;font-weight:bold">=</span> BeautifulSoup(result2,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">lxml</span><span style="color:#d14">&#39;</span>)
+    result3 <span style="color:#000;font-weight:bold">=</span> soup2<span style="color:#000;font-weight:bold">.</span>find_all(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">span</span><span style="color:#d14">&#39;</span>)
 
 
     <span style="color:#000;font-weight:bold">for</span> j <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">0</span>,<span style="color:#099">10</span>):
@@ -1221,23 +1221,23 @@ test3 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="col
         <span style="color:#000;font-weight:bold">print</span>(commentContent)
 
 
-        <span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">        数据库操作
-</span><span style="color:#d14">        &#39;&#39;&#39;</span>
+        <span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">        数据库操作</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">        </span><span style="color:#d14">&#39;&#39;&#39;</span>
 
 
 
         <span style="color:#998;font-style:italic">#获取数据库链接</span>
-        connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>connect(host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;localhost&#39;</span>,
-                                  user <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;root&#39;</span>,
-                                  password <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;123456&#39;</span>,
-                                  db <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;comment&#39;</span>,
-                                  charset <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;utf8mb4&#39;</span>)
+        connection  <span style="color:#000;font-weight:bold">=</span> pymysql<span style="color:#000;font-weight:bold">.</span>connect(host <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">localhost</span><span style="color:#d14">&#39;</span>,
+                                  user <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">root</span><span style="color:#d14">&#39;</span>,
+                                  password <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">123456</span><span style="color:#d14">&#39;</span>,
+                                  db <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">comment</span><span style="color:#d14">&#39;</span>,
+                                  charset <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">utf8mb4</span><span style="color:#d14">&#39;</span>)
         <span style="color:#000;font-weight:bold">try</span>:
             <span style="color:#998;font-style:italic">#获取会话指针</span>
             <span style="color:#000;font-weight:bold">with</span> connection<span style="color:#000;font-weight:bold">.</span>cursor() <span style="color:#000;font-weight:bold">as</span> cursor:
                 <span style="color:#998;font-style:italic">#创建sql语句</span>
-                sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;insert into `agm` (`commentTime`,`commentContent`) values (</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">)&#34;</span>
+                sql <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">insert into `agm` (`commentTime`,`commentContent`) values (</span><span style="color:#d14">%s</span><span style="color:#d14">,</span><span style="color:#d14">%s</span><span style="color:#d14">)</span><span style="color:#d14">&#34;</span>
 
                 <span style="color:#998;font-style:italic">#执行sql语句</span>
                 cursor<span style="color:#000;font-weight:bold">.</span>execute(sql,(commentTime,commentContent))
@@ -1250,12 +1250,12 @@ test3 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="col
 
 
 <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">1</span>,<span style="color:#099">26</span>):
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;正在下载第{}页数据...&#34;</span><span style="color:#000;font-weight:bold">.</span>format(i))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">正在下载第{}页数据...</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(i))
     <span style="color:#998;font-style:italic">#速卖通商品评论链接</span>
-    url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#34;https://feedback.aliexpress.com/display/productEvaluation.htm?productId=32789025522&amp;ownerMemberId=224795258&amp;companyId=234539103&amp;memberType=seller&amp;startValidDate=&amp;i18n=true&amp;page=&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(i)
+    url <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">https://feedback.aliexpress.com/display/productEvaluation.htm?productId=32789025522&amp;ownerMemberId=224795258&amp;companyId=234539103&amp;memberType=seller&amp;startValidDate=&amp;i18n=true&amp;page=</span><span style="color:#d14">&#34;</span> <span style="color:#000;font-weight:bold">+</span> <span style="color:#0086b3">str</span>(i)
     crawl(url,i)
     t <span style="color:#000;font-weight:bold">=</span> random<span style="color:#000;font-weight:bold">.</span>randint(<span style="color:#099">11</span>,<span style="color:#099">16</span>)
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;休眠时间为:{}s&#34;</span><span style="color:#000;font-weight:bold">.</span>format(t))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">休眠时间为:{}s</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(t))
     time<span style="color:#000;font-weight:bold">.</span>sleep(t)
 
 </code></pre></td></tr></table>
@@ -1330,19 +1330,19 @@ test3 <span style="color:#000;font-weight:bold">=</span> pynlpir<span style="col
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Sun Aug 27 20:51:15 2017
-</span><span style="color:#d14">
-</span><span style="color:#d14">@author: Administrator
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Sun Aug 27 20:51:15 2017</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: Administrator</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">numpy</span> <span style="color:#000;font-weight:bold">as</span> <span style="color:#555">np</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">lda</span>
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">lda.datasets</span>
 
-<span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">1.导入数据源
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">1.导入数据源</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 <span style="color:#998;font-style:italic">#通过LDA库自带的API接口调用路透社的数据</span>
 titles <span style="color:#000;font-weight:bold">=</span> lda<span style="color:#000;font-weight:bold">.</span>datasets<span style="color:#000;font-weight:bold">.</span>load_reuters_titles()
 
@@ -1350,9 +1350,9 @@ titles <span style="color:#000;font-weight:bold">=</span> lda<span style="color:
     <span style="color:#000;font-weight:bold">print</span>(titles[i])
 
 
-<span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">2.求解P(词语|主题),得到每个主题所包含的单词的分布
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">2.求解P(词语|主题),得到每个主题所包含的单词的分布</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 X <span style="color:#000;font-weight:bold">=</span> lda<span style="color:#000;font-weight:bold">.</span>datasets<span style="color:#000;font-weight:bold">.</span>load_reuters()
 vocab <span style="color:#000;font-weight:bold">=</span> lda<span style="color:#000;font-weight:bold">.</span>datasets<span style="color:#000;font-weight:bold">.</span>load_reuters_vocab()
 titles <span style="color:#000;font-weight:bold">=</span> lda<span style="color:#000;font-weight:bold">.</span>datasets<span style="color:#000;font-weight:bold">.</span>load_reuters_titles()
@@ -1365,15 +1365,15 @@ n_top_words <span style="color:#000;font-weight:bold">=</span> <span style="colo
 <span style="color:#000;font-weight:bold">for</span> i,topic_dist <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">enumerate</span>(topic_word):
     topic_words <span style="color:#000;font-weight:bold">=</span> np<span style="color:#000;font-weight:bold">.</span>array(vocab)[np<span style="color:#000;font-weight:bold">.</span>argsort(topic_dist)][:<span style="color:#000;font-weight:bold">-</span>(n_top_words<span style="color:#000;font-weight:bold">+</span><span style="color:#099">1</span>):<span style="color:#000;font-weight:bold">-</span><span style="color:#099">1</span>]
     <span style="color:#998;font-style:italic">#输出每个主题所包含的单词的分布</span>
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;Topic{}:{}&#39;</span><span style="color:#000;font-weight:bold">.</span>format(i,<span style="color:#d14">&#39;&#39;</span><span style="color:#000;font-weight:bold">.</span>join(topic_words)))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">Topic{}:{}</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">.</span>format(i,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">.</span>join(topic_words)))
 
-<span style="color:#d14">&#39;&#39;&#39;
-</span><span style="color:#d14">3.求解P(主题|文档),得到文章所对应的主题
-</span><span style="color:#d14">&#39;&#39;&#39;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">3.求解P(主题|文档),得到文章所对应的主题</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#39;&#39;&#39;</span>
 doc_topic <span style="color:#000;font-weight:bold">=</span> model<span style="color:#000;font-weight:bold">.</span>doc_topic_
 <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">20</span>):
     <span style="color:#998;font-style:italic">#输出文章所对应的主题</span>
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;{} (top topic:{})&#34;</span><span style="color:#000;font-weight:bold">.</span>format(titles[i],doc_topic[i]<span style="color:#000;font-weight:bold">.</span>argmax()))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">{} (top topic:{})</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(titles[i],doc_topic[i]<span style="color:#000;font-weight:bold">.</span>argmax()))
 
 </code></pre></td></tr></table>
 </div>
@@ -1440,11 +1440,11 @@ doc_topic <span style="color:#000;font-weight:bold">=</span> model<span style="c
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Thu Aug 31 22:48:55 2017
-</span><span style="color:#d14">
-</span><span style="color:#d14">@author: Administrator
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Thu Aug 31 22:48:55 2017</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: Administrator</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">math</span> <span style="color:#000;font-weight:bold">import</span> log
 
@@ -1460,7 +1460,7 @@ doc_topic <span style="color:#000;font-weight:bold">=</span> model<span style="c
     word_count <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">0</span>
     <span style="color:#000;font-weight:bold">for</span> doc <span style="color:#000;font-weight:bold">in</span> doc_list:
         <span style="color:#000;font-weight:bold">if</span> word <span style="color:#000;font-weight:bold">in</span> doc:
-            word_count <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+            word_count <span style="color:#000;font-weight:bold">+</span><span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
     <span style="color:#000;font-weight:bold">return</span> log(all_num<span style="color:#000;font-weight:bold">/</span>word_count)
 
 <span style="color:#998;font-style:italic">#tfdif计算(tfidf = tf * idf)</span>
@@ -1468,21 +1468,21 @@ doc_topic <span style="color:#000;font-weight:bold">=</span> model<span style="c
     score <span style="color:#000;font-weight:bold">=</span> tf(word,doc)<span style="color:#000;font-weight:bold">*</span>idf(word,doc_list)
     <span style="color:#000;font-weight:bold">return</span> score
 
-<span style="color:#000;font-weight:bold">if</span> __name__ <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#39;__main__&#39;</span>:
+<span style="color:#000;font-weight:bold">if</span> __name__ <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">__main__</span><span style="color:#d14">&#39;</span>:
 
-    doc1 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;at&#39;</span>:<span style="color:#099">16</span>,<span style="color:#d14">&#39;tell&#39;</span>:<span style="color:#099">132</span>,<span style="color:#d14">&#39;soft&#39;</span>:<span style="color:#099">42</span>,<span style="color:#d14">&#39;let&#39;</span>:<span style="color:#099">53</span>,<span style="color:#d14">&#39;this&#39;</span>:<span style="color:#099">32</span>}
-    doc2 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;tell&#39;</span>:<span style="color:#099">53</span>,<span style="color:#d14">&#39;be&#39;</span>:<span style="color:#099">46</span>,<span style="color:#d14">&#39;tea&#39;</span>:<span style="color:#099">43</span>,<span style="color:#d14">&#39;what&#39;</span>:<span style="color:#099">46</span>,<span style="color:#d14">&#39;foot&#39;</span>:<span style="color:#099">65</span>,<span style="color:#d14">&#39;hack&#39;</span>:<span style="color:#099">32</span>}
-    doc3 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14">&#39;soft&#39;</span>:<span style="color:#099">65</span>,<span style="color:#d14">&#39;this&#39;</span>:<span style="color:#099">67</span>,<span style="color:#d14">&#39;tell&#39;</span>:<span style="color:#099">78</span>,<span style="color:#d14">&#39;how&#39;</span>:<span style="color:#099">124</span>,<span style="color:#d14">&#39;foot&#39;</span>:<span style="color:#099">54</span>}
+    doc1 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">at</span><span style="color:#d14">&#39;</span>:<span style="color:#099">16</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">tell</span><span style="color:#d14">&#39;</span>:<span style="color:#099">132</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">soft</span><span style="color:#d14">&#39;</span>:<span style="color:#099">42</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">let</span><span style="color:#d14">&#39;</span>:<span style="color:#099">53</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">this</span><span style="color:#d14">&#39;</span>:<span style="color:#099">32</span>}
+    doc2 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">tell</span><span style="color:#d14">&#39;</span>:<span style="color:#099">53</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">be</span><span style="color:#d14">&#39;</span>:<span style="color:#099">46</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">tea</span><span style="color:#d14">&#39;</span>:<span style="color:#099">43</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">what</span><span style="color:#d14">&#39;</span>:<span style="color:#099">46</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">foot</span><span style="color:#d14">&#39;</span>:<span style="color:#099">65</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">hack</span><span style="color:#d14">&#39;</span>:<span style="color:#099">32</span>}
+    doc3 <span style="color:#000;font-weight:bold">=</span> {<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">soft</span><span style="color:#d14">&#39;</span>:<span style="color:#099">65</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">this</span><span style="color:#d14">&#39;</span>:<span style="color:#099">67</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">tell</span><span style="color:#d14">&#39;</span>:<span style="color:#099">78</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">how</span><span style="color:#d14">&#39;</span>:<span style="color:#099">124</span>,<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">foot</span><span style="color:#d14">&#39;</span>:<span style="color:#099">54</span>}
 
     doc_list <span style="color:#000;font-weight:bold">=</span> [doc1,doc2,doc3]
     i <span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
     <span style="color:#000;font-weight:bold">for</span> doc <span style="color:#000;font-weight:bold">in</span> doc_list:
-        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;-&#39;</span><span style="color:#000;font-weight:bold">*</span><span style="color:#099">30</span>)
-        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;doc{}中各单词的tfidf值:&#34;</span><span style="color:#000;font-weight:bold">.</span>format(i))
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">-</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">*</span><span style="color:#099">30</span>)
+        <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">doc{}中各单词的tfidf值:</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(i))
         <span style="color:#998;font-style:italic">#循环输出每个文档中每个单词的tfidf值</span>
         <span style="color:#000;font-weight:bold">for</span> word <span style="color:#000;font-weight:bold">in</span> doc:
-            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#39;&#34;{}&#34;:{}&#39;</span><span style="color:#000;font-weight:bold">.</span>format(word,tfidf(word,doc,doc_list)))
-        i <span style="color:#000;font-weight:bold">+=</span> <span style="color:#099">1</span>
+            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">&#34;</span><span style="color:#d14">{}</span><span style="color:#d14">&#34;</span><span style="color:#d14">:{}</span><span style="color:#d14">&#39;</span><span style="color:#000;font-weight:bold">.</span>format(word,tfidf(word,doc,doc_list)))
+        i <span style="color:#000;font-weight:bold">+</span><span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -1533,36 +1533,36 @@ doc_topic <span style="color:#000;font-weight:bold">=</span> model<span style="c
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#998;font-style:italic"># -*- coding: utf-8 -*-</span>
-<span style="color:#d14">&#34;&#34;&#34;
-</span><span style="color:#d14">Created on Fri Feb  9 15:58:14 2018
-</span><span style="color:#d14">@author: zch
-</span><span style="color:#d14">&#34;&#34;&#34;</span>
+<span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span><span style="color:#d14"></span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">Created on Fri Feb  9 15:58:14 2018</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">@author: zch</span><span style="color:#d14">
+</span><span style="color:#d14"></span><span style="color:#d14">&#34;&#34;&#34;</span>
 
 <span style="color:#000;font-weight:bold">import</span> <span style="color:#555">codecs</span>
 <span style="color:#000;font-weight:bold">from</span> <span style="color:#555">textrank4zh</span> <span style="color:#000;font-weight:bold">import</span> TextRank4Keyword, TextRank4Sentence
 
 <span style="color:#998;font-style:italic">#读取华为荣耀天猫旗舰店荣耀V10手机的评论文本数据</span>
-text <span style="color:#000;font-weight:bold">=</span> codecs<span style="color:#000;font-weight:bold">.</span>open(<span style="color:#d14">&#39;D://data/tmall/origin_tmall_review.txt&#39;</span>, <span style="color:#d14">&#39;r&#39;</span>, <span style="color:#d14">&#39;utf-8&#39;</span>)<span style="color:#000;font-weight:bold">.</span>read()
+text <span style="color:#000;font-weight:bold">=</span> codecs<span style="color:#000;font-weight:bold">.</span>open(<span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">D://data/tmall/origin_tmall_review.txt</span><span style="color:#d14">&#39;</span>, <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">r</span><span style="color:#d14">&#39;</span>, <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">utf-8</span><span style="color:#d14">&#39;</span>)<span style="color:#000;font-weight:bold">.</span>read()
 
 tr4w <span style="color:#000;font-weight:bold">=</span> TextRank4Keyword()
 
 tr4w<span style="color:#000;font-weight:bold">.</span>analyze(text<span style="color:#000;font-weight:bold">=</span>text, lower<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>, window<span style="color:#000;font-weight:bold">=</span><span style="color:#099">2</span>)
 
-<span style="color:#000;font-weight:bold">print</span>( <span style="color:#d14">&#39;关键词：&#39;</span> )
+<span style="color:#000;font-weight:bold">print</span>( <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">关键词：</span><span style="color:#d14">&#39;</span> )
 <span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> tr4w<span style="color:#000;font-weight:bold">.</span>get_keywords(<span style="color:#099">10</span>, word_min_len<span style="color:#000;font-weight:bold">=</span><span style="color:#099">1</span>):
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;{} 出现的频率为:{:.6f}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(item<span style="color:#000;font-weight:bold">.</span>word, item<span style="color:#000;font-weight:bold">.</span>weight))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">{} 出现的频率为:{:.6f}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(item<span style="color:#000;font-weight:bold">.</span>word, item<span style="color:#000;font-weight:bold">.</span>weight))
     
-<span style="color:#000;font-weight:bold">print</span>( <span style="color:#d14">&#39;关键短语：&#39;</span> )
+<span style="color:#000;font-weight:bold">print</span>( <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">关键短语：</span><span style="color:#d14">&#39;</span> )
 <span style="color:#000;font-weight:bold">for</span> phrase <span style="color:#000;font-weight:bold">in</span> tr4w<span style="color:#000;font-weight:bold">.</span>get_keyphrases(keywords_num<span style="color:#000;font-weight:bold">=</span><span style="color:#099">10</span>, min_occur_num<span style="color:#000;font-weight:bold">=</span><span style="color:#099">5</span>):
     <span style="color:#000;font-weight:bold">print</span>(phrase)
 tr4s <span style="color:#000;font-weight:bold">=</span> TextRank4Sentence()
-tr4s<span style="color:#000;font-weight:bold">.</span>analyze(text<span style="color:#000;font-weight:bold">=</span>text, lower<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>, source <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14">&#39;all_filters&#39;</span>)
+tr4s<span style="color:#000;font-weight:bold">.</span>analyze(text<span style="color:#000;font-weight:bold">=</span>text, lower<span style="color:#000;font-weight:bold">=</span><span style="color:#999">True</span>, source <span style="color:#000;font-weight:bold">=</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">all_filters</span><span style="color:#d14">&#39;</span>)
 
 <span style="color:#000;font-weight:bold">print</span>()
-<span style="color:#000;font-weight:bold">print</span>( <span style="color:#d14">&#39;摘要：&#39;</span> )
+<span style="color:#000;font-weight:bold">print</span>( <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">摘要：</span><span style="color:#d14">&#39;</span> )
 <span style="color:#000;font-weight:bold">for</span> item <span style="color:#000;font-weight:bold">in</span> tr4s<span style="color:#000;font-weight:bold">.</span>get_key_sentences(num<span style="color:#000;font-weight:bold">=</span><span style="color:#099">3</span>):
     <span style="color:#998;font-style:italic">#index是语句在文本中位置，weight是权重</span>
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;第{}句出现的频率为:{:.6f},内容为:{}&#34;</span><span style="color:#000;font-weight:bold">.</span>format(item<span style="color:#000;font-weight:bold">.</span>index, item<span style="color:#000;font-weight:bold">.</span>weight, item<span style="color:#000;font-weight:bold">.</span>sentence))
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">第{}句出现的频率为:{:.6f},内容为:{}</span><span style="color:#d14">&#34;</span><span style="color:#000;font-weight:bold">.</span>format(item<span style="color:#000;font-weight:bold">.</span>index, item<span style="color:#000;font-weight:bold">.</span>weight, item<span style="color:#000;font-weight:bold">.</span>sentence))
 
 </code></pre></td></tr></table>
 </div>
@@ -1697,6 +1697,8 @@ tr4s<span style="color:#000;font-weight:bold">.</span>analyze(text<span style="c
     
     <a href="https://sanbeichahegongheguo.github.io/tags/NLP/">NLP</a>
     
+    <a href="https://sanbeichahegongheguo.github.io/tags/RSA/">RSA</a>
+    
     <a href="https://sanbeichahegongheguo.github.io/tags/Vim/">Vim</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/Windows/">Windows</a>
@@ -1716,6 +1718,10 @@ tr4s<span style="color:#000;font-weight:bold">.</span>analyze(text<span style="c
     <a href="https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%AD%A6/">文学</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99/">文心雕龙</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/">杂评</a>
     
@@ -1807,7 +1813,7 @@ tr4s<span style="color:#000;font-weight:bold">.</span>analyze(text<span style="c
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
+        &copy; 2021 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

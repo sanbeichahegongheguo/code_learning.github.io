@@ -279,8 +279,8 @@
 <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Solution</span>(<span style="color:#0086b3">object</span>):
     <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">maxDiff</span>(<span style="color:#999">self</span>, arr):
         listlen <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">len</span>(arr)
-        <span style="color:#000;font-weight:bold">if</span> listlen <span style="color:#000;font-weight:bold">&lt;=</span> <span style="color:#099">1</span>:
-            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;NaN&#34;</span>)
+        <span style="color:#000;font-weight:bold">if</span> listlen <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>:
+            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">NaN</span><span style="color:#d14">&#34;</span>)
             <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">None</span>
         minnum <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">min</span>(arr[<span style="color:#099">0</span>], arr[<span style="color:#099">1</span>])
         maxnum <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">max</span>(arr[<span style="color:#099">0</span>], arr[<span style="color:#099">1</span>])
@@ -289,7 +289,7 @@
             <span style="color:#000;font-weight:bold">if</span> arr[i] <span style="color:#000;font-weight:bold">&gt;</span> maxnum:
                 maxnum <span style="color:#000;font-weight:bold">=</span> arr[i]
                 maxdiff <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">max</span>((maxnum <span style="color:#000;font-weight:bold">-</span> minnum), maxdiff)
-            <span style="color:#000;font-weight:bold">elif</span> arr[i] <span style="color:#000;font-weight:bold">&lt;=</span> minnum:
+            <span style="color:#000;font-weight:bold">elif</span> arr[i] <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">=</span> minnum:
                 minnum <span style="color:#000;font-weight:bold">=</span> arr[i]
                 maxnum <span style="color:#000;font-weight:bold">=</span> arr[i]
                 maxdiff <span style="color:#000;font-weight:bold">=</span> maxnum <span style="color:#000;font-weight:bold">-</span> minnum
@@ -299,7 +299,7 @@
         <span style="color:#000;font-weight:bold">return</span> maxdiff
 
 
-<span style="color:#000;font-weight:bold">if</span> __name__ <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#39;__main__&#39;</span>:
+<span style="color:#000;font-weight:bold">if</span> __name__ <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">__main__</span><span style="color:#d14">&#39;</span>:
     solution <span style="color:#000;font-weight:bold">=</span> Solution()
     arr1 <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>]
     arr2 <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">4</span>, <span style="color:#099">40</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">7</span>, <span style="color:#099">5</span>, <span style="color:#099">11</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">60</span>, <span style="color:#099">9</span>, <span style="color:#099">0</span>, <span style="color:#099">12</span>]
@@ -308,7 +308,7 @@
     <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">10000</span>):
         solution<span style="color:#000;font-weight:bold">.</span>maxDiff(arr2)
     elapsed <span style="color:#000;font-weight:bold">=</span> (time<span style="color:#000;font-weight:bold">.</span>time() <span style="color:#000;font-weight:bold">-</span> start)<span style="color:#000;font-weight:bold">/</span><span style="color:#099">10000</span>
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;elapsed:&#34;</span>, elapsed)
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">elapsed:</span><span style="color:#d14">&#34;</span>, elapsed)
 </code></pre></td></tr></table>
 </div>
 </div><p>26行   <code>if __name__ == '__main__':</code>   下面的是测试样例。第5、18、19、20行的print是测试输出用。</p>
@@ -358,8 +358,8 @@
 <span style="color:#000;font-weight:bold">class</span> <span style="color:#458;font-weight:bold">Solution</span>(<span style="color:#0086b3">object</span>):
     <span style="color:#000;font-weight:bold">def</span> <span style="color:#900;font-weight:bold">maxDiff</span>(<span style="color:#999">self</span>, arr):
         listlen <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">len</span>(arr)
-        <span style="color:#000;font-weight:bold">if</span> listlen <span style="color:#000;font-weight:bold">&lt;=</span> <span style="color:#099">1</span>:
-            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;NaN&#34;</span>)
+        <span style="color:#000;font-weight:bold">if</span> listlen <span style="color:#000;font-weight:bold">&lt;</span><span style="color:#000;font-weight:bold">=</span> <span style="color:#099">1</span>:
+            <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">NaN</span><span style="color:#d14">&#34;</span>)
             <span style="color:#000;font-weight:bold">return</span> <span style="color:#999">None</span>
         minnum <span style="color:#000;font-weight:bold">=</span> <span style="color:#0086b3">min</span>(arr[<span style="color:#099">0</span>], arr[<span style="color:#099">1</span>])
         maxdiff <span style="color:#000;font-weight:bold">=</span> arr[<span style="color:#099">1</span>] <span style="color:#000;font-weight:bold">-</span> arr[<span style="color:#099">0</span>]
@@ -373,7 +373,7 @@
         <span style="color:#000;font-weight:bold">return</span> maxdiff
 
 
-<span style="color:#000;font-weight:bold">if</span> __name__ <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14">&#39;__main__&#39;</span>:
+<span style="color:#000;font-weight:bold">if</span> __name__ <span style="color:#000;font-weight:bold">==</span> <span style="color:#d14"></span><span style="color:#d14">&#39;</span><span style="color:#d14">__main__</span><span style="color:#d14">&#39;</span>:
     solution <span style="color:#000;font-weight:bold">=</span> Solution()
     arr1 <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">1</span>]
     arr2 <span style="color:#000;font-weight:bold">=</span> [<span style="color:#099">4</span>, <span style="color:#099">40</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">7</span>, <span style="color:#099">5</span>, <span style="color:#099">11</span>, <span style="color:#000;font-weight:bold">-</span><span style="color:#099">60</span>, <span style="color:#099">9</span>, <span style="color:#099">0</span>, <span style="color:#099">12</span>]
@@ -382,7 +382,7 @@
     <span style="color:#000;font-weight:bold">for</span> i <span style="color:#000;font-weight:bold">in</span> <span style="color:#0086b3">range</span>(<span style="color:#099">10000</span>):
         solution<span style="color:#000;font-weight:bold">.</span>maxDiff(arr2)
     elapsed <span style="color:#000;font-weight:bold">=</span> (time<span style="color:#000;font-weight:bold">.</span>time() <span style="color:#000;font-weight:bold">-</span> start)<span style="color:#000;font-weight:bold">/</span><span style="color:#099">10000</span>
-    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14">&#34;elapsed:&#34;</span>, elapsed)
+    <span style="color:#000;font-weight:bold">print</span>(<span style="color:#d14"></span><span style="color:#d14">&#34;</span><span style="color:#d14">elapsed:</span><span style="color:#d14">&#34;</span>, elapsed)
 </code></pre></td></tr></table>
 </div>
 </div><p>第二个算法的特点就是不管三七二十一，只更新最小值，只要现在的游标碰到的值比现在的最小值还大，那我就尝试用现在游标碰到的值减去最小值。</p>
@@ -514,6 +514,8 @@
     
     <a href="https://sanbeichahegongheguo.github.io/tags/NLP/">NLP</a>
     
+    <a href="https://sanbeichahegongheguo.github.io/tags/RSA/">RSA</a>
+    
     <a href="https://sanbeichahegongheguo.github.io/tags/Vim/">Vim</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/Windows/">Windows</a>
@@ -533,6 +535,10 @@
     <a href="https://sanbeichahegongheguo.github.io/tags/%E5%B7%A5%E5%85%B7/">工具</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%8A%95%E8%B5%84/">投资</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%AD%A6/">文学</a>
+    
+    <a href="https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99/">文心雕龙</a>
     
     <a href="https://sanbeichahegongheguo.github.io/tags/%E6%9D%82%E8%AF%84/">杂评</a>
     
@@ -624,7 +630,7 @@
     </div>
     <footer id="footer">
     <div class="container">
-        &copy; 2020 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
+        &copy; 2021 <a href="https://sanbeichahegongheguo.github.io/">火山灰 By 总舵主</a>.
         Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io" target="_blank">Hugo</a>.
         <a href="https://www.flysnow.org/" target="_blank">Theme</a> based on <a href="https://github.com/flysnow-org/maupassant-hugo" target="_blank">maupassant</a>.
         

@@ -53,11 +53,6 @@
   </url>
   
   <url>
-    <loc>https://sanbeichahegongheguo.github.io/tags/git/</loc>
-    <lastmod>2018-12-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://sanbeichahegongheguo.github.io/tags/GitHub/</loc>
     <lastmod>2018-12-31T00:00:00+00:00</lastmod>
   </url>
@@ -188,6 +183,11 @@
   </url>
   
   <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/git/</loc>
+    <lastmod>2000-12-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://sanbeichahegongheguo.github.io/Git%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2000-12-30T00:00:00+00:00</lastmod>
   </url>
@@ -214,6 +214,12 @@
   
   <url>
     <loc>https://sanbeichahegongheguo.github.io/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -241,6 +247,14 @@
   </url>
   
   <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/RSA/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/RSA%E7%AE%97%E6%B3%95%E8%A7%A3%E9%87%8A/</loc>
+  </url>
+  
+  <url>
     <loc>https://sanbeichahegongheguo.github.io/tags/Windows/</loc>
   </url>
   
@@ -250,6 +264,10 @@
   
   <url>
     <loc>https://sanbeichahegongheguo.github.io/Zotero%E5%85%A5%E9%97%A8/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99-01/</loc>
   </url>
   
   <url>
@@ -270,6 +288,14 @@
   
   <url>
     <loc>https://sanbeichahegongheguo.github.io/search/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%AD%A6/</loc>
+  </url>
+  
+  <url>
+    <loc>https://sanbeichahegongheguo.github.io/tags/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99/</loc>
   </url>
   
   <url>
