@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>英文文章</title><link>/en/</link><description>Recent content on 英文文章</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 01 Jan 2021 16:01:23 +0800</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown文档形式的介绍</title><link>/en/post/jane-theme-preview/</link><pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate><guid>/en/post/jane-theme-preview/</guid><description>&lt;p>&lt;strong>Markdown&lt;/strong> is created by &lt;a href="http://daringfireball.net/">Daring Fireball&lt;/a>, the original guideline is &lt;a href="http://daringfireball.net/projects/markdown/syntax">here&lt;/a>. Its syntax, however, varies between different parsers or editors.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>英文文章</title><link>/en/</link><description>Recent content on 英文文章</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown文档形式的介绍</title><link>/en/post/000jane-theme-preview/</link><pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate><guid>/en/post/000jane-theme-preview/</guid><description>&lt;p>&lt;strong>Markdown&lt;/strong> is created by &lt;a href="http://daringfireball.net/">Daring Fireball&lt;/a>, the original guideline is &lt;a href="http://daringfireball.net/projects/markdown/syntax">here&lt;/a>. Its syntax, however, varies between different parsers or editors.&lt;/p>
 &lt;p>Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p>
 &lt;h2 id="paragraph-and-line-breaks">Paragraph and line breaks&lt;/h2>
 &lt;p>A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press &lt;code>Return&lt;/code> to create a new paragraph.&lt;/p>
@@ -346,25 +346,7 @@ And then define the link:
 &lt;p>Here is the &lt;em>text&lt;/em> of the &lt;strong>footnote&lt;/strong>. &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/section></description></item><item><title>AUTHOR’S POSTSCRIPT FOR THE AMERICAN EDITION</title><link>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link><pubDate>Fri, 01 Jan 2021 16:01:23 +0800</pubDate><guid>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</guid><description>&lt;p>A night from my childhood remains crisply etched in my memory: I was standing by a pond before a village somewhere in Luoshan County, Henan Province, where generations of my ancestors had lived. Next to me stood many other people, both adults and children. Together, we gazed up at the clear night sky, where a tiny star slowly glided across the darkfirmament.&lt;/p>
-&lt;p>It was the first artificial satellite China had ever launched: Dongfanghong I (“The East is Red I”). The date was April 25, 1970, and I was seven.&lt;/p>
-&lt;p>It had been thirteen years since Sputnik had been launched into space, and nine years since the first cosmonaut had left the Earth. Just a week earlier, Apollo 13 had safely returned from a perilous journey to the moon.&lt;/p>
-&lt;p>But I didn’t know any of that. As I gazed at that tiny, gliding star, my heart was filled with indescribable curiosity and yearning. And etched in my memory just as deeply as these feelings was the sensation of hunger. At that time, the region around my village was extremely poor. Hunger was the constant companion of every child. I was relatively fortunate because I had shoes on my feet. Most of the friends standing by my side were barefoot, and some of the tiny feet still had unhealed frostbite from the previous winter. Behind me, faint light from kerosene lamps shone out of cracks in the walls of dilapidated thatched huts—the village wasn’t wired for electricityuntil the eighties.&lt;/p>
-&lt;p>The adults standing nearby said that the satellite wasn’t like an airplane because it flew outside of the Earth. Back then the dust and smoke of industry hadn’t yet polluted the air, and the starry sky was especially clear, with the Milky Way clearly visible. In my mind, the stars that filled the heavens weren’t much farther away than the tiny, gliding satellite, and so I thought it was flying among them. I even worried that it might collide with one as it passed through the dense stellar clusters.&lt;/p>
-&lt;p>My parents weren’t with mebecause they were working at a coal mine more than a thousand kilometers away, in Shanxi Province. A few years earlier, when I had been even younger, the mine had been a combat zone for the factional civil wars of the Cultural Revolution. I remembered gunshots in the middle of the night, trucks passing in the street, filled with men clutching guns and wearing red armbands.… But I had been too young back then, and I can’t be sure whether these images are real memories, or mirages constructed later. However, I know one thing for certain: Because the mine was too unsafe and my parents had been impacted by the Cultural Revolution, they had had no choice but to send me to my ancestral home village in Henan. By the time I saw Dongfanghong I, I had already lived there for more than three years.&lt;/p>
-&lt;p>A few more years passed before I understood the distance between that satellite and the stars. Back then I was reading a popular set of basic science books called A Hundred Thousand Whys. From the astronomy volume, I learned the concept of a light-year. Before then, I had already known that light could traverse a distance equal to seven and a half trips around the Earth in a single second, but I had not contemplated what kind of terrifying distance could be crossed by flying at such a speed for a whole year. I imagined a ray of light passing through the cold silence of space at the speed of 300,000 kilometers per second. I struggled to grasp the bone-chilling vastness and profundity with my imagination, felt the weight of an immense terror and awe, and simultaneously enjoyed a druglike euphoria.&lt;/p>
-&lt;p>From that moment, I realized that I had a special talent: Scales and existences that far exceeded the bounds of human sensory perception—both macro and micro—and that seemed to be only abstract numbers to others, could take on concrete forms in my mind. I could touch them and feel them, much like others could touch and feel trees and rocks. Even today, when references to the 15-billion-light-year radius of the universe and “strings” many orders of magnitude smaller than quarks have numbed most people, theconcepts of a light-year or a nanometer can still produce lively, grand pictures in my mind and arouse in me an ineffable, religious feeling of awe and shock. Compared to most of the population who do not experience such sensations, I don’t know if I’m lucky or unlucky. But it is certain that such feelings made me first into a science fiction fan, and later a science fiction author.&lt;/p>
-&lt;p>In that same year when I was first awed by the concept of a light-year, a flood (known as the Great Flood of August ’75) occurred near my home village. In a single day, arecord-breaking 100.5 centimeters of rain fell in the Zhumadian region of Henan. Fifty-eight dams of various sizes collapsed, one after another, and 240,000 people died in the resulting deluge. Shortly after the floodwaters had receded, I returned to the village and saw a landscape filled with refugees. I thought I was looking at the end of the world.&lt;/p>
-&lt;p>And so, satellite, hunger, stars, kerosene lamps, the Milky Way, the Cultural Revolution’s factional civil wars, a light-year, the flood … these seemingly unconnected things melded together and formed the early part of my life, and also molded the science fiction I write today.&lt;/p>
-&lt;p>As a science fiction writer who began as a fan, I do not use my fiction as a disguised way to criticize the reality of the present. I feel that the greatest appeal of science fiction is the creation of numerous imaginary worlds outside of reality. I’ve always felt that the greatest and most beautiful stories in the history of humanity were not sung by wandering bards or written by playwrights and novelists, but told by science. The stories of scienceare far more magnificent, grand, involved, profound, thrilling, strange, terrifying, mysterious, and even emotional, compared to the stories told by literature. Only, these wonderful stories are locked in cold equations that most do not know how to read.&lt;/p>
-&lt;p>The creation myths of the various peoples and religions of the world pale when compared to the glory of the big bang. The three-billion-year history of life’s evolution from self-reproducing molecules to civilization contains twists and romances that cannot be matched by any myth or epic.&lt;/p>
-&lt;p>There is also the poetic vision of space and time in relativity, the weird subatomic world of quantum mechanics … these wondrous stories of science all possess an irresistible attraction. Through the medium of science fiction, I seek only to create my own worlds using the power of imagination, and to make known the poetry of Nature in those worlds, to tell the romantic legends that have unfolded between Man and Universe.&lt;/p>
-&lt;p>But I cannot escape and leave behind reality, just like I cannot leave behind my shadow. Realitybrands each of us with its indelible mark. Every era puts invisible shackles on those who have lived through it, and I can only dance in my chains. In science fiction, humanity is often described as a collective. In this book, a man named “humanity” confronts a disaster, and everything he demonstrates in the face of existence and annihilation undoubtedly has sources in the reality that I experienced. The wonder of science fiction is that it can, when given certain hypothetical world settings, turn what in our reality is evil and dark into what is righteous and bright, and vice versa. This book and its two sequels try to do just that, but no matter how reality is twisted by imagination, it ultimately remains there.&lt;/p>
-&lt;p>I’ve always felt that extraterrestrial intelligence will be the greatest source of uncertainty for humanity’s future. Other great shifts, such as climate change and ecological disasters, have a certain progression and built-in adjustment periods, but contact between humankind and aliens can occur at any time. Perhaps in ten thousand years, the starry skythat humankind gazes upon will remain empty and silent, but perhaps tomorrow we’ll wake up and find an alien spaceship the size of the moon parked in orbit. The appearance of extraterrestrial intelligence will force humanity to confront an Other. Before then, humanity as a whole will never have had an external counterpart. The appearance of this Other, or mere knowledge of its existence, will impact our civilization in unpredictable ways.&lt;/p>
-&lt;p>There’s a strange contradiction revealed by the naïveté and kindness demonstrated by humanity when faced with the universe: On Earth, humankind can step onto another continent, and without a thought, destroy the kindred civilizations found there through warfare and disease. But when they gaze up at the stars, they turn sentimental and believe that if extraterrestrial intelligences exist, they must be civilizations bound by universal, noble, moral constraints, as if cherishing and loving different forms of life are parts of a self-evident universal code of conduct.&lt;/p>
-&lt;p>I think it should be precisely the opposite: Let’s turn the kindnesswe show toward the stars to members of the human race on Earth and build up the trust and understanding between the different peoples and civilizations that make up humanity. But for the universe outside the solar system, we should be ever vigilant, and be ready to attribute the worst of intentions to any Others that might exist in space. For a fragile civilization like ours, this is without a doubt the most responsible path.&lt;/p>
-&lt;p>As a fan of science fiction, it has molded my life, and aconsiderable part of the science fiction I’ve read comes from America. The fact that American readers can now enjoy my book makes me both pleased and excited. Science fiction is a literature that belongs to all humankind. It portrays events of interest to all of humanity, and thus science fiction should be the literary genre most accessible to readers of different nations. Science fiction often describes a day when humanity will form a harmonious whole, and I believe the arrival of such a day need not wait for the appearance ofextraterrestrials.&lt;/p>
-&lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p></description></item><item><title>Math Preview</title><link>/en/post/math-preview/</link><pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate><guid>/en/post/math-preview/</guid><description>&lt;p>&lt;a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a>&lt;/p>
+&lt;/section></description></item><item><title>Math Preview</title><link>/en/post/math-preview/</link><pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate><guid>/en/post/math-preview/</guid><description>&lt;p>&lt;a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a>&lt;/p>
 &lt;h2 id="repeating-fractions">Repeating fractions&lt;/h2>
 &lt;p>&lt;span class="math">\[
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
@@ -500,297 +482,25 @@ f(x) \sim x^2 \quad (x\to\infty)
 &lt;p>&lt;span class="math">\[
 f(x) = \sqrt{1+x}, \quad x \ge -1
 f(x) \sim x^2, \quad x\to\infty
-\]&lt;/span>&lt;/p></description></item><item><title>(Hu)go Template Primer</title><link>/en/post/goisforlovers/</link><pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate><guid>/en/post/goisforlovers/</guid><description>&lt;p>Hugo uses the excellent &lt;a href="http://golang.org/">go&lt;/a> &lt;a href="http://golang.org/pkg/html/template/">html/template&lt;/a> library for
-its template engine. It is an extremely lightweight engine that provides a very
-small amount of logic. In our experience that it is just the right amount of
-logic to be able to create a good static website. If you have used other
-template systems from different languages or frameworks you will find a lot of
-similarities in go templates.&lt;/p>
-&lt;p>This document is a brief primer on using go templates. The &lt;a href="http://golang.org/pkg/html/template/">go docs&lt;/a>
-provide more details.&lt;/p>
-&lt;h2 id="introduction-to-go-templates">Introduction to Go Templates&lt;/h2>
-&lt;p>Go templates provide an extremely simple template language. It adheres to the
-belief that only the most basic of logic belongs in the template or view layer.
-One consequence of this simplicity is that go templates parse very quickly.&lt;/p>
-&lt;p>A unique characteristic of go templates is they are content aware. Variables and
-content will be sanitized depending on the context of where they are used. More
-details can be found in the &lt;a href="http://golang.org/pkg/html/template/">go docs&lt;/a>.&lt;/p>
-&lt;h2 id="basic-syntax">Basic Syntax&lt;/h2>
-&lt;p>Go lang templates are html files with the addition of variables and
-functions.&lt;/p>
-&lt;p>&lt;strong>Go variables and functions are accessible within {{ }}&lt;/strong>&lt;/p>
-&lt;p>Accessing a predefined variable &amp;ldquo;foo&amp;rdquo;:&lt;/p>
-&lt;pre>&lt;code>{{ foo }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Parameters are separated using spaces&lt;/strong>&lt;/p>
-&lt;p>Calling the add function with input of 1, 2:&lt;/p>
-&lt;pre>&lt;code>{{ add 1 2 }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Methods and fields are accessed via dot notation&lt;/strong>&lt;/p>
-&lt;p>Accessing the Page Parameter &amp;ldquo;bar&amp;rdquo;&lt;/p>
-&lt;pre>&lt;code>{{ .Params.bar }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Parentheses can be used to group items together&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if or (isset .Params &amp;quot;alt&amp;quot;) (isset .Params &amp;quot;caption&amp;quot;) }} Caption {{ end }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="variables">Variables&lt;/h2>
-&lt;p>Each go template has a struct (object) made available to it. In hugo each
-template is passed either a page or a node struct depending on which type of
-page you are rendering. More details are available on the
-&lt;a href="/layout/variables">variables&lt;/a> page.&lt;/p>
-&lt;p>A variable is accessed by referencing the variable name.&lt;/p>
-&lt;pre>&lt;code>&amp;lt;title&amp;gt;{{ .Title }}&amp;lt;/title&amp;gt;
-&lt;/code>&lt;/pre>
-&lt;p>Variables can also be defined and referenced.&lt;/p>
-&lt;pre>&lt;code>{{ $address := &amp;quot;123 Main St.&amp;quot;}}
-{{ $address }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="functions">Functions&lt;/h2>
-&lt;p>Go template ship with a few functions which provide basic functionality. The go
-template system also provides a mechanism for applications to extend the
-available functions with their own. &lt;a href="/layout/functions">Hugo template
-functions&lt;/a> provide some additional functionality we believe
-are useful for building websites. Functions are called by using their name
-followed by the required parameters separated by spaces. Template
-functions cannot be added without recompiling hugo.&lt;/p>
-&lt;p>&lt;strong>Example:&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ add 1 2 }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="includes">Includes&lt;/h2>
-&lt;p>When including another template you will pass to it the data it will be
-able to access. To pass along the current context please remember to
-include a trailing dot. The templates location will always be starting at
-the /layout/ directory within Hugo.&lt;/p>
-&lt;p>&lt;strong>Example:&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ template &amp;quot;chrome/header.html&amp;quot; . }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="logic">Logic&lt;/h2>
-&lt;p>Go templates provide the most basic iteration and conditional logic.&lt;/p>
-&lt;h3 id="iteration">Iteration&lt;/h3>
-&lt;p>Just like in go, the go templates make heavy use of range to iterate over
-a map, array or slice. The following are different examples of how to use
-range.&lt;/p>
-&lt;p>&lt;strong>Example 1: Using Context&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ range array }}
-{{ . }}
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Example 2: Declaring value variable name&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{range $element := array}}
-{{ $element }}
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Example 2: Declaring key and value variable name&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{range $index, $element := array}}
-{{ $index }}
-{{ $element }}
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;h3 id="conditionals">Conditionals&lt;/h3>
-&lt;p>If, else, with, or, &amp;amp; and provide the framework for handling conditional
-logic in Go Templates. Like range, each statement is closed with &lt;code>end&lt;/code>.&lt;/p>
-&lt;p>Go Templates treat the following values as false:&lt;/p>
-&lt;ul>
-&lt;li>false&lt;/li>
-&lt;li>0&lt;/li>
-&lt;li>any array, slice, map, or string of length zero&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Example 1: If&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if isset .Params &amp;quot;title&amp;quot; }}&amp;lt;h4&amp;gt;{{ index .Params &amp;quot;title&amp;quot; }}&amp;lt;/h4&amp;gt;{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Example 2: If -&amp;gt; Else&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if isset .Params &amp;quot;alt&amp;quot; }}
-{{ index .Params &amp;quot;alt&amp;quot; }}
-{{else}}
-{{ index .Params &amp;quot;caption&amp;quot; }}
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Example 3: And &amp;amp; Or&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if and (or (isset .Params &amp;quot;title&amp;quot;) (isset .Params &amp;quot;caption&amp;quot;)) (isset .Params &amp;quot;attr&amp;quot;)}}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Example 4: With&lt;/strong>&lt;/p>
-&lt;p>An alternative way of writing &amp;ldquo;if&amp;rdquo; and then referencing the same value
-is to use &amp;ldquo;with&amp;rdquo; instead. With rebinds the context &lt;code>.&lt;/code> within its scope,
-and skips the block if the variable is absent.&lt;/p>
-&lt;p>The first example above could be simplified as:&lt;/p>
-&lt;pre>&lt;code>{{ with .Params.title }}&amp;lt;h4&amp;gt;{{ . }}&amp;lt;/h4&amp;gt;{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>&lt;strong>Example 5: If -&amp;gt; Else If&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if isset .Params &amp;quot;alt&amp;quot; }}
-{{ index .Params &amp;quot;alt&amp;quot; }}
-{{ else if isset .Params &amp;quot;caption&amp;quot; }}
-{{ index .Params &amp;quot;caption&amp;quot; }}
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="pipes">Pipes&lt;/h2>
-&lt;p>One of the most powerful components of go templates is the ability to
-stack actions one after another. This is done by using pipes. Borrowed
-from unix pipes, the concept is simple, each pipeline&amp;rsquo;s output becomes the
-input of the following pipe.&lt;/p>
-&lt;p>Because of the very simple syntax of go templates, the pipe is essential
-to being able to chain together function calls. One limitation of the
-pipes is that they only can work with a single value and that value
-becomes the last parameter of the next pipeline.&lt;/p>
-&lt;p>A few simple examples should help convey how to use the pipe.&lt;/p>
-&lt;p>&lt;strong>Example 1 :&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if eq 1 1 }} Same {{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>is the same as&lt;/p>
-&lt;pre>&lt;code>{{ eq 1 1 | if }} Same {{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>It does look odd to place the if at the end, but it does provide a good
-illustration of how to use the pipes.&lt;/p>
-&lt;p>&lt;strong>Example 2 :&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ index .Params &amp;quot;disqus_url&amp;quot; | html }}
-&lt;/code>&lt;/pre>
-&lt;p>Access the page parameter called &amp;ldquo;disqus_url&amp;rdquo; and escape the HTML.&lt;/p>
-&lt;p>&lt;strong>Example 3 :&lt;/strong>&lt;/p>
-&lt;pre>&lt;code>{{ if or (or (isset .Params &amp;quot;title&amp;quot;) (isset .Params &amp;quot;caption&amp;quot;)) (isset .Params &amp;quot;attr&amp;quot;)}}
-Stuff Here
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>Could be rewritten as&lt;/p>
-&lt;pre>&lt;code>{{ isset .Params &amp;quot;caption&amp;quot; | or isset .Params &amp;quot;title&amp;quot; | or isset .Params &amp;quot;attr&amp;quot; | if }}
-Stuff Here
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="context-aka-the-dot">Context (aka. the dot)&lt;/h2>
-&lt;p>The most easily overlooked concept to understand about go templates is that {{ . }}
-always refers to the current context. In the top level of your template this
-will be the data set made available to it. Inside of a iteration it will have
-the value of the current item. When inside of a loop the context has changed. .
-will no longer refer to the data available to the entire page. If you need to
-access this from within the loop you will likely want to set it to a variable
-instead of depending on the context.&lt;/p>
-&lt;p>&lt;strong>Example:&lt;/strong>&lt;/p>
-&lt;pre>&lt;code> {{ $title := .Site.Title }}
-{{ range .Params.tags }}
-&amp;lt;li&amp;gt; &amp;lt;a href=&amp;quot;{{ $baseurl }}/tags/{{ . | urlize }}&amp;quot;&amp;gt;{{ . }}&amp;lt;/a&amp;gt; - {{ $title }} &amp;lt;/li&amp;gt;
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;p>Notice how once we have entered the loop the value of {{ . }} has changed. We
-have defined a variable outside of the loop so we have access to it from within
-the loop.&lt;/p>
-&lt;h1 id="hugo-parameters">Hugo Parameters&lt;/h1>
-&lt;p>Hugo provides the option of passing values to the template language
-through the site configuration (for sitewide values), or through the meta
-data of each specific piece of content. You can define any values of any
-type (supported by your front matter/config format) and use them however
-you want to inside of your templates.&lt;/p>
-&lt;h2 id="using-content-page-parameters">Using Content (page) Parameters&lt;/h2>
-&lt;p>In each piece of content you can provide variables to be used by the
-templates. This happens in the &lt;a href="/content/front-matter">front matter&lt;/a>.&lt;/p>
-&lt;p>An example of this is used in this documentation site. Most of the pages
-benefit from having the table of contents provided. Sometimes the TOC just
-doesn&amp;rsquo;t make a lot of sense. We&amp;rsquo;ve defined a variable in our front matter
-of some pages to turn off the TOC from being displayed.&lt;/p>
-&lt;p>Here is the example front matter:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">---
-title: &amp;#34;Permalinks&amp;#34;
-date: &amp;#34;2013-11-18&amp;#34;
-aliases:
-- &amp;#34;/doc/permalinks/&amp;#34;
-groups: [&amp;#34;extras&amp;#34;]
-groups_weight: 30
-notoc: true
----
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Here is the corresponding code inside of the template:&lt;/p>
-&lt;pre>&lt;code> {{ if not .Params.notoc }}
-&amp;lt;div id=&amp;quot;toc&amp;quot; class=&amp;quot;well col-md-4 col-sm-6&amp;quot;&amp;gt;
-{{ .TableOfContents }}
-&amp;lt;/div&amp;gt;
-{{ end }}
-&lt;/code>&lt;/pre>
-&lt;h2 id="using-site-config-parameters">Using Site (config) Parameters&lt;/h2>
-&lt;p>In your top-level configuration file (eg, &lt;code>config.yaml&lt;/code>) you can define site
-parameters, which are values which will be available to you in chrome.&lt;/p>
-&lt;p>For instance, you might declare:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">params&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">CopyrightHTML&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;Copyright &amp;amp;#xA9; 2013 John Doe. All Rights Reserved.&amp;#34;&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">TwitterUser&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s2">&amp;#34;spf13&amp;#34;&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">SidebarRecentLimit&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">5&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Within a footer layout, you might then declare a &lt;code>&amp;lt;footer&amp;gt;&lt;/code> which is only
-provided if the &lt;code>CopyrightHTML&lt;/code> parameter is provided, and if it is given,
-you would declare it to be HTML-safe, so that the HTML entity is not escaped
-again. This would let you easily update just your top-level config file each
-January 1st, instead of hunting through your templates.&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">{{if .Site.Params.CopyrightHTML}}&amp;lt;footer&amp;gt;
-&amp;lt;div class=&amp;#34;text-center&amp;#34;&amp;gt;{{.Site.Params.CopyrightHTML | safeHtml}}&amp;lt;/div&amp;gt;
-&amp;lt;/footer&amp;gt;{{end}}
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>An alternative way of writing the &amp;ldquo;if&amp;rdquo; and then referencing the same value
-is to use &amp;ldquo;with&amp;rdquo; instead. With rebinds the context &lt;code>.&lt;/code> within its scope,
-and skips the block if the variable is absent:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">{{with .Site.Params.TwitterUser}}&amp;lt;span class=&amp;#34;twitter&amp;#34;&amp;gt;
-&amp;lt;a href=&amp;#34;https://twitter.com/{{.}}&amp;#34; rel=&amp;#34;author&amp;#34;&amp;gt;
-&amp;lt;img src=&amp;#34;/images/twitter.png&amp;#34; width=&amp;#34;48&amp;#34; height=&amp;#34;48&amp;#34; title=&amp;#34;Twitter: {{.}}&amp;#34;
-alt=&amp;#34;Twitter&amp;#34;&amp;gt;&amp;lt;/a&amp;gt;
-&amp;lt;/span&amp;gt;{{end}}
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Finally, if you want to pull &amp;ldquo;magic constants&amp;rdquo; out of your layouts, you can do
-so, such as in this example:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-fallback" data-lang="fallback">&amp;lt;nav class=&amp;#34;recent&amp;#34;&amp;gt;
-&amp;lt;h1&amp;gt;Recent Posts&amp;lt;/h1&amp;gt;
-&amp;lt;ul&amp;gt;{{range first .Site.Params.SidebarRecentLimit .Site.Recent}}
-&amp;lt;li&amp;gt;&amp;lt;a href=&amp;#34;{{.RelPermalink}}&amp;#34;&amp;gt;{{.Title}}&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;
-{{end}}&amp;lt;/ul&amp;gt;
-&amp;lt;/nav&amp;gt;
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>Biodiversity May Thrive Through Games of Rock-Paper-Scissors</title><link>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</guid><description>&lt;blockquote>
+\]&lt;/span>&lt;/p></description></item><item><title>AUTHOR’S POSTSCRIPT FOR THE AMERICAN EDITION</title><link>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</guid><description>&lt;p>A night from my childhood remains crisply etched in my memory: I was standing by a pond before a village somewhere in Luoshan County, Henan Province, where generations of my ancestors had lived. Next to me stood many other people, both adults and children. Together, we gazed up at the clear night sky, where a tiny star slowly glided across the darkfirmament.&lt;/p>
+&lt;p>It was the first artificial satellite China had ever launched: Dongfanghong I (“The East is Red I”). The date was April 25, 1970, and I was seven.&lt;/p>
+&lt;p>It had been thirteen years since Sputnik had been launched into space, and nine years since the first cosmonaut had left the Earth. Just a week earlier, Apollo 13 had safely returned from a perilous journey to the moon.&lt;/p>
+&lt;p>But I didn’t know any of that. As I gazed at that tiny, gliding star, my heart was filled with indescribable curiosity and yearning. And etched in my memory just as deeply as these feelings was the sensation of hunger. At that time, the region around my village was extremely poor. Hunger was the constant companion of every child. I was relatively fortunate because I had shoes on my feet. Most of the friends standing by my side were barefoot, and some of the tiny feet still had unhealed frostbite from the previous winter. Behind me, faint light from kerosene lamps shone out of cracks in the walls of dilapidated thatched huts—the village wasn’t wired for electricityuntil the eighties.&lt;/p>
+&lt;p>The adults standing nearby said that the satellite wasn’t like an airplane because it flew outside of the Earth. Back then the dust and smoke of industry hadn’t yet polluted the air, and the starry sky was especially clear, with the Milky Way clearly visible. In my mind, the stars that filled the heavens weren’t much farther away than the tiny, gliding satellite, and so I thought it was flying among them. I even worried that it might collide with one as it passed through the dense stellar clusters.&lt;/p>
+&lt;p>My parents weren’t with mebecause they were working at a coal mine more than a thousand kilometers away, in Shanxi Province. A few years earlier, when I had been even younger, the mine had been a combat zone for the factional civil wars of the Cultural Revolution. I remembered gunshots in the middle of the night, trucks passing in the street, filled with men clutching guns and wearing red armbands.… But I had been too young back then, and I can’t be sure whether these images are real memories, or mirages constructed later. However, I know one thing for certain: Because the mine was too unsafe and my parents had been impacted by the Cultural Revolution, they had had no choice but to send me to my ancestral home village in Henan. By the time I saw Dongfanghong I, I had already lived there for more than three years.&lt;/p>
+&lt;p>A few more years passed before I understood the distance between that satellite and the stars. Back then I was reading a popular set of basic science books called A Hundred Thousand Whys. From the astronomy volume, I learned the concept of a light-year. Before then, I had already known that light could traverse a distance equal to seven and a half trips around the Earth in a single second, but I had not contemplated what kind of terrifying distance could be crossed by flying at such a speed for a whole year. I imagined a ray of light passing through the cold silence of space at the speed of 300,000 kilometers per second. I struggled to grasp the bone-chilling vastness and profundity with my imagination, felt the weight of an immense terror and awe, and simultaneously enjoyed a druglike euphoria.&lt;/p>
+&lt;p>From that moment, I realized that I had a special talent: Scales and existences that far exceeded the bounds of human sensory perception—both macro and micro—and that seemed to be only abstract numbers to others, could take on concrete forms in my mind. I could touch them and feel them, much like others could touch and feel trees and rocks. Even today, when references to the 15-billion-light-year radius of the universe and “strings” many orders of magnitude smaller than quarks have numbed most people, theconcepts of a light-year or a nanometer can still produce lively, grand pictures in my mind and arouse in me an ineffable, religious feeling of awe and shock. Compared to most of the population who do not experience such sensations, I don’t know if I’m lucky or unlucky. But it is certain that such feelings made me first into a science fiction fan, and later a science fiction author.&lt;/p>
+&lt;p>In that same year when I was first awed by the concept of a light-year, a flood (known as the Great Flood of August ’75) occurred near my home village. In a single day, arecord-breaking 100.5 centimeters of rain fell in the Zhumadian region of Henan. Fifty-eight dams of various sizes collapsed, one after another, and 240,000 people died in the resulting deluge. Shortly after the floodwaters had receded, I returned to the village and saw a landscape filled with refugees. I thought I was looking at the end of the world.&lt;/p>
+&lt;p>And so, satellite, hunger, stars, kerosene lamps, the Milky Way, the Cultural Revolution’s factional civil wars, a light-year, the flood … these seemingly unconnected things melded together and formed the early part of my life, and also molded the science fiction I write today.&lt;/p>
+&lt;p>As a science fiction writer who began as a fan, I do not use my fiction as a disguised way to criticize the reality of the present. I feel that the greatest appeal of science fiction is the creation of numerous imaginary worlds outside of reality. I’ve always felt that the greatest and most beautiful stories in the history of humanity were not sung by wandering bards or written by playwrights and novelists, but told by science. The stories of scienceare far more magnificent, grand, involved, profound, thrilling, strange, terrifying, mysterious, and even emotional, compared to the stories told by literature. Only, these wonderful stories are locked in cold equations that most do not know how to read.&lt;/p>
+&lt;p>The creation myths of the various peoples and religions of the world pale when compared to the glory of the big bang. The three-billion-year history of life’s evolution from self-reproducing molecules to civilization contains twists and romances that cannot be matched by any myth or epic.&lt;/p>
+&lt;p>There is also the poetic vision of space and time in relativity, the weird subatomic world of quantum mechanics … these wondrous stories of science all possess an irresistible attraction. Through the medium of science fiction, I seek only to create my own worlds using the power of imagination, and to make known the poetry of Nature in those worlds, to tell the romantic legends that have unfolded between Man and Universe.&lt;/p>
+&lt;p>But I cannot escape and leave behind reality, just like I cannot leave behind my shadow. Realitybrands each of us with its indelible mark. Every era puts invisible shackles on those who have lived through it, and I can only dance in my chains. In science fiction, humanity is often described as a collective. In this book, a man named “humanity” confronts a disaster, and everything he demonstrates in the face of existence and annihilation undoubtedly has sources in the reality that I experienced. The wonder of science fiction is that it can, when given certain hypothetical world settings, turn what in our reality is evil and dark into what is righteous and bright, and vice versa. This book and its two sequels try to do just that, but no matter how reality is twisted by imagination, it ultimately remains there.&lt;/p>
+&lt;p>I’ve always felt that extraterrestrial intelligence will be the greatest source of uncertainty for humanity’s future. Other great shifts, such as climate change and ecological disasters, have a certain progression and built-in adjustment periods, but contact between humankind and aliens can occur at any time. Perhaps in ten thousand years, the starry skythat humankind gazes upon will remain empty and silent, but perhaps tomorrow we’ll wake up and find an alien spaceship the size of the moon parked in orbit. The appearance of extraterrestrial intelligence will force humanity to confront an Other. Before then, humanity as a whole will never have had an external counterpart. The appearance of this Other, or mere knowledge of its existence, will impact our civilization in unpredictable ways.&lt;/p>
+&lt;p>There’s a strange contradiction revealed by the naïveté and kindness demonstrated by humanity when faced with the universe: On Earth, humankind can step onto another continent, and without a thought, destroy the kindred civilizations found there through warfare and disease. But when they gaze up at the stars, they turn sentimental and believe that if extraterrestrial intelligences exist, they must be civilizations bound by universal, noble, moral constraints, as if cherishing and loving different forms of life are parts of a self-evident universal code of conduct.&lt;/p>
+&lt;p>I think it should be precisely the opposite: Let’s turn the kindnesswe show toward the stars to members of the human race on Earth and build up the trust and understanding between the different peoples and civilizations that make up humanity. But for the universe outside the solar system, we should be ever vigilant, and be ready to attribute the worst of intentions to any Others that might exist in space. For a fragile civilization like ours, this is without a doubt the most responsible path.&lt;/p>
+&lt;p>As a fan of science fiction, it has molded my life, and aconsiderable part of the science fiction I’ve read comes from America. The fact that American readers can now enjoy my book makes me both pleased and excited. Science fiction is a literature that belongs to all humankind. It portrays events of interest to all of humanity, and thus science fiction should be the literary genre most accessible to readers of different nations. Science fiction often describes a day when humanity will form a harmonious whole, and I believe the arrival of such a day need not wait for the appearance ofextraterrestrials.&lt;/p>
+&lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p></description></item><item><title>Biodiversity May Thrive Through Games of Rock-Paper-Scissors</title><link>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</link><pubDate>Mon, 31 Jan 2000 00:00:00 +0000</pubDate><guid>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</guid><description>&lt;blockquote>
 &lt;p>&lt;em>Recent findings add weight to the evidence that intransitive competitions between species enrich the diversity of nature.&lt;/em>&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;img src="./pic/RockPaperScissor-2880x1620_Lede.jpg" alt="">&lt;/p>
