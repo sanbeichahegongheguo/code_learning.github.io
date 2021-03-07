@@ -1,14 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人随想</title><link>/</link><description>Recent content on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 06 Mar 2021 16:01:23 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>本博客的介绍及一些特性</title><link>/post/%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%B8%80%E4%BA%9B%E7%89%B9%E6%80%A7/</link><pubDate>Sat, 06 Mar 2021 16:01:23 +0800</pubDate><guid>/post/%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%B8%80%E4%BA%9B%E7%89%B9%E6%80%A7/</guid><description>&lt;p>本博客基于&lt;code>Hugo&lt;/code>和&lt;code>GitHub Page&lt;/code>开发部署。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>个人随想</title><link>/</link><description>Recent content on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 06 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>本博客的介绍及一些特性</title><link>/post/%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%B8%80%E4%BA%9B%E7%89%B9%E6%80%A7/</link><pubDate>Sat, 06 Mar 2021 00:00:00 +0000</pubDate><guid>/post/%E6%9C%AC%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%B8%80%E4%BA%9B%E7%89%B9%E6%80%A7/</guid><description>&lt;p>本博客基于&lt;code>Hugo&lt;/code>和&lt;code>GitHub Pages&lt;/code>开发部署。&lt;/p>
 &lt;p>主要是积累具有一定价值的成体系文章，不想放随意的低价值文档。&lt;/p>
-&lt;p>另外博客对这个&lt;code>Hugo Theme&lt;/code>主题的&lt;code>国际化&lt;/code>部分进行了修改，不是提供多语言版本，而是改造为多模块版。&lt;/p>
-&lt;p>不过名称还没设置，只能先对应着字母：&lt;/p>
+&lt;p>另外博客提供了&lt;code>国际化&lt;/code>部分：&lt;/p>
 &lt;blockquote>
 &lt;p>zh-cn：大多数中文随想文章。&lt;/p>
 &lt;p>en：一些我喜欢的英文文章稿件，通常如果有翻译会在放在zh-cn里发表。可以在文章标题下看到对应原文和翻译文的链接。&lt;/p>
-&lt;p>fr：这里对应的是法文，我放置和编程相关的文章。&lt;/p>
-&lt;p>de：这里原本对应的是德文，我改为 哲学思考。放置马克思主义、毛泽东思想方面的文章。&lt;/p>
-&lt;/blockquote>
-&lt;p>这样，各自读者喜欢的领域也做了分开。想看编程的选择&lt;code>fr&lt;/code>即可，想看马克思主义类的选择&lt;code>de&lt;/code>即可。&lt;/p></description></item><item><title>About</title><link>/about/</link><pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate><guid>/about/</guid><description>&lt;p>我的个人小站。记录学习和一些感悟。&lt;/p>
+&lt;/blockquote></description></item><item><title>About</title><link>/about/</link><pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate><guid>/about/</guid><description>&lt;p>我的个人小站。记录学习和一些感悟。&lt;/p>
 &lt;p>希望你会喜欢这里。&lt;/p>
 &lt;p>也欢迎到我的公众号跟我互动，可以多给我点点公众号上的广告。😆&lt;/p>
 &lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p>
@@ -275,8 +271,6 @@
 &lt;p>即出自这里。&lt;/p>
 &lt;p>文章特别长，典型的马克思雄辩色彩。但是非常值得一读。送给所有追求自由以及网络删帖员。&lt;/p>
 &lt;hr>
-&lt;!-- TOC -->
-&lt;!-- \TOC -->
 &lt;p>我们不是那种心怀不满的人，不会在普鲁士新的书报检查法令 &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 公布之前就声明说：即使丹纳士人带来礼物，我还是怕他们［注：维吉尔《亚尼雅士之歌》第 2 部第 49 行。丹纳士人在这里指希腊人。—— 编者注］。相反，因为新的检查令允许对已经颁布的法律进行讨论，哪怕这种讨论和政府的观点不一致，所以，我们现在就从这一检查令本身谈起。书报检查就是官方的批评。书报检查的标准就是批评的标准，因此，就很难把这种标准同批评分割开来，因为它们是建立在同一个基础上的。&lt;/p>
 &lt;p>当然，对于检查令序言中所表述的一般倾向，每个人都只能表示赞同：&lt;/p>
 &lt;blockquote>
@@ -3977,7 +3971,7 @@ endif
 &lt;/div>&lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p>
 &lt;p>&lt;em>EOF&lt;/em>是一个计算机术语，为&lt;code>End Of File&lt;/code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。&lt;/p>
 &lt;p>本人公众号&lt;code>火山灰&lt;/code>，亦可搜&lt;code>time_ash_past&lt;/code>。&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="">&lt;/p></description></item><item><title>Git入门</title><link>/post/git%E5%85%A5%E9%97%A8.fr/</link><pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate><guid>/post/git%E5%85%A5%E9%97%A8.fr/</guid><description>&lt;h2 id="一git是什么">一、Git是什么&lt;/h2>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="">&lt;/p></description></item><item><title>Git入门</title><link>/post/git%E5%85%A5%E9%97%A8/</link><pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate><guid>/post/git%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="一git是什么">一、Git是什么&lt;/h2>
 &lt;p>1、&lt;/p>
 &lt;p>2、&lt;/p>
 &lt;h2 id="二git基本用法">二、Git基本用法&lt;/h2>
