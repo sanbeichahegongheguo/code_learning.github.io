@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程世界</title><link>https://sanbeichahegongheguo.github.io/fr/</link><description>Recent content on 编程世界</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 30 Dec 2000 00:00:00 +0000</lastBuildDate><atom:link href="https://sanbeichahegongheguo.github.io/fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Git入门</title><link>https://sanbeichahegongheguo.github.io/fr/post/git%E5%85%A5%E9%97%A8/</link><pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate><guid>https://sanbeichahegongheguo.github.io/fr/post/git%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="一git是什么">一、Git是什么&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程世界</title><link>/fr/</link><description>Recent content on 编程世界</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Sat, 30 Dec 2000 00:00:00 +0000</lastBuildDate><atom:link href="/fr/index.xml" rel="self" type="application/rss+xml"/><item><title>Git入门</title><link>/fr/post/git%E5%85%A5%E9%97%A8/</link><pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate><guid>/fr/post/git%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="一git是什么">一、Git是什么&lt;/h2>
 &lt;p>1、&lt;/p>
 &lt;p>2、&lt;/p>
 &lt;h2 id="二git基本用法">二、Git基本用法&lt;/h2>
@@ -473,7 +473,7 @@ git stash pop
 &lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p>
 &lt;p>&lt;em>EOF&lt;/em>是一个计算机术语，为&lt;code>End Of File&lt;/code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。&lt;/p>
 &lt;p>本人公众号&lt;code>火山灰&lt;/code>，亦可搜&lt;code>time_ash_past&lt;/code>。&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="">&lt;/p></description></item><item><title>superset入门</title><link>https://sanbeichahegongheguo.github.io/fr/post/superset%E5%85%A5%E9%97%A8/</link><pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate><guid>https://sanbeichahegongheguo.github.io/fr/post/superset%E5%85%A5%E9%97%A8/</guid><description>&lt;p>&lt;code>superset&lt;/code>是什么？&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="">&lt;/p></description></item><item><title>superset入门</title><link>/fr/post/superset%E5%85%A5%E9%97%A8/</link><pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate><guid>/fr/post/superset%E5%85%A5%E9%97%A8/</guid><description>&lt;p>&lt;code>superset&lt;/code>是什么？&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -500,7 +500,7 @@ docker &lt;span class="nb">exec&lt;/span> -it &amp;lt;dockerID&amp;gt;superset i
 docker &lt;span class="nb">exec&lt;/span> -it &amp;lt;dockerID&amp;gt;superset runserver
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;p>&amp;ndash;END&amp;ndash;&lt;/p></description></item><item><title>GitHub使用入门及问题汇集</title><link>https://sanbeichahegongheguo.github.io/fr/post/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link><pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate><guid>https://sanbeichahegongheguo.github.io/fr/post/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid><description>&lt;hr>
+&lt;/div>&lt;p>&amp;ndash;END&amp;ndash;&lt;/p></description></item><item><title>GitHub使用入门及问题汇集</title><link>/fr/post/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link><pubDate>Tue, 28 Mar 2000 00:00:00 +0000</pubDate><guid>/fr/post/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid><description>&lt;hr>
 &lt;p>作者：荒野雄兵&lt;/p>
 &lt;p>来源：CSDN&lt;/p>
 &lt;p>原文：https://blog.csdn.net/daerzei/article/details/79528153&lt;/p>
@@ -519,7 +519,7 @@ OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
 &lt;/div>&lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p>
 &lt;p>&lt;em>EOF&lt;/em>是一个计算机术语，为&lt;code>End Of File&lt;/code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。&lt;/p>
 &lt;p>本人公众号&lt;code>火山灰&lt;/code>，亦可搜&lt;code>time_ash_past&lt;/code>。&lt;/p>
-&lt;p>&lt;img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="">&lt;/p></description></item><item><title>RSA算法解释</title><link>https://sanbeichahegongheguo.github.io/fr/post/rsa%E7%AE%97%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://sanbeichahegongheguo.github.io/fr/post/rsa%E7%AE%97%E6%B3%95/</guid><description>&lt;p>彻底讲清楚。&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/sanbeichahegongheguo/sanbeichahegongheguo.github.io/master/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg" alt="">&lt;/p></description></item><item><title>RSA算法解释</title><link>/fr/post/rsa%E7%AE%97%E6%B3%95/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/fr/post/rsa%E7%AE%97%E6%B3%95/</guid><description>&lt;p>彻底讲清楚。&lt;/p>
 &lt;h2 id="一一点历史">一、一点历史&lt;/h2>
 &lt;p>1976年以前，所有的加密方法都是同一种模式：&lt;/p>
 &lt;blockquote>
