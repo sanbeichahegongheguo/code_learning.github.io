@@ -1,597 +1,788 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>英文文章</title><link>/en/</link><description>Recent content on 英文文章</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate><atom:link href="/en/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown文档形式的介绍</title><link>/en/post/000jane-theme-preview/</link><pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate><guid>/en/post/000jane-theme-preview/</guid><description>&lt;p>&lt;strong>Markdown&lt;/strong> is created by &lt;a href="http://daringfireball.net/">Daring Fireball&lt;/a>, the original guideline is &lt;a href="http://daringfireball.net/projects/markdown/syntax">here&lt;/a>. Its syntax, however, varies between different parsers or editors.&lt;/p>
-&lt;p>Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p>
-&lt;h2 id="paragraph-and-line-breaks">Paragraph and line breaks&lt;/h2>
-&lt;p>A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press &lt;code>Return&lt;/code> to create a new paragraph.&lt;/p>
-&lt;p>Press &lt;code>Shift&lt;/code> + &lt;code>Return&lt;/code> to create a single line break. However, most markdown parser will ignore single line break, to make other markdown parsers recognize your line break, you can leave two whitespace at the end of the line, or insert &lt;code>&amp;lt;br/&amp;gt;&lt;/code>.&lt;/p>
-&lt;h2 id="headers">Headers&lt;/h2>
-&lt;p>Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="gh"># This is an H1
-&lt;/span>&lt;span class="gh">&lt;/span>
-&lt;span class="gu">## This is an H2
-&lt;/span>&lt;span class="gu">&lt;/span>
-&lt;span class="gu">###### This is an H6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>In typora, input ‘#’s followed by title content, and press &lt;code>Return&lt;/code> key will create a header.&lt;/p>
-&lt;h2 id="blockquotes">Blockquotes&lt;/h2>
-&lt;p>Markdown uses email-style &amp;gt; characters for block quoting. They are presented as:&lt;/p>
-&lt;blockquote>
-&lt;p>This is a blockquote with two paragraphs. This is first paragraph.&lt;/p>
-&lt;p>This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p>
-&lt;p>This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.&lt;/p>
-&lt;p>这是一段中文测试。&lt;/p>
-&lt;/blockquote>
-&lt;p>In typora, just input ‘&amp;gt;’ followed by quote contents a block quote is generated. Typora will insert proper ‘&amp;gt;’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘&amp;gt;’.&lt;/p>
-&lt;h2 id="lists">Lists&lt;/h2>
-&lt;p>Input &lt;code>* list item 1&lt;/code> will create an un-ordered list, the &lt;code>*&lt;/code> symbol can be replace with &lt;code>+&lt;/code> or &lt;code>-&lt;/code>.&lt;/p>
-&lt;p>Input &lt;code>1. list item 1&lt;/code> will create an ordered list, their markdown source code is like:&lt;/p>
-&lt;ul>
-&lt;li>Red&lt;/li>
-&lt;li>Green&lt;/li>
-&lt;li>Blue&lt;/li>
-&lt;/ul>
-&lt;ol>
-&lt;li>Red&lt;/li>
-&lt;li>Green&lt;/li>
-&lt;li>Blue&lt;/li>
-&lt;/ol>
-&lt;h2 id="task-list">Task List&lt;/h2>
-&lt;p>Task lists are lists with items marked as either &lt;code>[ ]&lt;/code> or &lt;code>[x]&lt;/code> (incomplete or complete). For example:&lt;/p>
-&lt;ul>
-&lt;li>&lt;input disabled="" type="checkbox"> a task list item&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> list syntax required&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> normal &lt;strong>formatting&lt;/strong>, @mentions, #1234 refs&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> incomplete&lt;/li>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> completed&lt;/li>
-&lt;/ul>
-&lt;p>You can change the complete/incomplete state by click the checkbox before the item.&lt;/p>
-&lt;h2 id="syntax-highlighting">Syntax Highlighting&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="kd">function&lt;/span> &lt;span class="nx">helloWorld&lt;/span> &lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="nx">alert&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Hello, World!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">HelloWorld&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="o">[]&lt;/span> &lt;span class="n">args&lt;/span>&lt;span class="o">)&lt;/span> &lt;span class="o">{&lt;/span>
-&lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="s">&amp;#34;Hello, World!&amp;#34;&lt;/span>&lt;span class="o">);&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="math-blocks">Math Blocks&lt;/h2>
-&lt;p>You can render &lt;em>LaTeX&lt;/em> mathematical expressions using &lt;strong>MathJax&lt;/strong>.&lt;/p>
-&lt;p>Input &lt;code>$$&lt;/code>, then press &amp;lsquo;Return&amp;rsquo; key will trigger an input field which accept &lt;em>Tex/LaTex&lt;/em> source. Following is an example:
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>英文文章</title>
+    <link>/en/</link>
+    <description>Recent content on 英文文章</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate>
+    
+        <atom:link href="/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown文档形式的介绍</title>
+      <link>/en/post/000jane-theme-preview/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>/en/post/000jane-theme-preview/</guid>
+      
+        <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
+&lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;
+&lt;h2 id=&#34;paragraph-and-line-breaks&#34;&gt;Paragraph and line breaks&lt;/h2&gt;
+&lt;p&gt;A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press &lt;code&gt;Return&lt;/code&gt; to create a new paragraph.&lt;/p&gt;
+&lt;p&gt;Press &lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;Return&lt;/code&gt; to create a single line break. However, most markdown parser will ignore single line break, to make other markdown parsers recognize your line break, you can leave two whitespace at the end of the line, or insert &lt;code&gt;&amp;lt;br/&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;headers&#34;&gt;Headers&lt;/h2&gt;
+&lt;p&gt;Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# This is an H1
+&lt;/span&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;gu&#34;&gt;## This is an H2
+&lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
+&lt;span class=&#34;gu&#34;&gt;###### This is an H6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In typora, input ‘#’s followed by title content, and press &lt;code&gt;Return&lt;/code&gt; key will create a header.&lt;/p&gt;
+&lt;h2 id=&#34;blockquotes&#34;&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Markdown uses email-style &amp;gt; characters for block quoting. They are presented as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. This is first paragraph.&lt;/p&gt;
+&lt;p&gt;This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;p&gt;This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.&lt;/p&gt;
+&lt;p&gt;这是一段中文测试。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In typora, just input ‘&amp;gt;’ followed by quote contents a block quote is  generated. Typora will insert proper ‘&amp;gt;’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘&amp;gt;’.&lt;/p&gt;
+&lt;h2 id=&#34;lists&#34;&gt;Lists&lt;/h2&gt;
+&lt;p&gt;Input &lt;code&gt;* list item 1&lt;/code&gt; will create an un-ordered list, the &lt;code&gt;*&lt;/code&gt; symbol can be replace with &lt;code&gt;+&lt;/code&gt; or &lt;code&gt;-&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Input &lt;code&gt;1. list item 1&lt;/code&gt; will create an ordered list, their markdown source code is like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;task-list&#34;&gt;Task List&lt;/h2&gt;
+&lt;p&gt;Task lists are lists with items marked as either &lt;code&gt;[ ]&lt;/code&gt; or &lt;code&gt;[x]&lt;/code&gt; (incomplete or complete). For example:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; a task list item&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; list syntax required&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; normal &lt;strong&gt;formatting&lt;/strong&gt;, @mentions, #1234 refs&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; incomplete&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; completed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can change the complete/incomplete state by click the checkbox before the item.&lt;/p&gt;
+&lt;h2 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloWorld&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+  &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+    &lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
+  &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;math-blocks&#34;&gt;Math Blocks&lt;/h2&gt;
+&lt;p&gt;You can render &lt;em&gt;LaTeX&lt;/em&gt; mathematical expressions using &lt;strong&gt;MathJax&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Input &lt;code&gt;$$&lt;/code&gt;, then press &amp;lsquo;Return&amp;rsquo; key will trigger an input field which accept &lt;em&gt;Tex/LaTex&lt;/em&gt; source. Following is an example:
 $$
-\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix}
-\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \&lt;br>
-\frac{\partial X}{\partial u} &amp;amp; \frac{\partial Y}{\partial u} &amp;amp; 0 \&lt;br>
-\frac{\partial X}{\partial v} &amp;amp; \frac{\partial Y}{\partial v} &amp;amp; 0 \&lt;br>
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \&lt;br&gt;
+\frac{\partial X}{\partial u} &amp;amp;  \frac{\partial Y}{\partial u} &amp;amp; 0 \&lt;br&gt;
+\frac{\partial X}{\partial v} &amp;amp;  \frac{\partial Y}{\partial v} &amp;amp; 0 \&lt;br&gt;
 \end{vmatrix}
-$$&lt;/p>
-&lt;p>In markdown source file, math block is &lt;em>LaTeX&lt;/em> expression wrapped by ‘$$’ mark:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">$$
-\mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix}
-\mathbf{i} &lt;span class="err">&amp;amp;&lt;/span> \mathbf{j} &lt;span class="err">&amp;amp;&lt;/span> \mathbf{k} \\
-\frac{\partial X}{\partial u} &lt;span class="err">&amp;amp;&lt;/span> \frac{\partial Y}{\partial u} &lt;span class="err">&amp;amp;&lt;/span> 0 \\
-\frac{\partial X}{\partial v} &lt;span class="err">&amp;amp;&lt;/span> \frac{\partial Y}{\partial v} &lt;span class="err">&amp;amp;&lt;/span> 0 \\
+$$&lt;/p&gt;
+&lt;p&gt;In markdown source file, math block is &lt;em&gt;LaTeX&lt;/em&gt; expression wrapped by ‘$$’ mark:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+\mathbf{i} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; \mathbf{j} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; \mathbf{k} \\
+\frac{\partial X}{\partial u} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt;  \frac{\partial Y}{\partial u} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; 0 \\
+\frac{\partial X}{\partial v} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt;  \frac{\partial Y}{\partial v} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; 0 \\
 \end{vmatrix}
 $$
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="tables">Tables&lt;/h2>
-&lt;p>Input &lt;code>| First Header | Second Header |&lt;/code> and press &lt;code>return&lt;/code> key will create a table with two column.&lt;/p>
-&lt;p>After table is created, focus on that table will pop up a toolbar for table, where you can resize, align, or delete table. You can also use context menu to copy and add/delete column/row.&lt;/p>
-&lt;p>Following descriptions can be skipped, as markdown source code for tables are generated by typora automatically.&lt;/p>
-&lt;p>In markdown source code, they look like:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">| Name | Markdown | HTML tag |
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;tables&#34;&gt;Tables&lt;/h2&gt;
+&lt;p&gt;Input &lt;code&gt;| First Header  | Second Header |&lt;/code&gt; and press &lt;code&gt;return&lt;/code&gt; key will create a table with two column.&lt;/p&gt;
+&lt;p&gt;After table is created, focus on that table will pop up a toolbar for table, where you can resize, align, or delete table. You can also use context menu to copy and add/delete column/row.&lt;/p&gt;
+&lt;p&gt;Following descriptions can be skipped, as markdown source code for tables are generated by typora automatically.&lt;/p&gt;
+&lt;p&gt;In markdown source code, they look like:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| Name              | Markdown            | HTML tag             |
 | ----------------- | ------------------- | -------------------- |
-| &lt;span class="ge">*Emphasis*&lt;/span> | &lt;span class="sb">`*Emphasis*`&lt;/span> | &lt;span class="sb">`&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;`&lt;/span> |
-| &lt;span class="gs">**Strong**&lt;/span> | &lt;span class="sb">`**Strong**`&lt;/span> | &lt;span class="sb">`&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;`&lt;/span> |
-| &lt;span class="sb">`code`&lt;/span> | ``code`` | &lt;span class="sb">`&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;`&lt;/span> |
-| &lt;span class="gd">~~Strikethrough~~&lt;/span> | &lt;span class="sb">`~~Strikethrough~~`&lt;/span> | &lt;span class="sb">`&amp;lt;del&amp;gt;&amp;lt;/del`&lt;/span> |
-| &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">u&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>Underline&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">u&lt;/span>&lt;span class="p">&amp;gt;&lt;/span> | &lt;span class="sb">`&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;`&lt;/span> | &lt;span class="sb">`&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;`&lt;/span> |
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;table>
-&lt;thead>
-&lt;tr>
-&lt;th>Name&lt;/th>
-&lt;th>Markdown&lt;/th>
-&lt;th>HTML tag&lt;/th>
-&lt;/tr>
-&lt;/thead>
-&lt;tbody>
-&lt;tr>
-&lt;td>&lt;em>Emphasis&lt;/em>&lt;/td>
-&lt;td>&lt;code>*Emphasis*&lt;/code>&lt;/td>
-&lt;td>&lt;code>&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;strong>Strong&lt;/strong>&lt;/td>
-&lt;td>&lt;code>**Strong**&lt;/code>&lt;/td>
-&lt;td>&lt;code> &amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;code>code&lt;/code>&lt;/td>
-&lt;td>&lt;code>`code`&lt;/code>&lt;/td>
-&lt;td>&lt;code>&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;del>Strikethrough&lt;/del>&lt;/td>
-&lt;td>&lt;code>~~Strikethrough~~&lt;/code>&lt;/td>
-&lt;td>&lt;code>&amp;lt;del&amp;gt;&amp;lt;/del&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td>&lt;u>Underline&lt;/u>&lt;/td>
-&lt;td>&lt;code>&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;&lt;/code>&lt;/td>
-&lt;td>&lt;code>&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;&lt;/code>&lt;/td>
-&lt;/tr>
-&lt;/tbody>
-&lt;/table>
-&lt;h2 id="footnotes">Footnotes&lt;/h2>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">You can create footnotes like this[^footnote].
-[^footnote]: Here is the &lt;span class="ge">*text*&lt;/span> of the &lt;span class="gs">**footnote**&lt;/span>.
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>will produce:&lt;/p>
-&lt;p>You can create footnotes like this&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>.&lt;/p>
-&lt;p>Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p>
-&lt;h2 id="horizontal-rules">Horizontal Rules&lt;/h2>
-&lt;p>Input &lt;code>***&lt;/code> or &lt;code>---&lt;/code> on a blank line and press &lt;code>return&lt;/code> will draw a horizontal line.&lt;/p>
-&lt;hr>
-&lt;h2 id="links">Links&lt;/h2>
-&lt;p>Markdown supports two style of links: inline and reference.&lt;/p>
-&lt;p>In both styles, the link text is delimited by [square brackets].&lt;/p>
-&lt;p>To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">This is [&lt;span class="nt">an example&lt;/span>](&lt;span class="na">http://example.com/ &amp;#34;Title&amp;#34;&lt;/span>) inline link.
-[&lt;span class="nt">This link&lt;/span>](&lt;span class="na">http://example.net/&lt;/span>) has no title attribute.
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>will produce:&lt;/p>
-&lt;p>This is &lt;a href="http://example.com/%22Title%22">an example&lt;/a> inline link. (&lt;code>&amp;lt;p&amp;gt;This is &amp;lt;a href=&amp;quot;http://example.com/&amp;quot; title=&amp;quot;Title&amp;quot;&amp;gt;&lt;/code>)&lt;/p>
-&lt;p>&lt;a href="http://example.net/">This link&lt;/a> has no title attribute. (&lt;code>&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.net/&amp;quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no&lt;/code>)&lt;/p>
-&lt;h3 id="internal-links">Internal Links&lt;/h3>
-&lt;p>&lt;strong>You can set the href to headers&lt;/strong>, which will create a bookmark that allow you to jump to that section after clicking. For example:&lt;/p>
-&lt;p>Command(on Windows: Ctrl) + Click &lt;a href="#block-elements">This link&lt;/a> will jump to header &lt;code>Block Elements&lt;/code>. To see how to write that, please move cursor or click that link with &lt;code>⌘&lt;/code> key pressed to expand the element into markdown source.&lt;/p>
-&lt;h3 id="reference-links">Reference Links&lt;/h3>
-&lt;p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">This is [an example][id] reference-style link.
+| &lt;span class=&#34;ge&#34;&gt;*Emphasis*&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`*Emphasis*`&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;`&lt;/span&gt;          |
+| &lt;span class=&#34;gs&#34;&gt;**Strong**&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`**Strong**`&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;`&lt;/span&gt; |
+| &lt;span class=&#34;sb&#34;&gt;`code`&lt;/span&gt;            | ``code``            | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;`&lt;/span&gt;      |
+| &lt;span class=&#34;gd&#34;&gt;~~Strikethrough~~&lt;/span&gt; | &lt;span class=&#34;sb&#34;&gt;`~~Strikethrough~~`&lt;/span&gt; | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;del&amp;gt;&amp;lt;/del`&lt;/span&gt;         |
+| &lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;Underline&lt;span class=&#34;p&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;u&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;  | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;`&lt;/span&gt;  | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;`&lt;/span&gt;            |
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Markdown&lt;/th&gt;
+&lt;th&gt;HTML tag&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Emphasis&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;*Emphasis*&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Strong&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;**Strong**&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt; &amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;code&gt;code&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;`code`&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;code&amp;gt;&amp;lt;/code&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;~~Strikethrough~~&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;del&amp;gt;&amp;lt;/del&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;u&gt;Underline&lt;/u&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;u&amp;gt;underline&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;&amp;lt;u&amp;gt;&amp;lt;/u&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].
+
+[^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;will produce:&lt;/p&gt;
+&lt;p&gt;You can create footnotes like this&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Mouse on the ‘footnote’ superscript to see content of the footnote.&lt;/p&gt;
+&lt;h2 id=&#34;horizontal-rules&#34;&gt;Horizontal Rules&lt;/h2&gt;
+&lt;p&gt;Input &lt;code&gt;***&lt;/code&gt; or &lt;code&gt;---&lt;/code&gt; on a blank line and press &lt;code&gt;return&lt;/code&gt; will draw a horizontal line.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+&lt;p&gt;Markdown supports two style of links: inline and reference.&lt;/p&gt;
+&lt;p&gt;In both styles, the link text is delimited by [square brackets].&lt;/p&gt;
+&lt;p&gt;To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;This is [&lt;span class=&#34;nt&#34;&gt;an example&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.com/ &amp;#34;Title&amp;#34;&lt;/span&gt;) inline link.
+
+[&lt;span class=&#34;nt&#34;&gt;This link&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.net/&lt;/span&gt;) has no title attribute.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;will produce:&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&#34;http://example.com/%22Title%22&#34;&gt;an example&lt;/a&gt; inline link. (&lt;code&gt;&amp;lt;p&amp;gt;This is &amp;lt;a href=&amp;quot;http://example.com/&amp;quot; title=&amp;quot;Title&amp;quot;&amp;gt;&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://example.net/&#34;&gt;This link&lt;/a&gt; has no title attribute. (&lt;code&gt;&amp;lt;p&amp;gt;&amp;lt;a href=&amp;quot;http://example.net/&amp;quot;&amp;gt;This link&amp;lt;/a&amp;gt; has no&lt;/code&gt;)&lt;/p&gt;
+&lt;h3 id=&#34;internal-links&#34;&gt;Internal Links&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;You can set the href to headers&lt;/strong&gt;, which will create a bookmark that allow you to jump to that section after clicking. For example:&lt;/p&gt;
+&lt;p&gt;Command(on Windows: Ctrl) + Click &lt;a href=&#34;#block-elements&#34;&gt;This link&lt;/a&gt; will jump to header &lt;code&gt;Block Elements&lt;/code&gt;. To see how to write that, please move cursor or click that link with &lt;code&gt;⌘&lt;/code&gt; key pressed to expand the element into markdown source.&lt;/p&gt;
+&lt;h3 id=&#34;reference-links&#34;&gt;Reference Links&lt;/h3&gt;
+&lt;p&gt;Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;This is [an example][id] reference-style link.
+
 Then, anywhere in the document, you define your link label like this, on a line by itself:
-[id]: http://example.com/ &amp;#34;Optional Title Here&amp;#34;
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>In typora, they will be rendered like:&lt;/p>
-&lt;p>This is &lt;a href="http://example.com/" title="Optional Title Here">an example&lt;/a> reference-style link.&lt;/p>
-&lt;p>The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">[Google][]
+
+[id]: http://example.com/  &amp;#34;Optional Title Here&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In typora, they will be rendered like:&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&#34;http://example.com/&#34; title=&#34;Optional Title Here&#34;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
+&lt;p&gt;The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;[Google][]
 And then define the link:
+
 [Google]: http://google.com/
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>In typora click link will expand it for editing, command+click will open the hyperlink in web browser.&lt;/p>
-&lt;h2 id="urls">URLs&lt;/h2>
-&lt;p>Typora allows you to insert urls as links, wrapped by &lt;code>&amp;lt;&lt;/code>brackets&lt;code>&amp;gt;&lt;/code>.&lt;/p>
-&lt;p>&lt;code>&amp;lt;i@typora.io&amp;gt;&lt;/code> becomes &lt;a href="mailto:i@typora.io">i@typora.io&lt;/a>.&lt;/p>
-&lt;p>Typora will aslo auto link standard URLs. e.g: &lt;a href="http://www.google.com">www.google.com&lt;/a>.&lt;/p>
-&lt;h2 id="images">Images&lt;/h2>
-&lt;p>Image looks similar with links, but it requires an additional &lt;code>!&lt;/code> char before the start of link. Image syntax looks like this:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">![&lt;span class="nt">Alt text&lt;/span>](&lt;span class="na">/path/to/img.jpg&lt;/span>)
-![&lt;span class="nt">Alt text&lt;/span>](&lt;span class="na">/path/to/img.jpg &amp;#34;Optional title&amp;#34;&lt;/span>)
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>You are able to use drag &amp;amp; drop to insert image from image file or we browser. And modify the markdown source code by clicking on the image. Relative path will be used if image is in same directory or sub-directory with current editing document when drag &amp;amp; drop.&lt;/p>
-&lt;p>For more tips on images, please read &lt;a href="http://support.typora.io//Images/">http://support.typora.io//Images/&lt;/a>&lt;/p>
-&lt;h2 id="emphasis">Emphasis&lt;/h2>
-&lt;p>Markdown treats asterisks (&lt;code>*&lt;/code>) and underscores (&lt;code>_&lt;/code>) as indicators of emphasis. Text wrapped with one &lt;code>*&lt;/code> or &lt;code>_&lt;/code> will be wrapped with an HTML &lt;code>&amp;lt;em&amp;gt;&lt;/code> tag. E.g:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">*single asterisks*
-&lt;span class="ge">_single underscores_&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>output:&lt;/p>
-&lt;p>&lt;em>single asterisks&lt;/em>&lt;/p>
-&lt;p>&lt;em>single underscores&lt;/em>&lt;/p>
-&lt;p>GFM will ignores underscores in words, which is commonly used in code and names, like this:&lt;/p>
-&lt;blockquote>
-&lt;p>wow_great_stuff&lt;/p>
-&lt;p>do_this_and_do_that_and_another_thing.&lt;/p>
-&lt;/blockquote>
-&lt;p>To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">\*this text is surrounded by literal asterisks\*
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Typora recommends to use &lt;code>*&lt;/code> symbol.&lt;/p>
-&lt;h2 id="strong">Strong&lt;/h2>
-&lt;p>double *’s or _’s will be wrapped with an HTML &lt;code>&amp;lt;strong&amp;gt;&lt;/code> tag, e.g:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">**double asterisks**
-&lt;span class="gs">__double underscores__&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>output:&lt;/p>
-&lt;p>&lt;strong>double asterisks&lt;/strong>&lt;/p>
-&lt;p>&lt;strong>double underscores&lt;/strong>&lt;/p>
-&lt;p>Typora recommends to use &lt;code>**&lt;/code> symbol.&lt;/p>
-&lt;h2 id="code">Code&lt;/h2>
-&lt;p>To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-markdown" data-lang="markdown">Use the &lt;span class="sb">`printf()`&lt;/span> function.
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>will produce:&lt;/p>
-&lt;p>Use the &lt;code>printf()&lt;/code> function.&lt;/p>
-&lt;h2 id="strikethrough">Strikethrough&lt;/h2>
-&lt;p>GFM adds syntax to create strikethrough text, which is missing from standard Markdown.&lt;/p>
-&lt;p>&lt;code>~~Mistaken text.~~&lt;/code> becomes &lt;del>Mistaken text.&lt;/del>&lt;/p>
-&lt;h2 id="underline">Underline&lt;/h2>
-&lt;p>Underline is powered by raw HTML.&lt;/p>
-&lt;p>&lt;code>&amp;lt;u&amp;gt;Underline&amp;lt;/u&amp;gt;&lt;/code> becomes &lt;u>Underline&lt;/u>.&lt;/p>
-&lt;h2 id="emoji-happy">Emoji :happy:&lt;/h2>
-&lt;p>Input emoji with syntax &lt;code>😄&lt;/code>.&lt;/p>
-&lt;p>User can trigger auto-complete suggestions for emoji by pressing &lt;code>ESC&lt;/code> key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from &lt;code>Edit&lt;/code> -&amp;gt; &lt;code>Emoji &amp;amp; Symbols&lt;/code> from menu bar is also supported.&lt;/p>
-&lt;h2 id="inline-math">Inline Math&lt;/h2>
-&lt;p>To use this feature, first, please enable it in &lt;code>Preference&lt;/code> Panel -&amp;gt; &lt;code>Markdown&lt;/code> Tab. Then use &lt;code>$&lt;/code> to wrap TeX command, for example: &lt;code>$\lim_{x \to \infty} \exp(-x) = 0$&lt;/code> will be rendered as LaTeX command.&lt;/p>
-&lt;p>To trigger inline preview for inline math: input “$”, then press &lt;code>ESC&lt;/code> key, then input TeX command, a preview tooltip will be visible like below:&lt;/p>
-&lt;p>&lt;img src="https://typora.io/img/inline-math.gif" style="zoom:50%;" />&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
-&lt;p>Here is the &lt;em>text&lt;/em> of the &lt;strong>footnote&lt;/strong>. &lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/section></description></item><item><title>Math Preview</title><link>/en/post/math-preview/</link><pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate><guid>/en/post/math-preview/</guid><description>&lt;p>&lt;a href="https://www.intmath.com/cg5/katex-mathjax-comparison.php">KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a>&lt;/p>
-&lt;h2 id="repeating-fractions">Repeating fractions&lt;/h2>
-&lt;p>&lt;span class="math">\[
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In typora click link will expand it for editing, command+click will open the hyperlink in web browser.&lt;/p&gt;
+&lt;h2 id=&#34;urls&#34;&gt;URLs&lt;/h2&gt;
+&lt;p&gt;Typora allows you to insert urls as links, wrapped by &lt;code&gt;&amp;lt;&lt;/code&gt;brackets&lt;code&gt;&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;i@typora.io&amp;gt;&lt;/code&gt; becomes &lt;a href=&#34;mailto:i@typora.io&#34;&gt;i@typora.io&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Typora will aslo auto link standard URLs. e.g: &lt;a href=&#34;http://www.google.com&#34;&gt;www.google.com&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;images&#34;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Image looks similar with links, but it requires an additional &lt;code&gt;!&lt;/code&gt; char before the start of link. Image syntax looks like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Alt text&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg&lt;/span&gt;)
+
+![&lt;span class=&#34;nt&#34;&gt;Alt text&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg &amp;#34;Optional title&amp;#34;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;You are able to use drag &amp;amp; drop to insert image from image file or we browser. And modify the markdown source code by clicking on the image. Relative path will be used if image is in same directory or sub-directory with current editing document when drag &amp;amp; drop.&lt;/p&gt;
+&lt;p&gt;For more tips on images, please read &lt;a href=&#34;http://support.typora.io//Images/&#34;&gt;http://support.typora.io//Images/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;emphasis&#34;&gt;Emphasis&lt;/h2&gt;
+&lt;p&gt;Markdown treats asterisks (&lt;code&gt;*&lt;/code&gt;) and underscores (&lt;code&gt;_&lt;/code&gt;) as indicators of emphasis. Text wrapped with one &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt; will be wrapped with an HTML &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag. E.g:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;*single asterisks*
+
+&lt;span class=&#34;ge&#34;&gt;_single underscores_&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;output:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;GFM will ignores underscores in words, which is commonly used in code and names, like this:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;wow_great_stuff&lt;/p&gt;
+&lt;p&gt;do_this_and_do_that_and_another_thing.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;\*this text is surrounded by literal asterisks\*
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Typora recommends to use &lt;code&gt;*&lt;/code&gt; symbol.&lt;/p&gt;
+&lt;h2 id=&#34;strong&#34;&gt;Strong&lt;/h2&gt;
+&lt;p&gt;double *’s or _’s will be wrapped with an HTML &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag, e.g:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;**double asterisks**
+
+&lt;span class=&#34;gs&#34;&gt;__double underscores__&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;output:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Typora recommends to use &lt;code&gt;**&lt;/code&gt; symbol.&lt;/p&gt;
+&lt;h2 id=&#34;code&#34;&gt;Code&lt;/h2&gt;
+&lt;p&gt;To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;Use the &lt;span class=&#34;sb&#34;&gt;`printf()`&lt;/span&gt; function.
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;will produce:&lt;/p&gt;
+&lt;p&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+&lt;h2 id=&#34;strikethrough&#34;&gt;Strikethrough&lt;/h2&gt;
+&lt;p&gt;GFM adds syntax to create strikethrough text, which is missing from standard Markdown.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;~~Mistaken text.~~&lt;/code&gt; becomes &lt;del&gt;Mistaken text.&lt;/del&gt;&lt;/p&gt;
+&lt;h2 id=&#34;underline&#34;&gt;Underline&lt;/h2&gt;
+&lt;p&gt;Underline is powered by raw HTML.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;lt;u&amp;gt;Underline&amp;lt;/u&amp;gt;&lt;/code&gt; becomes &lt;u&gt;Underline&lt;/u&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;emoji-happy&#34;&gt;Emoji :happy:&lt;/h2&gt;
+&lt;p&gt;Input emoji with syntax &lt;code&gt;😄&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;User can trigger auto-complete suggestions for emoji by pressing &lt;code&gt;ESC&lt;/code&gt; key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from &lt;code&gt;Edit&lt;/code&gt; -&amp;gt; &lt;code&gt;Emoji &amp;amp; Symbols&lt;/code&gt; from menu bar is also supported.&lt;/p&gt;
+&lt;h2 id=&#34;inline-math&#34;&gt;Inline Math&lt;/h2&gt;
+&lt;p&gt;To use this feature, first, please enable it in &lt;code&gt;Preference&lt;/code&gt; Panel -&amp;gt; &lt;code&gt;Markdown&lt;/code&gt; Tab. Then use &lt;code&gt;$&lt;/code&gt; to wrap TeX command, for example: &lt;code&gt;$\lim_{x \to \infty} \exp(-x) = 0$&lt;/code&gt; will be rendered as LaTeX command.&lt;/p&gt;
+&lt;p&gt;To trigger inline preview for inline math: input “$”, then press &lt;code&gt;ESC&lt;/code&gt; key, then input TeX command, a preview tooltip will be visible like below:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://typora.io/img/inline-math.gif&#34; style=&#34;zoom:50%;&#34; /&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Here is the &lt;em&gt;text&lt;/em&gt; of the &lt;strong&gt;footnote&lt;/strong&gt;. &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Math Preview</title>
+      <link>/en/post/math-preview/</link>
+      <pubDate>Mon, 04 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>/en/post/math-preview/</guid>
+      
+        <description>&lt;p&gt;&lt;a href=&#34;https://www.intmath.com/cg5/katex-mathjax-comparison.php&#34;&gt;KaTeX and MathJax Comparison Demo, currently processed as KaTex&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;repeating-fractions&#34;&gt;Repeating fractions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} \equiv 1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}} {1+\frac{e^{-8\pi}} {1+\cdots} } } }
-\]&lt;/span>&lt;/p>
-&lt;h2 id="summation-notation">Summation notation&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;summation-notation&#34;&gt;Summation notation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\]&lt;/span>&lt;/p>
-&lt;h2 id="sum-of-a-series">Sum of a Series&lt;/h2>
-&lt;p>I broke up the next two examples into separate lines so it behaves better on a mobile phone. That's why they include \displaystyle.&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;sum-of-a-series&#34;&gt;Sum of a Series&lt;/h2&gt;
+
+&lt;p&gt;I broke up the next two examples into separate lines so it behaves better on a mobile phone. That&#39;s why they include \displaystyle.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle\sum_{i=1}^{k+1}i
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle= \left(\sum_{i=1}^{k}i\right) +(k+1)
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle= \frac{k(k+1)}{2}+k+1
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle= \frac{k(k+1)+2(k+1)}{2}
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle= \frac{(k+1)(k+2)}{2}
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle= \frac{(k+1)((k+1)+1)}{2}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="product-notation">Product notation&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;product-notation&#34;&gt;Product notation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \displaystyle 1 + \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots = \displaystyle \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \displaystyle\text{ for }\lvert q\rvert &lt; 1.
-\]&lt;/span>&lt;/p>
-&lt;h2 id="inline-math">Inline math&lt;/h2>
-&lt;p>And here is some in-line math: &lt;span class="math">\( k_{n+1} = n^2 + k_n^2 - k_{n-1} \)&lt;/span> , followed by some more text.&lt;/p>
-&lt;h2 id="greek-letters">Greek Letters&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;inline-math&#34;&gt;Inline math&lt;/h2&gt;
+
+&lt;p&gt;And here is some in-line math: &lt;span  class=&#34;math&#34;&gt;\( k_{n+1} = n^2 + k_n^2 - k_{n-1} \)&lt;/span&gt; , followed by some more text.&lt;/p&gt;
+
+&lt;h2 id=&#34;greek-letters&#34;&gt;Greek Letters&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \Gamma\ \Delta\ \Theta\ \Lambda\ \Xi\ \Pi\ \Sigma\ \Upsilon\ \Phi\ \Psi\ \Omega
 \alpha\ \beta\ \gamma\ \delta\ \epsilon\ \zeta\ \eta\ \theta\ \iota\ \kappa\ \lambda\ \mu\ \nu\ \xi \ \omicron\ \pi\ \rho\ \sigma\ \tau\ \upsilon\ \phi\ \chi\ \psi\ \omega\ \varepsilon\ \vartheta\ \varpi\ \varrho\ \varsigma\ \varphi
-\]&lt;/span>&lt;/p>
-&lt;h2 id="arrows">Arrows&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;arrows&#34;&gt;Arrows&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \gets\ \to\ \leftarrow\ \rightarrow\ \uparrow\ \Uparrow\ \downarrow\ \Downarrow\ \updownarrow\ \Updownarrow
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \Leftarrow\ \Rightarrow\ \leftrightarrow\ \Leftrightarrow\ \mapsto\ \hookleftarrow
 \leftharpoonup\ \leftharpoondown\ \rightleftharpoons\ \longleftarrow\ \Longleftarrow\ \longrightarrow
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \Longrightarrow\ \longleftrightarrow\ \Longleftrightarrow\ \longmapsto\ \hookrightarrow\ \rightharpoonup
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \rightharpoondown\ \leadsto\ \nearrow\ \searrow\ \swarrow\ \nwarrow
-\]&lt;/span>&lt;/p>
-&lt;h2 id="symbols">Symbols&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;symbols&#34;&gt;Symbols&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \surd\ \barwedge\ \veebar\ \odot\ \oplus\ \otimes\ \oslash\ \circledcirc\ \boxdot\ \bigtriangleup
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \bigtriangledown\ \dagger\ \diamond\ \star\ \triangleleft\ \triangleright\ \angle\ \infty\ \prime\ \triangle
-\]&lt;/span>&lt;/p>
-&lt;h2 id="calculus">Calculus&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;calculus&#34;&gt;Calculus&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \int u \frac{dv}{dx}\,dx=uv-\int \frac{du}{dx}v\,dx
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 f(x) = \int_{-\infty}^\infty \hat f(\xi)\,e^{2 \pi i \xi x}
-\]&lt;/span>&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \oint \vec{F} \cdot d\vec{s}=0
-\]&lt;/span>&lt;/p>
-&lt;h2 id="lorenz-equations">Lorenz Equations&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;lorenz-equations&#34;&gt;Lorenz Equations&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \begin{aligned} \dot{x} &amp; = \sigma(y-x) \\ \dot{y} &amp; = \rho x - y - xz \\ \dot{z} &amp; = -\beta z + xy \end{aligned}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="cross-product">Cross Product&lt;/h2>
-&lt;p>This works in KaTeX, but the separation of fractions in this environment is not so good.&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;cross-product&#34;&gt;Cross Product&lt;/h2&gt;
+
+&lt;p&gt;This works in KaTeX, but the separation of fractions in this environment is not so good.&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
-\]&lt;/span>&lt;/p>
-&lt;p>Here's a workaround: make the fractions smaller with an extra class that targets the spans with &amp;quot;mfrac&amp;quot; class (makes no difference in the MathJax case):&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s a workaround: make the fractions smaller with an extra class that targets the spans with &amp;quot;mfrac&amp;quot; class (makes no difference in the MathJax case):&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \mathbf{V}_1 \times \mathbf{V}_2 = \begin{vmatrix} \mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\ \frac{\partial X}{\partial u} &amp; \frac{\partial Y}{\partial u} &amp; 0 \\ \frac{\partial X}{\partial v} &amp; \frac{\partial Y}{\partial v} &amp; 0 \end{vmatrix}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="accents">Accents&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;accents&#34;&gt;Accents&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \hat{x}\ \vec{x}\ \ddot{x}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="stretchy-brackets">Stretchy brackets&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;stretchy-brackets&#34;&gt;Stretchy brackets&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \left(\frac{x^2}{y^3}\right)
-\]&lt;/span>&lt;/p>
-&lt;h2 id="evaluation-at-limits">Evaluation at limits&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;evaluation-at-limits&#34;&gt;Evaluation at limits&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \left.\frac{x^3}{3}\right|_0^1
-\]&lt;/span>&lt;/p>
-&lt;h2 id="case-definitions">Case definitions&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;case-definitions&#34;&gt;Case definitions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 f(n) = \begin{cases} \frac{n}{2}, &amp; \text{if } n\text{ is even} \\ 3n+1, &amp; \text{if } n\text{ is odd} \end{cases}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="maxwells-equations">Maxwell's Equations&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;maxwells-equations&#34;&gt;Maxwell&#39;s Equations&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\ \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\ \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\ \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
-\]&lt;/span>&lt;/p>
-&lt;p>These equations are quite cramped. We can add vertical spacing using (for example) [1em] after each line break (\). as you can see here:&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;These equations are quite cramped. We can add vertical spacing using (for example) [1em] after each line break (\). as you can see here:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \begin{aligned} \nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &amp; = \frac{4\pi}{c}\vec{\mathbf{j}} \\[1em] \nabla \cdot \vec{\mathbf{E}} &amp; = 4 \pi \rho \\[0.5em] \nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} &amp; = \vec{\mathbf{0}} \\[1em] \nabla \cdot \vec{\mathbf{B}} &amp; = 0 \end{aligned}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="statistics">Statistics&lt;/h2>
-&lt;p>Definition of combination:&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;statistics&#34;&gt;Statistics&lt;/h2&gt;
+
+&lt;p&gt;Definition of combination:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \frac{n!}{k!(n-k)!} = {^n}C_k
 {n \choose k}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="fractions-on-fractions">Fractions on fractions&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;fractions-on-fractions&#34;&gt;Fractions on fractions&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \frac{\frac{1}{x}+\frac{1}{y}}{y-z}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="nth-root">n-th root&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;nth-root&#34;&gt;n-th root&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \sqrt[n]{1+x+x^2+x^3+\ldots}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="matrices">Matrices&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;matrices&#34;&gt;Matrices&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 \begin{pmatrix} a_{11} &amp; a_{12} &amp; a_{13}\\ a_{21} &amp; a_{22} &amp; a_{23}\\ a_{31} &amp; a_{32} &amp; a_{33} \end{pmatrix}
 \begin{bmatrix} 0 &amp; \cdots &amp; 0 \\ \vdots &amp; \ddots &amp; \vdots \\ 0 &amp; \cdots &amp; 0 \end{bmatrix}
-\]&lt;/span>&lt;/p>
-&lt;h2 id="punctuation">Punctuation&lt;/h2>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;punctuation&#34;&gt;Punctuation&lt;/h2&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 f(x) = \sqrt{1+x} \quad (x \ge -1)
 f(x) \sim x^2 \quad (x\to\infty)
-\]&lt;/span>&lt;/p>
-&lt;p>Now with punctuation:&lt;/p>
-&lt;p>&lt;span class="math">\[
+\]&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;Now with punctuation:&lt;/p&gt;
+
+&lt;p&gt;&lt;span  class=&#34;math&#34;&gt;\[
 f(x) = \sqrt{1+x}, \quad x \ge -1
 f(x) \sim x^2, \quad x\to\infty
-\]&lt;/span>&lt;/p></description></item><item><title>AUTHOR’S POSTSCRIPT FOR THE AMERICAN EDITION</title><link>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</guid><description>&lt;p>A night from my childhood remains crisply etched in my memory: I was standing by a pond before a village somewhere in Luoshan County, Henan Province, where generations of my ancestors had lived. Next to me stood many other people, both adults and children. Together, we gazed up at the clear night sky, where a tiny star slowly glided across the darkfirmament.&lt;/p>
-&lt;p>It was the first artificial satellite China had ever launched: Dongfanghong I (“The East is Red I”). The date was April 25, 1970, and I was seven.&lt;/p>
-&lt;p>It had been thirteen years since Sputnik had been launched into space, and nine years since the first cosmonaut had left the Earth. Just a week earlier, Apollo 13 had safely returned from a perilous journey to the moon.&lt;/p>
-&lt;p>But I didn’t know any of that. As I gazed at that tiny, gliding star, my heart was filled with indescribable curiosity and yearning. And etched in my memory just as deeply as these feelings was the sensation of hunger. At that time, the region around my village was extremely poor. Hunger was the constant companion of every child. I was relatively fortunate because I had shoes on my feet. Most of the friends standing by my side were barefoot, and some of the tiny feet still had unhealed frostbite from the previous winter. Behind me, faint light from kerosene lamps shone out of cracks in the walls of dilapidated thatched huts—the village wasn’t wired for electricityuntil the eighties.&lt;/p>
-&lt;p>The adults standing nearby said that the satellite wasn’t like an airplane because it flew outside of the Earth. Back then the dust and smoke of industry hadn’t yet polluted the air, and the starry sky was especially clear, with the Milky Way clearly visible. In my mind, the stars that filled the heavens weren’t much farther away than the tiny, gliding satellite, and so I thought it was flying among them. I even worried that it might collide with one as it passed through the dense stellar clusters.&lt;/p>
-&lt;p>My parents weren’t with mebecause they were working at a coal mine more than a thousand kilometers away, in Shanxi Province. A few years earlier, when I had been even younger, the mine had been a combat zone for the factional civil wars of the Cultural Revolution. I remembered gunshots in the middle of the night, trucks passing in the street, filled with men clutching guns and wearing red armbands.… But I had been too young back then, and I can’t be sure whether these images are real memories, or mirages constructed later. However, I know one thing for certain: Because the mine was too unsafe and my parents had been impacted by the Cultural Revolution, they had had no choice but to send me to my ancestral home village in Henan. By the time I saw Dongfanghong I, I had already lived there for more than three years.&lt;/p>
-&lt;p>A few more years passed before I understood the distance between that satellite and the stars. Back then I was reading a popular set of basic science books called A Hundred Thousand Whys. From the astronomy volume, I learned the concept of a light-year. Before then, I had already known that light could traverse a distance equal to seven and a half trips around the Earth in a single second, but I had not contemplated what kind of terrifying distance could be crossed by flying at such a speed for a whole year. I imagined a ray of light passing through the cold silence of space at the speed of 300,000 kilometers per second. I struggled to grasp the bone-chilling vastness and profundity with my imagination, felt the weight of an immense terror and awe, and simultaneously enjoyed a druglike euphoria.&lt;/p>
-&lt;p>From that moment, I realized that I had a special talent: Scales and existences that far exceeded the bounds of human sensory perception—both macro and micro—and that seemed to be only abstract numbers to others, could take on concrete forms in my mind. I could touch them and feel them, much like others could touch and feel trees and rocks. Even today, when references to the 15-billion-light-year radius of the universe and “strings” many orders of magnitude smaller than quarks have numbed most people, theconcepts of a light-year or a nanometer can still produce lively, grand pictures in my mind and arouse in me an ineffable, religious feeling of awe and shock. Compared to most of the population who do not experience such sensations, I don’t know if I’m lucky or unlucky. But it is certain that such feelings made me first into a science fiction fan, and later a science fiction author.&lt;/p>
-&lt;p>In that same year when I was first awed by the concept of a light-year, a flood (known as the Great Flood of August ’75) occurred near my home village. In a single day, arecord-breaking 100.5 centimeters of rain fell in the Zhumadian region of Henan. Fifty-eight dams of various sizes collapsed, one after another, and 240,000 people died in the resulting deluge. Shortly after the floodwaters had receded, I returned to the village and saw a landscape filled with refugees. I thought I was looking at the end of the world.&lt;/p>
-&lt;p>And so, satellite, hunger, stars, kerosene lamps, the Milky Way, the Cultural Revolution’s factional civil wars, a light-year, the flood … these seemingly unconnected things melded together and formed the early part of my life, and also molded the science fiction I write today.&lt;/p>
-&lt;p>As a science fiction writer who began as a fan, I do not use my fiction as a disguised way to criticize the reality of the present. I feel that the greatest appeal of science fiction is the creation of numerous imaginary worlds outside of reality. I’ve always felt that the greatest and most beautiful stories in the history of humanity were not sung by wandering bards or written by playwrights and novelists, but told by science. The stories of scienceare far more magnificent, grand, involved, profound, thrilling, strange, terrifying, mysterious, and even emotional, compared to the stories told by literature. Only, these wonderful stories are locked in cold equations that most do not know how to read.&lt;/p>
-&lt;p>The creation myths of the various peoples and religions of the world pale when compared to the glory of the big bang. The three-billion-year history of life’s evolution from self-reproducing molecules to civilization contains twists and romances that cannot be matched by any myth or epic.&lt;/p>
-&lt;p>There is also the poetic vision of space and time in relativity, the weird subatomic world of quantum mechanics … these wondrous stories of science all possess an irresistible attraction. Through the medium of science fiction, I seek only to create my own worlds using the power of imagination, and to make known the poetry of Nature in those worlds, to tell the romantic legends that have unfolded between Man and Universe.&lt;/p>
-&lt;p>But I cannot escape and leave behind reality, just like I cannot leave behind my shadow. Realitybrands each of us with its indelible mark. Every era puts invisible shackles on those who have lived through it, and I can only dance in my chains. In science fiction, humanity is often described as a collective. In this book, a man named “humanity” confronts a disaster, and everything he demonstrates in the face of existence and annihilation undoubtedly has sources in the reality that I experienced. The wonder of science fiction is that it can, when given certain hypothetical world settings, turn what in our reality is evil and dark into what is righteous and bright, and vice versa. This book and its two sequels try to do just that, but no matter how reality is twisted by imagination, it ultimately remains there.&lt;/p>
-&lt;p>I’ve always felt that extraterrestrial intelligence will be the greatest source of uncertainty for humanity’s future. Other great shifts, such as climate change and ecological disasters, have a certain progression and built-in adjustment periods, but contact between humankind and aliens can occur at any time. Perhaps in ten thousand years, the starry skythat humankind gazes upon will remain empty and silent, but perhaps tomorrow we’ll wake up and find an alien spaceship the size of the moon parked in orbit. The appearance of extraterrestrial intelligence will force humanity to confront an Other. Before then, humanity as a whole will never have had an external counterpart. The appearance of this Other, or mere knowledge of its existence, will impact our civilization in unpredictable ways.&lt;/p>
-&lt;p>There’s a strange contradiction revealed by the naïveté and kindness demonstrated by humanity when faced with the universe: On Earth, humankind can step onto another continent, and without a thought, destroy the kindred civilizations found there through warfare and disease. But when they gaze up at the stars, they turn sentimental and believe that if extraterrestrial intelligences exist, they must be civilizations bound by universal, noble, moral constraints, as if cherishing and loving different forms of life are parts of a self-evident universal code of conduct.&lt;/p>
-&lt;p>I think it should be precisely the opposite: Let’s turn the kindnesswe show toward the stars to members of the human race on Earth and build up the trust and understanding between the different peoples and civilizations that make up humanity. But for the universe outside the solar system, we should be ever vigilant, and be ready to attribute the worst of intentions to any Others that might exist in space. For a fragile civilization like ours, this is without a doubt the most responsible path.&lt;/p>
-&lt;p>As a fan of science fiction, it has molded my life, and aconsiderable part of the science fiction I’ve read comes from America. The fact that American readers can now enjoy my book makes me both pleased and excited. Science fiction is a literature that belongs to all humankind. It portrays events of interest to all of humanity, and thus science fiction should be the literary genre most accessible to readers of different nations. Science fiction often describes a day when humanity will form a harmonious whole, and I believe the arrival of such a day need not wait for the appearance ofextraterrestrials.&lt;/p>
-&lt;p>&amp;mdash;EOF&amp;mdash;&lt;/p></description></item><item><title>Biodiversity May Thrive Through Games of Rock-Paper-Scissors</title><link>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</link><pubDate>Mon, 31 Jan 2000 00:00:00 +0000</pubDate><guid>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</guid><description>&lt;blockquote>
-&lt;p>&lt;em>Recent findings add weight to the evidence that intransitive competitions between species enrich the diversity of nature.&lt;/em>&lt;/p>
-&lt;/blockquote>
-&lt;p>&lt;img src="./pic/RockPaperScissor-2880x1620_Lede.jpg" alt="">&lt;/p>
-&lt;blockquote>
-&lt;p>Some species seem to compete in a kind of rock-paper-scissors game in which no one species enjoys a lasting dominance. It may be part of why nature can maintain so much biodiversity.&lt;/p>
-&lt;p>&lt;a href="https://camillechew.com/">Camille Chew&lt;/a> for Quanta Magazine&lt;/p>
-&lt;/blockquote>
-&lt;p>Apioneer of synthetic biology at the University of California, San Diego, &lt;a href="http://biodynamics.ucsd.edu/profiles/jeff">Jeff Hasty&lt;/a> has spent his 20-year career designing strategies to make genetic circuits in engineered bacteria work together. But several years ago, Hasty had to admit that even he couldn’t outfox the humble bacterium &lt;em>Escherichia coli&lt;/em>.&lt;/p>
-&lt;p>Hasty didn’t have a problem engineering useful, tightly regulated new genetic traits or getting them to work in cells. That was the easy part. What’s harder, he discovered, is maintaining those traits. If a cell needs to divert some of its resources to make a desired protein, it becomes marginally less fit than cells that don’t synthesize it. Inevitably, cells acquire mutations deactivating the introduced genetic circuitry, and the mutants quickly replace the original cells. As a result, the desired characteristic disappears, often within 36 hours.&lt;/p>
-&lt;p>“It’s not a matter of if, it’s a matter of when,” Hasty said.&lt;/p>
-&lt;p>For years, Hasty watched mutant &lt;em>E. coli&lt;/em> disable even his elegantly engineered systems. But &lt;a href="http://doi.org/10.1126/science.aaw0542">last September in &lt;em>Science&lt;/em>&lt;/a>, Hasty, his doctoral student &lt;a href="http://biodynamics.ucsd.edu/people">Michael Liao&lt;/a> and their colleagues designed a strategy to thwart even the most mutation-happy bacterium through a kind of “microbial peer pressure,” as &lt;a href="http://doi.org/10.1126/science.aay3157">an accompanying commentary&lt;/a> called it. The UCSD team used three engineered strains of &lt;em>E. coli&lt;/em> that worked in tandem. Each strain produced a toxin, a corresponding antitoxin to protect itself, and a second antitoxin for protection against one of the other strains. The first strain could kill the second but not the third; the second could kill the third but not the first; the third could kill the first but not the second.&lt;/p>
-&lt;p>&lt;img src="./pic/liao-ucsd_2000x1280-1720x1101.jpg" alt="">&lt;/p>
-&lt;blockquote>
-&lt;p>Michael Liao, a doctoral student of biodynamics and synthetic biology at the University of California, San Diego, helped to develop a system of engineered bacteria that stabilizes itself through rock-paper-scissors interactions.&lt;/p>
-&lt;p>– University of California San Diego&lt;/p>
-&lt;/blockquote>
-&lt;p>This round robin of antagonism meant that, by sequentially adding the strains of bacteria, the researchers could keep the numbers of engineered &lt;em>E. coli&lt;/em> high while ensuring that unhelpful mutants were snuffed out by the newcomers’ toxins. The ecological interaction of the cells stabilized the system.&lt;/p>
-&lt;p>The project was nearing completion when Liao stumbled across the fact that other scientists were already paying attention to this strategy. Researchers in ecology and evolution had wrestled with it for decades as one possible answer to a major question in their field: How does so much biodiversity survive in nature? But even aside from its scientific history, the strategy is better known as a game used by children around the world to settle playground squabbles.&lt;/p>
-&lt;p>The game is rock-paper-scissors, “a classic game in game theory and evolutionary theory,” said the mathematical biologist &lt;a href="https://www.eeb.ucsc.edu/about/dept-directory.php?uid=sinervo">Barry Sinervo&lt;/a> of the University of California, Santa Cruz, whose field studies on side-blotched lizards helped to establish its relevance to ecosystems.&lt;/p>
-&lt;p>The rules of the game are easy: Rock beats scissors, scissors beat paper, and paper beats rock. No player has an advantage, and the chances of winning are equal regardless of what item they pick. When two people play, there’s always a clear victor. Add in more players, however, and the game becomes more complex, with the success of different strategies often cyclically rising and falling.&lt;/p>
-&lt;p>Biologists studying rock-paper-scissors have modeled how the game plays out with scores or even hundreds of species. They have also investigated how it changes when the species interact in various landscapes, and when the species differ in their mobility and competitiveness. What they have found is that over time, rock-paper-scissors may enable many species to coexist in the same area by cycling in and out of dominance.&lt;/p>
-&lt;p>Scientists are still determining the true importance of the game to living systems, but their discoveries have implications that could affect evolutionary theory, our understanding of ecological dynamics, biotechnology, and conservation policy. “It’s a universal game, which is pretty darn neat,” Sinervo said. “Rock-paper-scissors covers the entire biological universe.”&lt;/p>
-&lt;h2 id="equations-of-abundance">Equations of Abundance&lt;/h2>
-&lt;p>When Charles Darwin published his theory of natural selection in 1859, he and his contemporaries hypothesized that competition between individuals provided the force behind evolution. More than 150 years of experiments following Darwin’s initial work confirmed that competition is indeed a major evolutionary force. There is just one problem.&lt;/p>
-&lt;p>If simplistic competition were the only evolutionary force, then after billions of years, only a handful of highly competitive species should be left. Instead, the planet is home to a staggering array of life. The number of species for which Earth is home is almost impossible to estimate; one recent attempt pegged it &lt;a href="https://www.journals.uchicago.edu/doi/10.1086/693564">at about 2 billion&lt;/a>, but earlier efforts ranged from &lt;a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001127">under 10 million&lt;/a> to &lt;a href="https://www.pnas.org/content/113/21/5970.full">1 trillion&lt;/a>. The lowland Amazon rainforests alone are home to &lt;a href="https://www.pnas.org/content/114/40/10695">more than 6,700 tree species&lt;/a> and 7,300 other seed plant species — numbers that don’t begin to account for the accompanying insects, mammals, fungi and microbes.&lt;/p>
-&lt;p>“We look around and there are thousands, even millions, of microbes living in one hectare of forest,” said &lt;a href="https://gee.ethz.ch/people/profile.MjU3OTQy.TGlzdC8zMDU5LC0xMjcwMjU0MjUx.html">Daniel Maynard&lt;/a>, an ecologist at the Swiss Federal Institute of Technology Zurich. “And no matter what you do, they all survive. It’s not like one tears through the community and beats out everything else.”&lt;/p>
-&lt;p>One of the first breakthroughs in explaining biodiversity came not from ecology but from mathematics. In 1910, the American biophysicist and statistician Alfred Lotka &lt;a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4534218/">developed a series of equations&lt;/a> to describe certain chemical reactions. By 1925, he had realized that the same equations could be adapted to describe the cyclic rise and fall of predator and prey populations. A year later, the Italian mathematician and physicist Vito Volterra independently developed the same set of equations.&lt;/p>
-&lt;blockquote>
-&lt;p>“Rock-paper-scissors covers the entire biological universe.”&lt;/p>
-&lt;p>– Barry Sinervo, University of California, Santa Cruz&lt;/p>
-&lt;/blockquote>
-&lt;p>Their work showed how the number of predators depends on the number of prey. That insight might seem obvious, says &lt;a href="https://biological-sciences.uq.edu.au/profile/36/margaret-mayfield">Margaret Mayfield&lt;/a>, an ecologist at the University of Queensland in Australia, but the equations of Lotka and Volterra were groundbreaking in their time because they gave ecologists a way to start measuring and modeling the natural world.&lt;/p>
-&lt;p>Still, the equations weren’t perfect. They rested on useful but simplistic assumptions, and they couldn’t represent relationships between species that weren’t predator and prey but competed for resources.&lt;/p>
-&lt;p>That began to change in 1975, however, when the mathematicians &lt;a href="https://royalsociety.org/people/robert-may-11914/">Robert May&lt;/a> and &lt;a href="https://www.nhlbi.nih.gov/science/molecular-immunology/people/leonard-warren">Warren Leonard&lt;/a> &lt;a href="https://epubs.siam.org/doi/10.1137/0129022">adapted the classic Lotka-Volterra equations&lt;/a> for what ecologists call intransitive competition. When competition is transitive, it’s hierarchical: If A beats B and B beats C, then A also beats C, making A the winner in any contest. Intransitive competition lacks this hierarchy, because C can beat A. Instead of staying a clear winner, A will dominate for a while but then give way to C, which then gives way to B, followed once again by the rise of A.&lt;/p>
-&lt;p>What May and Leonard created was in effect the math to describe rock-paper-scissors in ecology. Later mathematicians extended their work to show that these intransitive relationships could involve a nearly infinite number of species.&lt;/p>
-&lt;p>Think of it like a gladiator death match, Maynard said. In single combat against a skilled fighter, he said, “I’m going to lose.” But if he were in a group of 100 fighters, he said, other defensive options might be available, such as forming an alliance with a stronger fighter. That strategy might help him outlast his competitors and come out on top.&lt;/p>
-&lt;h2 id="mating-games">Mating Games&lt;/h2>
-&lt;p>In the 1970s and ’80s, scientists began to document real-life examples in papers that showed rock-paper-scissors relationships among organisms living on coral reefs and among strains of the common yeast &lt;em>Saccharomyces cerevisiae&lt;/em>. Among the most famous studies, however, was Sinervo’s work on the common side-blotched lizard, &lt;a href="https://doi.org/10.1038/380240a0">published in &lt;em>Nature&lt;/em>&lt;/a> in 1996.&lt;/p>
-&lt;p>&lt;img src="./pic/04-SideBlotchedLizard.jpg" alt="">&lt;/p>
-&lt;blockquote>
-&lt;p>Male common side-blotched lizards with blue throats, like this one, band together to guard their females cooperatively. Other competing forms of this lizard with orange and yellow throats use different strategies.&lt;/p>
-&lt;p>– &lt;a href="https://bit.ly/3atOhlV">Rick Cameron&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;p>At first glance, the common side-blotched lizard lives down to its humble name. It’s small, brown and finger-length, and its main distinguishing characteristics are the patterns on its back and a spot of color on its throat. The lizards’ mating system, however, is far more unusual. In 1990, Sinervo traveled to the heart of side-blotched lizard territory, on the slopes of California’s parched Inner Coast Range, just outside the city of Merced. Sinervo spent five years studying how male lizards convince their lady friends to swipe right — and how they get their rivals to stay away.&lt;/p>
-&lt;p>A male’s mating strategy, Sinervo knew, was indicated by the patch of color on its throat. Lizards with orange throats are ultra-competitive. They individually guard large harems of females and attack any trespassing male rivals. Blues cooperate with each other to guard their territory and mates, a strategy that is only somewhat effective against the oranges. But it makes them less susceptible to the sneaky yellows, which mimic the appearance of sexually mature females and sneak into orange males’ territory to mate without fear of competition.&lt;/p>
-&lt;p>&lt;img src="./pic/02_Barry-Sinervo.jpg" alt="">&lt;/p>
-&lt;blockquote>
-&lt;p>Barry Sinervo, a mathematical biologist at the University of California, Santa Cruz, led landmark studies of the side-blotched lizards. He showed that the intransitive competitions between the various males creates a cycle of dominance in which each of the three coexisting forms is on top for a year or two.&lt;/p>
-&lt;p>– Carolyn Lagattuta/UC Santa Cruz&lt;/p>
-&lt;/blockquote>
-&lt;p>Sinervo noticed that at his study site, each color dominated for a year or two, after which a specific rival took over: Blue gave way to orange, which gave way to yellow, which gave way to blue once again. Some locations might have just a single color, but Sinervo never saw just two colors together, because one always completely replaced the other. But with three, the populations oscillated in dominance. When Sinervo and a colleague later began writing out equations to describe the observations, they soon realized they were describing a form of rock-paper-scissors.&lt;/p>
-&lt;p>Other situations in nature where this game theory seems to guide evolution have come to light. &lt;a href="https://doi.org/10.1086/706810">In the February 2020 issue&lt;/a> of &lt;em>The&lt;/em> &lt;em>American Naturalist&lt;/em>, for instance, Sinervo and his colleagues describe how it explains the prevalence of particular mating strategies among 288 species of rodents — and why certain species are more or less likely to be promiscuous, polygynous or monogamous.&lt;/p>
-&lt;p>Still, observations from nature can only tell scientists so much. To understand what types of environments create these rock-paper-scissors games between species and whether the new equations can help explain biodiversity, scientists had to go back to the lab.&lt;/p>
-&lt;h2 id="local-environments-change-the-game">Local Environments Change the Game&lt;/h2>
-&lt;p>The bacterium &lt;em>E. coli&lt;/em> gets a bad rap as a mundane colon dweller. Yet over the years, microbiologists have identified hundreds of &lt;em>E. coli&lt;/em> strains with diverse properties. One family carries a group of genes named Col, which produces a toxin called colicin but also a protein that protects the bacterium against it. Some &lt;em>E. coli&lt;/em> strains are sensitive to colicin, and others have evolved mutations that make them resistant. Resistant strains (known as R) grow faster than colicin-producing (C) strains because they don’t have the cost of producing colicin. Sensitive (S) strains can outcompete R because the protective mutations also impair the cells’ ability to transport nutrients. This system creates a perfect rock-paper-scissors setup, since R beats C, C beats S, and S beats R.&lt;/p>
-&lt;p>About two decades ago, microbiologists at Stanford University had the bacteria play rock-paper-scissors in three different situations: a flask where they all mixed together; a static petri dish where they were grouped together with limited movement; and a “mixed plate” environment where they had more intermediate mobility. In &lt;a href="https://www.nature.com/articles/nature00823">their &lt;em>Nature&lt;/em> paper&lt;/a> in 2002, &lt;a href="https://www.biology.washington.edu/people/profile/benjamin-kerr">Benjamin Kerr&lt;/a> (now at the University of Washington), &lt;a href="https://ie2.uoregon.edu/people/bohannan/">Brendan Bohannan&lt;/a> (now at the University of Oregon), and their colleagues found that in both the flask and the distributed plate, the R strain quickly won out over both the S and C groups.&lt;/p>
-&lt;p>The static petri dish, however, told a different story. When Kerr and Bohannan analyzed photographs of the bacterial colonies growing there, they saw a game of rock-paper-scissors playing out where the different strains came into contact, just as theory predicted. These results showed that local environments play a crucial role not only in the emergence of rock-paper-scissors, but in the consequent appearance and maintenance of biodiversity, explained &lt;a href="https://ecologyandevolution.uchicago.edu/faculty/stefano-allesina-phd">Stefano Allesina&lt;/a>, a theoretical ecologist at the University of Chicago.&lt;/p>
-&lt;p>&lt;img src="./pic/RPS_1160Desktop.jpg" alt="">&lt;/p>
-&lt;p>Reading this paper as a graduate student, Allesina found it “mind-blowing.” He picked the study for his journal club and posed a rhetorical question to his fellow students: Could rock-paper-scissors work with as many as 70 strains of &lt;em>E. coli&lt;/em>?&lt;/p>
-&lt;p>Because that discussion question stuck in his brain, Allesina decided to focus his work on developing computational models that could simulate rock-paper-scissors for large numbers of players. He found that adding more species to his model &lt;a href="https://doi.org/10.1038/nature23273">bolstered the system’s stability&lt;/a>, making it less likely that any individual population would go extinct. Maynard reached the same conclusion in his research: &lt;a href="http://dx.doi.org/10.1038/s41559-017-0156">Biodiversity begets more biodiversity&lt;/a> as a simple result of the system’s stability because large numbers of organisms can coexist.&lt;/p>
-&lt;p>This interdependence is part of what makes intransitivity so very common, according to Maynard. “You can’t be great at everything,” he said. “That genetically just can’t exist.” Each species has an Achilles’ heel that leaves the way open for rock-paper-scissors effects, which make every species vulnerable but also offer some relief from overwhelming predation. More diverse systems have higher levels of intransitivity and stability.&lt;/p>
-&lt;p>“It’s hard to reconcile a very unstable world with what we’re seeing in nature,” Allesina said. And as the diversity of a system increases, it offers more ways for species to interact, which can also lead to greater coexistence and biodiversity.&lt;/p>
-&lt;p>&lt;a href="https://physics.uoregon.edu/profile/tsu/">Tristan Ursell&lt;/a> at the University of Oregon, inspired by Kerr and Bohannan’s work, wanted to take it one step further. Although their study had shown that the distribution of organisms was key to the development of rock-paper-scissors, the environments in their experiments didn’t have physical barriers that would prevent the bacteria from moving about. The natural world is nothing like that: Whether a microbe is living on a plant’s roots or snuggled up somewhere in our intestines, its environment is filled with obstructions. Ursell, a biophysicist rather than a microbiologist, decided to create a series of computer models to see how physical obstacles could alter the rock-paper-scissors cycles.&lt;/p>
-&lt;p>Going into the project, Ursell expected that the obstacles might have minor consequences for the simulation. “I did not anticipate that it would in some cases completely flip over the stability,” he said.&lt;/p>
-&lt;h2 id="why-saving-single-species-isnt-enough">&lt;strong>Why Saving Single Species Isn’t Enough&lt;/strong>&lt;/h2>
-&lt;p>Pitting two species against each other in an open space, for example, typically ended with one replacing the other. But if the landscape in Ursell’s computer model had barriers, both species could often coexist. Meanwhile, three species locked in a rock-paper-scissors game in an open space could coexist by cycling in and out of dominance. Introducing a barrier into their world often led to one species eliminating the others.&lt;/p>
-&lt;p>&lt;a href="https://doi.org/10.1073/pnas.1811887116">Ursell’s resulting paper&lt;/a> with Nick Vallespir Lowery, published online in December 2018 by the &lt;em>Proceedings of the National Academies of Science&lt;/em>, joined other work showing the hidden complexities of real-life rock-paper-scissors games. For example, a team of scientists led by &lt;a href="https://www.theorie.physik.uni-muenchen.de/lsfrey/members/group_leaders/erwin_frey/index.html">Erwin Frey&lt;/a> and &lt;a href="https://www.theorie.physik.uni-muenchen.de/lsfrey/members/former_mem/postdocs/marianne_bauer/index.html">Marianne Bauer&lt;/a> at the Ludwig Maximilian University of Munich created mathematical models of soil microbes, which obtain nutrients and water via small openings in the soil itself, holes that also allow them to interact with their neighbors. If you try to grow soil-dwelling microbes in the laboratory, the species that can reproduce the fastest wins out. Yet in nature, a single gram of soil can contain more than 10,000 types of microbes.&lt;/p>
-&lt;p>The secret, &lt;a href="http://doi.org/10.1103/PhysRevE.97.042307">Frey and Bauer found&lt;/a>, is the amount of time is takes for the bacteria to adapt to changing environmental conditions. Because of this constraint, and the connectivity built into soil’s complex physical structure, thousands of microbes can continue to coexist.&lt;/p>
-&lt;p>&lt;img src="./pic/03_Microbes-Frey-500.gif" alt="">&lt;/p>
-&lt;blockquote>
-&lt;p>Red, blue and yellow “microbes” compete intransitively in this simulation. If they have the right mobility, their constantly shifting patterns of dominance form entangled, rotating spirals that cover the landscape. Changing their mobility or introducing obstacles completely changes the outcome, however.&lt;/p>
-&lt;p>– &lt;a href="https://doi-org.emedien.ub.uni-muenchen.de/10.1038/nature06095">Reichenbach, T., Mobilia, M. &amp;amp; Frey, E. Mobility&lt;/a>&lt;/p>
-&lt;/blockquote>
-&lt;p>This feedback between ecology and evolution is crucial, said &lt;a href="https://chroniclevitae.com/people/1049762-swati-patel/profile">Swati Patel&lt;/a>, an applied mathematician at Tulane University, because these interactions can lead to either ecosystem stability or extinction, as &lt;a href="https://www.biorxiv.org/content/biorxiv/early/2017/04/28/104505">her mathematical work&lt;/a> in &lt;em>The American Naturalist&lt;/em> showed. If species A starts to go extinct, she explained, species B might evolve in such a way that A can recover. This idea also works in reverse.&lt;/p>
-&lt;p>“Our human impact on various ecosystems can … make species evolve in ways we hadn’t anticipated,” Patel said.&lt;/p>
-&lt;p>Long-term ecological stability and coexistence doesn’t mean that population numbers will remain the same. Fluctuations are built into these models, Patel said. But how widely they vary and how quickly is key.&lt;/p>
-&lt;p>&lt;a href="http://www.stoufferlab.org/people/stouffer/">Daniel Stouffer&lt;/a>, an ecologist at the University of Canterbury in New Zealand and a frequent collaborator with Mayfield, says that weaker interactions help keep fluctuations between species from becoming too extreme. Ecologists call this the storage effect. “A species doesn’t always have to be the best. It just has to have enough times where it can be sufficiently good that it can weather the bad years,” Stouffer said.&lt;/p>
-&lt;p>If the numbers of one species drop too low, a chance event like a disease outbreak or drought can cause it to go extinct. These extinctions open a vacuum in an ecosystem, which can create an extinction cascade or open space for other organisms to recover. These ripple effects also provide clues for conservation biologists working to save endangered organisms. According to Allesina, theoretical work in rock-paper-scissors shows that ecologists may need to focus on saving entire ecosystems instead of just individual species.&lt;/p>
-&lt;p>“Imagine that you only want to conserve the rock of the rock-paper-scissor [trio],” he said. You might not care about the paper or the scissors, but as soon as one goes extinct, that “could reverberate through these networks of interactions to other species that you would never have guessed.”&lt;/p>
-&lt;p>Despite the advances in theoretical work that describes how rock-paper-scissors might operate in larger ecosystems, Stouffer points out that biologists have documented relatively few examples of these intransitive dynamics in the wild. Models show that they should exist, but identifying where rock-paper-scissors games are likely to dominate remains a challenge for evolutionary game theorists.&lt;/p>
-&lt;p>Maynard says that the best way forward may be for scientists to take their cues from nature itself. He has begun to develop a new statistical approach that might enable him to infer how species interact and to identify emergent patterns in those interactions. But he says that the key will be to remember that rock-paper-scissors is only one piece of a larger biodiversity puzzle, and that constant change — whether via gene mutation and evolution or natural shifts in climate — is the rule.&lt;/p>
-&lt;h2 id="related">RELATED:&lt;/h2>
-&lt;hr>
-&lt;ol>
-&lt;li>
-&lt;h5 id="evolution-saves-species-from-kill-the-winner-disastershttpswwwquantamagazineorgevolution-saves-species-from-kill-the-winner-disasters-20180212">&lt;a href="https://www.quantamagazine.org/evolution-saves-species-from-kill-the-winner-disasters-20180212/">Evolution Saves Species From ‘Kill the Winner’ Disasters&lt;/a>&lt;/h5>
-&lt;/li>
-&lt;li>
-&lt;h5 id="biodiversity-alters-strategies-of-bacterial-evolutionhttpswwwquantamagazineorgbiodiversity-alters-strategies-of-bacterial-evolution-20200106">&lt;a href="https://www.quantamagazine.org/biodiversity-alters-strategies-of-bacterial-evolution-20200106/">Biodiversity Alters Strategies of Bacterial Evolution&lt;/a>&lt;/h5>
-&lt;/li>
-&lt;li>
-&lt;h5 id="why-winning-in-rock-paper-scissors-and-in-life-isnt-everythinghttpswwwquantamagazineorgthe-game-theory-math-behind-rock-paper-scissors-20180402">&lt;a href="https://www.quantamagazine.org/the-game-theory-math-behind-rock-paper-scissors-20180402/">Why Winning in Rock-Paper-Scissors (and in Life) Isn’t Everything&lt;/a>&lt;/h5>
-&lt;/li>
-&lt;/ol></description></item></channel></rss>
+\]&lt;/span&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>AUTHOR’S POSTSCRIPT FOR THE AMERICAN EDITION</title>
+      <link>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</guid>
+      
+        <description>&lt;p&gt;A night from my childhood remains crisply etched in my memory: I was standing by a pond before a village somewhere in Luoshan County, Henan Province, where generations of my ancestors had lived. Next to me stood many other people, both adults and children. Together, we gazed up at the clear night sky, where a tiny star slowly glided across the darkfirmament.&lt;/p&gt;
+&lt;p&gt;It was the first artificial satellite China had ever launched: Dongfanghong I (“The East is Red I”). The date was April 25, 1970, and I was seven.&lt;/p&gt;
+&lt;p&gt;It had been thirteen years since Sputnik had been launched into space, and nine years since the first cosmonaut had left the Earth. Just a week earlier, Apollo 13 had safely returned from a perilous journey to the moon.&lt;/p&gt;
+&lt;p&gt;But I didn’t know any of that. As I gazed at that tiny, gliding star, my heart was filled with indescribable curiosity and yearning. And etched in my memory just as deeply as these feelings was the sensation of hunger. At that time, the region around my village was extremely poor. Hunger was the constant companion of every child. I was relatively fortunate because I had shoes on my feet. Most of the friends standing by my side were barefoot, and some of the tiny feet still had unhealed frostbite from the previous winter. Behind me, faint light from kerosene lamps shone out of cracks in the walls of dilapidated thatched huts—the village wasn’t wired for electricityuntil the eighties.&lt;/p&gt;
+&lt;p&gt;The adults standing nearby said that the satellite wasn’t like an airplane because it flew outside of the Earth. Back then the dust and smoke of industry hadn’t yet polluted the air, and the starry sky was especially clear, with the Milky Way clearly visible. In my mind, the stars that filled the heavens weren’t much farther away than the tiny, gliding satellite, and so I thought it was flying among them. I even worried that it might collide with one as it passed through the dense stellar clusters.&lt;/p&gt;
+&lt;p&gt;My parents weren’t with mebecause they were working at a coal mine more than a thousand kilometers away, in Shanxi Province. A few years earlier, when I had been even younger, the mine had been a combat zone for the factional civil wars of the Cultural Revolution. I remembered gunshots in the middle of the night, trucks passing in the street, filled with men clutching guns and wearing red armbands.… But I had been too young back then, and I can’t be sure whether these images are real memories, or mirages constructed later. However, I know one thing for certain: Because the mine was too unsafe and my parents had been impacted by the Cultural Revolution, they had had no choice but to send me to my ancestral home village in Henan. By the time I saw Dongfanghong I, I had already lived there for more than three years.&lt;/p&gt;
+&lt;p&gt;A few more years passed before I understood the distance between that satellite and the stars. Back then I was reading a popular set of basic science books called A Hundred Thousand Whys. From the astronomy volume, I learned the concept of a light-year. Before then, I had already known that light could traverse a distance equal to seven and a half trips around the Earth in a single second, but I had not contemplated what kind of terrifying distance could be crossed by flying at such a speed for a whole year. I imagined a ray of light passing through the cold silence of space at the speed of 300,000 kilometers per second. I struggled to grasp the bone-chilling vastness and profundity with my imagination, felt the weight of an immense terror and awe, and simultaneously enjoyed a druglike euphoria.&lt;/p&gt;
+&lt;p&gt;From that moment, I realized that I had a special talent: Scales and existences that far exceeded the bounds of human sensory perception—both macro and micro—and that seemed to be only abstract numbers to others, could take on concrete forms in my mind. I could touch them and feel them, much like others could touch and feel trees and rocks. Even today, when references to the 15-billion-light-year radius of the universe and “strings” many orders of magnitude smaller than quarks have numbed most people, theconcepts of a light-year or a nanometer can still produce lively, grand pictures in my mind and arouse in me an ineffable, religious feeling of awe and shock. Compared to most of the population who do not experience such sensations, I don’t know if I’m lucky or unlucky. But it is certain that such feelings made me first into a science fiction fan, and later a science fiction author.&lt;/p&gt;
+&lt;p&gt;In that same year when I was first awed by the concept of a light-year, a flood (known as the Great Flood of August ’75) occurred near my home village. In a single day, arecord-breaking 100.5 centimeters of rain fell in the Zhumadian region of Henan. Fifty-eight dams of various sizes collapsed, one after another, and 240,000 people died in the resulting deluge. Shortly after the floodwaters had receded, I returned to the village and saw a landscape filled with refugees. I thought I was looking at the end of the world.&lt;/p&gt;
+&lt;p&gt;And so, satellite, hunger, stars, kerosene lamps, the Milky Way, the Cultural Revolution’s factional civil wars, a light-year, the flood … these seemingly unconnected things melded together and formed the early part of my life, and also molded the science fiction I write today.&lt;/p&gt;
+&lt;p&gt;As a science fiction writer who began as a fan, I do not use my fiction as a disguised way to criticize the reality of the present. I feel that the greatest appeal of science fiction is the creation of numerous imaginary worlds outside of reality. I’ve always felt that the greatest and most beautiful stories in the history of humanity were not sung by wandering bards or written by playwrights and novelists, but told by science. The stories of scienceare far more magnificent, grand, involved, profound, thrilling, strange, terrifying, mysterious, and even emotional, compared to the stories told by literature. Only, these wonderful stories are locked in cold equations that most do not know how to read.&lt;/p&gt;
+&lt;p&gt;The creation myths of the various peoples and religions of the world pale when compared to the glory of the big bang. The three-billion-year history of life’s evolution from self-reproducing molecules to civilization contains twists and romances that cannot be matched by any myth or epic.&lt;/p&gt;
+&lt;p&gt;There is also the poetic vision of space and time in relativity, the weird subatomic world of quantum mechanics … these wondrous stories of science all possess an irresistible attraction. Through the medium of science fiction, I seek only to create my own worlds using the power of imagination, and to make known the poetry of Nature in those worlds, to tell the romantic legends that have unfolded between Man and Universe.&lt;/p&gt;
+&lt;p&gt;But I cannot escape and leave behind reality, just like I cannot leave behind my shadow. Realitybrands each of us with its indelible mark. Every era puts invisible shackles on those who have lived through it, and I can only dance in my chains. In science fiction, humanity is often described as a collective. In this book, a man named “humanity” confronts a disaster, and everything he demonstrates in the face of existence and annihilation undoubtedly has sources in the reality that I experienced. The wonder of science fiction is that it can, when given certain hypothetical world settings, turn what in our reality is evil and dark into what is righteous and bright, and vice versa. This book and its two sequels try to do just that, but no matter how reality is twisted by imagination, it ultimately remains there.&lt;/p&gt;
+&lt;p&gt;I’ve always felt that extraterrestrial intelligence will be the greatest source of uncertainty for humanity’s future. Other great shifts, such as climate change and ecological disasters, have a certain progression and built-in adjustment periods, but contact between humankind and aliens can occur at any time. Perhaps in ten thousand years, the starry skythat humankind gazes upon will remain empty and silent, but perhaps tomorrow we’ll wake up and find an alien spaceship the size of the moon parked in orbit. The appearance of extraterrestrial intelligence will force humanity to confront an Other. Before then, humanity as a whole will never have had an external counterpart. The appearance of this Other, or mere knowledge of its existence, will impact our civilization in unpredictable ways.&lt;/p&gt;
+&lt;p&gt;There’s a strange contradiction revealed by the naïveté and kindness demonstrated by humanity when faced with the universe: On Earth, humankind can step onto another continent, and without a thought, destroy the kindred civilizations found there through warfare and disease. But when they gaze up at the stars, they turn sentimental and believe that if extraterrestrial intelligences exist, they must be civilizations bound by universal, noble, moral constraints, as if cherishing and loving different forms of life are parts of a self-evident universal code of conduct.&lt;/p&gt;
+&lt;p&gt;I think it should be precisely the opposite: Let’s turn the kindnesswe show toward the stars to members of the human race on Earth and build up the trust and understanding between the different peoples and civilizations that make up humanity. But for the universe outside the solar system, we should be ever vigilant, and be ready to attribute the worst of intentions to any Others that might exist in space. For a fragile civilization like ours, this is without a doubt the most responsible path.&lt;/p&gt;
+&lt;p&gt;As a fan of science fiction, it has molded my life, and aconsiderable part of the science fiction I’ve read comes from America. The fact that American readers can now enjoy my book makes me both pleased and excited. Science fiction is a literature that belongs to all humankind. It portrays events of interest to all of humanity, and thus science fiction should be the literary genre most accessible to readers of different nations. Science fiction often describes a day when humanity will form a harmonious whole, and I believe the arrival of such a day need not wait for the appearance ofextraterrestrials.&lt;/p&gt;
+&lt;p&gt;&amp;mdash;EOF&amp;mdash;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Biodiversity May Thrive Through Games of Rock-Paper-Scissors</title>
+      <link>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</link>
+      <pubDate>Mon, 31 Jan 2000 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/%E7%94%9F%E7%89%A9%E5%A4%9A%E6%A0%B7%E6%80%A7/</guid>
+      
+        <description>&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Recent findings add weight to the evidence that intransitive competitions between species enrich the diversity of nature.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;./pic/RockPaperScissor-2880x1620_Lede.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some species seem to compete in a kind of rock-paper-scissors game in which no one species enjoys a lasting dominance. It may be part of why nature can maintain so much biodiversity.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://camillechew.com/&#34;&gt;Camille Chew&lt;/a&gt; for Quanta Magazine&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Apioneer of synthetic biology at the University of California, San Diego, &lt;a href=&#34;http://biodynamics.ucsd.edu/profiles/jeff&#34;&gt;Jeff Hasty&lt;/a&gt; has spent his 20-year career designing strategies to make genetic circuits in engineered bacteria work together. But several years ago, Hasty had to admit that even he couldn’t outfox the humble bacterium &lt;em&gt;Escherichia coli&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Hasty didn’t have a problem engineering useful, tightly regulated new genetic traits or getting them to work in cells. That was the easy part. What’s harder, he discovered, is maintaining those traits. If a cell needs to divert some of its resources to make a desired protein, it becomes marginally less fit than cells that don’t synthesize it. Inevitably, cells acquire mutations deactivating the introduced genetic circuitry, and the mutants quickly replace the original cells. As a result, the desired characteristic disappears, often within 36 hours.&lt;/p&gt;
+&lt;p&gt;“It’s not a matter of if, it’s a matter of when,” Hasty said.&lt;/p&gt;
+&lt;p&gt;For years, Hasty watched mutant &lt;em&gt;E. coli&lt;/em&gt; disable even his elegantly engineered systems. But &lt;a href=&#34;http://doi.org/10.1126/science.aaw0542&#34;&gt;last September in &lt;em&gt;Science&lt;/em&gt;&lt;/a&gt;, Hasty, his doctoral student &lt;a href=&#34;http://biodynamics.ucsd.edu/people&#34;&gt;Michael Liao&lt;/a&gt; and their colleagues designed a strategy to thwart even the most mutation-happy bacterium through a kind of “microbial peer pressure,” as &lt;a href=&#34;http://doi.org/10.1126/science.aay3157&#34;&gt;an accompanying commentary&lt;/a&gt; called it. The UCSD team used three engineered strains of &lt;em&gt;E. coli&lt;/em&gt; that worked in tandem. Each strain produced a toxin, a corresponding antitoxin to protect itself, and a second antitoxin for protection against one of the other strains. The first strain could kill the second but not the third; the second could kill the third but not the first; the third could kill the first but not the second.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./pic/liao-ucsd_2000x1280-1720x1101.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Michael Liao, a doctoral student of biodynamics and synthetic biology at the University of California, San Diego, helped to develop a system of engineered bacteria that stabilizes itself through rock-paper-scissors interactions.&lt;/p&gt;
+&lt;p&gt;– University of California San Diego&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This round robin of antagonism meant that, by sequentially adding the strains of bacteria, the researchers could keep the numbers of engineered &lt;em&gt;E. coli&lt;/em&gt; high while ensuring that unhelpful mutants were snuffed out by the newcomers’ toxins. The ecological interaction of the cells stabilized the system.&lt;/p&gt;
+&lt;p&gt;The project was nearing completion when Liao stumbled across the fact that other scientists were already paying attention to this strategy. Researchers in ecology and evolution had wrestled with it for decades as one possible answer to a major question in their field: How does so much biodiversity survive in nature? But even aside from its scientific history, the strategy is better known as a game used by children around the world to settle playground squabbles.&lt;/p&gt;
+&lt;p&gt;The game is rock-paper-scissors, “a classic game in game theory and evolutionary theory,” said the mathematical biologist &lt;a href=&#34;https://www.eeb.ucsc.edu/about/dept-directory.php?uid=sinervo&#34;&gt;Barry Sinervo&lt;/a&gt; of the University of California, Santa Cruz, whose field studies on side-blotched lizards helped to establish its relevance to ecosystems.&lt;/p&gt;
+&lt;p&gt;The rules of the game are easy: Rock beats scissors, scissors beat paper, and paper beats rock. No player has an advantage, and the chances of winning are equal regardless of what item they pick. When two people play, there’s always a clear victor. Add in more players, however, and the game becomes more complex, with the success of different strategies often cyclically rising and falling.&lt;/p&gt;
+&lt;p&gt;Biologists studying rock-paper-scissors have modeled how the game plays out with scores or even hundreds of species. They have also investigated how it changes when the species interact in various landscapes, and when the species differ in their mobility and competitiveness. What they have found is that over time, rock-paper-scissors may enable many species to coexist in the same area by cycling in and out of dominance.&lt;/p&gt;
+&lt;p&gt;Scientists are still determining the true importance of the game to living systems, but their discoveries have implications that could affect evolutionary theory, our understanding of ecological dynamics, biotechnology, and conservation policy. “It’s a universal game, which is pretty darn neat,” Sinervo said. “Rock-paper-scissors covers the entire biological universe.”&lt;/p&gt;
+&lt;h2 id=&#34;equations-of-abundance&#34;&gt;Equations of Abundance&lt;/h2&gt;
+&lt;p&gt;When Charles Darwin published his theory of natural selection in 1859, he and his contemporaries hypothesized that competition between individuals provided the force behind evolution. More than 150 years of experiments following Darwin’s initial work confirmed that competition is indeed a major evolutionary force. There is just one problem.&lt;/p&gt;
+&lt;p&gt;If simplistic competition were the only evolutionary force, then after billions of years, only a handful of highly competitive species should be left. Instead, the planet is home to a staggering array of life. The number of species for which Earth is home is almost impossible to estimate; one recent attempt pegged it &lt;a href=&#34;https://www.journals.uchicago.edu/doi/10.1086/693564&#34;&gt;at about 2 billion&lt;/a&gt;, but earlier efforts ranged from &lt;a href=&#34;https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001127&#34;&gt;under 10 million&lt;/a&gt; to &lt;a href=&#34;https://www.pnas.org/content/113/21/5970.full&#34;&gt;1 trillion&lt;/a&gt;. The lowland Amazon rainforests alone are home to &lt;a href=&#34;https://www.pnas.org/content/114/40/10695&#34;&gt;more than 6,700 tree species&lt;/a&gt; and 7,300 other seed plant species — numbers that don’t begin to account for the accompanying insects, mammals, fungi and microbes.&lt;/p&gt;
+&lt;p&gt;“We look around and there are thousands, even millions, of microbes living in one hectare of forest,” said &lt;a href=&#34;https://gee.ethz.ch/people/profile.MjU3OTQy.TGlzdC8zMDU5LC0xMjcwMjU0MjUx.html&#34;&gt;Daniel Maynard&lt;/a&gt;, an ecologist at the Swiss Federal Institute of Technology Zurich. “And no matter what you do, they all survive. It’s not like one tears through the community and beats out everything else.”&lt;/p&gt;
+&lt;p&gt;One of the first breakthroughs in explaining biodiversity came not from ecology but from mathematics. In 1910, the American biophysicist and statistician Alfred Lotka &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4534218/&#34;&gt;developed a series of equations&lt;/a&gt; to describe certain chemical reactions. By 1925, he had realized that the same equations could be adapted to describe the cyclic rise and fall of predator and prey populations. A year later, the Italian mathematician and physicist Vito Volterra independently developed the same set of equations.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Rock-paper-scissors covers the entire biological universe.”&lt;/p&gt;
+&lt;p&gt;– Barry Sinervo, University of California, Santa Cruz&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Their work showed how the number of predators depends on the number of prey. That insight might seem obvious, says &lt;a href=&#34;https://biological-sciences.uq.edu.au/profile/36/margaret-mayfield&#34;&gt;Margaret Mayfield&lt;/a&gt;, an ecologist at the University of Queensland in Australia, but the equations of Lotka and Volterra were groundbreaking in their time because they gave ecologists a way to start measuring and modeling the natural world.&lt;/p&gt;
+&lt;p&gt;Still, the equations weren’t perfect. They rested on useful but simplistic assumptions, and they couldn’t represent relationships between species that weren’t predator and prey but competed for resources.&lt;/p&gt;
+&lt;p&gt;That began to change in 1975, however, when the mathematicians &lt;a href=&#34;https://royalsociety.org/people/robert-may-11914/&#34;&gt;Robert May&lt;/a&gt; and &lt;a href=&#34;https://www.nhlbi.nih.gov/science/molecular-immunology/people/leonard-warren&#34;&gt;Warren Leonard&lt;/a&gt; &lt;a href=&#34;https://epubs.siam.org/doi/10.1137/0129022&#34;&gt;adapted the classic Lotka-Volterra equations&lt;/a&gt; for what ecologists call intransitive competition. When competition is transitive, it’s hierarchical: If A beats B and B beats C, then A also beats C, making A the winner in any contest. Intransitive competition lacks this hierarchy, because C can beat A. Instead of staying a clear winner, A will dominate for a while but then give way to C, which then gives way to B, followed once again by the rise of A.&lt;/p&gt;
+&lt;p&gt;What May and Leonard created was in effect the math to describe rock-paper-scissors in ecology. Later mathematicians extended their work to show that these intransitive relationships could involve a nearly infinite number of species.&lt;/p&gt;
+&lt;p&gt;Think of it like a gladiator death match, Maynard said. In single combat against a skilled fighter, he said, “I’m going to lose.” But if he were in a group of 100 fighters, he said, other defensive options might be available, such as forming an alliance with a stronger fighter. That strategy might help him outlast his competitors and come out on top.&lt;/p&gt;
+&lt;h2 id=&#34;mating-games&#34;&gt;Mating Games&lt;/h2&gt;
+&lt;p&gt;In the 1970s and ’80s, scientists began to document real-life examples in papers that showed rock-paper-scissors relationships among organisms living on coral reefs and among strains of the common yeast &lt;em&gt;Saccharomyces cerevisiae&lt;/em&gt;. Among the most famous studies, however, was Sinervo’s work on the common side-blotched lizard, &lt;a href=&#34;https://doi.org/10.1038/380240a0&#34;&gt;published in &lt;em&gt;Nature&lt;/em&gt;&lt;/a&gt; in 1996.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./pic/04-SideBlotchedLizard.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Male common side-blotched lizards with blue throats, like this one, band together to guard their females cooperatively. Other competing forms of this lizard with orange and yellow throats use different strategies.&lt;/p&gt;
+&lt;p&gt;– &lt;a href=&#34;https://bit.ly/3atOhlV&#34;&gt;Rick Cameron&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;At first glance, the common side-blotched lizard lives down to its humble name. It’s small, brown and finger-length, and its main distinguishing characteristics are the patterns on its back and a spot of color on its throat. The lizards’ mating system, however, is far more unusual. In 1990, Sinervo traveled to the heart of side-blotched lizard territory, on the slopes of California’s parched Inner Coast Range, just outside the city of Merced. Sinervo spent five years studying how male lizards convince their lady friends to swipe right — and how they get their rivals to stay away.&lt;/p&gt;
+&lt;p&gt;A male’s mating strategy, Sinervo knew, was indicated by the patch of color on its throat. Lizards with orange throats are ultra-competitive. They individually guard large harems of females and attack any trespassing male rivals. Blues cooperate with each other to guard their territory and mates, a strategy that is only somewhat effective against the oranges. But it makes them less susceptible to the sneaky yellows, which mimic the appearance of sexually mature females and sneak into orange males’ territory to mate without fear of competition.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./pic/02_Barry-Sinervo.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Barry Sinervo, a mathematical biologist at the University of California, Santa Cruz, led landmark studies of the side-blotched lizards. He showed that the intransitive competitions between the various males creates a cycle of dominance in which each of the three coexisting forms is on top for a year or two.&lt;/p&gt;
+&lt;p&gt;– Carolyn Lagattuta/UC Santa Cruz&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Sinervo noticed that at his study site, each color dominated for a year or two, after which a specific rival took over: Blue gave way to orange, which gave way to yellow, which gave way to blue once again. Some locations might have just a single color, but Sinervo never saw just two colors together, because one always completely replaced the other. But with three, the populations oscillated in dominance. When Sinervo and a colleague later began writing out equations to describe the observations, they soon realized they were describing a form of rock-paper-scissors.&lt;/p&gt;
+&lt;p&gt;Other situations in nature where this game theory seems to guide evolution have come to light. &lt;a href=&#34;https://doi.org/10.1086/706810&#34;&gt;In the February 2020 issue&lt;/a&gt; of &lt;em&gt;The&lt;/em&gt; &lt;em&gt;American Naturalist&lt;/em&gt;, for instance, Sinervo and his colleagues describe how it explains the prevalence of particular mating strategies among 288 species of rodents — and why certain species are more or less likely to be promiscuous, polygynous or monogamous.&lt;/p&gt;
+&lt;p&gt;Still, observations from nature can only tell scientists so much. To understand what types of environments create these rock-paper-scissors games between species and whether the new equations can help explain biodiversity, scientists had to go back to the lab.&lt;/p&gt;
+&lt;h2 id=&#34;local-environments-change-the-game&#34;&gt;Local Environments Change the Game&lt;/h2&gt;
+&lt;p&gt;The bacterium &lt;em&gt;E. coli&lt;/em&gt; gets a bad rap as a mundane colon dweller. Yet over the years, microbiologists have identified hundreds of &lt;em&gt;E. coli&lt;/em&gt; strains with diverse properties. One family carries a group of genes named Col, which produces a toxin called colicin but also a protein that protects the bacterium against it. Some &lt;em&gt;E. coli&lt;/em&gt; strains are sensitive to colicin, and others have evolved mutations that make them resistant. Resistant strains (known as R) grow faster than colicin-producing (C) strains because they don’t have the cost of producing colicin. Sensitive (S) strains can outcompete R because the protective mutations also impair the cells’ ability to transport nutrients. This system creates a perfect rock-paper-scissors setup, since R beats C, C beats S, and S beats R.&lt;/p&gt;
+&lt;p&gt;About two decades ago, microbiologists at Stanford University had the bacteria play rock-paper-scissors in three different situations: a flask where they all mixed together; a static petri dish where they were grouped together with limited movement; and a “mixed plate” environment where they had more intermediate mobility. In &lt;a href=&#34;https://www.nature.com/articles/nature00823&#34;&gt;their &lt;em&gt;Nature&lt;/em&gt; paper&lt;/a&gt; in 2002, &lt;a href=&#34;https://www.biology.washington.edu/people/profile/benjamin-kerr&#34;&gt;Benjamin Kerr&lt;/a&gt; (now at the University of Washington), &lt;a href=&#34;https://ie2.uoregon.edu/people/bohannan/&#34;&gt;Brendan Bohannan&lt;/a&gt; (now at the University of Oregon), and their colleagues found that in both the flask and the distributed plate, the R strain quickly won out over both the S and C groups.&lt;/p&gt;
+&lt;p&gt;The static petri dish, however, told a different story. When Kerr and Bohannan analyzed photographs of the bacterial colonies growing there, they saw a game of rock-paper-scissors playing out where the different strains came into contact, just as theory predicted. These results showed that local environments play a crucial role not only in the emergence of rock-paper-scissors, but in the consequent appearance and maintenance of biodiversity, explained &lt;a href=&#34;https://ecologyandevolution.uchicago.edu/faculty/stefano-allesina-phd&#34;&gt;Stefano Allesina&lt;/a&gt;, a theoretical ecologist at the University of Chicago.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./pic/RPS_1160Desktop.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Reading this paper as a graduate student, Allesina found it “mind-blowing.” He picked the study for his journal club and posed a rhetorical question to his fellow students: Could rock-paper-scissors work with as many as 70 strains of &lt;em&gt;E. coli&lt;/em&gt;?&lt;/p&gt;
+&lt;p&gt;Because that discussion question stuck in his brain, Allesina decided to focus his work on developing computational models that could simulate rock-paper-scissors for large numbers of players. He found that adding more species to his model &lt;a href=&#34;https://doi.org/10.1038/nature23273&#34;&gt;bolstered the system’s stability&lt;/a&gt;, making it less likely that any individual population would go extinct. Maynard reached the same conclusion in his research: &lt;a href=&#34;http://dx.doi.org/10.1038/s41559-017-0156&#34;&gt;Biodiversity begets more biodiversity&lt;/a&gt; as a simple result of the system’s stability because large numbers of organisms can coexist.&lt;/p&gt;
+&lt;p&gt;This interdependence is part of what makes intransitivity so very common, according to Maynard. “You can’t be great at everything,” he said. “That genetically just can’t exist.” Each species has an Achilles’ heel that leaves the way open for rock-paper-scissors effects, which make every species vulnerable but also offer some relief from overwhelming predation. More diverse systems have higher levels of intransitivity and stability.&lt;/p&gt;
+&lt;p&gt;“It’s hard to reconcile a very unstable world with what we’re seeing in nature,” Allesina said. And as the diversity of a system increases, it offers more ways for species to interact, which can also lead to greater coexistence and biodiversity.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://physics.uoregon.edu/profile/tsu/&#34;&gt;Tristan Ursell&lt;/a&gt; at the University of Oregon, inspired by Kerr and Bohannan’s work, wanted to take it one step further. Although their study had shown that the distribution of organisms was key to the development of rock-paper-scissors, the environments in their experiments didn’t have physical barriers that would prevent the bacteria from moving about. The natural world is nothing like that: Whether a microbe is living on a plant’s roots or snuggled up somewhere in our intestines, its environment is filled with obstructions. Ursell, a biophysicist rather than a microbiologist, decided to create a series of computer models to see how physical obstacles could alter the rock-paper-scissors cycles.&lt;/p&gt;
+&lt;p&gt;Going into the project, Ursell expected that the obstacles might have minor consequences for the simulation. “I did not anticipate that it would in some cases completely flip over the stability,” he said.&lt;/p&gt;
+&lt;h2 id=&#34;why-saving-single-species-isnt-enough&#34;&gt;&lt;strong&gt;Why Saving Single Species Isn’t Enough&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Pitting two species against each other in an open space, for example, typically ended with one replacing the other. But if the landscape in Ursell’s computer model had barriers, both species could often coexist. Meanwhile, three species locked in a rock-paper-scissors game in an open space could coexist by cycling in and out of dominance. Introducing a barrier into their world often led to one species eliminating the others.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://doi.org/10.1073/pnas.1811887116&#34;&gt;Ursell’s resulting paper&lt;/a&gt; with Nick Vallespir Lowery, published online in December 2018 by the &lt;em&gt;Proceedings of the National Academies of Science&lt;/em&gt;, joined other work showing the hidden complexities of real-life rock-paper-scissors games. For example, a team of scientists led by &lt;a href=&#34;https://www.theorie.physik.uni-muenchen.de/lsfrey/members/group_leaders/erwin_frey/index.html&#34;&gt;Erwin Frey&lt;/a&gt; and &lt;a href=&#34;https://www.theorie.physik.uni-muenchen.de/lsfrey/members/former_mem/postdocs/marianne_bauer/index.html&#34;&gt;Marianne Bauer&lt;/a&gt; at the Ludwig Maximilian University of Munich created mathematical models of soil microbes, which obtain nutrients and water via small openings in the soil itself, holes that also allow them to interact with their neighbors. If you try to grow soil-dwelling microbes in the laboratory, the species that can reproduce the fastest wins out. Yet in nature, a single gram of soil can contain more than 10,000 types of microbes.&lt;/p&gt;
+&lt;p&gt;The secret, &lt;a href=&#34;http://doi.org/10.1103/PhysRevE.97.042307&#34;&gt;Frey and Bauer found&lt;/a&gt;, is the amount of time is takes for the bacteria to adapt to changing environmental conditions. Because of this constraint, and the connectivity built into soil’s complex physical structure, thousands of microbes can continue to coexist.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;./pic/03_Microbes-Frey-500.gif&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Red, blue and yellow “microbes” compete intransitively in this simulation. If they have the right mobility, their constantly shifting patterns of dominance form entangled, rotating spirals that cover the landscape. Changing their mobility or introducing obstacles completely changes the outcome, however.&lt;/p&gt;
+&lt;p&gt;– &lt;a href=&#34;https://doi-org.emedien.ub.uni-muenchen.de/10.1038/nature06095&#34;&gt;Reichenbach, T., Mobilia, M. &amp;amp; Frey, E. Mobility&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This feedback between ecology and evolution is crucial, said &lt;a href=&#34;https://chroniclevitae.com/people/1049762-swati-patel/profile&#34;&gt;Swati Patel&lt;/a&gt;, an applied mathematician at Tulane University, because these interactions can lead to either ecosystem stability or extinction, as &lt;a href=&#34;https://www.biorxiv.org/content/biorxiv/early/2017/04/28/104505&#34;&gt;her mathematical work&lt;/a&gt; in &lt;em&gt;The American Naturalist&lt;/em&gt; showed. If species A starts to go extinct, she explained, species B might evolve in such a way that A can recover. This idea also works in reverse.&lt;/p&gt;
+&lt;p&gt;“Our human impact on various ecosystems can … make species evolve in ways we hadn’t anticipated,” Patel said.&lt;/p&gt;
+&lt;p&gt;Long-term ecological stability and coexistence doesn’t mean that population numbers will remain the same. Fluctuations are built into these models, Patel said. But how widely they vary and how quickly is key.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://www.stoufferlab.org/people/stouffer/&#34;&gt;Daniel Stouffer&lt;/a&gt;, an ecologist at the University of Canterbury in New Zealand and a frequent collaborator with Mayfield, says that weaker interactions help keep fluctuations between species from becoming too extreme. Ecologists call this the storage effect. “A species doesn’t always have to be the best. It just has to have enough times where it can be sufficiently good that it can weather the bad years,” Stouffer said.&lt;/p&gt;
+&lt;p&gt;If the numbers of one species drop too low, a chance event like a disease outbreak or drought can cause it to go extinct. These extinctions open a vacuum in an ecosystem, which can create an extinction cascade or open space for other organisms to recover. These ripple effects also provide clues for conservation biologists working to save endangered organisms. According to Allesina, theoretical work in rock-paper-scissors shows that ecologists may need to focus on saving entire ecosystems instead of just individual species.&lt;/p&gt;
+&lt;p&gt;“Imagine that you only want to conserve the rock of the rock-paper-scissor [trio],” he said. You might not care about the paper or the scissors, but as soon as one goes extinct, that “could reverberate through these networks of interactions to other species that you would never have guessed.”&lt;/p&gt;
+&lt;p&gt;Despite the advances in theoretical work that describes how rock-paper-scissors might operate in larger ecosystems, Stouffer points out that biologists have documented relatively few examples of these intransitive dynamics in the wild. Models show that they should exist, but identifying where rock-paper-scissors games are likely to dominate remains a challenge for evolutionary game theorists.&lt;/p&gt;
+&lt;p&gt;Maynard says that the best way forward may be for scientists to take their cues from nature itself. He has begun to develop a new statistical approach that might enable him to infer how species interact and to identify emergent patterns in those interactions. But he says that the key will be to remember that rock-paper-scissors is only one piece of a larger biodiversity puzzle, and that constant change — whether via gene mutation and evolution or natural shifts in climate — is the rule.&lt;/p&gt;
+&lt;h2 id=&#34;related&#34;&gt;RELATED:&lt;/h2&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;evolution-saves-species-from-kill-the-winner-disastershttpswwwquantamagazineorgevolution-saves-species-from-kill-the-winner-disasters-20180212&#34;&gt;&lt;a href=&#34;https://www.quantamagazine.org/evolution-saves-species-from-kill-the-winner-disasters-20180212/&#34;&gt;Evolution Saves Species From ‘Kill the Winner’ Disasters&lt;/a&gt;&lt;/h5&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;biodiversity-alters-strategies-of-bacterial-evolutionhttpswwwquantamagazineorgbiodiversity-alters-strategies-of-bacterial-evolution-20200106&#34;&gt;&lt;a href=&#34;https://www.quantamagazine.org/biodiversity-alters-strategies-of-bacterial-evolution-20200106/&#34;&gt;Biodiversity Alters Strategies of Bacterial Evolution&lt;/a&gt;&lt;/h5&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;why-winning-in-rock-paper-scissors-and-in-life-isnt-everythinghttpswwwquantamagazineorgthe-game-theory-math-behind-rock-paper-scissors-20180402&#34;&gt;&lt;a href=&#34;https://www.quantamagazine.org/the-game-theory-math-behind-rock-paper-scissors-20180402/&#34;&gt;Why Winning in Rock-Paper-Scissors (and in Life) Isn’t Everything&lt;/a&gt;&lt;/h5&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>跨领域心理学</title>
+      <link>/en/post/the-psychology-of-cross-countrys/</link>
+      <pubDate>Tue, 31 Jan 1995 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/the-psychology-of-cross-countrys/</guid>
+      
+        <description>&lt;p&gt;Buxton, W. (1995). The psychology of cross country, &lt;em&gt;The Eventer,&lt;/em&gt; Summer Issue, 16-18.&lt;/p&gt;
+&lt;p&gt;这是翻译计算机人机交互领域的科学家 Bill Buxton  1995 年的一篇文章。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-psychology-of-cross-country&#34;&gt;&lt;strong&gt;The Psychology of Cross Country&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Bill Buxton&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;introduction&#34;&gt;Introduction&lt;/h4&gt;
+&lt;p&gt;When we hear about the psychology of sport, what generally comes to mind has to do with the mental preparation before a competition. For example, we have all seen books or articles that give techniques on how to &amp;ldquo;think positive,&amp;rdquo; or how to handle nerves, stress or the excitement that might otherwise have a negative impact on our performance.&lt;/p&gt;
+&lt;p&gt;What is less known is that there is another area of psychology that can be applied to riding as well. It is known as cognitive psychology. This is the area of psychology concerned with how we think, learn, and solve problems. Understanding some of its basics can provide insights to many of the problems that we encounter in competition. Significantly, we can make use of these insights in adjusting our training regimen so as to avoid those problems in the future.&lt;/p&gt;
+&lt;p&gt;This article grew out of trying to understand my own riding mistakes (of which there are many). In my non-equestrian life, I am a scientist who studies the problems that people have in learning how to use technologies such as computers, fax machines and photocopiers. My belief is that much of what I observe in my science applies equally to riding.&lt;/p&gt;
+&lt;p&gt;At this stage, one might ask, &amp;ldquo;How does the process of learning to ride relate to learning a word processor?&amp;rdquo; At first glance, there is little similarity. But on reflection, what they have in common is that both have to do with the acquisition of a new skill.&lt;/p&gt;
+&lt;h4 id=&#34;skill-and-problem-solving&#34;&gt;Skill and Problem Solving&lt;/h4&gt;
+&lt;p&gt;Riding is a skill. Learning to ride is skill acquisition. But why use such fancy terminology when &amp;ldquo;learning to ride&amp;rdquo; seems to do just fine? After all, it is far more down to earth. My main reason is to get a bit of distance from riding per se so that we can concentrate on the learning part.&lt;/p&gt;
+&lt;p&gt;Generally, if someone tells me they want something, I assume that they know what it is. If you want a bridle, you can probably describe it to me quite clearly. But if you want a skill, can you describe what that means to the same level of detail? Yet isn&amp;rsquo;t that skill at least as important as the bridle? To find out what you do know about skill, let me give you a simple test:&lt;/p&gt;
+&lt;p&gt;Before reading on, think for a moment, and tell me what is the opposite of skill?&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ll even give you a hint: I&amp;rsquo;m not looking for &amp;ldquo;unskilled.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;The intended answer is, &amp;ldquo;problem solving.&amp;rdquo; Now if that was your response, then you probably don&amp;rsquo;t need to read this article. On the other hand, if this seems like a strange reply, then stick around - what follows may be of use to you.&lt;/p&gt;
+&lt;h4 id=&#34;automatic-and-attentive-behaviour&#34;&gt;Automatic and Attentive Behaviour&lt;/h4&gt;
+&lt;p&gt;The most important characteristic of any skilled performance, be it equestrian, musical or mathematical, is that it is automatic. That is to say, the person performing the task has done it so many times before that they literally don&amp;rsquo;t have to concentrate on it while doing it. As we shall see even more later, the most important consequence of this is that the mind is therefore freed to concentrate on other things (for example, rather than thinking &amp;ldquo;are my heels down, eyes up, &amp;hellip;?&amp;rdquo; the mind is free to think about, &amp;ldquo;where is the best line to the next jump?&amp;quot;).&lt;/p&gt;
+&lt;p&gt;A good way to test if someone is really skilled at a task is to see if they can do something else at the same time. A favorite example some of riding instructors is to have a student recite something difficult (such as multiplication tables or spelling their name backwards) while going over a jump. This is an excellent test. If the student is skilled at jumping, the mind will be free to focus on the recitation. If not, the two tasks will interfere with one another, and either or both will suffer.&lt;/p&gt;
+&lt;p&gt;Performing a task in which we are unskilled requires attentive behaviour. We have to think of all of the little steps that it takes to get through the task. Remember when you were unskilled at rising trot? It took all of your concentration to stay balanced and on the horse. It wasn&amp;rsquo;t until this became automatic that your mind was sufficiently freed up to enable you to begin to pay attention to what diagonal you were on. And now, you don&amp;rsquo;t even have to think of your diagonal. It too is automatic. It&amp;rsquo;s your rhythm and pace that you&amp;rsquo;re concentrating on. As skill develops, what previously required attention (and problem solving) now becomes automatic. Thus, the mind is freed so that it can attend to a new set of problems (which themselves will become automatic with practice).&lt;/p&gt;
+&lt;h4 id=&#34;the-power-law-of-practice&#34;&gt;The Power Law of Practice&lt;/h4&gt;
+&lt;p&gt;For me, I think that the most frustrating thing about acquiring a new skill, such as riding, is that I know intellectually what I am supposed to do. I read all the books, magazines and watch the top riders. But when I get on a horse, I just can&amp;rsquo;t put it all together.&lt;/p&gt;
+&lt;p&gt;This is just a round about way of saying that acquiring any skill is hard. And if there is anything that we know about leaning a new skill, it is that the only way to develop it and keep it is to practice: do it over and over and over again, then do it some more. Recognizing this leads us to one of the keys to a good instructor: someone who can have you do something over an over again while keeping it fresh, interesting and challenging (for you and your horse - who is also acquiring new skills).&lt;/p&gt;
+&lt;p&gt;Now when I say over and over again, just how many &amp;ldquo;overs&amp;rdquo; do I mean? Well, this is expressed in something called the power law of practice. Simply stated, this says that if it takes 2 hours to get one step, it will take 4 hours to get two steps, 8 hours to get three steps, 16 hours to get 4 steps, etc. Of course this is a generalization. The message to take away is that those riders on the Olympic team have put in an unbelievable number of hours, and at that level, every incremental improvement in technique comes at the cost of a large number of hours of practice.&lt;/p&gt;
+&lt;h4 id=&#34;task-interference-and-its-avoidance&#34;&gt;Task Interference, and its Avoidance&lt;/h4&gt;
+&lt;p&gt;&amp;ldquo;Interference&amp;rdquo; is the term that I used earlier to describe the cause of any degradation in performance that results from an attempt to perform one task at the same time as another. Interference results when different tasks compete for the same limited resources, or attention, of the brain. Remember, if I&amp;rsquo;m unskilled at a task, its performance demands attentive problem solving. Consequently, there is likely not enough processing power left to simultaneously perform the additional problem solving required by some other task in which I am also unskilled.&lt;/p&gt;
+&lt;p&gt;Now let us see how this affects us in an equestrian activity, such as riding a jump on a cross country course. In this case, one could argue that we need to perform at least three different tasks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Basic equitation: Simply put, we need to stay on our horse in a balanced position, while galloping over uneven and unfamiliar terrain.&lt;/li&gt;
+&lt;li&gt;Answer the question demanded each specific jump: In a well designed course, each jump is designed to ask a specific question of the rider - a question whose difficulty is determined by the level of competition.&lt;/li&gt;
+&lt;li&gt;Navigate the course: We need to remember the course and the specific line which we plan to follow, and all of us have made mistakes in this department.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The potential for task interference here is immense. If I am preoccupied with staying on my horse, I won&amp;rsquo;t be prepared to deal with the specific problem of the next jump when I get there. And if I&amp;rsquo;m not thinking about where I go next while going over the jump (because I&amp;rsquo;m preoccupied with riding the jump itself), I will be well beyond it before I get my mind back to riding my planned course. And because I consequently found myself off of my planned course after the jump, the problem of adjusting my plan is introduced, which takes my mind off of basic equitation, which means I get to the next jump off balance. And the cycle continues - hopefully without a fall.&lt;/p&gt;
+&lt;p&gt;After our run we inevitably ask ourselves, &amp;ldquo;What went wrong? How did that happen? I walked the course. I can handle any of the jumps on their own. And I certainly can canter over that terrain!&amp;rdquo; Of course, all of that may well be true. But what we seem slow to appreciate is that, psychologically, doing all three together is a very different thing than doing each in isolation. The situation is similar to one that many would-be musicians have encountered: they can sing the lyrics and they can play the accompaniment on guitar, but they can&amp;rsquo;t do the two together. In both cases, the problem is classic task interference.&lt;/p&gt;
+&lt;h4 id=&#34;practice-preparation-and-speed&#34;&gt;Practice, Preparation and Speed&lt;/h4&gt;
+&lt;p&gt;&amp;ldquo;Putting it all together,&amp;rdquo; from the psychological perspective means being sufficiently skilled in each of the tasks that there are sufficient cognitive resources to deal with each without interference. Now there are at least three strategies that can be applied to bring us to this state:&lt;/p&gt;
+&lt;p&gt;\1. &lt;em&gt;Practice:&lt;/em&gt; This is the obvious strategy. As we have discussed earlier, practice is the key to skill acquisition, and with skill comes the transition from attentive, demanding problem solving to automatic task performance.&lt;/p&gt;
+&lt;p&gt;\2. &lt;em&gt;Preparation:&lt;/em&gt; No matter how skilled we are, the unexpected will inevitably occur. Due to heavy rain, you may find yourself on footing unlike anything you or your horse have ever encountered. You may get a run-out in the middle of a combination where you never expected it. In these, and many similar situations, you are (often suddenly) confronted with an &amp;ldquo;extra&amp;rdquo; problem. The psychological danger here is that this &amp;ldquo;unexpected&amp;rdquo; problem may make extra cognitive demands which interfere with the performance of other ongoing tasks, and have the knock-on effect of causing additional problems.&lt;/p&gt;
+&lt;p&gt;The key to minimizing interference in these kinds of circumstances lies in appreciating the difference between unexpected and unplanned! Just because the footing or a runnout is unexpected does not mean that we should not have planned for the eventuality. Despite having a cozy indoor arena, periodically we should school dressage, cross country and stadium outside in the most miserable weather. That way, we are prepared to deal with cold fingers, slippery reins, poor visibility and slick footing when the weather is unexpectedly bad. The resulting practice means more skill and less interference when (not if) these same conditions are encountered in competition.&lt;/p&gt;
+&lt;p&gt;Likewise, when we unexpectedly get a run-out in the middle of a combination or in some other situation, we can minimize the consequences through preparation. Even though we expect to go clear, we should have a &amp;ldquo;Plan B&amp;rdquo; (and &amp;ldquo;C,&amp;rdquo; &amp;ldquo;D,&amp;rdquo; &amp;hellip;) for each fence. Each is a planned response to a possible problem that we can anticipate. Some of these plans can be practiced at home, others not. This planning is one of your main tasks in walking a course. If you&amp;rsquo;ve done your planning well, then when (again, not if) the &amp;ldquo;unexpected&amp;rdquo; happens, you will be ready. You will have fewer problems to solve. Consequently, the interference with other tasks will be reduced and the damage will be contained. You can get on and ride the rest of the course without the knock-on effects that might otherwise occur.&lt;/p&gt;
+&lt;p&gt;\3. &lt;em&gt;Speed:&lt;/em&gt; Of all of the things that we can do to improve our performance, perhaps slowing down is the one that gives the most gain for the least pain. All novices have heard variations of this theme before, yet excessive speed is still one of the most common causes for problems that one sees on course. Now notice that I said speed was not the problem, but the cause. What is the underlying psychology?&lt;/p&gt;
+&lt;p&gt;In the physical world, we are used to describing the performance of machines in terms of how much they can do in a given unit of time. Hence, we say that a car can go so many miles per hour, a motor run at so many revolutions per minute, or a generator provide so many kilowatts per hour. For our purposes, let us think of the brain in the same way. Let us say that our brain can answer X questions (or solve X problems) a minute. Let us further assume that in riding between two jumps, we need to answer Y questions. If I get to the second jump without answering all Y questions, I am likely going to have a problem. I can avoid this easily. By stretching out the time between the two jumps, I buy myself time. I therefore arrive at the second jump with all Y questions answered, and am far less likely to make an error. (Recalling all of the alternate plans for the upcoming fence are, of course, some of the questions that are required during the approach.)&lt;/p&gt;
+&lt;p&gt;Cross country speeds are normally given in metres per second. Of far more value, from the psychological perspective, would be for us to think of it in questions answered per metre. Because of skill, the expert can answer more questions more rapidly, and therefore safely cover the same distance in a shorter time, but having answered at least the same number of questions over the distance! As novices, our goal should be to match the question answering, not the speed, of the expert. This leads not only to more clean rounds, but safer and more enjoyable rounds as well.&lt;/p&gt;
+&lt;p&gt;One important caveat: there are obvious limits to what I am saying, otherwise the logical conclusion would be that sitting still, giving yourself all the time in the world to problem solve, would be the sure path to a perfect round. Keep in mind that approaching a fence at the proper pace and making your round within the time limit are two of the key problems that you have to take into account. There are limits to everything!&lt;/p&gt;
+&lt;h4 id=&#34;chronological-vs-perceptual-time&#34;&gt;Chronological vs Perceptual Time&lt;/h4&gt;
+&lt;p&gt;In the arithmetic of the physical world and chronological time, if I only answered half of the questions demanded of me between two fences, the conclusion might be that in order to answer them all, I should cut my speed in half (that is, double the amount of time between jumps). Here is the good news: perceptual time does not follow the rules of chronological time. One of the most interesting things about it is that it only takes about 10% more time, to more-or-less double the available problem solving time! Of course, the opposite is also true: if you speed up by only 10%, you run the risk cutting the number of questions that you can answer in half. A speed increase of about 10% comes close to doubling the difficulty and likelihood of error. Cutting speed by 10% about doubles your chances of going clear (as long as you also keep in mind my caveat, above). Making the right decision here isn&amp;rsquo;t rocket science: a 10% reduction in speed makes a lot of sense if you are currently having troubles going clear.&lt;/p&gt;
+&lt;h4 id=&#34;summary&#34;&gt;Summary&lt;/h4&gt;
+&lt;p&gt;We are all problem solving when riding. (If the amount of problem solving is negligible, then we are competing well below our ability and should move up a level or two.) Where we get into trouble is when we become overloaded, and the mental effort of solving one problem makes demands on the mind which cause interference with solving the problems associated with some other task.&lt;/p&gt;
+&lt;p&gt;Through practice, we can build up our level of skill in as many areas as possible. In so doing, the performance of those tasks will become automatic. Consequently, they will not interfere with problem solving associated with other tasks.&lt;/p&gt;
+&lt;p&gt;Through preparation we can anticipate the unexpected. In so doing, we can have a prepared &amp;ldquo;recipe&amp;rdquo; for each eventuality that might occur at any point on course. By so doing, we eliminate the need to &amp;ldquo;make up&amp;rdquo; the recipe on the fly. By reducing the amount of problem solving demanded by unexpected situations, we reduce the amount of task interference compared to what would otherwise result, and therefore reduce the likelihood of knock-on effects. If something happens, we deal with it according to plan, then get on with the rest of our ride.&lt;/p&gt;
+&lt;p&gt;Finally, by controlling our speed, we buy ourselves time to answer all of the questions demanded from obstacle to obstacle on course. By recognizing that psychological time is not linear, we can take advantage of the fact that it only requires about a 10% slow-down to double the problem solving time available.&lt;/p&gt;
+&lt;p&gt;Riding is as much a mental as a physical activity. To ride effectively and safely requires an understanding of both of these components. Hopefully this discussion has shed some light on the mental side, and makes it so that the process of solving all of these problems does not interfere with the most important task of them all: enjoying the sport.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Bill Buxton is Head of Research at Alias | Wavefront, a computer graphics company that - among other things - built the tools which were used to create the dinosaurs in the film, Jurassic Park. He is also Chief Scientist for Siicon Graphics Inc., a computer company specializing in computer graphics systems, and a Professor of Computer Science at the University of Toronto. His specialty is the human aspects of technology. He recently began competing at the preliminary level on his 8 year old buckskin clyde/thoroughbred mare, Matinee Performance, and is coached by Ian Roberts and Kelly Plitz of Dreamcrest Equestrian in Port Perry, Ont.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

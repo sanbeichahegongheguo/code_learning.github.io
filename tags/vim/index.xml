@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vim on 个人随想</title><link>/tags/vim/</link><description>Recent content in Vim on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Mon, 31 Dec 2001 00:00:00 +0000</lastBuildDate><atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml"/><item><title>vim入门</title><link>/post/vim%E5%85%A5%E9%97%A8/</link><pubDate>Mon, 31 Dec 2001 00:00:00 +0000</pubDate><guid>/post/vim%E5%85%A5%E9%97%A8/</guid><description>&lt;p>今天讲讲编程常用的工具，vim。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on 个人随想</title>
+    <link>/tags/vim/</link>
+    <description>Recent content in Vim on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 31 Dec 2001 00:00:00 +0000</lastBuildDate><atom:link href="/tags/vim/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>vim入门</title>
+      <link>/post/vim%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Mon, 31 Dec 2001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/vim%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;p&gt;今天讲讲编程常用的工具，vim。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

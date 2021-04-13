@@ -1,3 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文学 on 个人随想</title><link>/tags/%E6%96%87%E5%AD%A6/</link><description>Recent content in 文学 on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 02 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E6%96%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>《文心雕龙》-02</title><link>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-02/</link><pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate><guid>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-02/</guid><description>&lt;p>大学里通常有作为通识课程的语文课，我个人觉得应该开设就专门讲讲《文心雕龙》这部著作。&lt;/p>
-&lt;p>这段时间闲来翻了翻这本书，觉得颇有诸多值得称道的地方。&lt;/p></description></item><item><title>《文心雕龙》-01</title><link>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-01/</link><pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate><guid>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-01/</guid><description>&lt;p>大学里通常有作为通识课程的语文课，我个人觉得应该开设就专门讲讲《文心雕龙》这部著作。&lt;/p>
-&lt;p>这段时间闲来翻了翻这本书，觉得颇有诸多值得称道的地方。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>文学 on 个人随想</title>
+    <link>/tags/%E6%96%87%E5%AD%A6/</link>
+    <description>Recent content in 文学 on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 02 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E6%96%87%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>《文心雕龙》-02</title>
+      <link>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-02/</link>
+      <pubDate>Tue, 02 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-02/</guid>
+      <description>&lt;p&gt;大学里通常有作为通识课程的语文课，我个人觉得应该开设就专门讲讲《文心雕龙》这部著作。&lt;/p&gt;
+&lt;p&gt;这段时间闲来翻了翻这本书，觉得颇有诸多值得称道的地方。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《文心雕龙》-01</title>
+      <link>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-01/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E6%96%87%E5%BF%83%E9%9B%95%E9%BE%99%E8%A7%A3%E8%AF%BB-01/</guid>
+      <description>&lt;p&gt;大学里通常有作为通识课程的语文课，我个人觉得应该开设就专门讲讲《文心雕龙》这部著作。&lt;/p&gt;
+&lt;p&gt;这段时间闲来翻了翻这本书，觉得颇有诸多值得称道的地方。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

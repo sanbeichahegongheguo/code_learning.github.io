@@ -1,3 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>同步 on 个人随想</title><link>/tags/%E5%90%8C%E6%AD%A5/</link><description>Recent content in 同步 on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Tue, 04 Apr 2000 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%90%8C%E6%AD%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>使用bitTorrentSync同步一些电子书</title><link>/post/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</link><pubDate>Tue, 04 Apr 2000 00:00:00 +0000</pubDate><guid>/post/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</guid><description>&lt;p>先推荐一篇我觉得写得不错的文章：&lt;/p>
-&lt;p>&lt;a href="http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651024915&amp;amp;idx=1&amp;amp;sn=1ff4466d5ed02d3661847eccd4afd8b7&amp;amp;chksm=bdbe96408ac91f56e8dea10063ba23e2c41e2393b554bb85834a86935c38cb1aa4d79eb66116&amp;amp;scene=21#wechat_redirect">让比尔·盖茨放心退出董事会的纳德拉，是如何与两位前任 CEO“对抗”的？&lt;/a>&lt;/p>
-&lt;hr></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>同步 on 个人随想</title>
+    <link>/tags/%E5%90%8C%E6%AD%A5/</link>
+    <description>Recent content in 同步 on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Apr 2000 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%90%8C%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使用bitTorrentSync同步一些电子书</title>
+      <link>/post/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</link>
+      <pubDate>Tue, 04 Apr 2000 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</guid>
+      <description>&lt;p&gt;先推荐一篇我觉得写得不错的文章：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651024915&amp;amp;idx=1&amp;amp;sn=1ff4466d5ed02d3661847eccd4afd8b7&amp;amp;chksm=bdbe96408ac91f56e8dea10063ba23e2c41e2393b554bb85834a86935c38cb1aa4d79eb66116&amp;amp;scene=21#wechat_redirect&#34;&gt;让比尔·盖茨放心退出董事会的纳德拉，是如何与两位前任 CEO“对抗”的？&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

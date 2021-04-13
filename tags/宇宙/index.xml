@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>宇宙 on 个人随想</title><link>/tags/%E5%AE%87%E5%AE%99/</link><description>Recent content in 宇宙 on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Fri, 01 Jan 2021 16:01:23 +0800</lastBuildDate><atom:link href="/tags/%E5%AE%87%E5%AE%99/index.xml" rel="self" type="application/rss+xml"/><item><title>刘慈欣为《三体》英文写的跋</title><link>/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link><pubDate>Fri, 01 Jan 2021 16:01:23 +0800</pubDate><guid>/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</guid><description>&lt;p>童年的某个夜晚清晰地印在我的记忆里挥之不去：我站在河南省罗山县某村庄的池塘边，那是我的祖辈曾生活过的地方，我身边还站着许多人，有大人也有孩子。我们一起仰望着晴朗的夜空，一颗小星星缓缓划过黯淡的天际。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>宇宙 on 个人随想</title>
+    <link>/tags/%E5%AE%87%E5%AE%99/</link>
+    <description>Recent content in 宇宙 on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Jan 2021 16:01:23 +0800</lastBuildDate><atom:link href="/tags/%E5%AE%87%E5%AE%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>刘慈欣为《三体》英文写的跋</title>
+      <link>/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link>
+      <pubDate>Fri, 01 Jan 2021 16:01:23 +0800</pubDate>
+      
+      <guid>/post/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</guid>
+      <description>&lt;p&gt;童年的某个夜晚清晰地印在我的记忆里挥之不去：我站在河南省罗山县某村庄的池塘边，那是我的祖辈曾生活过的地方，我身边还站着许多人，有大人也有孩子。我们一起仰望着晴朗的夜空，一颗小星星缓缓划过黯淡的天际。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,2 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Anaconda on 个人随想</title><link>/tags/anaconda/</link><description>Recent content in Anaconda on 个人随想</description><generator>Hugo -- gohugo.io</generator><lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/anaconda/index.xml" rel="self" type="application/rss+xml"/><item><title>Anaconda入门</title><link>/post/anaconda%E5%85%A5%E9%97%A8/</link><pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate><guid>/post/anaconda%E5%85%A5%E9%97%A8/</guid><description>&lt;h2 id="一anaconda介绍">一、Anaconda介绍&lt;/h2>
-&lt;p>&lt;strong>Anaconda&lt;/strong>是一个Python的科学计算发行版，包含了超过300个流行的用于科学、数学、工程和数据分析的Python Packages。由于Python有2和3两个版本，因此Anaconda也在Python2和Python3的基础上推出了两个发行版，即&lt;strong>Anaconda2&lt;/strong>和&lt;strong>Anaconda3&lt;/strong>。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anaconda on 个人随想</title>
+    <link>/tags/anaconda/</link>
+    <description>Recent content in Anaconda on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anaconda入门</title>
+      <link>/post/anaconda%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/anaconda%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;h2 id=&#34;一anaconda介绍&#34;&gt;一、Anaconda介绍&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Anaconda&lt;/strong&gt;是一个Python的科学计算发行版，包含了超过300个流行的用于科学、数学、工程和数据分析的Python Packages。由于Python有2和3两个版本，因此Anaconda也在Python2和Python3的基础上推出了两个发行版，即&lt;strong&gt;Anaconda2&lt;/strong&gt;和&lt;strong&gt;Anaconda3&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
