@@ -5,7 +5,7 @@
     <link>/en/post/</link>
     <description>Recent content in Posts on 英文文章</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 04 Mar 2019 16:01:23 +0800</lastBuildDate><atom:link href="/en/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/en/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown文档形式的介绍</title>
       <link>/en/post/000jane-theme-preview/</link>
@@ -14,6 +14,15 @@
       <guid>/en/post/000jane-theme-preview/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Markdown&lt;/strong&gt; is created by &lt;a href=&#34;http://daringfireball.net/&#34;&gt;Daring Fireball&lt;/a&gt;, the original guideline is &lt;a href=&#34;http://daringfireball.net/projects/markdown/syntax&#34;&gt;here&lt;/a&gt;. Its syntax, however, varies between different parsers or editors.&lt;/p&gt;
 &lt;p&gt;Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>凯文凯利给年轻人的建议 | 火山灰 </title>
+      <link>/en/post/%E5%87%AF%E6%96%87%E5%87%AF%E5%88%A968-bits-of-unsolicited-advice/</link>
+      <pubDate>Wed, 05 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/%E5%87%AF%E6%96%87%E5%87%AF%E5%88%A968-bits-of-unsolicited-advice/</guid>
+      <description>&lt;h2 id=&#34;68-bits-of-unsolicited-advicehttpskkorgthetechnium68-bits-of-unsolicited-advice&#34;&gt;&lt;a href=&#34;https://kk.org/thetechnium/68-bits-of-unsolicited-advice/&#34;&gt;68 Bits of Unsolicited Advice&lt;/a&gt;&lt;/h2&gt;</description>
     </item>
     
     <item>
