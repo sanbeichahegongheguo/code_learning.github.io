@@ -8,38 +8,38 @@
     <lastBuildDate>Sun, 31 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RSA算法解释</title>
-      <link>/post/rsa%E7%AE%97%E6%B3%95/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/rsa%E7%AE%97%E6%B3%95/</link>
       <pubDate>Sun, 31 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/post/rsa%E7%AE%97%E6%B3%95/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/rsa%E7%AE%97%E6%B3%95/</guid>
       <description>&lt;p&gt;彻底讲清楚。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>聊一个算法入门题</title>
-      <link>/post/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/</link>
       <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%81%8A%E4%B8%80%E4%B8%AA%E7%AE%97%E6%B3%95%E5%85%A5%E9%97%A8%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;题目描述&#34;&gt;题目描述&lt;/h2&gt;
 &lt;p&gt;在一个整数数组中，一个数字减去它左边的数字得到一个差值，求最大差值的数字。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>转载 | 自然语言处理入门</title>
-      <link>/post/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;先整理一些资料。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>GitHub使用入门及问题汇集</title>
-      <link>/post/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
       <pubDate>Thu, 28 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/github%E4%BD%BF%E7%94%A8%E5%85%A5%E9%97%A8%E5%8F%8A%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;作者：荒野雄兵&lt;/p&gt;
 &lt;p&gt;来源：CSDN&lt;/p&gt;
@@ -50,147 +50,147 @@
     
     <item>
       <title>在Windows系统下，使用Chocolatey和Scoop管理电脑上软件</title>
-      <link>/post/%E5%9C%A8windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BD%BF%E7%94%A8chocolatey%E5%92%8Cscoop%E7%AE%A1%E7%90%86%E7%94%B5%E8%84%91%E4%B8%8A%E8%BD%AF%E4%BB%B6/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E5%9C%A8windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BD%BF%E7%94%A8chocolatey%E5%92%8Cscoop%E7%AE%A1%E7%90%86%E7%94%B5%E8%84%91%E4%B8%8A%E8%BD%AF%E4%BB%B6/</link>
       <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E5%9C%A8windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BD%BF%E7%94%A8chocolatey%E5%92%8Cscoop%E7%AE%A1%E7%90%86%E7%94%B5%E8%84%91%E4%B8%8A%E8%BD%AF%E4%BB%B6/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E5%9C%A8windows%E7%B3%BB%E7%BB%9F%E4%B8%8B%E4%BD%BF%E7%94%A8chocolatey%E5%92%8Cscoop%E7%AE%A1%E7%90%86%E7%94%B5%E8%84%91%E4%B8%8A%E8%BD%AF%E4%BB%B6/</guid>
       <description>&lt;p&gt;关于电脑工具的一些想法。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何用hugo&#43;GitHub建立自己的博客</title>
-      <link>/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo&#43;github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
+      <link>/post/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E5%A6%82%E4%BD%95%E7%94%A8hugo&#43;github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo&#43;github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
+      <guid>/post/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E5%A6%82%E4%BD%95%E7%94%A8hugo&#43;github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;这篇讲讲如何用&lt;code&gt;hugo+GitHub&lt;/code&gt;建立自己的博客。&lt;/p&gt;
 &lt;p&gt;本人的博客就是用&lt;code&gt;hugo+GitHub&lt;/code&gt;搭建。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>正常人学编程 前言</title>
-      <link>/post/section000-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section000-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/section000-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section000-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</guid>
       <description>&lt;p&gt;现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>转载 | Linux 系统和 Shell 编程问题集</title>
-      <link>/post/%E8%BD%AC%E8%BD%BD-linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%BD%AC%E8%BD%BD-linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/</link>
       <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E8%BD%AC%E8%BD%BD-linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%BD%AC%E8%BD%BD-linux-%E7%B3%BB%E7%BB%9F%E5%92%8C-shell-%E7%BC%96%E7%A8%8B%E9%97%AE%E9%A2%98%E9%9B%86/</guid>
       <description>&lt;p&gt;本文来源：&lt;a href=&#34;https://zhuanlan.zhihu.com/p/62543626&#34;&gt;知乎专栏&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>section01-环境配置-01</title>
-      <link>/post/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</link>
       <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-01/</guid>
       <description>&lt;p&gt;环境配置分两种，一种是语言本身的环境配置，一种是编写代码时所需要的编辑器。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>section01-环境配置-02-语言环境</title>
-      <link>/post/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</link>
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-02/</guid>
       <description>&lt;h2 id=&#34;1优先推荐初学者先使用网上环境而不是本地部署&#34;&gt;1、优先推荐初学者先使用网上环境，而不是本地部署。&lt;/h2&gt;</description>
     </item>
     
     <item>
       <title>section02-计算机起源与组成</title>
-      <link>/post/section002-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section002-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</link>
       <pubDate>Fri, 28 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/section002-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section002-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90/</guid>
       <description>&lt;p&gt;本文转自[&lt;a href=&#34;https://zhuanlan.zhihu.com/p/36534718&#34;&gt;零基础编程入门（02）——计算机起源与组成&lt;/a&gt;]&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>section01-环境配置-03-编辑器设置</title>
-      <link>/post/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/section001-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE-03/</guid>
       <description>&lt;h2 id=&#34;什么是shebang&#34;&gt;什么是shebang&lt;/h2&gt;</description>
     </item>
     
     <item>
       <title>转载 | 版本控制系统入门</title>
-      <link>/post/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</link>
       <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;本文转载自阮一峰的博客的一篇文章：&lt;a href=&#34;http://www.ruanyifeng.com/blog/2008/12/a_visual_guide_to_version_control.html&#34;&gt;版本控制入门插图教程&lt;/a&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Anaconda入门</title>
-      <link>/post/anaconda%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/anaconda%E5%85%A5%E9%97%A8/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/anaconda%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/anaconda%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;h2 id=&#34;一anaconda介绍&#34;&gt;一、Anaconda介绍&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Anaconda&lt;/strong&gt;是一个Python的科学计算发行版，包含了超过300个流行的用于科学、数学、工程和数据分析的Python Packages。由于Python有2和3两个版本，因此Anaconda也在Python2和Python3的基础上推出了两个发行版，即&lt;strong&gt;Anaconda2&lt;/strong&gt;和&lt;strong&gt;Anaconda3&lt;/strong&gt;。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>泡沫往哪里去-2</title>
-      <link>/post/zotero%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/zotero%E5%85%A5%E9%97%A8/</link>
       <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/zotero%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/zotero%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;注：本文在阳博客基础上修改增加内容。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>vim入门</title>
-      <link>/post/vim%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/vim%E5%85%A5%E9%97%A8/</link>
       <pubDate>Mon, 31 Dec 2001 00:00:00 +0000</pubDate>
       
-      <guid>/post/vim%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/vim%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;今天讲讲编程常用的工具，vim。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Git入门</title>
-      <link>/post/git%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/git%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>/post/git%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/git%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;h2 id=&#34;一git是什么&#34;&gt;一、Git是什么&lt;/h2&gt;</description>
     </item>
     
     <item>
       <title>Git常见问题总结</title>
-      <link>/post/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>/post/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
       <description>&lt;p&gt;收集使用&lt;code&gt;git&lt;/code&gt;的过程中出现的问题。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>superset入门</title>
-      <link>/post/superset%E5%85%A5%E9%97%A8/</link>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/superset%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
       
-      <guid>/post/superset%E5%85%A5%E9%97%A8/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/superset%E5%85%A5%E9%97%A8/</guid>
       <description>&lt;p&gt;&lt;code&gt;superset&lt;/code&gt;是什么？&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>使用bitTorrentSync同步一些电子书</title>
-      <link>/post/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</link>
+      <link>/post/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</link>
       <pubDate>Tue, 04 Apr 2000 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</guid>
+      <guid>/post/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%94/%E5%90%8C%E6%AD%A5%E7%94%B5%E5%AD%90%E4%B9%A6/</guid>
       <description>&lt;p&gt;先推荐一篇我觉得写得不错的文章：&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://mp.weixin.qq.com/s?__biz=MjM5MDE0Mjc4MA==&amp;amp;mid=2651024915&amp;amp;idx=1&amp;amp;sn=1ff4466d5ed02d3661847eccd4afd8b7&amp;amp;chksm=bdbe96408ac91f56e8dea10063ba23e2c41e2393b554bb85834a86935c38cb1aa4d79eb66116&amp;amp;scene=21#wechat_redirect&#34;&gt;让比尔·盖茨放心退出董事会的纳德拉，是如何与两位前任 CEO“对抗”的？&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;</description>
