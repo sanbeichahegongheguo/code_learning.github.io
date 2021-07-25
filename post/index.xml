@@ -5,7 +5,7 @@
     <link>/post/</link>
     <description>Recent content in Posts on 个人随想</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 05 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>本博客的介绍及一些特性</title>
       <link>/post/article-title/</link>
@@ -16,6 +16,15 @@
 &lt;p&gt;主要是积累具有一定价值的成体系文章，不想放随意的低价值文档。&lt;/p&gt;
 &lt;p&gt;主要分4个模块。&lt;/p&gt;
 &lt;p&gt;第一个是&lt;code&gt;个人随想&lt;/code&gt;，放置自己的日常思考。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>那年庐山（十二）毛彭旧事之华北座谈会 | 史文恭</title>
+      <link>/post/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1-12/</link>
+      <pubDate>Sat, 24 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1-12/</guid>
+      <description>&lt;p&gt;1945年，从二月到七月，断断续续之间，（中间隔着著名的中共七大）在延安召开了一次前后有43天的“&lt;strong&gt;华北地方与军队工作同志的座谈会&lt;/strong&gt;”。参加会议的有胡服、彭总、林总等，大会推选薄一波为主席。&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -189,15 +198,6 @@
       <guid>/post/%E5%A6%82%E4%BD%95%E7%94%A8hugo&#43;github%E5%BB%BA%E7%AB%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8D%9A%E5%AE%A2/</guid>
       <description>&lt;p&gt;这篇讲讲如何用&lt;code&gt;hugo+GitHub&lt;/code&gt;建立自己的博客。&lt;/p&gt;
 &lt;p&gt;本人的博客就是用&lt;code&gt;hugo+GitHub&lt;/code&gt;搭建。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>正常人学编程 前言</title>
-      <link>/post/section000-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</link>
-      <pubDate>Sun, 30 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/section000-%E6%AD%A3%E5%B8%B8%E4%BA%BA%E5%AD%A6%E7%BC%96%E7%A8%8B-%E5%89%8D%E8%A8%80/</guid>
-      <description>&lt;p&gt;现有的编程课程，书本，教程，对非计算机专业、转行的初学者而言，都非常糟糕。&lt;/p&gt;</description>
     </item>
     
   </channel>
