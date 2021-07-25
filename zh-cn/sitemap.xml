@@ -499,6 +499,27 @@
   </url>
   
   <url>
+    <loc>/tags/%E5%BD%AD%E5%BE%B7%E6%80%80/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%94%BF%E6%B2%BB%E6%95%85%E4%BA%8B/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tags/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/</loc>
     <lastmod>2018-04-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -507,6 +528,20 @@
   
   <url>
     <loc>/post/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1/</loc>
+    <lastmod>2018-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1-12/</loc>
     <lastmod>2018-04-03T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
