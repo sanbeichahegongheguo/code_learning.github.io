@@ -1119,6 +1119,655 @@ f(x) \sim x^2, \quad x\to\infty
     </item>
     
     <item>
+      <title>转载 |  A Visual Guide to Version Control</title>
+      <link>/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Tue, 03 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E5%85%A5%E9%97%A8/</guid>
+      
+        <description>&lt;p&gt;&lt;a href=&#34;https://betterexplained.com/&#34;&gt;Home&lt;/a&gt; &amp;gt; &lt;a href=&#34;https://betterexplained.com/articles/category/guides/&#34;&gt;Guides&lt;/a&gt;, &lt;a href=&#34;https://betterexplained.com/articles/category/programming/&#34;&gt;Programming&lt;/a&gt; &amp;gt;&lt;/p&gt;
+&lt;p&gt;Version Control (aka Revision Control aka Source Control) lets you track your files over time. Why do you care? So when you mess up you can easily get back to a previous working version.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/version_control_intro_small.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;You’ve probably cooked up your own&lt;/strong&gt; version control system without realizing it had such a geeky name. Got any files like this? (Not these exact ones I hope).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;KalidAzadResumeOct2014.doc&lt;/li&gt;
+&lt;li&gt;KalidAzadResumeMar2015.doc&lt;/li&gt;
+&lt;li&gt;instacalc-logo3.png&lt;/li&gt;
+&lt;li&gt;instacalc-logo4.png&lt;/li&gt;
+&lt;li&gt;logo-old.png&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;It’s why we use “Save As”.&lt;/strong&gt; You want the new file without obliterating the old one. It’s a common problem, and solutions are usually like this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make a &lt;strong&gt;single backup copy&lt;/strong&gt; (Document.old.txt).&lt;/li&gt;
+&lt;li&gt;If we’re clever, we add a &lt;strong&gt;version number or date&lt;/strong&gt;: Document_V1.txt, DocumentMarch2015.txt&lt;/li&gt;
+&lt;li&gt;We may even use a &lt;strong&gt;shared folder&lt;/strong&gt; so other people can see and edit files without sending them over email. Hopefully they relabel the file after they save it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;so-why-do-we-need-a-version-control-system-vcs&#34;&gt;So Why Do We Need A Version Control System (VCS)?&lt;/h2&gt;
+&lt;p&gt;Our shared folder/naming system is fine for class projects or one-time papers. But software projects? Not a chance.&lt;/p&gt;
+&lt;p&gt;Do you think the Windows source code sits in a shared folder like “Windows2007-Latest-UPDATED!!”, for anyone to edit? That every programmer just works in a different subfolder? No way.&lt;/p&gt;
+&lt;p&gt;Large, fast-changing projects with many authors need a Version Control System (geekspeak for “file database”) to track changes and avoid general chaos. A good VCS does the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Backup and Restore.&lt;/strong&gt; Files are saved as they are edited, and you can jump to any moment in time. Need that file as it was on Feb 23, 2007? No problem.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Synchronization.&lt;/strong&gt; Lets people share files and stay up-to-date with the latest version.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Short-term undo.&lt;/strong&gt; Monkeying with a file and messed it up? (That’s just like you, isn’t it?). Throw away your changes and go back to the “last known good” version in the database.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Long-term undo.&lt;/strong&gt; Sometimes we mess up bad. Suppose you made a change a year ago, and it had a bug. Jump back to the old version, and see what change was made that day.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Track Changes&lt;/strong&gt;. As files are updated, you can leave messages explaining why the change happened (stored in the VCS, not the file). This makes it easy to see how a file is evolving over time, and why.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Track Ownership.&lt;/strong&gt; A VCS tags every change with the name of the person who made it. Helpful for &lt;del&gt;&lt;a href=&#34;http://www.unwords.com/unword/blamestorming.html&#34;&gt;blamestorming&lt;/a&gt;&lt;/del&gt; giving credit.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sandboxing&lt;/strong&gt;, or insurance against yourself. Making a big change? You can make temporary changes in an isolated area, test and work out the kinks before “checking in” your changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Branching and merging&lt;/strong&gt;. A larger sandbox. You can &lt;strong&gt;branch&lt;/strong&gt; a copy of your code into a separate area and modify it in isolation (tracking changes separately). Later, you can &lt;strong&gt;merge&lt;/strong&gt; your work back into the common area.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Shared folders are quick and simple, but can’t beat these features.&lt;/p&gt;
+&lt;h2 id=&#34;learn-the-lingo&#34;&gt;Learn The Lingo&lt;/h2&gt;
+&lt;p&gt;Most version control systems involve the following concepts, though the labels may be different.&lt;/p&gt;
+&lt;p&gt;Basic Setup&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Repository (repo)&lt;/strong&gt;: The database storing the files.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Server&lt;/strong&gt;: The computer storing the repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Client&lt;/strong&gt;: The computer connecting to the repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Working Set/Working Copy&lt;/strong&gt;: Your local directory of files, where you make changes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Trunk/Main&lt;/strong&gt;: The primary location for code in the repo. Think of code as a family tree — the trunk is the main line.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Basic Actions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Add&lt;/strong&gt;: Put a file into the repo for the first time, i.e. begin tracking it with Version Control.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Revision&lt;/strong&gt;: What version a file is on (v1, v2, v3, etc.).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Head&lt;/strong&gt;: The latest revision in the repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Check out&lt;/strong&gt;: Download a file from the repo.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Check in&lt;/strong&gt;: Upload a file to the repository (if it has changed). The file gets a new revision number, and people can “check out” the latest one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Checkin Message&lt;/strong&gt;: A short message describing what was changed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Changelog/History&lt;/strong&gt;: A list of changes made to a file since it was created.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Update/Sync&lt;/strong&gt;: Synchronize your files with the latest from the repository. This lets you grab the latest revisions of all files.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Revert&lt;/strong&gt;: Throw away your local changes and reload the latest version from the repository.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Advanced Actions&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Branch&lt;/strong&gt;: Create a separate copy of a file/folder for private use (bug fixing, testing, etc). Branch is both a verb (“branch the code”) and a noun (“Which branch is it in?”).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Diff/Change/Delta&lt;/strong&gt;: Finding the differences between two files. Useful for seeing what changed between revisions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Merge (or patch)&lt;/strong&gt;: Apply the changes from one file to another, to bring it up-to-date. For example, you can merge features from one branch into another. (At Microsoft this was called &lt;a href=&#34;https://blogs.msdn.com/larryosterman/archive/2005/02/01/364840.aspx&#34;&gt;Reverse Integrate and Forward Integrate&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conflict&lt;/strong&gt;: When pending changes to a file contradict each other (both changes cannot be applied).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resolve&lt;/strong&gt;: Fixing the changes that contradict each other and checking in the correct version.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Locking&lt;/strong&gt;: Taking control of a file so nobody else can edit it until you unlock it. Some version control systems use this to avoid conflicts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Breaking the lock&lt;/strong&gt;: Forcibly unlocking a file so you can edit it. It may be needed if someone locks a file and goes on vacation (or “calls in sick” the day Halo 3 comes out).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Check out for edit&lt;/strong&gt;: Checking out an “editable” version of a file. Some VCSes have editable files by default, others require an explicit command.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And a typical scenario goes like this:&lt;/p&gt;
+&lt;p&gt;Alice &lt;strong&gt;adds&lt;/strong&gt; a file (&lt;code&gt;list.txt&lt;/code&gt;) to the &lt;strong&gt;repository&lt;/strong&gt;. She &lt;strong&gt;checks it out&lt;/strong&gt;, makes a change (puts “milk” on the list), and checks it back in with a checkin message (“Added required item.”). The next morning, Bob &lt;strong&gt;updates&lt;/strong&gt; his local working set and sees the latest revision of &lt;code&gt;list.txt&lt;/code&gt;, which contains “milk”. He can browse the &lt;strong&gt;changelog&lt;/strong&gt; or &lt;strong&gt;diff&lt;/strong&gt; to see that Alice put “milk” the day before.&lt;/p&gt;
+&lt;h2 id=&#34;visual-examples&#34;&gt;Visual Examples&lt;/h2&gt;
+&lt;p&gt;This guide is purposefully high-level: most tutorials throw a bunch of text commands at you. Let’s cover the high-level concepts without getting stuck in the syntax (the &lt;a href=&#34;http://svnbook.red-bean.com/&#34;&gt;Subversion manual&lt;/a&gt; is always there, don’t worry). Sometimes it’s nice to &lt;strong&gt;see what’s possible&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;checkins&#34;&gt;Checkins&lt;/h2&gt;
+&lt;p&gt;The simplest scenario is checking in a file (&lt;code&gt;list.txt&lt;/code&gt;) and modifying it over time.&lt;/p&gt;
+&lt;p&gt;c&lt;/p&gt;
+&lt;p&gt;Each time we check in a new version, we get a new revision (r1, r2, r3, etc.). In Subversion you’d do:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn add list.txt
+&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;modify the file&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+svn ci list.txt -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Changed the list&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The &lt;code&gt;-m&lt;/code&gt; flag is the message to use for this checkin.&lt;/p&gt;
+&lt;h2 id=&#34;checkouts-and-editing&#34;&gt;Checkouts And Editing&lt;/h2&gt;
+&lt;p&gt;In reality, you might not keep checking in a file. You may have to &lt;strong&gt;check out, edit and check in&lt;/strong&gt;. The cycle looks like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/checkout_edit.png&#34; alt=&#34;version control checkout&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If you don’t like your changes and want to start over, you can &lt;strong&gt;revert&lt;/strong&gt; to the previous version and start again (or stop). When checking out, you get the latest revision by default. If you want, you can specify a particular revision. In Subversion, run:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn co list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;get latest version&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+…edit file…
+svn revert list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;throw away changes&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+svn co -r2 list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;check out particular version&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;diffs&#34;&gt;Diffs&lt;/h2&gt;
+&lt;p&gt;The trunk has a history of &lt;strong&gt;changes&lt;/strong&gt; as a file evolves. Diffs are the changes you made while editing: imagine you can “peel” them off and apply them to a file:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/basic_diffs.png&#34; alt=&#34;version control diff&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example, to go from r1 to r2, we add eggs (+Eggs). Imagine peeling off that red sticker and placing it on r1, to get r2.&lt;/p&gt;
+&lt;p&gt;And to get from r2 to r3, we add Juice (+Juice). To get from r3 to r4, we remove Juice and add Soup (-Juice, +Soup).&lt;/p&gt;
+&lt;p&gt;Most version control systems &lt;strong&gt;store diffs rather than full copies of the file&lt;/strong&gt;. This saves disk space: 4 revisions of a file doesn’t mean we have 4 copies; we have 1 copy and 4 small diffs. Pretty nifty, eh? In SVN, we diff two revisions of a file like this:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn diff -r3:4 list.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Diffs help us notice changes (“How did you fix that bug again?”) and even apply them from one branch to another.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Bonus question:&lt;/strong&gt; what’s the diff from r1 to r4?&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;+Eggs
++Soup
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Notice how “Juice” wasn’t even involved — the direct jump from r1 to r4 doesn’t need that change, since Juice was overridden by Soup.&lt;/p&gt;
+&lt;h2 id=&#34;branching&#34;&gt;Branching&lt;/h2&gt;
+&lt;p&gt;Branches let us copy code into a separate folder so we can monkey with it separately:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/first_branch.png&#34; alt=&#34;version control branch&#34;&gt;&lt;/p&gt;
+&lt;p&gt;For example, we can create a branch for new, experimental ideas for our list: crazy things like Rice or Eggo waffles. Depending on the version control system, creating a branch (copy) may change the revision number.&lt;/p&gt;
+&lt;p&gt;Now that we have a branch, we can change our code and work out the kinks. (&lt;em&gt;“Hrm… waffles? I don’t know what the boss will think. Rice is a safe bet.”&lt;/em&gt;). Since we’re in a separate branch, we can make changes and test in isolation, knowing our changes won’t hurt anyone. And our branch history is under version control.&lt;/p&gt;
+&lt;p&gt;In Subversion, you create a branch simply by copying a directory to another.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn copy http://path/to/trunk http://path/to/branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;So branching isn’t too tough of a concept: &lt;strong&gt;Pretend you copied your code into a different directory.&lt;/strong&gt; You’ve probably branched your code in school projects, making sure you have a “fail safe” version you can return to if things blow up.&lt;/p&gt;
+&lt;h2 id=&#34;merging&#34;&gt;Merging&lt;/h2&gt;
+&lt;p&gt;Branching sounds simple, right? Well, it’s not — figuring out how to merge changes from one branch to another can be tricky.&lt;/p&gt;
+&lt;p&gt;Let’s say we want to get the “Rice” feature from our experimental branch into the mainline. How would we do this? Diff r6 and r7 and apply that to the main line?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wrongo.&lt;/strong&gt; We only want to apply the changes &lt;strong&gt;that happened in the branch!&lt;/strong&gt;. That means we diff r5 and r6, and apply that to the main trunk:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/merging.png&#34; alt=&#34;version control merge&#34;&gt;&lt;/p&gt;
+&lt;p&gt;If we diffed r6 and r7, we would lose the “Bread” feature that was in main. This is a subtle point — imagine “peeling off” the changes from the experimental branch (+Rice) and adding that to main. Main may have had other changes, which is ok — we just want to insert the Rice feature.&lt;/p&gt;
+&lt;p&gt;In Subversion, merging is very close to diffing. Inside the main trunk, run the command:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn merge -r5:6 http://path/to/branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;This command diffs r5-r6 in the experimental branch and applies it to the current location. Unfortunately, Subversion doesn’t have an easy way to keep track of what merges have been applied, so if you’re not careful you may apply the same changes twice. It’s a planned feature, but the current advice is to keep a changelog message reminding you that you’ve already merged r5-r6 into main.&lt;/p&gt;
+&lt;h2 id=&#34;conflicts&#34;&gt;Conflicts&lt;/h2&gt;
+&lt;p&gt;Many times, the VCS can automatically merge changes to different parts of a file. &lt;strong&gt;Conflicts&lt;/strong&gt; can arise when changes appear that don’t gel: Joe wants to remove eggs and replace it with cheese (-eggs, +cheese), and Sue wants to replace eggs with a hot dog (-eggs, +hot dog).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/vcs_conflict.png&#34; alt=&#34;version control conflict&#34;&gt;&lt;/p&gt;
+&lt;p&gt;At this point it’s a race: if Joe checks in first, that’s the change that goes through (and Sue can’t make her change).&lt;/p&gt;
+&lt;p&gt;When changes overlap and contradict like this, the VCS may report a &lt;strong&gt;conflict&lt;/strong&gt; and not let you check in — it’s up to you to check in a newer version that &lt;strong&gt;resolves&lt;/strong&gt; this dilemma. A few approaches:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Re-apply your changes&lt;/strong&gt;. Sync to the the latest version (r4) and re-apply your changes to this file: Add hot dog to the list that already has cheese.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Override their changes with yours&lt;/strong&gt;. Check out the latest version (r4), copy over your version, and check your version in. In effect, this removes cheese and replaces it with hot dog.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Conflicts are infrequent but can be a pain. Usually I update to the latest and re-apply my changes.&lt;/p&gt;
+&lt;h2 id=&#34;tagging&#34;&gt;Tagging&lt;/h2&gt;
+&lt;p&gt;Who would have thought a version control system would be Web 2.0 compliant? Many systems let you tag (label) any revision for easy reference. This way you can refer to “Release 1.0” instead of a particular build number:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/tagging.png&#34; alt=&#34;version control tag&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In Subversion, tags are just branches that you agree not to edit; they are around for posterity, so you can see exactly what your version 1.0 release contained. Hence they end in a stub — there’s nowhere to go.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;in trunk&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+svn copy http://path/to/revision http://path/to/tag
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;real-life-example-managing-windows-source-code&#34;&gt;Real-Life Example: Managing Windows Source Code&lt;/h2&gt;
+&lt;p&gt;We guessed that Windows was managed out of a shared folder, but it’s not the case. So &lt;a href=&#34;https://blogs.msdn.com/larryosterman/archive/2005/02/01/364840.aspx&#34;&gt;how’s it done&lt;/a&gt;?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;There’s a &lt;strong&gt;main line&lt;/strong&gt; with stable builds of Windows.&lt;/li&gt;
+&lt;li&gt;Each group (Networking, User Interface, Media Player, etc.) &lt;strong&gt;has its own branch&lt;/strong&gt; to develop new features. These are under development and less stable than main.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You develop new features in your branch and “Reverse Integrate (RI)” to get them into Main. Later, you “Forward Integrate” to bring the latest changes from Main into your branch:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://betterexplained.com/wp-content/uploads/version_control/windows.png&#34; alt=&#34;version control branch example&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Let’s say we’re at Media Player 10 and IE 6. The Media Player team makes version 11 in their own branch. When it’s ready and tested, there’s a patch from 10 – 11 which is applied to Main (just like the “Rice” example, but a tad more complicated). This is a &lt;strong&gt;reverse integration&lt;/strong&gt;, from the branch to the trunk. The IE team can do the same thing.&lt;/p&gt;
+&lt;p&gt;Later, the Media Player team can pick up the latest code from other teams, like IE. In this case, Media Player &lt;strong&gt;forward integrates&lt;/strong&gt; and gets the latest patches from main into their branch. This is like pulling in the “Bread” feature into the experimental branch, but again, more complicated.&lt;/p&gt;
+&lt;p&gt;So it’s RI and FI. Aye aye. This arrangement lets changes percolate throughout the branches, while keeping new code out of the main line. Cool, eh?&lt;/p&gt;
+&lt;p&gt;In reality, there’s many layers of branches and sub-branches, along with quality metrics that determine when you get to RI. But you get the idea: branches help manage complexity. Now you know the basics of how one of the largest software projects is organized.&lt;/p&gt;
+&lt;h2 id=&#34;key-takeaways&#34;&gt;Key Takeaways&lt;/h2&gt;
+&lt;p&gt;My goal was to share high-level thoughts about version control systems. Here are the basics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Use version control.&lt;/strong&gt; Seriously, it’s a good thing, even if you’re not writing an OS. It’s worth it for backups alone.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Take it slow.&lt;/strong&gt; I’m only now looking into branching and merging for my projects. Just get a handle on using version control and go from there. If you’re a small project, branching/merging may not be an issue. Large projects often have experienced maintainers who keep track of the branches and patches.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keep Learning.&lt;/strong&gt; There’s plenty of guides for &lt;a href=&#34;http://svnbook.red-bean.com/&#34;&gt;SVN&lt;/a&gt;, &lt;a href=&#34;http://wwwasd.web.cern.ch/wwwasd/cvs/tutorial/cvs_tutorial_toc.html&#34;&gt;CVS&lt;/a&gt;, &lt;a href=&#34;http://agave.garden.org/~aaronh/rcs/tutorial.html&#34;&gt;RCS&lt;/a&gt;, &lt;a href=&#34;https://www.kernel.org/pub/software/scm/git/docs/&#34;&gt;Git&lt;/a&gt;, &lt;a href=&#34;http://public.perforce.com/public/tutorial.html&#34;&gt;Perforce&lt;/a&gt; or whatever system you’re using. The important thing is to &lt;strong&gt;know the concepts&lt;/strong&gt; and realize every system has its own lingo and philosophy. Eric Sink has a &lt;a href=&#34;http://www.ericsink.com/scm/source_control.html&#34;&gt;detailed version control guide&lt;/a&gt; also.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;These are the basics — as time goes on I’ll share specific lessons I’ve learned from &lt;a href=&#34;http://instacalc.com/&#34;&gt;my projects&lt;/a&gt;. Now that you’ve figured out a regular VCS, &lt;a href=&#34;https://betterexplained.com/articles/intro-to-distributed-version-control-illustrated/&#34;&gt;try an illustrated guide to distributed version control&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&amp;mdash;EOF&amp;mdash;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;EOF&lt;/em&gt;是一个计算机术语，为&lt;code&gt;End Of File&lt;/code&gt;的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。&lt;/p&gt;
+&lt;p&gt;本人公众号&lt;code&gt;火山灰&lt;/code&gt;，亦可搜&lt;code&gt;time_ash_past&lt;/code&gt;。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>The (too) many pitfalls of VLA in C</title>
+      <link>/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</guid>
+      
+        <description>&lt;p&gt;2021-07-05 | Categories: &lt;a href=&#34;https://blog.joren.ga/categories/#programming&#34;&gt;programming&lt;/a&gt; | Tags: &lt;a href=&#34;https://blog.joren.ga/categories/#C&#34;&gt;C&lt;/a&gt; &lt;a href=&#34;https://blog.joren.ga/categories/#advice&#34;&gt;advice&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It generates much more code, and much &lt;em&gt;slower&lt;/em&gt; code (and more fragile code), than just using a fixed key size would have done.&lt;/p&gt;
+&lt;p&gt;~ &lt;a href=&#34;https://lkml.org/lkml/2018/3/7/621&#34;&gt;Linus Torvalds&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;VLA&lt;/em&gt; is an acronym of &lt;strong&gt;variable-length array&lt;/strong&gt;, which is an &lt;strong&gt;array&lt;/strong&gt; (actual array, not just block of memory which can act like one) that have size (at least one dimension) determined during runtime (instead of at compile time).&lt;/p&gt;
+&lt;p&gt;Languages supporting VLAs in one form or another include: Ada, Algol 68, APL, C, C#, COBOL, Fortran, J and Object Pascal. As you may notice, beside C and C#, those aren&amp;rsquo;t languages one would call mainstream nowadays.&lt;/p&gt;
+&lt;p&gt;VLAs were introduced with the revision C99 of the C standard. At first glance they seem convenient and efficient, but it&amp;rsquo;s just an illusion. In reality they are just sources of constant issues. Truly a stain on otherwise really good revision.&lt;/p&gt;
+&lt;p&gt;As you could have guessed by the quote at the beginning, project which used to rely on VLA quite extensively is nothing else than Linux kernel. Maintainers spent a lot of effort to get rid of all VLA and as of version 4.20 (year 2018) it&amp;rsquo;s completely VLA-free.&lt;/p&gt;
+&lt;h2 id=&#34;allocation-on-stack&#34;&gt;Allocation on stack&lt;/h2&gt;
+&lt;p&gt;VLAs are usually allocated on stack and this is the source of the most of the problems. Let&amp;rsquo;s consider a painfully simple, very favourable to VLA, example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+
+int main(void) {
+    int n;
+    scanf(&amp;#34;%d&amp;#34;, &amp;amp;n);
+    long double arr[n];
+    printf(&amp;#34;%Lf&amp;#34;, arr[0]);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;As we can see, it takes a number from user then makes array of that size. Compile and try it. Check how big values you can input before getting segfault caused by stack overflow. In my case, it was around half a million. With primitive type! Imagine what would be the limit for structure! Or what if it wasn&amp;rsquo;t just &lt;code&gt;main()&lt;/code&gt;? Maybe a recursive function? The limit shrinks tremendously.&lt;/p&gt;
+&lt;p&gt;And you don&amp;rsquo;t have any (portable, standard) way to react after a stack overflow - the program already crashed, you lost control. So you either need to make elaborate checks before declaring an array or betting that user won&amp;rsquo;t input too large values (I think we can already guess the outcome of such gamble).&lt;/p&gt;
+&lt;p&gt;So the programmer &lt;strong&gt;must&lt;/strong&gt; ensure that VLA size doesn&amp;rsquo;t exceed some safe maximum, but in reality, if you know safe maximum, there is rarely any reason for not using it always.&lt;/p&gt;
+&lt;h3 id=&#34;worst-of-it-is&#34;&gt;Worst of it is…&lt;/h3&gt;
+&lt;p&gt;… that segfault is actually one of the best outcomes of improperly handled VLA. The worst case is an exploitable vulnerability, where attacker may choose a value that causes an array to overlap with other allocations, giving them control over those values as well. A security nightmare.&lt;/p&gt;
+&lt;p&gt;At the cost of further drop of efficiency, in GCC you can enable &lt;code&gt;-fstack-clash-protection&lt;/code&gt; option. It adds &lt;em&gt;extra&lt;/em&gt; instructions around variable length stack memory allocations to probe each page of memory at allocation time. This mitigates stack-clash attacks by ensuring all stack memory allocations are valid or by throwing a segfault if they are not, thus turning a possible code-execution attack into a denial of service.&lt;/p&gt;
+&lt;h3 id=&#34;so-how-to-fix-this-example&#34;&gt;So how to fix this example?&lt;/h3&gt;
+&lt;p&gt;What if I need to let user define size and creating ridiculously large fixed array would be too wasteful? It&amp;rsquo;s simple - use &lt;code&gt;malloc()&lt;/code&gt;!&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;stdlib.h&amp;gt;
+
+int main(void) {
+    int n;
+    scanf(&amp;#34;%d&amp;#34;, &amp;amp;n);
+    long double* arr = malloc(n * sizeof(*arr));
+    printf(&amp;#34;%Lf&amp;#34;, arr[0]);
+    free(arr);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In this case I was able to input over 1.3 &lt;strong&gt;billion&lt;/strong&gt; on my machine before segfault. Almost 2500 times larger size! But I still got the segfault, right? Well, the difference is in possibility of checking the value returned by &lt;code&gt;malloc()&lt;/code&gt; and thus being able to, for example, inform the user about the error:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;    long double* arr = malloc(n * sizeof(*arr));
+    if (arr == NULL) {
+        perror(&amp;#34;malloc()&amp;#34;); // output: &amp;#34;malloc(): Cannot allocate memory&amp;#34;
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;I&amp;rsquo;ve encountered a counterargument, that as C is often used as a systems/embedded language, there are situations where using &lt;code&gt;malloc()&lt;/code&gt; may not even be possible.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sigh&lt;/strong&gt; I&amp;rsquo;m basically going to repeat myself here, but it is really important.&lt;/p&gt;
+&lt;p&gt;On such device you&amp;rsquo;re not going to have a lot of stack either. So instead of dynamically allocating on stack, you should determine how much you need and just always use that fixed amount.&lt;/p&gt;
+&lt;p&gt;When using VLA on system with small amounts of stack, it&amp;rsquo;s really easy to make something which seems to work, but which blows your stack if your function gets called from a deep call stack combined with the large amount of data.&lt;/p&gt;
+&lt;p&gt;If you always allocate fixed amounts of stack space everywhere, and you test it, you know you&amp;rsquo;re good. If you dynamically allocate on stack, you have to test all your code paths with all the largest sizes of allocated space, which is much harder and much easier to make a mistake. Don&amp;rsquo;t make it even easier to shoot yourself in the foot for no real advantage.&lt;/p&gt;
+&lt;h2 id=&#34;creation-by-accident&#34;&gt;Creation by accident&lt;/h2&gt;
+&lt;p&gt;Unlike most other dangerous C functionality, VLA doesn&amp;rsquo;t have the barrier of being not known. Many newbies learn to use them via trial and error, but don&amp;rsquo;t learn about the pitfalls. Sometimes even an experiences programmer will make an mistake and create an VLA when not intended. The following will silently create a VLA when it&amp;rsquo;s clearly not necessary:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;const int n = 10;
+int A[n];
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Thankfully, any half-decent compiler would notice and optimize VLA away, but… what if it doesn&amp;rsquo;t notice? Or what if for some reason (safety?) the optimizations were not turned on? But it surely isn&amp;rsquo;t so much worse, right? Well…&lt;/p&gt;
+&lt;h2 id=&#34;slower-than-fixed-size&#34;&gt;Slower than fixed size&lt;/h2&gt;
+&lt;p&gt;Without compiler optimizations a function with &lt;a href=&#34;https://godbolt.org/z/c7nPvGGcP&#34;&gt;VLA from previous example&lt;/a&gt; will result in &lt;strong&gt;7 times&lt;/strong&gt; more Assembly instructions than its &lt;a href=&#34;https://godbolt.org/z/jx94vx84T&#34;&gt;fixed size counterpart&lt;/a&gt; before moving past the array definition (look at the body before &lt;code&gt;jmp .L5&lt;/code&gt;). But it&amp;rsquo;s without optimizations - with them the produced Assembly is exactly the same.&lt;/p&gt;
+&lt;p&gt;So &lt;a href=&#34;https://godbolt.org/z/vnf174eej&#34;&gt;an example where VLA isn&amp;rsquo;t by mistake&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+void bar(int*, int);
+
+#if 1 // 1 for VLA, 0 for VLA-free
+
+void foo(int n) {
+    int A[n];
+    for (int i = n; i--;) {
+        scanf(&amp;#34;%d&amp;#34;, &amp;amp;A[i]);
+    }
+    bar(A, n);
+}
+
+#else
+
+void foo(int n) {
+    int A[1000];  // Let&amp;#39;s make it bigger than 10! (or there won&amp;#39;t be what to examine)
+    for (int i = n; i--;) {
+        scanf(&amp;#34;%d&amp;#34;, &amp;amp;A[i]);
+    }
+    bar(A, n);
+}
+
+#endif
+
+int main(void) {
+    foo(10);
+    return 0;
+}
+
+void bar(int* B, int n) {
+    for (int i = n; i--;) {
+        printf(&amp;#34;%d %d&amp;#34;, i, B[i]);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;For our educational purposes in this example, &lt;code&gt;-O1&lt;/code&gt; level of optimisation will work best (as Assembly will be more clear and &lt;code&gt;-O2&lt;/code&gt; won&amp;rsquo;t help VLA&amp;rsquo;s case here really much).&lt;/p&gt;
+&lt;p&gt;When we compile VLA version, before instructions corresponding to &lt;code&gt;for&lt;/code&gt; loop, we get:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;push    rbp
+mov     rbp, rsp
+push    r14
+push    r13
+push    r12
+push    rbx
+mov     r13d, edi
+movsx   r12, edi       ; here VLA &amp;#34;starts&amp;#34;...
+sal     r12, 2         ;
+lea     rax, [r12+15]  ;
+and     rax, -16       ;
+sub     rsp, rax       ;
+mov     r14, rsp       ; ... and there &amp;#34;ends&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;VLA-free version on the other hand generates:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;push    r12
+push    rbp
+push    rbx
+sub     rsp, 4000      ; this is caused by array definition
+mov     r12d, edi
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;So not only fixed array spawns less code, but also way simpler code. Why, VLA even causes more overhead at the beginning of the function. It&amp;rsquo;s not so much more in the grand scheme of things, but it still isn&amp;rsquo;t just a pointer bump.&lt;/p&gt;
+&lt;p&gt;But are those differences significant enough to care? &lt;a href=&#34;https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=02361bc77888&#34;&gt;Yes, they are&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;no-initialization&#34;&gt;No initialization&lt;/h2&gt;
+&lt;p&gt;To add more to the issue with inadvertent VLA, the following isn&amp;rsquo;t allowed:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int n = 10;
+int A[n] = { 0 };
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Even with optimizations, initialisation isn&amp;rsquo;t allowed for VLAs. So despite wanting fixed size array and compiler being technically able to provide one, it&amp;rsquo;s won&amp;rsquo;t work.&lt;/p&gt;
+&lt;h2 id=&#34;mess-for-compiler-writers&#34;&gt;Mess for compiler writers&lt;/h2&gt;
+&lt;p&gt;Few months ago I saved a &lt;a href=&#34;https://www.reddit.com/r/C_Programming/comments/jz2213/are_vlas_bad_even_if_theyre_not_allocated_on_the/gdc3hz6&#34;&gt;comment&lt;/a&gt; on Reddit listing problems encountered with VLA from compiler writer perspective. I will cite it:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;A VLA applies to a type, not an actual array. So you can create a &lt;code&gt;typedef&lt;/code&gt; of a VLA type, which &amp;ldquo;freezes&amp;rdquo; the value of the expression used, even if elements of that expression change at the time the VLA type is applied&lt;/li&gt;
+&lt;li&gt;VLAs can occur inside blocks, and inside loops. This means allocating and deallocating variable-sized data on the stack, and either screwing up all the offsets, or needing to do things indirectly via pointers.&lt;/li&gt;
+&lt;li&gt;You can use &lt;code&gt;goto&lt;/code&gt; into and out of blocks with active VLAs, with some things restricted and some not, but the compiler needs to keep track of the mess.&lt;/li&gt;
+&lt;li&gt;VLAs can be used with multi-dimensional arrays.&lt;/li&gt;
+&lt;li&gt;VLAs can be used as pointer targets (so no allocation is done, but it still needs to keep track of the variable size).&lt;/li&gt;
+&lt;li&gt;Some compilers allow VLAs inside structure definitions (I really have no idea how that works, or at what point the VLA size is frozen, so that all instances have the same VLA(s) sizes.)&lt;/li&gt;
+&lt;li&gt;A function can have dozens of VLAs active at any one time, with some being created or destroyed at different times, or conditionally, or in loops.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;sizeof&lt;/code&gt; needs to be specially implemented for VLAs, and all the necessary info (for actual VLAs, VLA-types, and hybrid VLA/fixed-size types and arrays and pointed-to VLAs).&lt;/li&gt;
+&lt;li&gt;&amp;lsquo;VLA&amp;rsquo; is also the term used for multi-dimensional array parameters, where the dimensions are passed by other parameters.&lt;/li&gt;
+&lt;li&gt;On Windows, with some compilers (GCC at least), declaring local arrays which make the stack frame size over 4 KiB, mean calling a special allocator (&lt;code&gt;__chkstk()&lt;/code&gt;), as the stack can only grow a page at a time. When a VLA is declared, since the compiler doesn&amp;rsquo;t know the size, it needs to call &lt;code&gt;__chkstk&lt;/code&gt; for every such function, even if the size turns out to be small.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And believe me, if you take a stroll around some C forums you will see even more different complaints.&lt;/p&gt;
+&lt;h2 id=&#34;reduced-portability&#34;&gt;Reduced portability&lt;/h2&gt;
+&lt;p&gt;Due to all previously presented problems, some compiler providers decided to not fully support C99. The primary example is Microsoft with its MSVC. The C Standard&amp;rsquo;s Committee also noticed the problem and with C11 revision VLAs were made optional (many would prefer &lt;em&gt;deprecated&lt;/em&gt;).&lt;/p&gt;
+&lt;p&gt;That means code using a VLA won&amp;rsquo;t necessarily be compiled by a C11 compiler, so you need to check whether it is supported with &lt;code&gt;__STDC_NO_VLA__&lt;/code&gt; macro and make version without VLA as fallback. Wait… if you need to implement VLA-free version either way then what&amp;rsquo;s the point of doubling the code and creating VLA in the first place?!&lt;/p&gt;
+&lt;p&gt;As a side note - C++ doesn&amp;rsquo;t have VLA and nothing suggests it ever will. Not a dealbreaker, but still point against VLA in C.&lt;/p&gt;
+&lt;h2 id=&#34;nitpick-breaking-conventions&#34;&gt;(nitpick) Breaking conventions&lt;/h2&gt;
+&lt;p&gt;This one is more of a nitpick, but still another reason to dislike VLA. There is a widely used convention of first passing object then its parameters, what in terms of arrays means:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int** arr, int n, int m) { /* arr[i][j] = ... */ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;C99 specified that array sizes need to be parsed immediately when encountered within a function definition&amp;rsquo;s parameter list, what means that when using VLA you cannot do an equivalent of the above:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int arr[n][m], int n, int m) { /* arr[i][j] = ... */ } // INVALID!
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;You either need to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;break up with the convention:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int n, int m, int arr[n][m]) { /* arr[i][j] = ... */ }
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;or make use of the obsolescent syntax:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int[*][*], int, int);
+void foo(arr, n, n)
+    int n;
+    int m;
+    int arr[n][m]
+{
+    // arr[i][j] = ...
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-kinda-useful-in-one-case&#34;&gt;… kinda useful in one case&lt;/h2&gt;
+&lt;p&gt;There is one use case where VLA could come in handy: dynamically allocating multi-dimensional arrays where the inner dimensions are not known until runtime. It isn&amp;rsquo;t even so unsafe as there&amp;rsquo;s no arbitrary stack allocation.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int (* A)[m] = malloc(n * sizeof(*A)); // `n` and `m` are variables with dimensions
+if (A) {
+    // A[i][j] = ...;
+    free(A);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;The VLA-free alternatives are either:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;piecemeal allocation with &lt;code&gt;malloc()&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int** A = malloc(n * sizeof(*A));
+if (A) {
+    for (int i = 0; i &amp;lt; m; ++i) {
+        A[i] = malloc(m * sizeof(*A[i]));
+    }
+    // A[i][j] = ...
+    for (int i = 0; i &amp;lt; m; ++i) {
+        free(A[i]);
+    }
+    free(A);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;1D array with offsets&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int* A = malloc(n * m * sizeof(*A));
+if (A) {
+    // A[i*n + j] = ...
+    free(A);
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;big fixed array&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int A[SAFE_SIZE][SAFE_SIZE]; // SAFE_SIZE must be safe for SAFE_SIZE*SAFE_SIZE
+// A[i][j] = ...;
+&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;In short, &lt;strong&gt;avoid VLA&lt;/strong&gt;. It poses dangers without giving anything really useful in return (beside in one situation). If you really need to use one, remember about its limitations.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably also worth mentioning that VLAs were supposed to be a solution to even more problematic (non-standard) &lt;code&gt;alloca()&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;And for the very end, an example of vla lacking all those problems: &lt;a href=&#34;https://en.wikipedia.org/wiki/Vla&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/commons/b/bb/Chocoladevla.jpg&#34; alt=&#34;Chocolate vla&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;mdash;EOF&amp;mdash;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;EOF&lt;/em&gt;是一个计算机术语，为&lt;code&gt;End Of File&lt;/code&gt;的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。&lt;/p&gt;
+&lt;p&gt;本人公众号&lt;code&gt;火山灰&lt;/code&gt;，亦可搜&lt;code&gt;time_ash_past&lt;/code&gt;。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>AUTHOR’S POSTSCRIPT FOR THE AMERICAN EDITION</title>
       <link>/en/post/%E8%BD%AC%E8%BD%BD%E7%BF%BB%E8%AF%91/%E5%88%98%E6%85%88%E6%AC%A3%E4%B8%89%E4%BD%93%E5%BA%8F/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>

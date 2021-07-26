@@ -5,11 +5,11 @@
     <link>/tags/</link>
     <description>Recent content in Tags on 个人随想</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>彭德怀</title>
       <link>/tags/%E5%BD%AD%E5%BE%B7%E6%80%80/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E5%BD%AD%E5%BE%B7%E6%80%80/</guid>
       <description></description>
@@ -18,7 +18,7 @@
     <item>
       <title>毛泽东</title>
       <link>/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/</guid>
       <description></description>
@@ -27,7 +27,7 @@
     <item>
       <title>转载</title>
       <link>/tags/%E8%BD%AC%E8%BD%BD/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E8%BD%AC%E8%BD%BD/</guid>
       <description></description>
@@ -36,9 +36,36 @@
     <item>
       <title>那年庐山</title>
       <link>/tags/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1/</link>
-      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>林彪</title>
+      <link>/tags/%E6%9E%97%E5%BD%AA/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E6%9E%97%E5%BD%AA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>第二次庐山会议</title>
+      <link>/tags/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BA%90%E5%B1%B1%E4%BC%9A%E8%AE%AE/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%BA%90%E5%B1%B1%E4%BC%9A%E8%AE%AE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>陈伯达</title>
+      <link>/tags/%E9%99%88%E4%BC%AF%E8%BE%BE/</link>
+      <pubDate>Mon, 07 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%E9%99%88%E4%BC%AF%E8%BE%BE/</guid>
       <description></description>
     </item>
     
@@ -142,47 +169,20 @@
     </item>
     
     <item>
-      <title>毛选</title>
-      <link>/tags/%E6%AF%9B%E9%80%89/</link>
-      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E6%AF%9B%E9%80%89/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>梦想</title>
-      <link>/tags/%E6%A2%A6%E6%83%B3/</link>
-      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E6%A2%A6%E6%83%B3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>编程</title>
-      <link>/tags/%E7%BC%96%E7%A8%8B/</link>
-      <pubDate>Thu, 26 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%E7%BC%96%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>七千人大会</title>
       <link>/tags/%E4%B8%83%E5%8D%83%E4%BA%BA%E5%A4%A7%E4%BC%9A/</link>
-      <pubDate>Fri, 31 May 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
       <guid>/tags/%E4%B8%83%E5%8D%83%E4%BA%BA%E5%A4%A7%E4%BC%9A/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>NLP</title>
-      <link>/tags/nlp/</link>
-      <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
+      <title>毛选</title>
+      <link>/tags/%E6%AF%9B%E9%80%89/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/nlp/</guid>
+      <guid>/tags/%E6%AF%9B%E9%80%89/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on 英文文章</title>
+    <link>/en/tags/c/</link>
+    <description>Recent content in C on 英文文章</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/en/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The (too) many pitfalls of VLA in C</title>
+      <link>/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</guid>
+      <description>&lt;p&gt;2021-07-05 | Categories: &lt;a href=&#34;https://blog.joren.ga/categories/#programming&#34;&gt;programming&lt;/a&gt; | Tags: &lt;a href=&#34;https://blog.joren.ga/categories/#C&#34;&gt;C&lt;/a&gt; &lt;a href=&#34;https://blog.joren.ga/categories/#advice&#34;&gt;advice&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;It generates much more code, and much &lt;em&gt;slower&lt;/em&gt; code (and more fragile code), than just using a fixed key size would have done.&lt;/p&gt;
+&lt;p&gt;~ &lt;a href=&#34;https://lkml.org/lkml/2018/3/7/621&#34;&gt;Linus Torvalds&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

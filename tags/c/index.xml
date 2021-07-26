@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on 个人随想</title>
+    <link>/tags/c/</link>
+    <description>Recent content in C on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate><atom:link href="/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C语言中可变数组（VLA）有太多陷阱</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</guid>
+      <description>&lt;p&gt;2021-07-05 | Categories: &lt;a href=&#34;https://blog.joren.ga/categories/#programming&#34;&gt;programming&lt;/a&gt; | Tags: &lt;a href=&#34;https://blog.joren.ga/categories/#C&#34;&gt;C&lt;/a&gt; &lt;a href=&#34;https://blog.joren.ga/categories/#advice&#34;&gt;advice&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。&lt;/p&gt;
+&lt;p&gt;~ &lt;a href=&#34;https://lkml.org/lkml/2018/3/7/621&#34;&gt;Linus Torvalds&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
