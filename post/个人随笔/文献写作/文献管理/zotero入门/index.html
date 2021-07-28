@@ -69,7 +69,7 @@
 <meta itemprop="name" content="zotero入门 | 阳志平">
 <meta itemprop="description" content="注：本文在阳博客基础上修改增加内容。"><meta itemprop="datePublished" content="2018-01-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-01-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3607">
+<meta itemprop="wordCount" content="4561">
 <meta itemprop="keywords" content="zotero,转载,阳志平," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="zotero入门 | 阳志平"/>
 <meta name="twitter:description" content="注：本文在阳博客基础上修改增加内容。"/>
@@ -383,8 +383,8 @@ style="fill:white;stroke:red;stroke-width:2"/>
             <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/"> 编程世界 </a>
             
           </div>
-        <span class="more-meta"> 约 3607 字 </span>
-          <span class="more-meta"> 预计阅读 8 分钟 </span>
+        <span class="more-meta"> 约 4561 字 </span>
+          <span class="more-meta"> 预计阅读 10 分钟 </span>
 
         
         
@@ -407,7 +407,12 @@ style="fill:white;stroke:red;stroke-width:2"/>
   <ul>
     <li><a href="#注册zotero新账号并下载">注册Zotero新账号并下载</a></li>
     <li><a href="#zotero版本介绍">Zotero版本介绍</a></li>
-    <li><a href="#配置zotero">配置Zotero</a></li>
+    <li><a href="#配置zoteroxbos或者坚果云同步">配置Zoteroxbos或者坚果云同步</a>
+      <ul>
+        <li><a href="#第一种是用dropbox同步这里用的是mac建立软连接的方式和windows是不一样看后文">第一种是用dropbox同步（这里用的是Mac，建立软连接的方式和Windows是不一样，看后文）</a></li>
+        <li><a href="#第二种是用坚果云同步">第二种是用坚果云同步</a></li>
+      </ul>
+    </li>
     <li><a href="#导入第一篇文献">导入第一篇文献</a></li>
     <li><a href="#导入维基百科">导入维基百科</a></li>
     <li><a href="#导入google学术">导入Google学术</a></li>
@@ -433,6 +438,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
     
     <div class="post-content">
       <p>注：本文在阳博客基础上修改增加内容。</p>
+<p>[TOC]</p>
 <h2 id="注册zotero新账号并下载">注册Zotero新账号并下载</h2>
 <p>登陆<a href="https://www.zotero.org/user/register/">https://www.zotero.org/user/register/</a>，注册一个自己的Zotero账号，请特别记住，username会直接生成个性域名，别乱起，未来会有些不方便。</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7oOUK.jpg" alt="2"></p>
@@ -443,14 +449,16 @@ style="fill:white;stroke:red;stroke-width:2"/>
 <p>下载之后安装默认提示一路安装。</p>
 <h2 id="zotero版本介绍">Zotero版本介绍</h2>
 <p>Zotero有桌面版和浏览器版。</p>
-<h2 id="配置zotero">配置Zotero</h2>
+<h2 id="配置zoteroxbos或者坚果云同步">配置Zoteroxbos或者坚果云同步</h2>
 <p>打开Zotero，找到[首选项]或偏好：</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7oLE6.jpg" alt="4"></p>
-<p>在同步一栏输入前面注册的账号，这样，文献库可以同步到[Zotero]官网。官方给我们提供了300MB的共享同步空间。当然基本不够用，后面会介绍如果用坚果云扩展。</p>
+<p>在同步一栏输入前面注册的账号，这样，文献库可以同步到[Zotero]官网。官方给我们提供了300MB的共享同步空间。当然基本不够用。</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7ozgH.jpg" alt="5"></p>
 <p>创建一个用来保存文献库的根目录，假设是：/users/ouyang/dev/zotero 继续配置：</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7TSvd.jpg" alt="6"></p>
-<p>[Zotero]官网默认的存储空间有限，所以，我们需要一个小技巧，将文献库里面保存PDF文档的目录，分离开，放到[dropbox]目录下同步。回到刚才创建的：<strong>/users/ouyang/dev/zotero</strong> 目录，其中的<strong>storage</strong>目录是拿来保存PDF等文档的，将其剪切到[dropbox]目录下，如下图所示：</p>
+<p>[Zotero]官网默认的存储空间有限，所以，我们需要一个小技巧，将文献库里面保存PDF文档的目录，分离开。</p>
+<h3 id="第一种是用dropbox同步这里用的是mac建立软连接的方式和windows是不一样看后文">第一种是用dropbox同步（这里用的是Mac，建立软连接的方式和Windows是不一样，看后文）</h3>
+<p>安装dropbox，新建[dropbox]目录。回到刚才创建的：<strong>/users/ouyang/dev/zotero</strong> 目录，其中的<strong>storage</strong>目录是拿来保存PDF等文档的，将其剪切到[dropbox]目录下，如下图所示：</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7T9KA.jpg" alt="7"></p>
 <p>打开终端或shell，创建一个软连接，让[Zotero]认出该目录：</p>
 <div class="highlight"><div class="chroma">
@@ -463,9 +471,41 @@ style="fill:white;stroke:red;stroke-width:2"/>
 </div>
 </div><p>回头看，<strong>/users/ouyang/dev/zotero</strong> 目录下多了一个软链接，表示成功了。</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7TCDI.jpg" alt="8"></p>
-<p>接下去，在配置这里安装pdf索引：</p>
+<h3 id="第二种是用坚果云同步">第二种是用坚果云同步</h3>
+<p>坚果云想要连接Zotero的话，得开启坚果云的第三方应用管理。具体操作步骤如下：</p>
+<h4 id="1-登录网页端坚果云账号">1 登录网页端坚果云账号</h4>
+<p>点击右上角的账号名称——账户信息——安全选项——第三方应用管理——添加应用密码。应用名称为zotero（也可以写其他的名称），之后会自己生成一个应用密码。如下图所示：</p>
+<p><img src="https://pic4.zhimg.com/80/v2-aef9e358a60c6daf8f1d9975e4555913_1440w.jpg" alt="img"></p>
+<h4 id="2-登录zetero">2 登录Zetero</h4>
+<p>打开Zetero软件：编辑——首选项——同步——设置，输入用户名和密码进行登陆</p>
+<p><img src="https://pic4.zhimg.com/80/v2-e776380eb7d3b3685a15e578414cc6eb_1440w.jpg" alt="img"></p>
+<p>正常情况下，按照上述步骤操作完成以后，重启Zotero软件接口将文献拖拽到对应的目录下了，恭喜你，可以正常使用了。如果此时不能成功操作的话，需要将Zotero软件多安装几次，我当时就是这样才可以正常使用的。</p>
+<h4 id="3-软连接的方式配合使用坚果云">3 软连接的方式配合使用坚果云</h4>
+<ol>
+<li>
+<p>坚果云根目录下建立个storage目录，本地同步，我的坚果云同步文件夹放在F盘即<code>F:\我的坚果云\storage</code>。我的zotero安装在D盘，但storage的地址还应是<code>C:\Users\HP\Zotero\storage</code>；</p>
+</li>
+<li>
+<p>剪切<code>C:\Users\user\Zotero\storage</code>的<code>storage</code>目录到<code>F:\我的坚果云</code>下 (这时<code>C:\Users\user\Zotero</code>下面没有<code>storage</code>目录了)【目的是做一个软连接】</p>
+</li>
+<li>
+<p>运行cmd（命令提示符）输入：<code>mklink /j &quot;C:\Users\HP\Zotero\storage&quot; &quot;F:\我的坚果云\storage&quot; </code>，此时C:\Users\HP\Zotero\里面也出现了storage目录</p>
+</li>
+</ol>
+<p><img src="https://pic4.zhimg.com/80/v2-c31e2dabf39f0491237509956372236f_1440w.png" alt="img"></p>
+<p>这样做的目的是当我们把文献拖拽到Zotero的时候，会自动同步到我的坚果云。</p>
+<p>完成之后，原来C盘出现storage文件夹是下图这样的，表示软连接成功。这样zotero存储的只是一个链接，这样在PC端上同步方便些。</p>
+<p><img src="https://pic1.zhimg.com/80/v2-842857089b66a8e35ec914e8041df6ec_1440w.jpg" alt="img"></p>
+<h4 id="4-zotfile插件">4 ZotFile插件</h4>
+<p>该插件是为了配合浏览器插件将下载的文献PDF文件自动拷贝到云盘目录中，并将它的目录链接保存到对应的文献条目下。</p>
+<p>直接在下面的官网进行下载：</p>
+<p><a href="https://link.zhihu.com/?target=http%3A//zotfile.com/">http://zotfile.com/zotfile.com</a></p>
+<p>进入Zotero-&gt;工具-&gt;插件，如下图选择从文件安装插件并安装刚才的xpi文件，安装后重启Zotero。</p>
+<p><img src="https://pic4.zhimg.com/80/v2-fc6967343991e310341e9cdf371917f3_1440w.jpg" alt="img"></p>
+<p>在谷歌商店中安装Zotero插件，当我们打开谷歌学术，此时可以将我们想要的文献保存到相应的目录中。</p>
+<p>在配置这里安装pdf索引：</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7TPbt.jpg" alt="9"></p>
-<p>以及，将默认输出格式，更改为APA第六版：</p>
+<p>以及，将默认输出格式，根据自己需求改为对应的版本。</p>
 <p><img src="https://z3.ax1x.com/2021/07/29/W7TFVP.jpg" alt="10"></p>
 <h2 id="导入第一篇文献">导入第一篇文献</h2>
 <p>好了，准备工作做完了。现在，让我们导入第一篇文献。Zotero支持以下六种导入方法：</p>
