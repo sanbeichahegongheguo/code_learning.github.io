@@ -534,6 +534,13 @@
   </url>
   
   <url>
+    <loc>/tags/%E4%B8%A5%E6%89%93/</loc>
+    <lastmod>2020-05-31T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/%E6%94%BF%E6%B2%BB%E6%95%85%E4%BA%8B/%E5%89%AF%E6%80%BB%E7%90%86%E5%A7%AC%E9%B9%8F%E9%A3%9E%E6%AD%BB%E4%BA%A1%E5%86%85%E5%B9%95/</loc>
     <lastmod>2020-05-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -548,7 +555,7 @@
   </url>
   
   <url>
-    <loc>/tags/%E6%94%BF%E6%B2%BB%E4%BB%BB%E5%8A%A1-%E4%B8%A5%E6%89%93-%E7%BA%A2%E4%BA%8C%E4%BB%A3/</loc>
+    <loc>/tags/%E6%94%BF%E6%B2%BB%E4%BB%BB%E5%8A%A1/</loc>
     <lastmod>2020-05-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
