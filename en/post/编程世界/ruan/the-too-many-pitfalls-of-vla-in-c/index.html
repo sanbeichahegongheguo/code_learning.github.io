@@ -36,7 +36,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/" />
@@ -71,17 +71,17 @@ It generates much more code, and much slower code (and more fragile code), than 
 " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/en/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2018-01-31T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2018-01-31T00:00:00&#43;00:00" /><meta property="og:site_name" content="英文文章" />
+<meta property="article:published_time" content="2018-01-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-31T00:00:00+00:00" /><meta property="og:site_name" content="英文文章" />
 
 <meta itemprop="name" content="The (too) many pitfalls of VLA in C">
 <meta itemprop="description" content="2021-07-05 | Categories: programming | Tags: C advice
 
 It generates much more code, and much slower code (and more fragile code), than just using a fixed key size would have done.
 ~ Linus Torvalds
-"><meta itemprop="datePublished" content="2018-01-31T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-01-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="2372">
+"><meta itemprop="datePublished" content="2018-01-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-01-31T00:00:00+00:00" />
+<meta itemprop="wordCount" content="2349">
 <meta itemprop="keywords" content="C,ruan,翻译," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="The (too) many pitfalls of VLA in C"/>
 <meta name="twitter:description" content="2021-07-05 | Categories: programming | Tags: C advice
@@ -387,7 +387,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
             <a href="/en/categories/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/"> 编程世界 </a>
             
           </div>
-        <span class="more-meta"> 2372 words </span>
+        <span class="more-meta"> 2349 words </span>
           <span class="more-meta"> 5 min read </span>
 
         
@@ -443,7 +443,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
 <p>VLAs are usually allocated on stack and this is the source of the most of the problems. Let&rsquo;s consider a painfully simple, very favourable to VLA, example:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -454,7 +454,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
 </span><span class="lnt">9
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
 
 int main(void) {
     int n;
@@ -475,7 +475,7 @@ int main(void) {
 <p>What if I need to let user define size and creating ridiculously large fixed array would be too wasteful? It&rsquo;s simple - use <code>malloc()</code>!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -488,7 +488,7 @@ int main(void) {
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
 #include &lt;stdlib.h&gt;
 
 int main(void) {
@@ -504,13 +504,13 @@ int main(void) {
 </div><p>In this case I was able to input over 1.3 <strong>billion</strong> on my machine before segfault. Almost 2500 times larger size! But I still got the segfault, right? Well, the difference is in possibility of checking the value returned by <code>malloc()</code> and thus being able to, for example, inform the user about the error:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">    long double* arr = malloc(n * sizeof(*arr));
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">    long double* arr = malloc(n * sizeof(*arr));
     if (arr == NULL) {
         perror(&#34;malloc()&#34;); // output: &#34;malloc(): Cannot allocate memory&#34;
     }
@@ -525,11 +525,11 @@ int main(void) {
 <p>Unlike most other dangerous C functionality, VLA doesn&rsquo;t have the barrier of being not known. Many newbies learn to use them via trial and error, but don&rsquo;t learn about the pitfalls. Sometimes even an experiences programmer will make an mistake and create an VLA when not intended. The following will silently create a VLA when it&rsquo;s clearly not necessary:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">const int n = 10;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">const int n = 10;
 int A[n];
 </code></pre></td></tr></table>
 </div>
@@ -539,7 +539,7 @@ int A[n];
 <p>So <a href="https://godbolt.org/z/vnf174eej">an example where VLA isn&rsquo;t by mistake</a>:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -576,7 +576,7 @@ int A[n];
 </span><span class="lnt">35
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
 void bar(int*, int);
 
 #if 1 // 1 for VLA, 0 for VLA-free
@@ -617,7 +617,7 @@ void bar(int* B, int n) {
 <p>When we compile VLA version, before instructions corresponding to <code>for</code> loop, we get:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -632,7 +632,7 @@ void bar(int* B, int n) {
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">push    rbp
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">push    rbp
 mov     rbp, rsp
 push    r14
 push    r13
@@ -650,14 +650,14 @@ mov     r14, rsp       ; ... and there &#34;ends&#34;
 </div><p>VLA-free version on the other hand generates:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">push    r12
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">push    r12
 push    rbp
 push    rbx
 sub     rsp, 4000      ; this is caused by array definition
@@ -670,11 +670,11 @@ mov     r12d, edi
 <p>To add more to the issue with inadvertent VLA, the following isn&rsquo;t allowed:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">int n = 10;
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">int n = 10;
 int A[n] = { 0 };
 </code></pre></td></tr></table>
 </div>
@@ -704,19 +704,19 @@ int A[n] = { 0 };
 <p>This one is more of a nitpick, but still another reason to dislike VLA. There is a widely used convention of first passing object then its parameters, what in terms of arrays means:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int** arr, int n, int m) { /* arr[i][j] = ... */ }
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int** arr, int n, int m) { /* arr[i][j] = ... */ }
 </code></pre></td></tr></table>
 </div>
 </div><p>C99 specified that array sizes need to be parsed immediately when encountered within a function definition&rsquo;s parameter list, what means that when using VLA you cannot do an equivalent of the above:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int arr[n][m], int n, int m) { /* arr[i][j] = ... */ } // INVALID!
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int arr[n][m], int n, int m) { /* arr[i][j] = ... */ } // INVALID!
 </code></pre></td></tr></table>
 </div>
 </div><p>You either need to:</p>
@@ -725,10 +725,10 @@ int A[n] = { 0 };
 <p>break up with the convention:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int n, int m, int arr[n][m]) { /* arr[i][j] = ... */ }
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int n, int m, int arr[n][m]) { /* arr[i][j] = ... */ }
 </code></pre></td></tr></table>
 </div>
 </div></li>
@@ -736,7 +736,7 @@ int A[n] = { 0 };
 <p>or make use of the obsolescent syntax:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -746,7 +746,7 @@ int A[n] = { 0 };
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int[*][*], int, int);
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">void foo(int[*][*], int, int);
 void foo(arr, n, n)
     int n;
     int m;
@@ -762,19 +762,19 @@ void foo(arr, n, n)
 <p>There is one use case where VLA could come in handy: dynamically allocating multi-dimensional arrays where the inner dimensions are not known until runtime. It isn&rsquo;t even so unsafe as there&rsquo;s no arbitrary stack allocation.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">int (* A)[m] = malloc(n * sizeof(*A)); // `n` and `m` are variables with dimensions
-if (A) {
-    // A[i][j] = ...;
-    free(A);
-}
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-mysql" data-lang="mysql"><span class="kt">int</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="w"> </span><span class="n">A</span><span class="p">)[</span><span class="n">m</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">malloc</span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nf">sizeof</span><span class="p">(</span><span class="o">*</span><span class="n">A</span><span class="p">));</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="o">`</span><span class="n">n</span><span class="o">`</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="o">`</span><span class="n">m</span><span class="o">`</span><span class="w"> </span><span class="n">are</span><span class="w"> </span><span class="n">variables</span><span class="w"> </span><span class="k">with</span><span class="w"> </span><span class="n">dimensions</span><span class="w">
+</span><span class="w"></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="w"> </span><span class="err">{</span><span class="w">
+</span><span class="w">    </span><span class="o">//</span><span class="w"> </span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...;</span><span class="w">
+</span><span class="w">    </span><span class="nf">free</span><span class="p">(</span><span class="n">A</span><span class="p">);</span><span class="w">
+</span><span class="w"></span><span class="err">}</span><span class="w">
+</span></code></pre></td></tr></table>
 </div>
 </div><p>The VLA-free alternatives are either:</p>
 <ul>
@@ -782,7 +782,7 @@ if (A) {
 <p>piecemeal allocation with <code>malloc()</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -795,7 +795,7 @@ if (A) {
 </span><span class="lnt">11
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">int** A = malloc(n * sizeof(*A));
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">int** A = malloc(n * sizeof(*A));
 if (A) {
     for (int i = 0; i &lt; m; ++i) {
         A[i] = malloc(m * sizeof(*A[i]));
@@ -813,14 +813,14 @@ if (A) {
 <p>1D array with offsets</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">int* A = malloc(n * m * sizeof(*A));
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">int* A = malloc(n * m * sizeof(*A));
 if (A) {
     // A[i*n + j] = ...
     free(A);
@@ -832,11 +832,11 @@ if (A) {
 <p>big fixed array</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">int A[SAFE_SIZE][SAFE_SIZE]; // SAFE_SIZE must be safe for SAFE_SIZE*SAFE_SIZE
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">int A[SAFE_SIZE][SAFE_SIZE]; // SAFE_SIZE must be safe for SAFE_SIZE*SAFE_SIZE
 // A[i][j] = ...;
 </code></pre></td></tr></table>
 </div>

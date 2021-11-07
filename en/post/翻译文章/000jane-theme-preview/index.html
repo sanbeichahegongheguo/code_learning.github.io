@@ -33,7 +33,7 @@ Please note that HTML fragments in markdown source will be recognized but not pa
 
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="/en/post/%E7%BF%BB%E8%AF%91%E6%96%87%E7%AB%A0/000jane-theme-preview/" />
@@ -65,13 +65,13 @@ Please note that HTML fragments in markdown source will be recognized but not pa
 Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/en/post/%E7%BF%BB%E8%AF%91%E6%96%87%E7%AB%A0/000jane-theme-preview/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2018-01-01T16:01:23&#43;08:00" />
-<meta property="article:modified_time" content="2018-03-07T16:01:23&#43;08:00" /><meta property="og:site_name" content="英文文章" />
+<meta property="article:published_time" content="2018-01-01T16:01:23+08:00" />
+<meta property="article:modified_time" content="2018-03-07T16:01:23+08:00" /><meta property="og:site_name" content="英文文章" />
 
 <meta itemprop="name" content="Markdown文档形式的介绍">
 <meta itemprop="description" content="Markdown is created by Daring Fireball, the original guideline is here. Its syntax, however, varies between different parsers or editors.
-Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving."><meta itemprop="datePublished" content="2018-01-01T16:01:23&#43;08:00" />
-<meta itemprop="dateModified" content="2018-03-07T16:01:23&#43;08:00" />
+Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving."><meta itemprop="datePublished" content="2018-01-01T16:01:23+08:00" />
+<meta itemprop="dateModified" content="2018-03-07T16:01:23+08:00" />
 <meta itemprop="wordCount" content="1529">
 <meta itemprop="keywords" content="preview,shortcodes,tag-6," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Markdown文档形式的介绍"/>
@@ -432,14 +432,14 @@ style="fill:white;stroke:red;stroke-width:2"/>
 <p>Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh"># This is an H1
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="gh"># This is an H1
 </span><span class="gh"></span>
 <span class="gu">## This is an H2
 </span><span class="gu"></span>
@@ -482,26 +482,26 @@ style="fill:white;stroke:red;stroke-width:2"/>
 <h2 id="syntax-highlighting">Syntax Highlighting</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">helloWorld</span> <span class="p">()</span> <span class="p">{</span>
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="kd">function</span> <span class="nx">helloWorld</span> <span class="p">()</span> <span class="p">{</span>
   <span class="nx">alert</span><span class="p">(</span><span class="s2">&#34;Hello, World!&#34;</span><span class="p">)</span>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloWorld</span> <span class="o">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="o">);</span>
   <span class="o">}</span>
@@ -521,7 +521,7 @@ $$</p>
 <p>In markdown source file, math block is <em>LaTeX</em> expression wrapped by ‘$$’ mark:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -530,7 +530,7 @@ $$</p>
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">$$
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">$$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} <span class="err">&amp;</span> \mathbf{j} <span class="err">&amp;</span> \mathbf{k} \\
 \frac{\partial X}{\partial u} <span class="err">&amp;</span>  \frac{\partial Y}{\partial u} <span class="err">&amp;</span> 0 \\
@@ -546,7 +546,7 @@ $$
 <p>In markdown source code, they look like:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -555,7 +555,7 @@ $$
 </span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">| Name              | Markdown            | HTML tag             |
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">| Name              | Markdown            | HTML tag             |
 | ----------------- | ------------------- | -------------------- |
 | <span class="ge">*Emphasis*</span>        | <span class="sb">`*Emphasis*`</span>        | <span class="sb">`&lt;em&gt;&lt;/em&gt;`</span>          |
 | <span class="gs">**Strong**</span>        | <span class="sb">`**Strong**`</span>        | <span class="sb">`&lt;strong&gt;&lt;/strong&gt;`</span> |
@@ -603,12 +603,12 @@ $$
 <h2 id="footnotes">Footnotes</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">You can create footnotes like this[^footnote].
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">You can create footnotes like this[^footnote].
 
 [^footnote]: Here is the <span class="ge">*text*</span> of the <span class="gs">**footnote**</span>.
 </code></pre></td></tr></table>
@@ -625,12 +625,12 @@ $$
 <p>To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">This is [<span class="nt">an example</span>](<span class="na">http://example.com/ &#34;Title&#34;</span>) inline link.
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">This is [<span class="nt">an example</span>](<span class="na">http://example.com/ &#34;Title&#34;</span>) inline link.
 
 [<span class="nt">This link</span>](<span class="na">http://example.net/</span>) has no title attribute.
 </code></pre></td></tr></table>
@@ -645,14 +645,14 @@ $$
 <p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">This is [an example][id] reference-style link.
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">This is [an example][id] reference-style link.
 
 Then, anywhere in the document, you define your link label like this, on a line by itself:
 
@@ -664,13 +664,13 @@ Then, anywhere in the document, you define your link label like this, on a line 
 <p>The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">[Google][]
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">[Google][]
 And then define the link:
 
 [Google]: http://google.com/
@@ -685,12 +685,12 @@ And then define the link:
 <p>Image looks similar with links, but it requires an additional <code>!</code> char before the start of link. Image syntax looks like this:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">Alt text</span>](<span class="na">/path/to/img.jpg</span>)
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">![<span class="nt">Alt text</span>](<span class="na">/path/to/img.jpg</span>)
 
 ![<span class="nt">Alt text</span>](<span class="na">/path/to/img.jpg &#34;Optional title&#34;</span>)
 </code></pre></td></tr></table>
@@ -701,12 +701,12 @@ And then define the link:
 <p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an HTML <code>&lt;em&gt;</code> tag. E.g:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">*single asterisks*
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">*single asterisks*
 
 <span class="ge">_single underscores_</span>
 </code></pre></td></tr></table>
@@ -722,10 +722,10 @@ And then define the link:
 <p>To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">\*this text is surrounded by literal asterisks\*
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">\*this text is surrounded by literal asterisks\*
 </code></pre></td></tr></table>
 </div>
 </div><p>Typora recommends to use <code>*</code> symbol.</p>
@@ -733,12 +733,12 @@ And then define the link:
 <p>double *’s or _’s will be wrapped with an HTML <code>&lt;strong&gt;</code> tag, e.g:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">**double asterisks**
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">**double asterisks**
 
 <span class="gs">__double underscores__</span>
 </code></pre></td></tr></table>
@@ -751,10 +751,10 @@ And then define the link:
 <p>To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-markdown" data-lang="markdown">Use the <span class="sb">`printf()`</span> function.
+<pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown">Use the <span class="sb">`printf()`</span> function.
 </code></pre></td></tr></table>
 </div>
 </div><p>will produce:</p>

@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/vim%E5%85%A5%E9%97%A8/" />
@@ -63,12 +63,12 @@
 <meta property="og:description" content="今天讲讲编程常用的工具，vim。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/vim%E5%85%A5%E9%97%A8/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2001-12-31T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2001-12-31T00:00:00&#43;00:00" /><meta property="og:site_name" content="个人随想" />
+<meta property="article:published_time" content="2001-12-31T00:00:00+00:00" />
+<meta property="article:modified_time" content="2001-12-31T00:00:00+00:00" /><meta property="og:site_name" content="个人随想" />
 
 <meta itemprop="name" content="vim入门">
-<meta itemprop="description" content="今天讲讲编程常用的工具，vim。"><meta itemprop="datePublished" content="2001-12-31T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2001-12-31T00:00:00&#43;00:00" />
+<meta itemprop="description" content="今天讲讲编程常用的工具，vim。"><meta itemprop="datePublished" content="2001-12-31T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2001-12-31T00:00:00+00:00" />
 <meta itemprop="wordCount" content="6035">
 <meta itemprop="keywords" content="Vim,编程," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="vim入门"/>
@@ -466,10 +466,10 @@ Copyright (c) 2007 Laurent Gregoire</p>
 <p>可以用</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">vim -v
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim -v
 </code></pre></td></tr></table>
 </div>
 </div><p>查看自己的版本号。</p>
@@ -532,10 +532,10 @@ Copyright (c) 2007 Laurent Gregoire</p>
 <p>得到最新版本的 Vim 的最好方式是使用 Git ：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">git clone https://github.com/vim/vim.git
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">git clone https://github.com/vim/vim.git
 </code></pre></td></tr></table>
 </div>
 </div><p>更多信息可参考： <a href="http://www.vim.org/git.php">http://www.vim.org/git.php</a> 。</p>
@@ -550,14 +550,14 @@ Copyright (c) 2007 Laurent Gregoire</p>
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">安装程序：<span class="sb">`</span>ftp://ftp.vim.org/pub/vim/pc/gvim80.exe<span class="sb">`</span>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">安装程序：<span class="sb">`</span>ftp://ftp.vim.org/pub/vim/pc/gvim80.exe<span class="sb">`</span>
 运行文件：<span class="sb">`</span> ftp://ftp.vim.org/pub/vim/pc/vim80rt.zip<span class="sb">`</span>
 Windows 95/98/NT/2000/XP/7 图形界面版：<span class="sb">`</span>ftp://ftp.vim.org/pub/vim/pc/gvim80.zip<span class="sb">`</span>
 带有 OLE 支持的版本： <span class="sb">`</span>ftp://ftp.vim.org/pub/vim/pc/gvim80ole.zip<span class="sb">`</span>
@@ -578,26 +578,26 @@ Windows NT/2000/XP/7 字符界面版：<span class="sb">`</span>ftp://ftp.vim.or
 <p>vim的全局配置在文件</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">/etc/vim/vimrc
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">/etc/vim/vimrc
 </code></pre></td></tr></table>
 </div>
 </div><p>里。作为多用户管理系统，不建议直接修改这里的文件，因为会影响其他用户，在自己的家目录下修改vim配置，仅供自己使用就可以。当然，这个情况指的是你的Linux系统是供多人使用的。像我的Linux系统是装在我自己电脑的虚拟机上，我反而喜欢在系统配置文件里修改，这样我换了别的用户还是这样的配置。</p>
 <p>我们可以先看一眼全局配置的内容：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">cat /etc/vim/vimrc
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">cat /etc/vim/vimrc
 </code></pre></td></tr></table>
 </div>
 </div><p>输出为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -652,7 +652,7 @@ Windows NT/2000/XP/7 字符界面版：<span class="sb">`</span>ftp://ftp.vim.or
 </span><span class="lnt">53
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="s2">&#34; All system-wide defaults are set in </span><span class="nv">$VIMRUNTIME</span><span class="s2">/debian.vim and sourced by
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="s2">&#34; All system-wide defaults are set in </span><span class="nv">$VIMRUNTIME</span><span class="s2">/debian.vim and sourced by
 </span><span class="s2">&#34;</span> the call to :runtime you can find below.  If you wish to change any of those
 <span class="s2">&#34; settings, you should do it in this file (/etc/vim/vimrc), since debian.vim
 </span><span class="s2">&#34;</span> will be overwritten everytime an upgrade of the vim packages is performed.
@@ -712,7 +712,7 @@ endif
 <p>下面再看看41-48行的命令是做什么的。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -722,7 +722,7 @@ endif
 </span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="s2">&#34;set showcmd		&#34;</span> 在vim的状态条里显示输入的命令。
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="s2">&#34;set showcmd		&#34;</span> 在vim的状态条里显示输入的命令。
 <span class="s2">&#34;set showmatch		&#34;</span> 显示匹配成对的括号。
 <span class="s2">&#34;set ignorecase		&#34;</span> 大小写不敏感。或者说不区分大小写。
 <span class="s2">&#34;set smartcase		&#34;</span> 开启智能大小写匹配。就是自动帮你识别此时应该是大写还是小写。
@@ -738,16 +738,16 @@ endif
 <p>一般情况下在当前用户根目录 <strong>~/</strong> 下没有.vimrc文件，故直接建立该文件：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">vim ~/.vimrc
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">vim ~/.vimrc
 </code></pre></td></tr></table>
 </div>
 </div><p>然后可以先设置如下内容：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -763,7 +763,7 @@ endif
 </span><span class="lnt">14
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">colorscheme desert	<span class="s2">&#34;这个是设置颜色主题，我选的是沙漠主题，普通字体是黄沙色。
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">colorscheme desert	<span class="s2">&#34;这个是设置颜色主题，我选的是沙漠主题，普通字体是黄沙色。
 </span><span class="s2">syntax on			&#34;</span>这个是设置语法识别。就是识别编程语言的语法是否有问题。不过很简陋。
 <span class="nb">set</span> number			<span class="s2">&#34;这个是显示行号。我其实更建议这个写进全局配置里。因为每个用户应该都挺想知道自己现在在哪行。
 </span><span class="s2">set shiftwidth=4	&#34;</span>这个是设置一个回车后的自动添加的缩进是4个空格。为的是和python的PEP8格式一致。像Java、C之类也有缩进的时候，这里也被设置为4了。
@@ -789,11 +789,11 @@ endif
 <p>在vim的配置文件<code>.vimrc</code>中配色方案的设置<code>colorscheme foo</code>为：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">set t_Co=256 &#34; required
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">set t_Co=256 &#34; required
 colorscheme desert12
 </code></pre></td></tr></table>
 </div>
@@ -815,11 +815,11 @@ colorscheme desert12
 <p>打开 colors 下面的 colorscheme, 其实很简单，完全可以自己写一个，主要内容差不多都是这样：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">hi Function        ctermfg=134   guifg=#af5fd7 gui=bold            cterm=bold
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">hi Function        ctermfg=134   guifg=#af5fd7 gui=bold            cterm=bold
 hi Identifier      ctermfg=98    guifg=#875fd7 gui=bold           cterm=bold12
 </code></pre></td></tr></table>
 </div>
@@ -829,10 +829,10 @@ hi Identifier      ctermfg=98    guifg=#875fd7 gui=bold           cterm=bold12
 <p>Vim的颜色主题在</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">/usr/share/vim/vim74/colors
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">/usr/share/vim/vim74/colors
 </code></pre></td></tr></table>
 </div>
 </div><p>文件夹里。其中<strong>vim74</strong>文件夹名跟你所使用的vim版本号有关，如果是7.3版本，则是vim73。打开vim后在normal模式下输入“：colorscheme”查看当前的主题，修改主题使用命令“：colorscheme mycolor”，其中mycolor是你usr/share/vim/vim74/colors文件夹包含的文件名。也可以把这个命令写入~/.vimrc配置文件中，这样每次打开Vim都是你设定的主题。</p>
@@ -840,7 +840,7 @@ hi Identifier      ctermfg=98    guifg=#875fd7 gui=bold           cterm=bold12
 <p>上面是默认就会安装的colorscheme选项。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -860,7 +860,7 @@ hi Identifier      ctermfg=98    guifg=#875fd7 gui=bold           cterm=bold12
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">blue.vim      README.txt 
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">blue.vim      README.txt 
 desert.vim    
 koehler.vim  
 peachpuff.vim  
@@ -883,7 +883,7 @@ shine.vim
 </div><p>README.txt里的内容如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -962,7 +962,7 @@ shine.vim
 </span><span class="lnt">77
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">README.txt for color scheme files 
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">README.txt for color scheme files 
 
 These files are used for the &#34;:colorscheme&#34; command.  They appear in the
 
@@ -1055,12 +1055,12 @@ please check the following items:
 <p>异常信息如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">The ycmd server SHUT DOWN <span class="o">(</span>restart with <span class="s1">&#39;:YcmRestartServer&#39;</span><span class="o">)</span>. 
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">The ycmd server SHUT DOWN <span class="o">(</span>restart with <span class="s1">&#39;:YcmRestartServer&#39;</span><span class="o">)</span>. 
 Unexpected error <span class="k">while</span> loading the YCM core library. 
 Use the <span class="s1">&#39;:YcmToggleLogs&#39;</span> <span class="nb">command</span> to check the logs.123
 </code></pre></td></tr></table>
@@ -1070,10 +1070,10 @@ Use the <span class="s1">&#39;:YcmToggleLogs&#39;</span> <span class="nb">comman
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">python3 YouCompleteMe/install.py --clang-completer --racer-completer1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">python3 YouCompleteMe/install.py --clang-completer --racer-completer1
 </code></pre></td></tr></table>
 </div>
 </div><ol start="2">
@@ -1081,19 +1081,19 @@ Use the <span class="s1">&#39;:YcmToggleLogs&#39;</span> <span class="nb">comman
 </ol>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">ERROR: cargo is required for the Rust completer.1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">ERROR: cargo is required for the Rust completer.1
 </code></pre></td></tr></table>
 </div>
 </div><p>如果提示cargo异常，需要安装cargo，命令如下：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">curl -sSf https://static.rust-lang.org/rustup.sh | sh1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">curl -sSf https://static.rust-lang.org/rustup.sh | sh1
 </code></pre></td></tr></table>
 </div>
 </div><p>cargo安装成功后再重试上述步骤1</p>
@@ -1111,10 +1111,10 @@ Use the <span class="s1">&#39;:YcmToggleLogs&#39;</span> <span class="nb">comman
 <p>使用如下命令查看Gnome-Terminal终端的版本：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">aptitude show gnome-terminal1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">aptitude show gnome-terminal1
 </code></pre></td></tr></table>
 </div>
 </div><hr>
@@ -1126,14 +1126,14 @@ Use the <span class="s1">&#39;:YcmToggleLogs&#39;</span> <span class="nb">comman
 <p>This makes your cursor change in all open terminals. Upgrade your terminal and use the version above instead.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
   au InsertEnter * silent execute &#34;!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam&#34;
   au InsertLeave * silent execute &#34;!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape block&#34;
   au VimLeave * silent execute &#34;!gconftool-2 --type string --set /apps/gnome-terminal/profiles/Default/cursor_shape ibeam&#34;
@@ -1144,13 +1144,13 @@ endif12345
 <p>First make a script gnome-terminal-cursor-shape.sh</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/sh
 </span><span class="cp"></span><span class="nv">DEFAULTPROF</span><span class="o">=</span><span class="sb">`</span>dconf <span class="nb">read</span> /org/gnome/terminal/legacy/profiles:/default<span class="sb">`</span>
 <span class="nv">DEFAULTPROF</span><span class="o">=</span><span class="sb">`</span><span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$DEFAULTPROF</span><span class="s2">&#34;</span> <span class="p">|</span> sed -e <span class="s2">&#34;s/^&#39;/:/&#34;</span> -e <span class="s2">&#34;s/&#39;</span>$<span class="s2">//&#34;</span><span class="sb">`</span>
 dconf write /org/gnome/terminal/legacy/profiles:/<span class="nv">$DEFAULTPROF</span>/cursor-shape <span class="s2">&#34;&#39;</span><span class="nv">$1</span><span class="s2">&#39;&#34;</span><span class="m">1234</span>
@@ -1159,7 +1159,7 @@ dconf write /org/gnome/terminal/legacy/profiles:/<span class="nv">$DEFAULTPROF</
 </div><p>Make it executable &amp; put it in /usr/local/bin Next, add this to .vimrc</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1171,7 +1171,7 @@ dconf write /org/gnome/terminal/legacy/profiles:/<span class="nv">$DEFAULTPROF</
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
     au InsertEnter *
         \ if v:insertmode == &#39;i&#39; |
         \   silent execute &#34;!gnome-terminal-cursor-shape.sh ibeam&#34; |
@@ -1188,7 +1188,7 @@ endif12345678910
 <p>This method has the advantage compared to the method above that it influences the given tab only, and not all the tabs that use the given profile. Add the following into .vimrc</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1200,7 +1200,7 @@ endif12345678910
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
   au VimEnter,InsertLeave * silent execute &#39;!echo -ne &#34;\e[2 q&#34;&#39; | redraw!
   au InsertEnter,InsertChange *
     \ if v:insertmode == &#39;i&#39; | 
@@ -1215,7 +1215,7 @@ endif12345678910
 </div><p>Above snippet disables cursor blinking. If you want cursor blink, just decrement all the 3 numbers above 2,4,6 by one each.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -1227,7 +1227,7 @@ endif12345678910
 </span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">if has(&#34;autocmd&#34;)
   au VimEnter,InsertLeave * silent execute &#39;!echo -ne &#34;\e[1 q&#34;&#39; | redraw!
   au InsertEnter,InsertChange *
     \ if v:insertmode == &#39;i&#39; | 

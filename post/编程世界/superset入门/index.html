@@ -32,7 +32,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.83.1" />
+<meta name="generator" content="Hugo 0.88.1" />
 
 
 <link rel="canonical" href="/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/superset%E5%85%A5%E9%97%A8/" />
@@ -63,12 +63,12 @@
 <meta property="og:description" content="superset是什么？" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/superset%E5%85%A5%E9%97%A8/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2000-12-30T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2000-12-30T00:00:00&#43;00:00" /><meta property="og:site_name" content="个人随想" />
+<meta property="article:published_time" content="2000-12-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2000-12-30T00:00:00+00:00" /><meta property="og:site_name" content="个人随想" />
 
 <meta itemprop="name" content="superset入门">
-<meta itemprop="description" content="superset是什么？"><meta itemprop="datePublished" content="2000-12-30T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2000-12-30T00:00:00&#43;00:00" />
+<meta itemprop="description" content="superset是什么？"><meta itemprop="datePublished" content="2000-12-30T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2000-12-30T00:00:00+00:00" />
 <meta itemprop="wordCount" content="78">
 <meta itemprop="keywords" content="数据可视化,入门,Docker," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="superset入门"/>
@@ -412,7 +412,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
       <p><code>superset</code>是什么？</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -427,7 +427,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
 </span><span class="lnt">13
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">docker run -d -p 8088:8088 -v /dockerfs/superset/conf:/etc/superset -v mkdir /dockerfs/superset/data:/data  --name superset  amancevice/superset:0.18.5
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash">docker run -d -p 8088:8088 -v /dockerfs/superset/conf:/etc/superset -v mkdir /dockerfs/superset/data:/data  --name superset  amancevice/superset:0.18.5
 
 docker run -d -p 8088:8088 -v D:/Data/sqlite:/home/superset amancevice/superset:0.20.0
 

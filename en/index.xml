@@ -26,14 +26,14 @@
 &lt;p&gt;Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# This is an H1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;gh&#34;&gt;# This is an H1
 &lt;/span&gt;&lt;span class=&#34;gh&#34;&gt;&lt;/span&gt;
 &lt;span class=&#34;gu&#34;&gt;## This is an H2
 &lt;/span&gt;&lt;span class=&#34;gu&#34;&gt;&lt;/span&gt;
@@ -76,26 +76,26 @@
 &lt;h2 id=&#34;syntax-highlighting&#34;&gt;Syntax Highlighting&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span class=&#34;kd&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;nx&#34;&gt;helloWorld&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
   &lt;span class=&#34;nx&#34;&gt;alert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloWorld&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;class&lt;/span&gt; &lt;span class=&#34;nc&#34;&gt;HelloWorld&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
   &lt;span class=&#34;kd&#34;&gt;public&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;void&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;main&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;String&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;[]&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;args&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;{&lt;/span&gt;
     &lt;span class=&#34;n&#34;&gt;System&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;out&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;na&#34;&gt;println&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;);&lt;/span&gt;
   &lt;span class=&#34;o&#34;&gt;}&lt;/span&gt;
@@ -115,7 +115,7 @@ $$&lt;/p&gt;
 &lt;p&gt;In markdown source file, math block is &lt;em&gt;LaTeX&lt;/em&gt; expression wrapped by ‘$$’ mark:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
@@ -124,7 +124,7 @@ $$&lt;/p&gt;
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;$$
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;$$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
 \mathbf{i} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; \mathbf{j} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; \mathbf{k} \\
 \frac{\partial X}{\partial u} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt;  \frac{\partial Y}{\partial u} &lt;span class=&#34;err&#34;&gt;&amp;amp;&lt;/span&gt; 0 \\
@@ -140,7 +140,7 @@ $$
 &lt;p&gt;In markdown source code, they look like:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
@@ -149,7 +149,7 @@ $$
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| Name              | Markdown            | HTML tag             |
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;| Name              | Markdown            | HTML tag             |
 | ----------------- | ------------------- | -------------------- |
 | &lt;span class=&#34;ge&#34;&gt;*Emphasis*&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`*Emphasis*`&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;em&amp;gt;&amp;lt;/em&amp;gt;`&lt;/span&gt;          |
 | &lt;span class=&#34;gs&#34;&gt;**Strong**&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`**Strong**`&lt;/span&gt;        | &lt;span class=&#34;sb&#34;&gt;`&amp;lt;strong&amp;gt;&amp;lt;/strong&amp;gt;`&lt;/span&gt; |
@@ -197,12 +197,12 @@ $$
 &lt;h2 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;You can create footnotes like this[^footnote].
 
 [^footnote]: Here is the &lt;span class=&#34;ge&#34;&gt;*text*&lt;/span&gt; of the &lt;span class=&#34;gs&#34;&gt;**footnote**&lt;/span&gt;.
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -219,12 +219,12 @@ $$
 &lt;p&gt;To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;This is [&lt;span class=&#34;nt&#34;&gt;an example&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.com/ &amp;#34;Title&amp;#34;&lt;/span&gt;) inline link.
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;This is [&lt;span class=&#34;nt&#34;&gt;an example&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.com/ &amp;#34;Title&amp;#34;&lt;/span&gt;) inline link.
 
 [&lt;span class=&#34;nt&#34;&gt;This link&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;http://example.net/&lt;/span&gt;) has no title attribute.
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -239,14 +239,14 @@ $$
 &lt;p&gt;Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;This is [an example][id] reference-style link.
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;This is [an example][id] reference-style link.
 
 Then, anywhere in the document, you define your link label like this, on a line by itself:
 
@@ -258,13 +258,13 @@ Then, anywhere in the document, you define your link label like this, on a line 
 &lt;p&gt;The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;[Google][]
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;[Google][]
 And then define the link:
 
 [Google]: http://google.com/
@@ -279,12 +279,12 @@ And then define the link:
 &lt;p&gt;Image looks similar with links, but it requires an additional &lt;code&gt;!&lt;/code&gt; char before the start of link. Image syntax looks like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Alt text&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg&lt;/span&gt;)
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;![&lt;span class=&#34;nt&#34;&gt;Alt text&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg&lt;/span&gt;)
 
 ![&lt;span class=&#34;nt&#34;&gt;Alt text&lt;/span&gt;](&lt;span class=&#34;na&#34;&gt;/path/to/img.jpg &amp;#34;Optional title&amp;#34;&lt;/span&gt;)
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -295,12 +295,12 @@ And then define the link:
 &lt;p&gt;Markdown treats asterisks (&lt;code&gt;*&lt;/code&gt;) and underscores (&lt;code&gt;_&lt;/code&gt;) as indicators of emphasis. Text wrapped with one &lt;code&gt;*&lt;/code&gt; or &lt;code&gt;_&lt;/code&gt; will be wrapped with an HTML &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; tag. E.g:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;*single asterisks*
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;*single asterisks*
 
 &lt;span class=&#34;ge&#34;&gt;_single underscores_&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -316,10 +316,10 @@ And then define the link:
 &lt;p&gt;To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;\*this text is surrounded by literal asterisks\*
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;\*this text is surrounded by literal asterisks\*
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Typora recommends to use &lt;code&gt;*&lt;/code&gt; symbol.&lt;/p&gt;
@@ -327,12 +327,12 @@ And then define the link:
 &lt;p&gt;double *’s or _’s will be wrapped with an HTML &lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; tag, e.g:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;**double asterisks**
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;**double asterisks**
 
 &lt;span class=&#34;gs&#34;&gt;__double underscores__&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -345,10 +345,10 @@ And then define the link:
 &lt;p&gt;To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;Use the &lt;span class=&#34;sb&#34;&gt;`printf()`&lt;/span&gt; function.
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;Use the &lt;span class=&#34;sb&#34;&gt;`printf()`&lt;/span&gt; function.
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;will produce:&lt;/p&gt;
@@ -1305,12 +1305,12 @@ f(x) \sim x^2, \quad x\to\infty
 &lt;p&gt;Each time we check in a new version, we get a new revision (r1, r2, r3, etc.). In Subversion you’d do:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn add list.txt
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn add list.txt
 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;modify the file&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 svn ci list.txt -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Changed the list&amp;#34;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -1322,13 +1322,13 @@ svn ci list.txt -m &lt;span class=&#34;s2&#34;&gt;&amp;#34;Changed the list&amp;
 &lt;p&gt;If you don’t like your changes and want to start over, you can &lt;strong&gt;revert&lt;/strong&gt; to the previous version and start again (or stop). When checking out, you get the latest revision by default. If you want, you can specify a particular revision. In Subversion, run:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn co list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;get latest version&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn co list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;get latest version&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 …edit file…
 svn revert list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;throw away changes&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 svn co -r2 list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;check out particular version&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
@@ -1342,21 +1342,21 @@ svn co -r2 list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;check out partic
 &lt;p&gt;Most version control systems &lt;strong&gt;store diffs rather than full copies of the file&lt;/strong&gt;. This saves disk space: 4 revisions of a file doesn’t mean we have 4 copies; we have 1 copy and 4 small diffs. Pretty nifty, eh? In SVN, we diff two revisions of a file like this:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn diff -r3:4 list.txt
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn diff -r3:4 list.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;Diffs help us notice changes (“How did you fix that bug again?”) and even apply them from one branch to another.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Bonus question:&lt;/strong&gt; what’s the diff from r1 to r4?&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;+Eggs
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;+Eggs
 +Soup
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -1369,10 +1369,10 @@ svn co -r2 list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;check out partic
 &lt;p&gt;In Subversion, you create a branch simply by copying a directory to another.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn copy http://path/to/trunk http://path/to/branch
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn copy http://path/to/trunk http://path/to/branch
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;So branching isn’t too tough of a concept: &lt;strong&gt;Pretend you copied your code into a different directory.&lt;/strong&gt; You’ve probably branched your code in school projects, making sure you have a “fail safe” version you can return to if things blow up.&lt;/p&gt;
@@ -1385,10 +1385,10 @@ svn co -r2 list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;check out partic
 &lt;p&gt;In Subversion, merging is very close to diffing. Inside the main trunk, run the command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn merge -r5:6 http://path/to/branch
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;svn merge -r5:6 http://path/to/branch
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;This command diffs r5-r6 in the experimental branch and applies it to the current location. Unfortunately, Subversion doesn’t have an easy way to keep track of what merges have been applied, so if you’re not careful you may apply the same changes twice. It’s a planned feature, but the current advice is to keep a changelog message reminding you that you’ve already merged r5-r6 into main.&lt;/p&gt;
@@ -1408,11 +1408,11 @@ svn co -r2 list.txt &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;check out partic
 &lt;p&gt;In Subversion, tags are just branches that you agree not to edit; they are around for posterity, so you can see exactly what your version 1.0 release contained. Hence they end in a stub — there’s nowhere to go.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;in trunk&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;in trunk&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;
 svn copy http://path/to/revision http://path/to/tag
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -1462,7 +1462,7 @@ svn copy http://path/to/revision http://path/to/tag
 &lt;p&gt;VLAs are usually allocated on stack and this is the source of the most of the problems. Let&amp;rsquo;s consider a painfully simple, very favourable to VLA, example:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
@@ -1473,7 +1473,7 @@ svn copy http://path/to/revision http://path/to/tag
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
 
 int main(void) {
     int n;
@@ -1494,7 +1494,7 @@ int main(void) {
 &lt;p&gt;What if I need to let user define size and creating ridiculously large fixed array would be too wasteful? It&amp;rsquo;s simple - use &lt;code&gt;malloc()&lt;/code&gt;!&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
@@ -1507,7 +1507,7 @@ int main(void) {
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
 #include &amp;lt;stdlib.h&amp;gt;
 
 int main(void) {
@@ -1523,13 +1523,13 @@ int main(void) {
 &lt;/div&gt;&lt;p&gt;In this case I was able to input over 1.3 &lt;strong&gt;billion&lt;/strong&gt; on my machine before segfault. Almost 2500 times larger size! But I still got the segfault, right? Well, the difference is in possibility of checking the value returned by &lt;code&gt;malloc()&lt;/code&gt; and thus being able to, for example, inform the user about the error:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;    long double* arr = malloc(n * sizeof(*arr));
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;    long double* arr = malloc(n * sizeof(*arr));
     if (arr == NULL) {
         perror(&amp;#34;malloc()&amp;#34;); // output: &amp;#34;malloc(): Cannot allocate memory&amp;#34;
     }
@@ -1544,11 +1544,11 @@ int main(void) {
 &lt;p&gt;Unlike most other dangerous C functionality, VLA doesn&amp;rsquo;t have the barrier of being not known. Many newbies learn to use them via trial and error, but don&amp;rsquo;t learn about the pitfalls. Sometimes even an experiences programmer will make an mistake and create an VLA when not intended. The following will silently create a VLA when it&amp;rsquo;s clearly not necessary:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;const int n = 10;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;const int n = 10;
 int A[n];
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -1558,7 +1558,7 @@ int A[n];
 &lt;p&gt;So &lt;a href=&#34;https://godbolt.org/z/vnf174eej&#34;&gt;an example where VLA isn&amp;rsquo;t by mistake&lt;/a&gt;:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
@@ -1595,7 +1595,7 @@ int A[n];
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;#include &amp;lt;stdio.h&amp;gt;
 void bar(int*, int);
 
 #if 1 // 1 for VLA, 0 for VLA-free
@@ -1636,7 +1636,7 @@ void bar(int* B, int n) {
 &lt;p&gt;When we compile VLA version, before instructions corresponding to &lt;code&gt;for&lt;/code&gt; loop, we get:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
@@ -1651,7 +1651,7 @@ void bar(int* B, int n) {
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;push    rbp
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;push    rbp
 mov     rbp, rsp
 push    r14
 push    r13
@@ -1669,14 +1669,14 @@ mov     r14, rsp       ; ... and there &amp;#34;ends&amp;#34;
 &lt;/div&gt;&lt;p&gt;VLA-free version on the other hand generates:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;push    r12
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;push    r12
 push    rbp
 push    rbx
 sub     rsp, 4000      ; this is caused by array definition
@@ -1689,11 +1689,11 @@ mov     r12d, edi
 &lt;p&gt;To add more to the issue with inadvertent VLA, the following isn&amp;rsquo;t allowed:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int n = 10;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int n = 10;
 int A[n] = { 0 };
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
@@ -1723,19 +1723,19 @@ int A[n] = { 0 };
 &lt;p&gt;This one is more of a nitpick, but still another reason to dislike VLA. There is a widely used convention of first passing object then its parameters, what in terms of arrays means:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int** arr, int n, int m) { /* arr[i][j] = ... */ }
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int** arr, int n, int m) { /* arr[i][j] = ... */ }
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;C99 specified that array sizes need to be parsed immediately when encountered within a function definition&amp;rsquo;s parameter list, what means that when using VLA you cannot do an equivalent of the above:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int arr[n][m], int n, int m) { /* arr[i][j] = ... */ } // INVALID!
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int arr[n][m], int n, int m) { /* arr[i][j] = ... */ } // INVALID!
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;You either need to:&lt;/p&gt;
@@ -1744,10 +1744,10 @@ int A[n] = { 0 };
 &lt;p&gt;break up with the convention:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int n, int m, int arr[n][m]) { /* arr[i][j] = ... */ }
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int n, int m, int arr[n][m]) { /* arr[i][j] = ... */ }
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
@@ -1755,7 +1755,7 @@ int A[n] = { 0 };
 &lt;p&gt;or make use of the obsolescent syntax:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
@@ -1765,7 +1765,7 @@ int A[n] = { 0 };
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int[*][*], int, int);
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;void foo(int[*][*], int, int);
 void foo(arr, n, n)
     int n;
     int m;
@@ -1781,19 +1781,19 @@ void foo(arr, n, n)
 &lt;p&gt;There is one use case where VLA could come in handy: dynamically allocating multi-dimensional arrays where the inner dimensions are not known until runtime. It isn&amp;rsquo;t even so unsafe as there&amp;rsquo;s no arbitrary stack allocation.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int (* A)[m] = malloc(n * sizeof(*A)); // `n` and `m` are variables with dimensions
-if (A) {
-    // A[i][j] = ...;
-    free(A);
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-mysql&#34; data-lang=&#34;mysql&#34;&gt;&lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;malloc&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;sizeof&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;n&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;and&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;m&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;`&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;are&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;variables&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;with&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;dimensions&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;//&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;][&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;...;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;free&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;}&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;The VLA-free alternatives are either:&lt;/p&gt;
 &lt;ul&gt;
@@ -1801,7 +1801,7 @@ if (A) {
 &lt;p&gt;piecemeal allocation with &lt;code&gt;malloc()&lt;/code&gt;&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
@@ -1814,7 +1814,7 @@ if (A) {
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int** A = malloc(n * sizeof(*A));
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int** A = malloc(n * sizeof(*A));
 if (A) {
     for (int i = 0; i &amp;lt; m; ++i) {
         A[i] = malloc(m * sizeof(*A[i]));
@@ -1832,14 +1832,14 @@ if (A) {
 &lt;p&gt;1D array with offsets&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int* A = malloc(n * m * sizeof(*A));
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int* A = malloc(n * m * sizeof(*A));
 if (A) {
     // A[i*n + j] = ...
     free(A);
@@ -1851,11 +1851,11 @@ if (A) {
 &lt;p&gt;big fixed array&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int A[SAFE_SIZE][SAFE_SIZE]; // SAFE_SIZE must be safe for SAFE_SIZE*SAFE_SIZE
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;int A[SAFE_SIZE][SAFE_SIZE]; // SAFE_SIZE must be safe for SAFE_SIZE*SAFE_SIZE
 // A[i][j] = ...;
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
