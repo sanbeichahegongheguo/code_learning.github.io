@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>多版本 on 个人随想</title>
+    <link>/tags/%E5%A4%9A%E7%89%88%E6%9C%AC/</link>
+    <description>Recent content in 多版本 on 个人随想</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 31 Jul 2008 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E5%A4%9A%E7%89%88%E6%9C%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>如何在系统中安装多版本 GCC 编译器</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%AC-gcc-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Thu, 31 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%AC-gcc-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>&lt;p&gt;GNU 编译器集合（GCC，GNU Compiler Collection）是 C、C ++、Objective-C、Fortran、Ada、Go 和 D 等编程语言的编译器和库的集合，许多开源项目包括：&lt;em&gt;GNU 工具&lt;/em&gt;和 &lt;em&gt;Linux 内核&lt;/em&gt;都是用 GCC 编译的。&lt;/p&gt;
+&lt;p&gt;下面介绍如何在系统上安装多个版本的GCC编译器。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

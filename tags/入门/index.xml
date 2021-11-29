@@ -35,6 +35,16 @@
     </item>
     
     <item>
+      <title>Anaconda入门</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/anaconda%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Thu, 31 Jan 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/anaconda%E5%85%A5%E9%97%A8/</guid>
+      <description>&lt;h2 id=&#34;一anaconda介绍&#34;&gt;一、Anaconda介绍&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Anaconda&lt;/strong&gt;是一个Python的科学计算发行版，包含了超过300个流行的用于科学、数学、工程和数据分析的Python Packages。由于Python有2和3两个版本，因此Anaconda也在Python2和Python3的基础上推出了两个发行版，即&lt;strong&gt;Anaconda2&lt;/strong&gt;和&lt;strong&gt;Anaconda3&lt;/strong&gt;。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Git入门</title>
       <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/git%E5%85%A5%E9%97%A8/</link>
       <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>

@@ -173,30 +173,31 @@
     </item>
     
     <item>
-      <title>vim入门</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/vim%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Mon, 31 Dec 2001 00:00:00 +0000</pubDate>
+      <title>数据分析教程第一章-搭建自己的数据可视化平台</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
+      <pubDate>Thu, 31 Dec 2009 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/vim%E5%85%A5%E9%97%A8/</guid>
-      <description>&lt;p&gt;今天讲讲编程常用的工具，vim。&lt;/p&gt;</description>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
+      <description>我已经见了太多分别讲如何数据分析、如何数据可视化以及如何部署数据分析产品的文章了，但是从来没有一个把这些内容融合到一起的，全部都是割裂的。 比</description>
     </item>
     
     <item>
-      <title>Git入门</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/git%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      <title>数据分析教程第一章-搭建自己的数据可视化平台</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
+      <pubDate>Thu, 31 Dec 2009 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/git%E5%85%A5%E9%97%A8/</guid>
-      <description>&lt;h2 id=&#34;一git是什么&#34;&gt;一、Git是什么&lt;/h2&gt;</description>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
+      <description>我已经见了太多分别讲如何数据分析、如何数据可视化以及如何部署数据分析产品的文章了，但是从来没有一个把这些内容融合到一起的，全部都是割裂的。 比</description>
     </item>
     
     <item>
-      <title>Git常见问题总结</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Sat, 30 Dec 2000 00:00:00 +0000</pubDate>
+      <title>如何在系统中安装多版本 GCC 编译器</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%AC-gcc-%E7%BC%96%E8%AF%91%E5%99%A8/</link>
+      <pubDate>Thu, 31 Jul 2008 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6/git%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</guid>
-      <description>&lt;p&gt;收集使用&lt;code&gt;git&lt;/code&gt;的过程中出现的问题。&lt;/p&gt;</description>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%AC-gcc-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
+      <description>&lt;p&gt;GNU 编译器集合（GCC，GNU Compiler Collection）是 C、C ++、Objective-C、Fortran、Ada、Go 和 D 等编程语言的编译器和库的集合，许多开源项目包括：&lt;em&gt;GNU 工具&lt;/em&gt;和 &lt;em&gt;Linux 内核&lt;/em&gt;都是用 GCC 编译的。&lt;/p&gt;
+&lt;p&gt;下面介绍如何在系统上安装多个版本的GCC编译器。&lt;/p&gt;</description>
     </item>
     
   </channel>
