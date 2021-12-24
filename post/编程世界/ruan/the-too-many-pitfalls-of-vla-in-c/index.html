@@ -26,7 +26,7 @@
 
 <meta name="author" content="总舵主" />
   <meta name="description" content="2021-07-05 | Categories: programming | Tags: C advice
- 比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。
+ 比起用一个固定大小的数组，（可变数组）会产生太多代码，和太多更慢（更脆弱）的代码。
 ~ Linus Torvalds
 " />
 
@@ -66,7 +66,7 @@
 <meta property="og:title" content="C语言中可变数组（VLA）有太多陷阱" />
 <meta property="og:description" content="2021-07-05 | Categories: programming | Tags: C advice
 
-比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。
+比起用一个固定大小的数组，（可变数组）会产生太多代码，和太多更慢（更脆弱）的代码。
 ~ Linus Torvalds
 " />
 <meta property="og:type" content="article" />
@@ -77,16 +77,16 @@
 <meta itemprop="name" content="C语言中可变数组（VLA）有太多陷阱">
 <meta itemprop="description" content="2021-07-05 | Categories: programming | Tags: C advice
 
-比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。
+比起用一个固定大小的数组，（可变数组）会产生太多代码，和太多更慢（更脆弱）的代码。
 ~ Linus Torvalds
 "><meta itemprop="datePublished" content="2018-01-31T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2018-01-31T00:00:00+00:00" />
-<meta itemprop="wordCount" content="2523">
+<meta itemprop="wordCount" content="2533">
 <meta itemprop="keywords" content="C,ruan,翻译," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="C语言中可变数组（VLA）有太多陷阱"/>
 <meta name="twitter:description" content="2021-07-05 | Categories: programming | Tags: C advice
 
-比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。
+比起用一个固定大小的数组，（可变数组）会产生太多代码，和太多更慢（更脆弱）的代码。
 ~ Linus Torvalds
 "/>
 
@@ -405,7 +405,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
             <a href="/categories/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/"> 编程世界 </a>
             
           </div>
-        <span class="more-meta"> 约 2523 字 </span>
+        <span class="more-meta"> 约 2533 字 </span>
           <span class="more-meta"> 预计阅读 6 分钟 </span>
 
         
@@ -430,7 +430,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
     <li><a href="#allocation-on-stack">Allocation on stack</a>
       <ul>
         <li><a href="#worst-of-it-is">Worst of it is…</a></li>
-        <li><a href="#so-how-to-fix-this-example">So how to fix this example?</a></li>
+        <li><a href="#所以如何解决这个问题">所以如何解决这个问题？</a></li>
       </ul>
     </li>
     <li><a href="#creation-by-accident">Creation by accident</a></li>
@@ -440,7 +440,7 @@ style="fill:white;stroke:red;stroke-width:2"/>
     <li><a href="#降低可移植性">降低可移植性</a></li>
     <li><a href="#nitpick-breaking-conventions">(nitpick) Breaking conventions</a></li>
     <li><a href="#-kinda-useful-in-one-case">… kinda useful in one case</a></li>
-    <li><a href="#conclusion">Conclusion</a></li>
+    <li><a href="#结论">结论</a></li>
   </ul>
 </nav>
   </div>
@@ -450,11 +450,11 @@ style="fill:white;stroke:red;stroke-width:2"/>
     <div class="post-content">
       <p>2021-07-05 | Categories: <a href="https://blog.joren.ga/categories/#programming">programming</a> | Tags: <a href="https://blog.joren.ga/categories/#C">C</a> <a href="https://blog.joren.ga/categories/#advice">advice</a></p>
 <blockquote>
-<p>比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。</p>
+<p>比起用一个固定大小的数组，（可变数组）会产生太多代码，和太多更慢（更脆弱）的代码。</p>
 <p>~ <a href="https://lkml.org/lkml/2018/3/7/621">Linus Torvalds</a></p>
 </blockquote>
 <p><em>VLA</em> 是可变数组的缩写，指的是一个数组的大小（至少一维）在运行时决定而不是编译时。</p>
-<p>支持VLAs的语言包括：Ada, Algol 68, APL, C, C#, COBOL, Fortran, J and Object Pascal。你可能注意到，除了 C 和 C#，其他语言都不是今天的主流。</p>
+<p>支持<code>VLAs</code>的语言包括：<code>Ada, Algol 68, APL, C, C#, COBOL, Fortran, J and Object Pascal</code>。你可能注意到，除了 C 和 C#，其他语言都不是今天的主流。</p>
 <p>VLAs were introduced with the revision C99 of the C standard. At first glance they seem convenient and efficient, but it&rsquo;s just an illusion. In reality they are just sources of constant issues. Truly a stain on otherwise really good revision.</p>
 <p>As you could have guessed by the quote at the beginning, project which used to rely on VLA quite extensively is nothing else than Linux kernel. Maintainers spent a lot of effort to get rid of all VLA and as of version 4.20 (year 2018) it&rsquo;s completely VLA-free.</p>
 <h2 id="allocation-on-stack">Allocation on stack</h2>
@@ -489,7 +489,7 @@ int main(void) {
 <h3 id="worst-of-it-is">Worst of it is…</h3>
 <p>… that segfault is actually one of the best outcomes of improperly handled VLA. The worst case is an exploitable vulnerability, where attacker may choose a value that causes an array to overlap with other allocations, giving them control over those values as well. A security nightmare.</p>
 <p>At the cost of further drop of efficiency, in GCC you can enable <code>-fstack-clash-protection</code> option. It adds <em>extra</em> instructions around variable length stack memory allocations to probe each page of memory at allocation time. This mitigates stack-clash attacks by ensuring all stack memory allocations are valid or by throwing a segfault if they are not, thus turning a possible code-execution attack into a denial of service.</p>
-<h3 id="so-how-to-fix-this-example">So how to fix this example?</h3>
+<h3 id="所以如何解决这个问题">所以如何解决这个问题？</h3>
 <p>What if I need to let user define size and creating ridiculously large fixed array would be too wasteful? It&rsquo;s simple - use <code>malloc()</code>!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -594,41 +594,41 @@ int A[n];
 </span><span class="lnt">35
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">#include &lt;stdio.h&gt;
-void bar(int*, int);
+<pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="kt">void</span> <span class="nf">bar</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span><span class="p">,</span> <span class="kt">int</span><span class="p">);</span>
 
-#if 1 // 1 for VLA, 0 for VLA-free
+<span class="cp">#if 1 </span><span class="c1">// 1 for VLA, 0 for VLA-free
+</span><span class="c1"></span>
+<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">A</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">;)</span> <span class="p">{</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="n">bar</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="p">}</span>
 
-void foo(int n) {
-    int A[n];
-    for (int i = n; i--;) {
-        scanf(&#34;%d&#34;, &amp;A[i]);
-    }
-    bar(A, n);
-}
+<span class="cp">#else
+</span><span class="cp"></span>
+<span class="kt">void</span> <span class="nf">foo</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">A</span><span class="p">[</span><span class="mi">1000</span><span class="p">];</span>  <span class="c1">// Let&#39;s make it bigger than 10! (or there won&#39;t be what to examine)
+</span><span class="c1"></span>    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">;)</span> <span class="p">{</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+    <span class="n">bar</span><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">n</span><span class="p">);</span>
+<span class="p">}</span>
 
-#else
+<span class="cp">#endif
+</span><span class="cp"></span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">foo</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
 
-void foo(int n) {
-    int A[1000];  // Let&#39;s make it bigger than 10! (or there won&#39;t be what to examine)
-    for (int i = n; i--;) {
-        scanf(&#34;%d&#34;, &amp;A[i]);
-    }
-    bar(A, n);
-}
-
-#endif
-
-int main(void) {
-    foo(10);
-    return 0;
-}
-
-void bar(int* B, int n) {
-    for (int i = n; i--;) {
-        printf(&#34;%d %d&#34;, i, B[i]);
-    }
-}
+<span class="kt">void</span> <span class="nf">bar</span><span class="p">(</span><span class="kt">int</span><span class="o">*</span> <span class="n">B</span><span class="p">,</span> <span class="kt">int</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">--</span><span class="p">;)</span> <span class="p">{</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d %d&#34;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">B</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>For our educational purposes in this example, <code>-O1</code> level of optimisation will work best (as Assembly will be more clear and <code>-O2</code> won&rsquo;t help VLA&rsquo;s case here really much).</p>
@@ -685,7 +685,7 @@ mov     r12d, edi
 </div><p>So not only fixed array spawns less code, but also way simpler code. Why, VLA even causes more overhead at the beginning of the function. It&rsquo;s not so much more in the grand scheme of things, but it still isn&rsquo;t just a pointer bump.</p>
 <p>But are those differences significant enough to care? <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=02361bc77888">Yes, they are</a>.</p>
 <h2 id="无法初始化">无法初始化</h2>
-<p>使得疏忽VLA的问题更突出的是，下面的代码不被允许：</p>
+<p>疏忽VLA的问题更突出的是，下面的代码不被允许：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -860,13 +860,14 @@ if (A) {
 </div>
 </div></li>
 </ul>
-<h2 id="conclusion">Conclusion</h2>
+<h2 id="结论">结论</h2>
 <p>In short, <strong>avoid VLA</strong>. It poses dangers without giving anything really useful in return (beside in one situation). If you really need to use one, remember about its limitations.</p>
 <p>It&rsquo;s probably also worth mentioning that VLAs were supposed to be a solution to even more problematic (non-standard) <code>alloca()</code>.</p>
 <p>And for the very end, an example of vla lacking all those problems: <a href="https://en.wikipedia.org/wiki/Vla"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/Chocoladevla.jpg" alt="Chocolate vla"></a></p>
 <p>&mdash;EOF&mdash;</p>
 <p><em>EOF</em>是一个计算机术语，为<code>End Of File</code>的缩写，在操作系统中表示资料源无更多的资料可读取。通常在文本的最后存在此字符表示资料结束。</p>
 <p>本人公众号<code>火山灰</code>，亦可搜<code>time_ash_past</code>。</p>
+<p><img src="https://timeash.club/pulic.jpg" alt=""></p>
     </div>
 
     

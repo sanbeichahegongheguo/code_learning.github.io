@@ -7,20 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 31 Dec 2009 00:00:00 +0000</lastBuildDate><atom:link href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>数据分析教程第一章-搭建自己的数据可视化平台</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
+      <title>数据分析教程01章-搭建自己的数据可视化平台</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E7%AC%AC01%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
       <pubDate>Thu, 31 Dec 2009 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
-      <description>我已经见了太多分别讲如何数据分析、如何数据可视化以及如何部署数据分析产品的文章了，但是从来没有一个把这些内容融合到一起的，全部都是割裂的。 比</description>
-    </item>
-    
-    <item>
-      <title>数据分析教程第一章-搭建自己的数据可视化平台</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
-      <pubDate>Thu, 31 Dec 2009 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E7%AC%AC01%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
       <description>我已经见了太多分别讲如何数据分析、如何数据可视化以及如何部署数据分析产品的文章了，但是从来没有一个把这些内容融合到一起的，全部都是割裂的。 比</description>
     </item>
     

@@ -17,28 +17,105 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2021-08-13T00:00:00+00:00</lastmod>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD/</loc>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E6%95%B0%E5%AD%97%E4%B8%AD%E5%9B%BD/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD-69-%E5%8C%97%E4%BA%AC%E5%BC%BA%E5%A5%B8%E6%A1%88%E5%AE%9E%E5%BD%95/</loc>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%8C%97%E4%BA%AC%E5%BC%BA%E5%A5%B8%E6%A1%88%E5%AE%9E%E5%BD%95/</loc>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E6%95%B0%E5%AD%97%E4%B8%AD%E5%9B%BD/</loc>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E6%95%B0%E5%AD%97%E4%B8%AD%E5%9B%BD/</loc>
+    <lastmod>2021-12-11T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E6%95%B0%E5%AD%97%E4%B8%AD%E5%9B%BD/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD-68-%E5%8C%97%E4%BA%AC%E5%BC%BA%E5%A5%B8%E6%A1%88%E5%AE%9E%E5%BD%95/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E5%A4%B1%E4%B8%9A/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E7%BD%91%E7%BB%9C%E6%B0%91%E8%AE%AE/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E8%BD%AC%E8%BD%BD%E6%95%85%E4%BA%8B/2021%E5%B9%B4%E7%BB%8F%E6%B5%8E%E5%BD%A2%E5%8A%BF%E5%BE%88%E5%B7%AE%E5%90%97/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/%E8%BD%AC%E8%BD%BD%E6%95%85%E4%BA%8B/</loc>
+    <lastmod>2021-12-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -79,6 +156,13 @@
   </url>
   
   <url>
+    <loc>/post/%E6%95%B0%E5%AD%97%E4%B8%AD%E5%9B%BD/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD/%E8%A3%81%E5%88%A4%E6%96%87%E4%B9%A6%E7%BD%91%E5%92%8B%E6%88%90%E4%BA%86%E4%BF%9D%E5%AF%86%E7%BD%91/</loc>
+    <lastmod>2021-07-09T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tags/%E5%BD%AD%E5%BE%B7%E6%80%80/</loc>
     <lastmod>2021-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -87,13 +171,6 @@
   
   <url>
     <loc>/tags/%E6%AF%9B%E6%B3%BD%E4%B8%9C/</loc>
-    <lastmod>2021-06-30T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2021-06-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -109,6 +186,13 @@
   <url>
     <loc>/post/%E6%94%BF%E6%B2%BB%E6%95%85%E4%BA%8B/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1/%E9%82%A3%E5%B9%B4%E5%BA%90%E5%B1%B1-01/</loc>
     <lastmod>2021-06-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E6%95%B0%E5%AD%97%E4%B8%AD%E5%9B%BD/%E5%88%91%E4%BA%8B%E5%88%A4%E5%86%B3%E4%B9%A6%E9%87%8C%E7%9A%84%E4%B8%AD%E5%9B%BD/%E4%B8%AD%E5%9B%BD%E8%A3%81%E5%88%A4%E6%96%87%E4%B9%A6%E7%BD%91%E5%88%A0%E6%96%87%E5%8A%A8%E4%BD%9C%E6%97%B6%E9%97%B4%E7%BA%BF/</loc>
+    <lastmod>2021-06-28T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -765,13 +849,6 @@
   </url>
   
   <url>
-    <loc>/categories/%E8%BD%AC%E8%BD%BD%E6%95%85%E4%BA%8B/</loc>
-    <lastmod>2019-12-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/tags/%E5%BE%B7%E6%84%8F%E5%BF%97%E9%93%B6%E8%A1%8C-%E5%A4%AA%E5%AD%90%E5%85%9A-%E7%BA%BD%E7%BA%A6%E6%97%B6%E6%8A%A5%E4%B8%AD%E6%96%87%E7%BD%91/</loc>
     <lastmod>2019-10-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -828,7 +905,7 @@
   </url>
   
   <url>
-    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</loc>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-01/</loc>
     <lastmod>2019-05-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1318,14 +1395,7 @@
   </url>
   
   <url>
-    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</loc>
-    <lastmod>2009-12-31T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</loc>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E7%AC%AC01%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</loc>
     <lastmod>2009-12-31T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1766,7 +1836,1075 @@
   </url>
   
   <url>
-    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</loc>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/0006_%E7%AC%AC%E4%BA%8C%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/001_%E5%89%8D%E8%A8%80/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/002_%E6%9C%AC%E4%B9%A6%E4%BB%8B%E7%BB%8D/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/003_%E7%9B%AE%E5%BD%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/004_%E7%AC%AC%E4%B8%80%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/004_%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/004_%E8%B5%B7%E6%BA%90%E4%B8%8E%E5%8F%91%E5%B1%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/005_%E8%AF%AD%E8%A8%80%E7%9A%84%E4%B8%BB%E8%A6%81%E7%89%B9%E6%80%A7%E4%B8%8E%E5%8F%91%E5%B1%95%E7%9A%84%E7%8E%AF%E5%A2%83%E5%92%8C%E5%BD%B1%E5%93%8D%E5%9B%A0%E7%B4%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/006_%E5%B9%B3%E5%8F%B0%E4%B8%8E%E6%9E%B6%E6%9E%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/006_%E7%AC%AC%E4%BA%8C%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/007_go_%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/008_%E5%9C%A8_linux_%E4%B8%8A%E5%AE%89%E8%A3%85_go/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/009_%E5%9C%A8_mac_os_x_%E4%B8%8A%E5%AE%89%E8%A3%85_go/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/010_%E5%9C%A8_windows_%E4%B8%8A%E5%AE%89%E8%A3%85_go/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/011_%E5%AE%89%E8%A3%85%E7%9B%AE%E5%BD%95%E6%B8%85%E5%8D%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/012_go_%E8%BF%90%E8%A1%8C%E6%97%B6_runtime/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/013_go_%E8%A7%A3%E9%87%8A%E5%99%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/014_go_%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E5%9F%BA%E6%9C%AC%E8%A6%81%E6%B1%82/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/014_%E7%AC%AC3%E7%AB%A0%E7%BC%96%E8%BE%91%E5%99%A8%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E4%B8%8E%E5%85%B6%E5%AE%83%E5%B7%A5%E5%85%B7/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/015_%E7%BC%96%E8%BE%91%E5%99%A8%E5%92%8C%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/016_%E8%B0%83%E8%AF%95%E5%99%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/017_%E6%9E%84%E5%BB%BA%E5%B9%B6%E8%BF%90%E8%A1%8C_go_%E7%A8%8B%E5%BA%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/018_%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/019_%E7%94%9F%E6%88%90%E4%BB%A3%E7%A0%81%E6%96%87%E6%A1%A3/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/020_%E5%85%B6%E5%AE%83%E5%B7%A5%E5%85%B7/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/021_go_%E6%80%A7%E8%83%BD%E8%AF%B4%E6%98%8E/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/022_%E4%B8%8E%E5%85%B6%E5%AE%83%E8%AF%AD%E8%A8%80%E8%BF%9B%E8%A1%8C%E4%BA%A4%E4%BA%92/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/023_%E6%96%87%E4%BB%B6%E5%90%8D%E5%85%B3%E9%94%AE%E5%AD%97%E4%B8%8E%E6%A0%87%E8%AF%86%E7%AC%A6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/023_%E7%AC%AC4%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/023_%E7%AC%AC%E4%BA%8C%E9%83%A8%E5%88%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/024_go_%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%BB%93%E6%9E%84%E5%92%8C%E8%A6%81%E7%B4%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/025_%E5%B8%B8%E9%87%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/026_%E5%8F%98%E9%87%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/027_%E5%9F%BA%E6%9C%AC%E7%B1%BB%E5%9E%8B%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/028_%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/029_strings_%E5%92%8C_strconv_%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/030_%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%A5%E6%9C%9F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/031_%E6%8C%87%E9%92%88/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/032_if-else_%E7%BB%93%E6%9E%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/032_%E7%AC%AC5%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/033_%E6%B5%8B%E8%AF%95%E5%A4%9A%E8%BF%94%E5%9B%9E%E5%80%BC%E5%87%BD%E6%95%B0%E7%9A%84%E9%94%99%E8%AF%AF/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/034_switch_%E7%BB%93%E6%9E%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/035_for_%E7%BB%93%E6%9E%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/036_break_%E4%B8%8E_continue/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/037_%E6%A0%87%E7%AD%BE%E4%B8%8E_goto/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/038_%E4%BB%8B%E7%BB%8D/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/038_%E7%AC%AC6%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/039_%E5%87%BD%E6%95%B0%E5%8F%82%E6%95%B0%E4%B8%8E%E8%BF%94%E5%9B%9E%E5%80%BC/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/040_%E4%BC%A0%E9%80%92%E5%8F%98%E9%95%BF%E5%8F%82%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/041_defer_%E5%92%8C%E8%BF%BD%E8%B8%AA/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/042_%E5%86%85%E7%BD%AE%E5%87%BD%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/043_%E9%80%92%E5%BD%92%E5%87%BD%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/044_%E5%B0%86%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E5%8F%82%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/045_%E9%97%AD%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/046_%E5%BA%94%E7%94%A8%E9%97%AD%E5%8C%85%E5%B0%86%E5%87%BD%E6%95%B0%E4%BD%9C%E4%B8%BA%E8%BF%94%E5%9B%9E%E5%80%BC/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/047_%E4%BD%BF%E7%94%A8%E9%97%AD%E5%8C%85%E8%B0%83%E8%AF%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/048_%E8%AE%A1%E7%AE%97%E5%87%BD%E6%95%B0%E6%89%A7%E8%A1%8C%E6%97%B6%E9%97%B4/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/049_%E9%80%9A%E8%BF%87%E5%86%85%E5%AD%98%E7%BC%93%E5%AD%98%E6%9D%A5%E6%8F%90%E5%8D%87%E6%80%A7%E8%83%BD/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/050_%E5%A3%B0%E6%98%8E%E5%92%8C%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/050_%E7%AC%AC7%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/051_%E5%88%87%E7%89%87/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/052_for-range_%E7%BB%93%E6%9E%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/053_%E5%88%87%E7%89%87%E9%87%8D%E7%BB%84_reslice/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/054_%E5%88%87%E7%89%87%E7%9A%84%E5%A4%8D%E5%88%B6%E4%B8%8E%E8%BF%BD%E5%8A%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/055_%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87%E7%9A%84%E5%BA%94%E7%94%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/056_%E5%A3%B0%E6%98%8E%E5%88%9D%E5%A7%8B%E5%8C%96%E5%92%8C_make/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/056_%E7%AC%AC8%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/057_%E6%B5%8B%E8%AF%95%E9%94%AE%E5%80%BC%E5%AF%B9%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E5%8F%8A%E5%88%A0%E9%99%A4%E5%85%83%E7%B4%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/058_for-range_%E7%9A%84%E9%85%8D%E5%A5%97%E7%94%A8%E6%B3%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/059_map_%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%88%87%E7%89%87/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/060_map_%E7%9A%84%E6%8E%92%E5%BA%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/061_%E5%B0%86_map_%E7%9A%84%E9%94%AE%E5%80%BC%E5%AF%B9%E8%B0%83/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/062_%E6%A0%87%E5%87%86%E5%BA%93%E6%A6%82%E8%BF%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/063_regexp_%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/064_%E9%94%81%E5%92%8C_sync_%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/065_%E7%B2%BE%E5%AF%86%E8%AE%A1%E7%AE%97%E5%92%8C_big_%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/066_%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85%E5%92%8C%E5%8F%AF%E8%A7%81%E6%80%A7/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/067_%E4%B8%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85%E4%BD%BF%E7%94%A8_godoc/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/068_%E4%BD%BF%E7%94%A8_go_install_%E5%AE%89%E8%A3%85%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/069_%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85%E7%9A%84%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84go_install_%E5%92%8C_go_test/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/070_%E9%80%9A%E8%BF%87_git_%E6%89%93%E5%8C%85%E5%92%8C%E5%AE%89%E8%A3%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/071_go_%E7%9A%84%E5%A4%96%E9%83%A8%E5%8C%85%E5%92%8C%E9%A1%B9%E7%9B%AE/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/072_%E5%9C%A8_go_%E7%A8%8B%E5%BA%8F%E4%B8%AD%E4%BD%BF%E7%94%A8%E5%A4%96%E9%83%A8%E5%BA%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/073_%E7%AC%AC10%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/073_%E7%BB%93%E6%9E%84%E4%BD%93%E5%AE%9A%E4%B9%89/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/074_%E4%BD%BF%E7%94%A8%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95%E5%88%9B%E5%BB%BA%E7%BB%93%E6%9E%84%E4%BD%93%E5%AE%9E%E4%BE%8B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/075_%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85%E4%B8%AD%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/076_%E5%B8%A6%E6%A0%87%E7%AD%BE%E7%9A%84%E7%BB%93%E6%9E%84%E4%BD%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/077_%E5%8C%BF%E5%90%8D%E5%AD%97%E6%AE%B5%E5%92%8C%E5%86%85%E5%B5%8C%E7%BB%93%E6%9E%84%E4%BD%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/078_%E6%96%B9%E6%B3%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/079_%E7%B1%BB%E5%9E%8B%E7%9A%84_string%E6%96%B9%E6%B3%95%E5%92%8C%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%8F%8F%E8%BF%B0%E7%AC%A6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/080_%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E5%92%8C_setfinalizer/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/081_%E6%8E%A5%E5%8F%A3%E6%98%AF%E4%BB%80%E4%B9%88/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/081_%E7%AC%AC%E5%8D%81%E4%B8%80%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/082_%E6%8E%A5%E5%8F%A3%E5%B5%8C%E5%A5%97%E6%8E%A5%E5%8F%A3/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/083_%E7%B1%BB%E5%9E%8B%E6%96%AD%E8%A8%80%E5%A6%82%E4%BD%95%E6%A3%80%E6%B5%8B%E5%92%8C%E8%BD%AC%E6%8D%A2%E6%8E%A5%E5%8F%A3%E5%8F%98%E9%87%8F%E7%9A%84%E7%B1%BB%E5%9E%8B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/084_%E7%B1%BB%E5%9E%8B%E5%88%A4%E6%96%ADtype-switch/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/085_%E6%B5%8B%E8%AF%95%E4%B8%80%E4%B8%AA%E5%80%BC%E6%98%AF%E5%90%A6%E5%AE%9E%E7%8E%B0%E4%BA%86%E6%9F%90%E4%B8%AA%E6%8E%A5%E5%8F%A3/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/086_%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95%E9%9B%86%E4%B8%8E%E6%8E%A5%E5%8F%A3/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/087_%E7%AC%AC%E4%B8%80%E4%B8%AA%E4%BE%8B%E5%AD%90%E4%BD%BF%E7%94%A8_sorter_%E6%8E%A5%E5%8F%A3%E6%8E%92%E5%BA%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/088_%E7%AC%AC%E4%BA%8C%E4%B8%AA%E4%BE%8B%E5%AD%90%E8%AF%BB%E5%92%8C%E5%86%99/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/089_%E7%A9%BA%E6%8E%A5%E5%8F%A3/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/090_%E5%8F%8D%E5%B0%84%E5%8C%85/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/091_printf_%E5%92%8C%E5%8F%8D%E5%B0%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/092_%E6%8E%A5%E5%8F%A3%E4%B8%8E%E5%8A%A8%E6%80%81%E7%B1%BB%E5%9E%8B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/093_%E6%80%BB%E7%BB%93go_%E4%B8%AD%E7%9A%84%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/094_%E7%BB%93%E6%9E%84%E4%BD%93%E9%9B%86%E5%90%88%E5%92%8C%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/095_%E7%AC%AC12%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/095_%E7%AC%AC%E4%B8%89%E9%83%A8%E5%88%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/095_%E8%AF%BB%E5%8F%96%E7%94%A8%E6%88%B7%E7%9A%84%E8%BE%93%E5%85%A5/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/096_%E6%96%87%E4%BB%B6%E8%AF%BB%E5%86%99/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/097_%E6%96%87%E4%BB%B6%E6%8B%B7%E8%B4%9D/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/098_%E4%BB%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E8%AF%BB%E5%8F%96%E5%8F%82%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/099_%E7%94%A8_buffer_%E8%AF%BB%E5%8F%96%E6%96%87%E4%BB%B6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/100_%E7%94%A8%E5%88%87%E7%89%87%E8%AF%BB%E5%86%99%E6%96%87%E4%BB%B6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/101_%E7%94%A8_defer_%E5%85%B3%E9%97%AD%E6%96%87%E4%BB%B6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/102_%E4%BD%BF%E7%94%A8%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%AE%9E%E9%99%85%E4%BE%8B%E5%AD%90fmt.fprintf/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/103_json_%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/104_xml_%E6%95%B0%E6%8D%AE%E6%A0%BC%E5%BC%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/105_%E7%94%A8_gob_%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/106_go_%E4%B8%AD%E7%9A%84%E5%AF%86%E7%A0%81%E5%AD%A6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/107_%E7%AC%AC13%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/107_%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/108_%E8%BF%90%E8%A1%8C%E6%97%B6%E5%BC%82%E5%B8%B8%E5%92%8C_panic/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/109_%E4%BB%8E_panic_%E4%B8%AD%E6%81%A2%E5%A4%8Drecover/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/110_%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8C%85%E4%B8%AD%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86%E5%92%8C_panicking/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/111_%E4%B8%80%E7%A7%8D%E7%94%A8%E9%97%AD%E5%8C%85%E5%A4%84%E7%90%86%E9%94%99%E8%AF%AF%E7%9A%84%E6%A8%A1%E5%BC%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/112_%E5%90%AF%E5%8A%A8%E5%A4%96%E9%83%A8%E5%91%BD%E4%BB%A4%E5%92%8C%E7%A8%8B%E5%BA%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/113_go_%E4%B8%AD%E7%9A%84%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E5%92%8C%E5%9F%BA%E5%87%86%E6%B5%8B%E8%AF%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/114_%E6%B5%8B%E8%AF%95%E7%9A%84%E5%85%B7%E4%BD%93%E4%BE%8B%E5%AD%90/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/115_%E7%94%A8%E6%B5%8B%E8%AF%95%E6%95%B0%E6%8D%AE%E8%A1%A8%E9%A9%B1%E5%8A%A8%E6%B5%8B%E8%AF%95/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/116_%E6%80%A7%E8%83%BD%E8%B0%83%E8%AF%95%E5%88%86%E6%9E%90%E5%B9%B6%E4%BC%98%E5%8C%96_go_%E7%A8%8B%E5%BA%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/117_%E5%B9%B6%E5%8F%91%E5%B9%B6%E8%A1%8C%E5%92%8C%E5%8D%8F%E7%A8%8B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/117_%E7%AC%AC14%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/118_%E5%8D%8F%E7%A8%8B%E9%97%B4%E7%9A%84%E4%BF%A1%E9%81%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/119_%E5%8D%8F%E7%A8%8B%E7%9A%84%E5%90%8C%E6%AD%A5%E5%85%B3%E9%97%AD%E9%80%9A%E9%81%93-%E6%B5%8B%E8%AF%95%E9%98%BB%E5%A1%9E%E7%9A%84%E9%80%9A%E9%81%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/120_%E4%BD%BF%E7%94%A8_select_%E5%88%87%E6%8D%A2%E5%8D%8F%E7%A8%8B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/121_%E9%80%9A%E9%81%93%E8%B6%85%E6%97%B6%E5%92%8C%E8%AE%A1%E6%97%B6%E5%99%A8_ticker/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/122_%E5%8D%8F%E7%A8%8B%E5%92%8C%E6%81%A2%E5%A4%8D_recover/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/123_%E6%96%B0%E6%97%A7%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94_%E4%BB%BB%E5%8A%A1%E5%92%8Cworker/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/123_%E6%96%B0%E6%97%A7%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%AF%94%E4%BB%BB%E5%8A%A1%E5%92%8Cworker/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/124_%E6%83%B0%E6%80%A7%E7%94%9F%E6%88%90%E5%99%A8%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/125_%E5%AE%9E%E7%8E%B0_futures_%E6%A8%A1%E5%BC%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/126_tcp%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/126_%E7%AC%AC15%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/127_%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/128_%E8%AE%BF%E9%97%AE%E5%B9%B6%E8%AF%BB%E5%8F%96%E9%A1%B5%E9%9D%A2/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/129_%E5%86%99%E4%B8%80%E4%B8%AA%E7%AE%80%E5%8D%95%E7%9A%84%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/130_%E7%AC%AC16%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/130_%E7%AC%AC%E5%9B%9B%E9%83%A8%E5%88%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/130_%E8%AF%AF%E7%94%A8%E7%9F%AD%E5%A3%B0%E6%98%8E%E5%AF%BC%E8%87%B4%E5%8F%98%E9%87%8F%E8%A6%86%E7%9B%96/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/131_%E8%AF%AF%E7%94%A8%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/132_%E5%8F%91%E7%94%9F%E9%94%99%E8%AF%AF%E6%97%B6%E4%BD%BF%E7%94%A8defer%E5%85%B3%E9%97%AD%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/133_%E4%BD%95%E6%97%B6%E4%BD%BF%E7%94%A8new%E5%92%8Cmake/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/134_%E4%B8%8D%E9%9C%80%E8%A6%81%E5%B0%86%E4%B8%80%E4%B8%AA%E6%8C%87%E5%90%91%E5%88%87%E7%89%87%E7%9A%84%E6%8C%87%E9%92%88%E4%BC%A0%E9%80%92%E7%BB%99%E5%87%BD%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/135_%E4%BD%BF%E7%94%A8%E6%8C%87%E9%92%88%E6%8C%87%E5%90%91%E6%8E%A5%E5%8F%A3%E7%B1%BB%E5%9E%8B/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/136_%E4%BD%BF%E7%94%A8%E5%80%BC%E7%B1%BB%E5%9E%8B%E6%97%B6%E8%AF%AF%E7%94%A8%E6%8C%87%E9%92%88/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/137_%E8%AF%AF%E7%94%A8%E5%8D%8F%E7%A8%8B%E5%92%8C%E9%80%9A%E9%81%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/138_%E9%97%AD%E5%8C%85%E5%92%8C%E5%8D%8F%E7%A8%8B%E7%9A%84%E4%BD%BF%E7%94%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/139_%E7%B3%9F%E7%B3%95%E7%9A%84%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/140_%E5%85%B3%E4%BA%8E%E9%80%97%E5%8F%B7ok%E6%A8%A1%E5%BC%8F/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/140_%E7%AC%AC17%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/141_%E5%AD%97%E7%AC%A6%E4%B8%B2/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/141_%E7%AC%AC18%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/142_%E6%95%B0%E7%BB%84%E5%92%8C%E5%88%87%E7%89%87/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/143_%E6%98%A0%E5%B0%84/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/144_%E7%BB%93%E6%9E%84%E4%BD%93/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/145_%E6%8E%A5%E5%8F%A3/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/146_%E5%87%BD%E6%95%B0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/147_%E6%96%87%E4%BB%B6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/148_%E5%8D%8F%E7%A8%8B_goroutine%E4%B8%8E%E9%80%9A%E9%81%93_channel/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/149_%E7%BD%91%E7%BB%9C%E5%92%8C%E7%BD%91%E9%A1%B5%E5%BA%94%E7%94%A8/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/150_%E5%85%B6%E4%BB%96/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/151_%E5%87%BA%E4%BA%8E%E6%80%A7%E8%83%BD%E8%80%83%E8%99%91%E7%9A%84%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%E5%92%8C%E5%BB%BA%E8%AE%AE/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/200_%E7%BF%BB%E8%AF%91%E8%BF%9B%E5%BA%A6/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/62_%E7%AC%AC9%E7%AB%A0/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E5%AD%A6%E4%B9%A0%E5%85%A5%E9%97%A8/src/summary/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E8%AF%AD%E8%A8%80%E6%A0%87%E5%87%86%E5%BA%93%E5%AE%9E%E4%BE%8B/src/chapter_1/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/go%E8%AF%AD%E8%A8%80%E6%A0%87%E5%87%86%E5%BA%93%E5%AE%9E%E4%BE%8B/src/summary/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

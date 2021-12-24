@@ -7,12 +7,13 @@
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 30 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="/categories/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>转载 | 自然语言处理入门</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</link>
+      <title>自然语言处理入门-01</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-01/</link>
       <pubDate>Thu, 30 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%85%A5%E9%97%A8/</guid>
-      <description>&lt;p&gt;先整理一些资料。&lt;/p&gt;</description>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86-01/</guid>
+      <description>&lt;p&gt;先整理一些资料。&lt;/p&gt;
+&lt;p&gt;[TOC]&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -149,7 +150,7 @@
       <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/ruan/the-too-many-pitfalls-of-vla-in-c/</guid>
       <description>&lt;p&gt;2021-07-05 | Categories: &lt;a href=&#34;https://blog.joren.ga/categories/#programming&#34;&gt;programming&lt;/a&gt; | Tags: &lt;a href=&#34;https://blog.joren.ga/categories/#C&#34;&gt;C&lt;/a&gt; &lt;a href=&#34;https://blog.joren.ga/categories/#advice&#34;&gt;advice&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;比起用一个固定的大小，它会产生太多代码，和太多更慢（更脆弱）的代码。&lt;/p&gt;
+&lt;p&gt;比起用一个固定大小的数组，（可变数组）会产生太多代码，和太多更慢（更脆弱）的代码。&lt;/p&gt;
 &lt;p&gt;~ &lt;a href=&#34;https://lkml.org/lkml/2018/3/7/621&#34;&gt;Linus Torvalds&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
@@ -173,20 +174,11 @@
     </item>
     
     <item>
-      <title>数据分析教程第一章-搭建自己的数据可视化平台</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
+      <title>数据分析教程01章-搭建自己的数据可视化平台</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E7%AC%AC01%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
       <pubDate>Thu, 31 Dec 2009 00:00:00 +0000</pubDate>
       
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
-      <description>我已经见了太多分别讲如何数据分析、如何数据可视化以及如何部署数据分析产品的文章了，但是从来没有一个把这些内容融合到一起的，全部都是割裂的。 比</description>
-    </item>
-    
-    <item>
-      <title>数据分析教程第一章-搭建自己的数据可视化平台</title>
-      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</link>
-      <pubDate>Thu, 31 Dec 2009 00:00:00 +0000</pubDate>
-      
-      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E8%AF%BE%E7%A8%8B/%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/%E7%AC%AC01%E7%AB%A0-%E6%90%AD%E5%BB%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%B9%B3%E5%8F%B0/</guid>
       <description>我已经见了太多分别讲如何数据分析、如何数据可视化以及如何部署数据分析产品的文章了，但是从来没有一个把这些内容融合到一起的，全部都是割裂的。 比</description>
     </item>
     
@@ -198,6 +190,16 @@
       <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%AE%89%E8%A3%85%E5%A4%9A%E7%89%88%E6%9C%AC-gcc-%E7%BC%96%E8%AF%91%E5%99%A8/</guid>
       <description>&lt;p&gt;GNU 编译器集合（GCC，GNU Compiler Collection）是 C、C ++、Objective-C、Fortran、Ada、Go 和 D 等编程语言的编译器和库的集合，许多开源项目包括：&lt;em&gt;GNU 工具&lt;/em&gt;和 &lt;em&gt;Linux 内核&lt;/em&gt;都是用 GCC 编译的。&lt;/p&gt;
 &lt;p&gt;下面介绍如何在系统上安装多个版本的GCC编译器。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>快速操作Linux终端命令行的快捷键列表</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%BF%AB%E9%80%9F%E6%93%8D%E4%BD%9Clinux%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Thu, 31 Jul 2008 00:00:00 +0000</pubDate>
+      
+      <guid>/post/%E7%BC%96%E7%A8%8B%E4%B8%96%E7%95%8C/%E6%8A%80%E6%9C%AF%E6%96%87%E7%AB%A0/%E5%BF%AB%E9%80%9F%E6%93%8D%E4%BD%9Clinux%E7%BB%88%E7%AB%AF%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%88%97%E8%A1%A8/</guid>
+      <description>&lt;p&gt;在shell命令终端中，Ctrl+n 相当于方向向下的方向键，Ctrl+p 相当于方向向上的方向键。&lt;/p&gt;
+&lt;p&gt;在命令终端中通过它们或者方向键可以实现对历史命令的快速查找。这也是快速输入命令的技巧。&lt;/p&gt;</description>
     </item>
     
   </channel>

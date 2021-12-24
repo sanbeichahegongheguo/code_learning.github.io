@@ -1,0 +1,6 @@
+[book]
+authors = ["Volcano_ash"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Go语言标准库实例"

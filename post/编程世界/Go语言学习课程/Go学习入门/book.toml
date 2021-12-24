@@ -1,0 +1,10 @@
+[book]
+authors = ["火山灰"]
+language = "zh-CN"
+multilingual = true
+src = "src"
+title = "Go语言学习入门"
+description = "Go语言学习入门指导."
+
+[output.html]
+curly-quotes = true
